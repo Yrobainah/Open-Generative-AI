@@ -2,7 +2,7 @@
 
 ## Alcance
 
-Esta capa convierte Open Generative AI en un estudio de producción asistida para una serie infantil original. Lumo Kids añade organización narrativa, dirección visual 3D, consistencia de personajes, seguridad infantil, estrategia multiplataforma, guion técnico y revisión humana.
+Esta capa convierte Open Generative AI en un estudio de producción asistida para una serie infantil original. Lumo Kids añade organización narrativa, dirección visual 3D, consistencia de personajes, seguridad infantil, estrategia multiplataforma, guion técnico, pruebas de producción y revisión humana.
 
 ## Rutas
 
@@ -12,12 +12,13 @@ Esta capa convierte Open Generative AI en un estudio de producción asistida par
 - `/studio/lumo-kids/episodes/S01E01/package`: título, canción, Shorts y estrategia de distribución.
 - `/studio/lumo-kids/episodes/S01E01/storyboard`: guion técnico y producción escena por escena.
 - `/studio/lumo-kids/episodes/S01E01/keyframes`: registro del primer pase vectorial descartado.
+- `/studio/lumo-kids/episodes/S01E01/proof`: prueba real de 25 segundos generada exclusivamente con los estudios de Open-Generative-AI.
 
-## Nueva dirección artística
+## Dirección artística
 
 La serie adopta animación 3D estilizada premium para preescolar:
 
-- Personajes redondeados, suaves y expresivos.
+- Personajes redondeados, suaves y muy expresivos.
 - Ojos, cejas, párpados, boca y postura capaces de comunicar la emoción sin diálogo.
 - Materiales diferenciados y coherentes.
 - Iluminación cinematográfica cálida con rellenos fríos.
@@ -33,23 +34,41 @@ La especificación completa está en `docs/LUMO_VISUAL_BIBLE.md`.
 **Duración:** `6:00`  
 **Enseñanza:** compartir, incluir y reparar el daño.
 
-Brillavalle se prepara para la Fiesta de las Mil Luces. Nublo, una criatura nocturna que se siente olvidada, toma el Corazón de Luz del pueblo para iluminar una celebración solitaria. Lumo y sus amigos comparten sus propios destellos, siguen el rastro hasta el observatorio y atraviesan tres retos usando las habilidades de Biri, Nara, Tuno y Pompón. En lugar de arrebatar la fuente, realizan La Ronda de las Ideas. Nublo comprende el daño, devuelve la luz y ayuda a llevarla a la plaza. La fiesta comienza con fuegos artificiales mágicos y silenciosos.
+Brillavalle se prepara para la Fiesta de las Mil Luces. Nublo, una criatura nocturna que se siente olvidada, toma el Corazón de Luz para iluminar una celebración solitaria. Lumo y sus amigos comparten sus propios destellos, siguen el rastro hasta el observatorio y atraviesan tres retos usando las habilidades de la pandilla. En lugar de recuperar la fuente por la fuerza, realizan La Ronda de las Ideas. Nublo comprende el daño, devuelve la luz y ayuda a llevarla a la plaza. La fiesta termina con fuegos artificiales mágicos y silenciosos.
 
 ## Guion técnico
 
-El storyboard v2 contiene veinte escenas continuas entre `0:00` y `6:00`:
+El storyboard v2 contiene veinte escenas continuas entre `0:00` y `6:00`. Cada escena declara tiempo, objetivo, personajes, emoción, plano, cámara, acción, diálogo, audio, iluminación, recursos, continuidad y prompt 3D.
 
-1. Preparativos y presentación del Corazón de Luz.
-2. Aparición de Nublo y desaparición de la fuente.
-3. Descubrimiento del rastro.
-4. Reparto de los destellos de Lumo.
-5. Puente, niebla y puerta del observatorio.
-6. Revelación de la motivación de Nublo.
-7. La Ronda de las Ideas y la canción `Compartimos nuestro brillo`.
-8. Disculpa, devolución y regreso en relevo.
-9. Encendido de Brillavalle y fuegos de luz.
+## Prueba real en Open-Generative-AI
 
-Cada escena declara tiempo, objetivo, personajes, emoción, plano, cámara, acción, diálogo, audio, iluminación, recursos, continuidad y prompt 3D.
+Antes de producir los seis minutos se debe aprobar una secuencia real de 25 segundos:
+
+1. `PT01`, 5 segundos: Nublo observa la fiesta.
+2. `PT02`, 10 segundos: cuenta atrás, robo del Corazón de Luz y apagón.
+3. `PT03`, 10 segundos: Nara reacciona y Lumo decide actuar.
+
+El manifiesto se encuentra en:
+
+`content/season-01/proofs/S01E01-theft-proof.json`
+
+Los modelos recomendados dentro de Open-Generative-AI son:
+
+- Image Studio: `nano-banana-2-edit`.
+- Video Studio: `seedance-v2.0-i2v`.
+- Audio Studio: `elevenlabs-text-to-dialogue-v3`.
+- Lip Sync Studio: `infinitetalk-video-to-video`.
+
+La pantalla de prueba copia el prompt del plano, abre el estudio correspondiente y permite registrar las URL reales devueltas por Open-Generative-AI. El estado permanece en producción mientras falte cualquiera de los siguientes elementos:
+
+- un fotograma inicial por plano;
+- un vídeo I2V por plano;
+- audio para las líneas habladas;
+- sincronización labial de `PT03`;
+- montaje completo de 25 segundos;
+- revisión humana.
+
+No se aceptan imágenes estáticas con zoom, vídeos externos ni animáticas presentadas como animación terminada. El procedimiento completo está documentado en `docs/OGAI_PRODUCTION_PROOF.md`.
 
 ## Reparto
 
@@ -60,26 +79,15 @@ Cada escena declara tiempo, objetivo, personajes, emoción, plano, cámara, acci
 - Pompón: compañero sensible y cómico.
 - Nublo: antagonista travieso que aprende a reparar el daño.
 
-Las fichas maestras se encuentran en `content/characters/profiles/`.
+Las fichas maestras están en `content/characters/profiles/`.
 
 ## Paquete de lanzamiento
 
-`content/season-01/packages/S01E01.launch.json` contiene:
-
-- Título orientado a descubrimiento.
-- Apertura de diez segundos.
-- Concepto de miniatura.
-- Canción original de 64 segundos.
-- Línea temporal completa.
-- Tres Shorts: desaparición, canción y fuegos de luz.
-- Nueve momentos de retención.
-- Objetivos internos de retención y porcentaje visto.
+`content/season-01/packages/S01E01.launch.json` contiene el título público, la apertura, el concepto de miniatura, la canción original, la línea temporal, tres Shorts, nueve momentos de retención y los objetivos internos de medición.
 
 ## Keyframes anteriores
 
-Los SVG del primer enfoque 2D quedan con `status=superseded`. Se conservan solo para trazabilidad y no deben utilizarse como arte final, referencia 3D, miniatura ni material de producción.
-
-El siguiente conjunto de keyframes debe generarse desde el storyboard v2 y la biblia 3D.
+Los SVG del primer enfoque 2D tienen `status=superseded`. Se conservan solo para trazabilidad y no deben utilizarse como arte final, referencia 3D, miniatura ni material de producción.
 
 ## Contenido versionado
 
@@ -87,9 +95,11 @@ El siguiente conjunto de keyframes debe generarse desde el storyboard v2 y la bi
 - `content/season-01/packages/`: estrategia de lanzamiento.
 - `content/season-01/storyboards/`: guion técnico.
 - `content/season-01/keyframes/`: conjuntos visuales y su estado.
+- `content/season-01/proofs/`: pruebas reales y resultados de generación.
 - `content/characters/profiles/`: fichas maestras.
 - `content/characters/model-sheets/`: referencias de modelo.
 - `docs/LUMO_VISUAL_BIBLE.md`: dirección artística 3D.
+- `docs/OGAI_PRODUCTION_PROOF.md`: flujo de la prueba real.
 - `docs/YOUTUBE_GROWTH_STRATEGY.md`: estrategia editorial y de distribución.
 
 ## Traspaso entre estudios
@@ -100,6 +110,11 @@ Las pantallas guardan paquetes temporales en `sessionStorage`:
 - `lumo_episode_launch_handoff_v1`
 - `lumo_storyboard_handoff_v1`
 - `lumo_keyframe_handoff_v1`
+- `lumo_ogai_proof_handoff_v1`
+
+El registro local de resultados de la prueba utiliza:
+
+- `lumo_ogai_proof_results_v1`
 
 No contienen claves ni información personal.
 
@@ -107,29 +122,30 @@ No contienen claves ni información personal.
 
 `npm run kids:validate` comprueba:
 
-- Episodio y clasificación infantil.
-- Paquete de lanzamiento y Shorts.
-- Veinte escenas consecutivas hasta el segundo 360.
-- Seis referencias maestras de personaje.
-- Recursos, planos, cámara, diálogos, audio, iluminación y continuidad.
-- Presencia de La Ronda de las Ideas y una resolución final.
-- Fichas de personaje y listas negativas.
-- Hojas de modelo y keyframes, incluidos conjuntos descartados.
-- Revisión humana antes de cualquier aprobación o publicación.
+- episodio y clasificación infantil;
+- paquete de lanzamiento y Shorts;
+- veinte escenas consecutivas hasta el segundo 360;
+- seis referencias maestras de personaje;
+- recursos, cámara, diálogos, audio, iluminación y continuidad;
+- presencia de La Ronda de las Ideas y una resolución final;
+- fichas de personaje, hojas de modelo y conjuntos visuales descartados;
+- plataforma, modelos, planos, duraciones y reglas de finalización de la prueba OGAI;
+- prohibición de declarar terminada la prueba sin resultados reales;
+- revisión humana antes de cualquier aprobación o publicación.
 
 La misma validación se ejecuta en GitHub Actions.
 
 ## Flujo recomendado
 
-1. Aprobar la nueva historia y el diseño de Nublo.
-2. Crear hojas de modelo 3D del reparto.
-3. Producir keyframes 3D del robo, observatorio, canción y final.
-4. Crear una animática de seis minutos.
-5. Producir voces, canción, ambiente y efectos.
-6. Modelar, riggear, animar, iluminar y renderizar.
-7. Montar el episodio y derivar tres Shorts.
-8. Ejecutar validación y revisión humana.
-9. Exportar y publicar manualmente.
+1. Aprobar historia, reparto y dirección 3D.
+2. Abrir la prueba OGAI desde el paquete del piloto.
+3. Generar los tres fotogramas en Image Studio.
+4. Animarlos en Video Studio.
+5. Crear las voces en Audio Studio.
+6. Aplicar sincronización labial a `PT03`.
+7. Montar y revisar los 25 segundos.
+8. Aprobar o rechazar el estándar visual y sonoro.
+9. Solo después, escalar el flujo al episodio completo.
 
 ## Principio editorial
 
