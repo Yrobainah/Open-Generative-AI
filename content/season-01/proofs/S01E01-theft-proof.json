@@ -1,0 +1,161 @@
+{
+  "id": "S01E01-theft-proof-v1",
+  "episodeCode": "S01E01",
+  "version": 1,
+  "status": "ready-for-generation",
+  "title": "Prueba de producción: el robo del Corazón de Luz",
+  "targetDurationSeconds": 25,
+  "aspectRatio": "16:9",
+  "resolution": "1920x1080",
+  "productionPlatform": "Open-Generative-AI",
+  "externalRenderingAllowed": false,
+  "humanReviewRequired": true,
+  "studios": {
+    "image": {
+      "route": "/studio/image",
+      "recommendedModelId": "nano-banana-2-edit",
+      "recommendedModelName": "Nano Banana 2 Edit",
+      "purpose": "crear los fotogramas iniciales manteniendo personajes y mundo consistentes"
+    },
+    "video": {
+      "route": "/studio/video",
+      "recommendedModelId": "seedance-v2.0-i2v",
+      "recommendedModelName": "Seedance 2.0 I2V",
+      "purpose": "animar cada fotograma con movimiento corporal, cámara e iluminación"
+    },
+    "audio": {
+      "route": "/studio/audio",
+      "recommendedModelId": "elevenlabs-text-to-dialogue-v3",
+      "recommendedModelName": "ElevenLabs Text to Dialogue V3",
+      "purpose": "generar voces expresivas y diferenciadas en español"
+    },
+    "lipSync": {
+      "route": "/studio/lipsync",
+      "recommendedModelId": "infinitetalk-video-to-video",
+      "recommendedModelName": "Infinite Talk V2V",
+      "purpose": "sincronizar únicamente las líneas visibles en primer plano"
+    }
+  },
+  "globalVisualPrompt": "Animación 3D estilizada premium para público preescolar, personajes originales con formas redondeadas, ojos muy expresivos, materiales suaves y táctiles, actuación corporal clara, iluminación cinematográfica cálida y violeta, profundidad de campo moderada, Brillavalle mágico y habitable, composición legible en pantalla pequeña, continuidad exacta entre planos, sin texto dentro de la imagen.",
+  "globalNegativePrompt": [
+    "personajes de franquicias existentes",
+    "fotorrealismo inquietante",
+    "terror",
+    "violencia",
+    "movimientos bruscos",
+    "rostros deformados",
+    "dedos extra",
+    "ojos desalineados",
+    "texto o logotipos",
+    "cambio de vestuario o colores entre planos"
+  ],
+  "referenceRequirements": [
+    "una imagen maestra de Lumo 3D",
+    "una imagen maestra de Nublo 3D",
+    "una vista general de la plaza festiva de Brillavalle",
+    "una referencia del Corazón de Luz",
+    "la paleta y materiales definidos en la biblia visual"
+  ],
+  "shots": [
+    {
+      "id": "PT01",
+      "durationSeconds": 5,
+      "title": "Nublo observa la fiesta",
+      "characters": ["Nublo"],
+      "dialogue": [],
+      "imagePrompt": "Nublo, criatura nocturna infantil original de pelaje azul violeta suave, ojos ámbar grandes y expresivos, orejas redondeadas en forma de media luna y cola de niebla, observa desde un tejado la Fiesta de las Mil Luces de Brillavalle. La plaza resplandece al fondo con guirnaldas, faroles, flores luminosas y habitantes felices. Nublo siente curiosidad y tristeza leve, no amenaza. Plano medio de tres cuartos, cámara a la altura de sus ojos, luz cálida de la plaza reflejada en su rostro y contraluz violeta suave. Animación 3D estilizada premium para preescolar, materiales táctiles, profundidad cinematográfica y silueta muy clara.",
+      "videoPrompt": "Nublo respira con suavidad, sus orejas bajan un poco y su cola de niebla forma un pequeño remolino triste. Mira la plaza, luego su mochila-linterna vacía. La cámara avanza muy lentamente hacia su rostro. Las luces festivas parpadean con ritmo amable al fondo. Movimiento corporal natural y contenido, pelaje estable, rostro consistente, sin hablar y sin movimientos rápidos.",
+      "audioPlan": {
+        "music": "tema festivo cálido escuchado a distancia",
+        "ambience": "risas lejanas, campanillas suaves y hojas nocturnas",
+        "sfx": ["pequeño suspiro de Nublo"]
+      },
+      "approvalCriteria": [
+        "Nublo resulta comprensible y no aterrador",
+        "su emoción se entiende sin diálogo",
+        "la plaza parece atractiva y llena de vida",
+        "el diseño coincide con su ficha 3D"
+      ]
+    },
+    {
+      "id": "PT02",
+      "durationSeconds": 10,
+      "title": "El robo del Corazón de Luz",
+      "characters": ["Lumo", "Nublo", "Nara", "Tuno", "Biri", "Pompón"],
+      "dialogue": [
+        {
+          "speaker": "Todos",
+          "text": "¡Tres, dos, uno!",
+          "direction": "alegres, con expectación y ritmo de celebración"
+        }
+      ],
+      "imagePrompt": "La plaza central de Brillavalle durante la cuenta atrás de la Fiesta de las Mil Luces. Lumo, Nara, Tuno, Biri y Pompón rodean una fuente mágica; sobre ella flota el Corazón de Luz, un cristal esférico dorado y semitransparente. Nublo aparece en el borde superior del plano envuelto en una espiral de niebla violeta, preparado para tomar la fuente sin agresividad. Los personajes miran el Corazón con emoción. Gran plano general cinematográfico, composición clara, iluminación dorada intensa con sombras azules suaves, animación 3D estilizada premium para preescolar.",
+      "videoPrompt": "La pandilla cuenta tres, dos, uno con movimientos alegres. Justo antes del encendido, la cola de niebla de Nublo se alarga como una cinta suave, envuelve el Corazón de Luz y lo eleva. Nublo lo recibe con ambas manos y se aleja sobre una nube violeta. Las guirnaldas se apagan en una ola desde el centro hacia los bordes. La cámara sigue primero el Corazón y después desciende hacia las reacciones del grupo. Acción clara, mágica y sin choque físico; expresiones de sorpresa, nunca terror; continuidad estricta de personajes y objeto.",
+      "audioPlan": {
+        "music": "música festiva que se interrumpe en una nota suspendida",
+        "ambience": "multitud expectante y campanillas",
+        "sfx": ["cuenta atrás", "remolino de niebla suave", "descenso luminoso", "silencio breve"]
+      },
+      "approvalCriteria": [
+        "el robo se entiende en menos de dos segundos",
+        "no existe contacto violento",
+        "el Corazón de Luz conserva forma y escala",
+        "las reacciones son variadas y legibles",
+        "el apagón mantiene los rostros visibles"
+      ]
+    },
+    {
+      "id": "PT03",
+      "durationSeconds": 10,
+      "title": "Lumo decide actuar",
+      "characters": ["Lumo", "Nara", "Tuno", "Biri", "Pompón"],
+      "dialogue": [
+        {
+          "speaker": "Nara",
+          "text": "¡La fiesta se quedó sin luz!",
+          "direction": "sorprendida pero serena, sin gritar"
+        },
+        {
+          "speaker": "Lumo",
+          "text": "La fiesta no termina aquí. Encontraremos la luz juntos.",
+          "direction": "primero preocupado y después decidido, cálido y esperanzador"
+        }
+      ],
+      "imagePrompt": "Lumo y sus amigos en la plaza de Brillavalle recién apagada. Lumo ocupa el primer término, cuerpo dorado suave, ojos turquesa grandes, núcleo luminoso en forma de corazón y dos antenas de luz que reflejan su emoción. Nara, Tuno, Biri y Pompón forman detrás un semicírculo de apoyo. Un rastro de chispas violetas se aleja por un sendero. Plano medio cinematográfico, rostro de Lumo completamente visible, penumbra azul con luz cálida procedente de su pecho, animación 3D estilizada premium para preescolar.",
+      "videoPrompt": "Nara mira las guirnaldas apagadas y pronuncia su frase. Lumo baja la mirada durante un instante; su núcleo luminoso parpadea, respira, levanta la cabeza y da un pequeño paso al frente. Mientras dice su frase, sus antenas recuperan brillo y una luz cálida ilumina suavemente a sus amigos. La cámara comienza en plano conjunto y avanza hasta un primer plano de Lumo. Al final todos miran el rastro violeta y se preparan para avanzar. Movimiento facial expresivo, sincronización labial clara, gestos naturales y continuidad exacta.",
+      "audioPlan": {
+        "music": "tema de Lumo que pasa de preocupación a esperanza",
+        "ambience": "plaza silenciosa con hojas suaves",
+        "sfx": ["parpadeo del núcleo de Lumo", "chispas violetas lejanas"]
+      },
+      "approvalCriteria": [
+        "la voz de Lumo suena infantil, natural y no robótica",
+        "el cambio emocional se entiende antes de la frase final",
+        "la sincronización labial no deforma el rostro",
+        "el grupo transmite unidad",
+        "el rastro violeta establece el siguiente objetivo"
+      ]
+    }
+  ],
+  "completionRules": {
+    "requiresGeneratedStartFramePerShot": true,
+    "requiresGeneratedVideoPerShot": true,
+    "requiresGeneratedDialogueAudio": true,
+    "requiresLipSyncForShots": ["PT03"],
+    "requiresHumanApproval": true,
+    "mayBeCalledFinishedWithoutResultUrls": false
+  },
+  "results": {
+    "startFrames": {},
+    "videos": {},
+    "audio": {},
+    "lipSync": {},
+    "assembledPreview": null
+  },
+  "approval": {
+    "humanApproved": false,
+    "approvedBy": null,
+    "approvedAt": null,
+    "notes": "No considerar terminada la prueba hasta registrar resultados reales generados por Open-Generative-AI."
+  }
+}
