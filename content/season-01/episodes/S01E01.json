@@ -1,0 +1,23 @@
+{
+  "code": "S01E01",
+  "title": "Lumo y la luz prestada",
+  "lesson": "Compartir",
+  "logline": "Lumo guarda toda su luz para iluminar su rincón favorito, pero descubre que Brillavalle brilla más cuando cada amigo aporta un poco.",
+  "durationMinutes": 8,
+  "status": "idea",
+  "focusCharacters": ["Lumo", "Nara", "Tuno", "Biri", "Pompón"],
+  "storyBeats": [
+    "Lumo descubre una piedra que amplifica su luz.",
+    "Decide reservarla para su rincón de lectura.",
+    "La plaza queda oscura durante los preparativos de la merienda.",
+    "La pandilla realiza La Ronda de las Ideas.",
+    "Prueban repartir la luz con espejos, hojas claras y pequeñas linternas.",
+    "Lumo comparte la piedra y cada solución aporta un brillo diferente.",
+    "La plaza termina más luminosa que el rincón original."
+  ],
+  "visualMotifs": ["luz cálida", "hojas translúcidas", "formas redondeadas"],
+  "publication": {
+    "youtubeMadeForKids": true,
+    "humanApproved": false
+  }
+}
