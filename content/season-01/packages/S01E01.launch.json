@@ -1,106 +1,111 @@
 {
-  "id": "S01E01-launch-v1",
+  "id": "S01E01-launch-v2",
   "episodeCode": "S01E01",
-  "version": 1,
+  "version": 2,
   "status": "strategy",
-  "searchTitle": "Lumo aprende a compartir ⭐ La luz prestada | Cuento y canción infantil",
+  "searchTitle": "¡Desapareció la luz de la fiesta! ⭐ Lumo salva Brillavalle",
   "alternateTitles": [
-    "Aprender a compartir con Lumo ⭐ Cuento infantil",
-    "La luz prestada 💛 Canción y aventura sobre compartir",
-    "¿Compartimos la luz? | Las aventuras de Lumo"
+    "Lumo y la luz robada ⭐ Aventura infantil sobre compartir",
+    "¿Quién se llevó la luz de Brillavalle? | Lumo Kids",
+    "La Fiesta de las Mil Luces ✨ Cuento y canción de Lumo"
   ],
   "openingHook": {
-    "durationSeconds": 8,
-    "visual": "La plaza de Brillavalle se apaga justo cuando todos preparan la merienda.",
-    "dialogue": "¡Oh, no! ¿Dónde se escondió toda la luz?",
-    "promise": "Lumo y sus amigos encontrarán una forma de iluminar la plaza entre todos."
+    "durationSeconds": 10,
+    "visual": "Brillavalle está a punto de encender la Fiesta de las Mil Luces cuando una sombra violeta toma el Corazón de Luz y todas las guirnaldas se apagan.",
+    "dialogue": "¡La fiesta se quedó sin luz!",
+    "promise": "Lumo y sus amigos seguirán el rastro antes de que comience la celebración."
   },
   "thumbnailConcept": {
-    "primaryEmotion": "sorpresa amable y preocupación leve",
-    "focalObject": "la piedra luminosa en las manos de Lumo",
-    "supportingCharacters": ["Nara", "Pompón"],
-    "background": "la plaza oscura de Brillavalle con pequeñas luces cálidas",
-    "optionalText": "¿Compartimos?",
-    "maximumWords": 2,
+    "primaryEmotion": "sorpresa valiente y urgencia amable",
+    "focalObject": "el Corazón de Luz flotando entre Lumo y la silueta redondeada de Nublo",
+    "supportingCharacters": ["Nara", "Biri", "Pompón"],
+    "background": "la plaza festiva apagada con guirnaldas oscuras y fuegos de luz esperando en el cielo",
+    "optionalText": "¿QUIÉN LA TOMÓ?",
+    "maximumWords": 3,
     "avoid": [
-      "flechas exageradas",
-      "peligro falso",
       "rostros aterrados",
-      "texto pequeño",
-      "fondos recargados"
+      "armas",
+      "persecución agresiva",
+      "oscuridad que oculte los ojos",
+      "texto pequeño"
     ]
   },
   "song": {
-    "title": "Una luz para compartir",
-    "durationSeconds": 82,
-    "placement": "La Ronda de las Ideas",
+    "title": "Compartimos nuestro brillo",
+    "durationSeconds": 64,
+    "placement": "La Ronda de las Ideas en el observatorio",
     "chorus": [
       "Paro, miro alrededor,",
       "pienso y pruebo algo mejor.",
-      "Una luz para ti, otra luz para mí,",
-      "si la compartimos, brilla más aquí."
+      "Tu luz y mi luz pueden caminar,",
+      "si las compartimos, vuelven a brillar."
     ],
     "callAndResponse": {
-      "call": "¿Qué hacemos con la luz?",
-      "response": "¡La compartimos!"
+      "call": "¿La luz es solo para uno?",
+      "response": "¡Brilla más entre todos!"
     },
     "movements": [
       "manos quietas al decir Paro",
-      "mirar a izquierda y derecha",
-      "dedo en la mejilla al decir Pienso",
-      "abrir los brazos en Compartimos"
+      "mirar a cada amigo al decir Alrededor",
+      "llevar una mano al corazón al decir Mi luz",
+      "unir las manos hacia el centro al decir Entre todos"
     ],
-    "reuseTargets": ["episodio principal", "vídeo musical", "Short musical", "compilación de canciones"]
+    "reuseTargets": ["episodio principal", "vídeo musical", "Short musical", "compilación de canciones", "apertura de fiestas"]
   },
   "mainVideo": {
-    "targetDurationSeconds": 310,
+    "targetDurationSeconds": 360,
     "format": "16:9",
     "segments": [
-      {"startSecond": 0, "endSecond": 8, "purpose": "mostrar el problema", "retentionDevice": "apagón visual y pregunta directa"},
-      {"startSecond": 8, "endSecond": 75, "purpose": "descubrimiento y decisión de Lumo", "retentionDevice": "piedra luminosa y humor visual"},
-      {"startSecond": 75, "endSecond": 155, "purpose": "complicación en la plaza", "retentionDevice": "intentos diferentes de la pandilla"},
-      {"startSecond": 155, "endSecond": 237, "purpose": "canción de La Ronda de las Ideas", "retentionDevice": "coro, movimientos y repetición"},
-      {"startSecond": 237, "endSecond": 292, "purpose": "resolución compartida", "retentionDevice": "transformación luminosa de la plaza"},
-      {"startSecond": 292, "endSecond": 310, "purpose": "enseñanza y cierre", "retentionDevice": "frase final breve y reprise musical"}
+      {"startSecond": 0, "endSecond": 48, "purpose": "presentar la fiesta, la fuente y a Nublo observando", "retentionDevice": "espectáculo festivo y misterio visual"},
+      {"startSecond": 48, "endSecond": 82, "purpose": "robo del Corazón de Luz y apagón", "retentionDevice": "cambio de luz y objetivo inmediato"},
+      {"startSecond": 82, "endSecond": 118, "purpose": "descubrir el rastro y decidir compartir los destellos", "retentionDevice": "pista luminosa y promesa de aventura"},
+      {"startSecond": 118, "endSecond": 218, "purpose": "recorrer obstáculos usando las habilidades del grupo", "retentionDevice": "tres retos breves con soluciones visuales"},
+      {"startSecond": 218, "endSecond": 258, "purpose": "encontrar a Nublo y comprender su motivación", "retentionDevice": "revelación del antagonista y fuente debilitada"},
+      {"startSecond": 258, "endSecond": 322, "purpose": "La Ronda de las Ideas, canción y recuperación compartida", "retentionDevice": "participación musical y transformación de la fuente"},
+      {"startSecond": 322, "endSecond": 354, "purpose": "regresar la fuente y encender la plaza", "retentionDevice": "relevo dinámico y cuenta atrás"},
+      {"startSecond": 354, "endSecond": 360, "purpose": "cerrar con fuegos artificiales mágicos", "retentionDevice": "recompensa visual final y frase de marca"}
     ]
   },
   "shorts": [
     {
-      "id": "S01E01-short-problem",
-      "title": "¡Brillavalle se quedó sin luz!",
-      "durationSeconds": 24,
+      "id": "S01E01-short-theft",
+      "title": "¡Alguien tomó la luz de la fiesta!",
+      "durationSeconds": 28,
       "format": "9:16",
-      "hook": "La plaza se apaga y Lumo mira la piedra que guardó.",
-      "payoff": "Pregunta: ¿qué harías tú con la luz?",
-      "sourceSegment": "0-35"
+      "hook": "La cuenta atrás llega a uno y una cola de niebla se lleva el Corazón de Luz.",
+      "payoff": "Lumo descubre un rastro de destellos violetas.",
+      "sourceSegment": "38-92"
     },
     {
       "id": "S01E01-short-song",
-      "title": "Una luz para compartir ⭐",
-      "durationSeconds": 34,
+      "title": "Compartimos nuestro brillo ✨",
+      "durationSeconds": 36,
       "format": "9:16",
-      "hook": "Empieza directamente con Paro, miro alrededor.",
-      "payoff": "Coro completo con cuatro movimientos fáciles.",
-      "sourceSegment": "170-220"
+      "hook": "Comienza directamente con Paro, miro alrededor.",
+      "payoff": "Lumo, la pandilla y Nublo unen sus luces en el coro.",
+      "sourceSegment": "258-316"
     },
     {
-      "id": "S01E01-short-resolution",
-      "title": "Cuando compartimos, todo brilla más",
+      "id": "S01E01-short-fireworks",
+      "title": "¡La fiesta vuelve a brillar!",
       "durationSeconds": 22,
       "format": "9:16",
-      "hook": "Lumo entrega la piedra y aparecen varias luces.",
-      "payoff": "La plaza termina más luminosa que antes.",
-      "sourceSegment": "250-300"
+      "hook": "El Corazón de Luz regresa a la fuente justo antes de que termine la cuenta atrás.",
+      "payoff": "Brillavalle se ilumina y aparecen fuegos artificiales mágicos.",
+      "sourceSegment": "332-360"
     }
   ],
-  "compilationGroups": ["compartir-y-cooperar", "temporada-01-volumen-01"],
+  "compilationGroups": ["aventuras-de-brillavalle", "compartir-y-cooperar", "temporada-01-volumen-01", "fiestas-y-celebraciones"],
   "retentionMoments": [
-    {"second": 5, "event": "pregunta sobre la luz desaparecida"},
-    {"second": 32, "event": "revelación de la piedra luminosa"},
-    {"second": 96, "event": "primer intento divertido de repartir la luz"},
-    {"second": 158, "event": "inicio musical de La Ronda de las Ideas"},
-    {"second": 244, "event": "Lumo decide compartir"},
-    {"second": 285, "event": "revelación de la plaza iluminada"}
+    {"second": 6, "event": "vista espectacular de la fiesta preparada"},
+    {"second": 34, "event": "primera aparición furtiva de Nublo"},
+    {"second": 55, "event": "desaparición del Corazón de Luz"},
+    {"second": 88, "event": "descubrimiento del rastro violeta"},
+    {"second": 142, "event": "primer reto resuelto compartiendo luz"},
+    {"second": 218, "event": "revelación del observatorio y Nublo"},
+    {"second": 260, "event": "inicio de La Ronda de las Ideas"},
+    {"second": 302, "event": "el Corazón de Luz vuelve a encenderse"},
+    {"second": 354, "event": "fuegos artificiales mágicos sobre Brillavalle"}
   ],
   "publicationVariants": {
     "episode": {"platform": "YouTube", "format": "16:9", "madeForKids": true},
@@ -109,9 +114,9 @@
     "compilation": {"platform": "YouTube", "format": "16:9", "madeForKids": true}
   },
   "measurementGoals": {
-    "retentionAt30SecondsPercent": 70,
-    "averageViewedPercent": 55,
-    "primarySignals": ["retención", "repeticiones", "espectadores recurrentes", "tráfico desde Shorts"]
+    "retentionAt30SecondsPercent": 75,
+    "averageViewedPercent": 60,
+    "primarySignals": ["retención durante el robo", "repeticiones de la canción", "reacción a Nublo", "tráfico desde Shorts", "espectadores recurrentes"]
   },
   "approval": {
     "humanApproved": false,
