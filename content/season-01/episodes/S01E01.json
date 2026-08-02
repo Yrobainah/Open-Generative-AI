@@ -17,6 +17,7 @@
   ],
   "visualMotifs": ["luz cálida", "hojas translúcidas", "formas redondeadas"],
   "launchPackage": "content/season-01/packages/S01E01.launch.json",
+  "storyboard": "content/season-01/storyboards/S01E01.storyboard.json",
   "publication": {
     "youtubeMadeForKids": true,
     "humanApproved": false
