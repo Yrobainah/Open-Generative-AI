@@ -6,16 +6,16 @@
   "agePresentation": "equivalente emocional a 5 años",
   "personality": ["tierno", "glotón de frutas imaginarias", "creativo", "algo tímido", "muy atento a los sentimientos"],
   "visual": {
-    "silhouette": "círculo grande y esponjoso formado por pequeños lóbulos redondeados",
-    "bodyShape": "cuerpo casi esférico, brazos cortos visibles entre el musgo y pies diminutos",
-    "face": "ojos ovalados muy grandes, nariz mínima y boca pequeña situada baja en el rostro",
-    "palette": {"primary":"#B894E8","secondary":"#E6D8FA","accent":"#8ED08A","eyes":"#302B46"},
-    "signatureFeatures": ["tres semillas verdes sobre la cabeza", "mejillas lavanda claras", "una pequeña bolsa de hojas cruzada al cuerpo"],
+    "silhouette": "círculo grande y esponjoso formado por mechones redondeados con brazos cortos visibles",
+    "bodyShape": "cuerpo casi esférico, blando y deformable, pies diminutos y volumen que cambia con el humor",
+    "face": "ojos ovalados muy grandes, cejas suaves, nariz mínima y boca pequeña situada baja en el rostro",
+    "palette": {"primary":"#9A6FD1","secondary":"#E6D8FA","accent":"#8ED08A","eyes":"#302B46"},
+    "signatureFeatures": ["tres semillas verdes sobre la cabeza", "mejillas lavanda claras", "pequeña bolsa de hojas", "pelaje-musgo esponjoso con movimiento secundario"],
     "scaleRelativeToLumo": 0.92
   },
-  "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "enfado controlado", "tristeza segura", "concentración", "orgullo compartido"],
+  "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "determinación tierna", "timidez", "concentración", "orgullo compartido"],
   "voice": {"register":"infantil neutro", "pace":"medio con pequeñas pausas", "tone":"dulce y cómico", "avoid":["voz de bebé exagerada", "sonidos incomprensibles", "comicidad basada en humillación"]},
-  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["recoger semillas", "rodar suavemente", "abrazar", "oler una flor", "esconderse y asomarse", "participar en La Ronda de las Ideas"]},
-  "promptTemplate": "Pompón, criatura infantil original de musgo lavanda, cuerpo redondo y esponjoso compuesto por lóbulos suaves, tres semillas verdes sobre la cabeza, ojos violeta oscuro muy grandes, pequeña bolsa de hojas, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados y diseño tierno para público infantil",
-  "negativePrompt": ["fotorrealismo", "pelaje hiperrealista", "moho inquietante", "dientes afilados", "extremidades largas", "ropa adulta", "texto o logotipos", "personajes de franquicias existentes"]
+  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["recoger semillas", "rodar suavemente", "abrazar", "convertirse en nube luminosa", "esconderse y asomarse", "participar en La Ronda de las Ideas"]},
+  "promptTemplate": "Pompón, criatura infantil original de musgo lavanda, cuerpo redondo y esponjoso con pelaje suave y volumétrico, tres semillas verdes sobre la cabeza, ojos violeta oscuro muy grandes con cejas expresivas, pequeña bolsa de hojas, cuerpo blando capaz de deformarse de manera cómica, animación 3D estilizada premium para preescolar, iluminación cinematográfica cálida, actuación tierna y movimiento secundario del pelaje",
+  "negativePrompt": ["fotorrealismo", "pelaje hiperrealista", "moho inquietante", "dientes afilados", "extremidades largas", "ropa adulta", "rostro rígido", "texto o logotipos", "personajes de franquicias existentes"]
 }
