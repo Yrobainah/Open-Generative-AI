@@ -1,0 +1,20 @@
+{
+  "policyVersion": "1.1.0",
+  "ageBand": "3-7",
+  "defaultLanguage": "es",
+  "humanReviewRequired": true,
+  "publicationAutomationAllowed": false,
+  "requiredEpisodeFields": ["code", "title", "lesson", "logline", "status", "publication"],
+  "allowedStatuses": ["idea", "draft", "validated", "needs_human_review", "approved", "published"],
+  "blockedPatterns": [
+    "\\b(desnud[oa]s?|sexo|sexual|pornograf)\\b",
+    "\\b(suicid|autolesi|matarse)\\b",
+    "\\b(coca[ií]na|hero[ií]na|metanfetamina|droga[s]?)\\b",
+    "\\b(alcohol|cerveza|tabaco|cigarrillo[s]?|vape)\\b",
+    "\\b(apuesta[s]?|casino|tragaperras)\\b",
+    "\\b(pistola[s]?|rifle[s]?|arma[s]?|cuchillo[s]?|sangre|violencia gr[aá]fica)\\b",
+    "\\b(dime tu direcci[oó]n|tu tel[eé]fono|no se lo digas a tus padres|guarda este secreto)\\b",
+    "\\b(los fruittis|pb&j otter)\\b",
+    "\\b(al estilo exacto de|imita exactamente a)\\b"
+  ]
+}
