@@ -22,6 +22,7 @@
   "launchPackage": "content/season-01/packages/S01E01.launch.json",
   "storyboard": "content/season-01/storyboards/S01E01.storyboard.json",
   "keyframeSet": "content/season-01/keyframes/S01E01.keyframes.json",
+  "productionProof": "content/season-01/proofs/S01E01-theft-proof.json",
   "publication": {
     "youtubeMadeForKids": true,
     "humanApproved": false
