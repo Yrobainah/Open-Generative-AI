@@ -11,6 +11,7 @@ import {
 } from '../lib/kids/safety/validate.mjs';
 import { validateStoryboard } from '../lib/kids/safety/validate-storyboard.mjs';
 import { validateKeyframeSet } from '../lib/kids/safety/validate-keyframes.mjs';
+import { validateOgaiProof } from '../lib/kids/safety/validate-proof.mjs';
 
 const safetyPolicy = loadPolicy();
 const characterPolicy = loadCharacterPolicy();
@@ -18,6 +19,7 @@ const episodeFiles = findJsonFiles('content/season-01/episodes');
 const launchPackageFiles = findJsonFiles('content/season-01/packages');
 const storyboardFiles = findJsonFiles('content/season-01/storyboards');
 const keyframeFiles = findJsonFiles('content/season-01/keyframes');
+const proofFiles = findJsonFiles('content/season-01/proofs');
 const characterFiles = findJsonFiles('content/characters/profiles');
 const modelSheetFiles = findJsonFiles('content/characters/model-sheets');
 let failed = false;
@@ -57,6 +59,11 @@ for (const file of keyframeFiles) {
   report(file, validateKeyframeSet(keyframeSet, storyboard, safetyPolicy, validateText));
 }
 
+for (const file of proofFiles) {
+  const proof = JSON.parse(fs.readFileSync(file, 'utf8'));
+  report(file, validateOgaiProof(proof, safetyPolicy));
+}
+
 for (const file of characterFiles) {
   const character = JSON.parse(fs.readFileSync(file, 'utf8'));
   report(file, validateCharacter(character, safetyPolicy, characterPolicy));
@@ -69,5 +76,5 @@ for (const file of modelSheetFiles) {
 
 if (failed) process.exit(1);
 console.log(
-  `\n${episodeFiles.length} episodio(s), ${launchPackageFiles.length} paquete(s), ${storyboardFiles.length} storyboard(s), ${keyframeFiles.length} conjunto(s) de keyframes, ${characterFiles.length} personaje(s) y ${modelSheetFiles.length} hoja(s) de modelo validados.`,
+  `\n${episodeFiles.length} episodio(s), ${launchPackageFiles.length} paquete(s), ${storyboardFiles.length} storyboard(s), ${keyframeFiles.length} conjunto(s) de keyframes, ${proofFiles.length} prueba(s) OGAI, ${characterFiles.length} personaje(s) y ${modelSheetFiles.length} hoja(s) de modelo validados.`,
 );
