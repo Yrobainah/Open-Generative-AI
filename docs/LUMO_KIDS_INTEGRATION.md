@@ -2,7 +2,7 @@
 
 ## Alcance
 
-Esta capa convierte Open Generative AI en un estudio de producción asistida para una serie infantil original. Open Generative AI conserva sus estudios multimedia; Lumo Kids añade organización narrativa, consistencia visual, seguridad infantil, estrategia multiplataforma, guion técnico y revisión humana.
+Esta capa convierte Open Generative AI en un estudio de producción asistida para una serie infantil original. Open Generative AI conserva sus estudios multimedia; Lumo Kids añade organización narrativa, consistencia visual, seguridad infantil, estrategia multiplataforma, guion técnico, keyframes y revisión humana.
 
 ## Herramientas externas
 
@@ -20,6 +20,7 @@ Se descargan en `tools/`, directorio ignorado por Git. No forman parte del produ
 - `/studio/lumo-kids/model-sheets/lumo`: revisión de la hoja canónica de Lumo y traspaso hacia Image Studio.
 - `/studio/lumo-kids/episodes/S01E01/package`: estrategia de lanzamiento del piloto, canción, Shorts y medición.
 - `/studio/lumo-kids/episodes/S01E01/storyboard`: guion técnico, línea temporal y producción escena por escena.
+- `/studio/lumo-kids/episodes/S01E01/keyframes`: revisión del primer pase visual de SC01, SC02, SC14 y SC16.
 
 ## Contenido versionado
 
@@ -27,56 +28,42 @@ Se descargan en `tools/`, directorio ignorado por Git. No forman parte del produ
 - `content/season-01/episodes/`: manifiestos narrativos de episodios.
 - `content/season-01/packages/`: títulos públicos, miniaturas, canciones, Shorts, compilaciones y objetivos de medición.
 - `content/season-01/storyboards/`: escenas, diálogos, cámara, sonido, continuidad y recursos de producción.
+- `content/season-01/keyframes/`: manifiestos de fotogramas de referencia, criterios y aprobación.
 - `content/characters/index.json`: índice de personajes.
 - `content/characters/profiles/`: fichas maestras para generación consistente.
 - `content/characters/model-sheets/`: manifiestos de hojas de modelo, prompts y parámetros de generación.
-- `public/lumo-kids/model-sheets/`: activos visuales públicos y versionados.
+- `public/lumo-kids/model-sheets/`: hojas visuales públicas y versionadas.
+- `public/lumo-kids/keyframes/`: keyframes SVG editables y hoja comparativa.
 - `docs/LUMO_VISUAL_BIBLE.md`: lenguaje visual, proporciones y restricciones.
 - `docs/YOUTUBE_GROWTH_STRATEGY.md`: estrategia editorial y de distribución.
 
 ## Paquete multiplataforma
 
-Cada historia mantiene su manifiesto narrativo y añade un paquete de lanzamiento independiente. Este paquete contiene:
-
-1. Título orientado a descubrimiento.
-2. Apertura de tres a quince segundos.
-3. Concepto de miniatura.
-4. Canción de La Ronda de las Ideas.
-5. Línea temporal del episodio principal.
-6. Tres Shorts con funciones distintas.
-7. Grupos para futuras compilaciones.
-8. Momentos de retención.
-9. Variantes de publicación marcadas para niños.
-10. Objetivos internos de medición.
-
-La separación permite mejorar títulos, miniaturas y distribución sin modificar la historia ni la enseñanza.
+Cada historia mantiene su manifiesto narrativo y añade un paquete de lanzamiento independiente. Este paquete contiene título, apertura, miniatura, canción, línea temporal, tres Shorts, compilaciones y objetivos de medición. La separación permite mejorar distribución sin modificar la enseñanza.
 
 ## Guion técnico y storyboard
 
-El storyboard desarrolla el paquete de lanzamiento sin cambiar su duración total. Cada escena declara:
+El storyboard desarrolla el paquete de lanzamiento sin cambiar su duración total. Cada escena declara intervalo, objetivo, personajes, emoción, plano, cámara, acción, diálogo, audio, iluminación, recursos, continuidad y prompt visual. El piloto contiene 18 escenas consecutivas entre `0:00` y `5:10`.
 
-- Intervalo temporal continuo.
-- Objetivo dramático y de retención.
-- Lugar y personajes.
-- Emoción principal.
-- Tamaño de plano, ángulo y composición.
-- Movimiento de cámara y transiciones.
-- Acción, diálogo y dirección interpretativa.
-- Música, ambiente y efectos.
-- Iluminación.
-- Recursos reutilizables.
-- Regla de continuidad.
-- Prompt visual específico del plano.
+## Primer pase de keyframes
 
-El piloto contiene 18 escenas consecutivas entre `0:00` y `5:10`. Los intentos de la pandilla, La Ronda de las Ideas y la resolución tienen bloques temporales diferenciados.
+Antes de producir las dieciocho escenas se revisan cuatro momentos de alto impacto:
+
+1. `SC01`: claridad del gancho y lectura del apagón.
+2. `SC02`: presentación de Lumo, rincón y piedra luminosa.
+3. `SC14`: confesión segura y respuesta de apoyo.
+4. `SC16`: recompensa visual y colaboración del grupo.
+
+Los activos iniciales son SVG a `1600 × 900`, editables y pendientes de aprobación humana. Sirven para decidir composición, emoción, contraste, continuidad y paleta; no son fotogramas finales de emisión.
 
 ## Traspaso entre estudios
 
-Las pantallas de Lumo Kids guardan paquetes temporales en `sessionStorage` para entregar contexto a los estudios multimedia:
+Las pantallas guardan paquetes temporales en `sessionStorage`:
 
 - `lumo_image_studio_handoff_v1`: hoja canónica y prompts del personaje.
 - `lumo_episode_launch_handoff_v1`: episodio, pieza seleccionada y datos de distribución.
-- `lumo_storyboard_handoff_v1`: escena seleccionada, cámara, diálogo, audio, recursos y prompt visual.
+- `lumo_storyboard_handoff_v1`: escena, cámara, diálogo, audio, recursos y prompt visual.
+- `lumo_keyframe_handoff_v1`: keyframe seleccionado, escena de origen y criterios de revisión.
 
 Los paquetes no incluyen claves ni información personal.
 
@@ -98,27 +85,16 @@ npm run kids:setup:windows
 
 ## Validación
 
-`npm run kids:validate` comprueba:
+`npm run kids:validate` comprueba episodios, paquetes, storyboards, personajes, hojas de modelo y keyframes. Para el primer pase visual verifica:
 
-- Campos y códigos de episodios.
-- Duración y estado de producción.
-- Clasificación obligatoria para niños.
-- Revisión humana antes de publicar.
-- Patrones de contenido bloqueado.
-- Títulos, apertura, miniatura, canción y línea temporal de los paquetes de lanzamiento.
-- Tres Shorts con formato y duración válidos.
-- Variantes de publicación marcadas para niños.
-- Objetivos de medición dentro de rangos válidos.
-- Storyboards de entre cuatro y seis minutos.
-- Escenas consecutivas, numeradas y sin huecos.
-- Personajes con referencia maestra.
-- Plano, cámara, diálogo, audio, iluminación, continuidad y prompt por escena.
-- Recursos declarados en el registro de producción.
-- Existencia de La Ronda de las Ideas y de una resolución final.
-- Campos visuales y paletas de personajes.
-- Vistas, expresiones y prompts negativos mínimos.
-- Ausencia de referencias a franquicias o estilos protegidos en prompts maestros.
-- Manifiestos de hojas de modelo y existencia del activo visual asociado.
+- Formato SVG y relación `16:9`.
+- Resolución `1600 × 900`.
+- Existencia de los cuatro activos y de la hoja comparativa.
+- Correspondencia con escenas reales del storyboard.
+- Presencia obligatoria de SC01, SC02, SC14 y SC16.
+- Un mínimo de tres criterios por fotograma.
+- Revisión humana antes de usar `status=approved`.
+- Seguridad infantil en todo el texto del manifiesto.
 
 La misma validación se ejecuta en GitHub Actions.
 
@@ -126,19 +102,19 @@ La misma validación se ejecuta en GitHub Actions.
 
 1. Seleccionar o crear un capítulo.
 2. Aprobar enseñanza, logline y estructura narrativa.
-3. Crear el paquete multiplataforma del capítulo.
-4. Aprobar título público, apertura y miniatura.
-5. Escribir el guion técnico y fijar la línea temporal.
-6. Revisar diálogos, actuación, planos y continuidad.
-7. Seleccionar personajes y hojas de modelo canónicas.
-8. Generar un keyframe aprobado por escena en Image Studio.
-9. Producir canción, voces, ambiente y efectos en Audio Studio.
-10. Animar escenas y montar el capítulo en Video Studio.
-11. Derivar canción independiente y tres Shorts.
-12. Ejecutar validación de seguridad.
-13. Registrar aprobación humana.
-14. Exportar y publicar manualmente.
-15. Registrar resultados y ajustar el siguiente paquete.
+3. Crear el paquete multiplataforma.
+4. Aprobar título, apertura y miniatura.
+5. Escribir el guion técnico.
+6. Revisar diálogos, planos y continuidad.
+7. Seleccionar hojas de modelo.
+8. Revisar keyframes prioritarios.
+9. Refinar y aprobar un keyframe por escena.
+10. Producir canción, voces, ambiente y efectos.
+11. Animar escenas y montar el capítulo.
+12. Derivar canción independiente y Shorts.
+13. Ejecutar validación de seguridad.
+14. Registrar aprobación humana.
+15. Exportar y publicar manualmente.
 
 ## Principio editorial
 
