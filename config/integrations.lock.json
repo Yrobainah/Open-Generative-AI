@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "integrations": {
+    "openGenerativeAI": {
+      "repository": "https://github.com/Anil-matcha/Open-Generative-AI.git",
+      "role": "application-base",
+      "branch": "main",
+      "baseCommit": "2a2e0a2970a9dca1dd5c4cbb4ab8876c7b2b0879",
+      "license": "MIT"
+    },
+    "caveman": {
+      "repository": "https://github.com/JuliusBrussee/caveman.git",
+      "role": "development-agent-output-optimizer",
+      "branch": "main",
+      "commit": "0d95a81d35a9f2d123a5e9430d1cfc43d55f1bb0",
+      "license": "MIT",
+      "installPath": "tools/caveman"
+    },
+    "graphify": {
+      "repository": "https://github.com/Graphify-Labs/graphify.git",
+      "role": "project-knowledge-graph",
+      "branch": "v8",
+      "commit": "00efd6e7969837ae4a9f11d8d504dcd3b20b09df",
+      "license": "Apache-2.0 AND MIT",
+      "installPath": "tools/graphify"
+    }
+  }
+}
