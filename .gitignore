@@ -31,6 +31,11 @@ release/
 .next/
 out/
 
+# Lumo Kids / external tools and generated output
+tools/
+graphify-out/
+generated-media/
+
 # Misc
 *.pem
 .env
