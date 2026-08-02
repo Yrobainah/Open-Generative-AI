@@ -1,0 +1,21 @@
+{
+  "id": "pompon",
+  "name": "Pompón",
+  "role": "Compañero sensible, recolector y corazón cómico del grupo",
+  "characterType": "criatura de musgo y semillas original",
+  "agePresentation": "equivalente emocional a 5 años",
+  "personality": ["tierno", "glotón de frutas imaginarias", "creativo", "algo tímido", "muy atento a los sentimientos"],
+  "visual": {
+    "silhouette": "círculo grande y esponjoso formado por pequeños lóbulos redondeados",
+    "bodyShape": "cuerpo casi esférico, brazos cortos visibles entre el musgo y pies diminutos",
+    "face": "ojos ovalados muy grandes, nariz mínima y boca pequeña situada baja en el rostro",
+    "palette": {"primary":"#B894E8","secondary":"#E6D8FA","accent":"#8ED08A","eyes":"#302B46"},
+    "signatureFeatures": ["tres semillas verdes sobre la cabeza", "mejillas lavanda claras", "una pequeña bolsa de hojas cruzada al cuerpo"],
+    "scaleRelativeToLumo": 0.92
+  },
+  "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "enfado controlado", "tristeza segura", "concentración", "orgullo compartido"],
+  "voice": {"register":"infantil neutro", "pace":"medio con pequeñas pausas", "tone":"dulce y cómico", "avoid":["voz de bebé exagerada", "sonidos incomprensibles", "comicidad basada en humillación"]},
+  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["recoger semillas", "rodar suavemente", "abrazar", "oler una flor", "esconderse y asomarse", "participar en La Ronda de las Ideas"]},
+  "promptTemplate": "Pompón, criatura infantil original de musgo lavanda, cuerpo redondo y esponjoso compuesto por lóbulos suaves, tres semillas verdes sobre la cabeza, ojos violeta oscuro muy grandes, pequeña bolsa de hojas, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados y diseño tierno para público infantil",
+  "negativePrompt": ["fotorrealismo", "pelaje hiperrealista", "moho inquietante", "dientes afilados", "extremidades largas", "ropa adulta", "texto o logotipos", "personajes de franquicias existentes"]
+}
