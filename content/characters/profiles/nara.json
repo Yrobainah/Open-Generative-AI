@@ -1,0 +1,21 @@
+{
+  "id": "nara",
+  "name": "Nara",
+  "role": "Observadora, cuidadora de plantas y voz serena del grupo",
+  "characterType": "criatura brote original",
+  "agePresentation": "equivalente emocional a 7 años",
+  "personality": ["paciente", "empática", "valiente", "observadora", "prudente sin ser temerosa"],
+  "visual": {
+    "silhouette": "cuerpo ovalado con dos hojas largas y redondeadas a modo de orejas",
+    "bodyShape": "torso pequeño en forma de semilla, piernas cortas y brazos finos como tallos",
+    "face": "ojos almendrados grandes, cejas curvas y sonrisa tranquila",
+    "palette": {"primary":"#73C96B","secondary":"#C8EE9B","accent":"#F4C95D","eyes":"#29443A"},
+    "signatureFeatures": ["hoja izquierda ligeramente doblada", "pequeña flor amarilla desmontable", "marcas suaves de nervaduras en las hojas"],
+    "scaleRelativeToLumo": 1.06
+  },
+  "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "enfado controlado", "tristeza segura", "concentración", "orgullo compartido"],
+  "voice": {"register":"infantil neutro", "pace":"pausado", "tone":"sereno y afectuoso", "avoid":["susurro constante", "tono maternal adulto", "habla excesivamente lenta"]},
+  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["regar", "escuchar", "agacharse", "sostener una hoja", "caminar", "participar en La Ronda de las Ideas"]},
+  "promptTemplate": "Nara, criatura brote infantil original, cuerpo ovalado verde hoja, dos hojas largas y redondeadas como orejas, hoja izquierda ligeramente doblada, ojos almendrados verde oscuro, flor amarilla pequeña opcional, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados y formas seguras para público infantil",
+  "negativePrompt": ["fotorrealismo", "planta humana realista", "hojas afiladas", "maquillaje", "ropa adulta", "textura marchita inquietante", "texto o logotipos", "personajes de franquicias existentes"]
+}
