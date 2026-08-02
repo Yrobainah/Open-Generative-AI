@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "requiredFields": [
+    "id",
+    "name",
+    "role",
+    "characterType",
+    "agePresentation",
+    "personality",
+    "visual",
+    "expressions",
+    "voice",
+    "promptTemplate",
+    "negativePrompt"
+  ],
+  "requiredVisualFields": [
+    "silhouette",
+    "bodyShape",
+    "face",
+    "palette",
+    "signatureFeatures",
+    "scaleRelativeToLumo"
+  ],
+  "requiredPaletteKeys": ["primary", "secondary", "accent", "eyes"],
+  "requiredViews": ["front", "threeQuarter", "side", "back"],
+  "minimumExpressions": 6,
+  "minimumNegativePromptItems": 6,
+  "forbiddenReferenceTerms": [
+    "los fruitis",
+    "fruittis",
+    "pb&j otter",
+    "peanut otter",
+    "jelly otter",
+    "butter otter",
+    "disney style",
+    "pixar style",
+    "in the style of"
+  ]
+}
