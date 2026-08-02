@@ -24,7 +24,7 @@
     "maximumWords": 3,
     "avoid": [
       "rostros aterrados",
-      "armas",
+      "objetos de combate",
       "persecución agresiva",
       "oscuridad que oculte los ojos",
       "texto pequeño"
