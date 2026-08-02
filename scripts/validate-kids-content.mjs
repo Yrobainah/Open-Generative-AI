@@ -1,13 +1,19 @@
 import fs from 'node:fs';
-import { findJsonFiles, loadPolicy, validateEpisode } from '../lib/kids/safety/validate.mjs';
+import {
+  findJsonFiles,
+  loadCharacterPolicy,
+  loadPolicy,
+  validateCharacter,
+  validateEpisode,
+} from '../lib/kids/safety/validate.mjs';
 
-const policy = loadPolicy();
-const files = findJsonFiles('content/season-01/episodes');
+const safetyPolicy = loadPolicy();
+const characterPolicy = loadCharacterPolicy();
+const episodeFiles = findJsonFiles('content/season-01/episodes');
+const characterFiles = findJsonFiles('content/characters/profiles');
 let failed = false;
 
-for (const file of files) {
-  const episode = JSON.parse(fs.readFileSync(file, 'utf8'));
-  const errors = validateEpisode(episode, policy);
+function report(file, errors) {
   if (errors.length) {
     failed = true;
     console.error(`\n${file}`);
@@ -17,5 +23,15 @@ for (const file of files) {
   }
 }
 
+for (const file of episodeFiles) {
+  const episode = JSON.parse(fs.readFileSync(file, 'utf8'));
+  report(file, validateEpisode(episode, safetyPolicy));
+}
+
+for (const file of characterFiles) {
+  const character = JSON.parse(fs.readFileSync(file, 'utf8'));
+  report(file, validateCharacter(character, safetyPolicy, characterPolicy));
+}
+
 if (failed) process.exit(1);
-console.log(`\n${files.length} manifiesto(s) validados.`);
+console.log(`\n${episodeFiles.length} manifiesto(s) y ${characterFiles.length} personaje(s) validados.`);
