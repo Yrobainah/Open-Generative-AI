@@ -1,0 +1,21 @@
+{
+  "id": "biri",
+  "name": "Biri",
+  "role": "Explorador veloz, mensajero y fuente de humor físico",
+  "characterType": "ave-nube original",
+  "agePresentation": "equivalente emocional a 5 años",
+  "personality": ["rápido", "divertido", "distraído", "valiente", "muy afectuoso"],
+  "visual": {
+    "silhouette": "cuerpo de nube compacta con pequeñas alas triangulares redondeadas y cola corta",
+    "bodyShape": "volumen ligero y ovalado, patas muy cortas y alas grandes respecto al torso",
+    "face": "ojos grandes y circulares, pico pequeño redondeado y cejas finas móviles",
+    "palette": {"primary":"#80D8F2","secondary":"#D7F5FF","accent":"#FF8B73","eyes":"#23354A"},
+    "signatureFeatures": ["mechón en forma de remolino", "punta coral en cada ala", "pequeña estela de vapor al volar rápido"],
+    "scaleRelativeToLumo": 0.82
+  },
+  "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "enfado controlado", "tristeza segura", "concentración", "orgullo compartido"],
+  "voice": {"register":"infantil neutro", "pace":"rápido con pausas claras", "tone":"ligero y juguetón", "avoid":["chillidos", "tartamudeo usado como burla", "habla ininteligible"]},
+  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["volar", "aterrizar", "llevar una nota", "mirar desde arriba", "tropezar sin daño", "participar en La Ronda de las Ideas"]},
+  "promptTemplate": "Biri, ave-nube infantil original, cuerpo de nube azul celeste compacto, alas triangulares muy redondeadas con puntas coral, mechón en remolino, pico pequeño y ojos azul oscuro grandes, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados, movimiento alegre y diseño seguro para público infantil",
+  "negativePrompt": ["fotorrealismo", "ave anatómicamente realista", "pico afilado", "garras", "tormenta amenazante", "ojos agresivos", "texto o logotipos", "personajes de franquicias existentes"]
+}
