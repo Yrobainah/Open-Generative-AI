@@ -6,16 +6,16 @@
   "agePresentation": "equivalente emocional a 7 años",
   "personality": ["ingenioso", "trabajador", "terco a veces", "leal", "entusiasta con los mecanismos"],
   "visual": {
-    "silhouette": "forma rectangular redondeada coronada por una cúpula de bellota",
-    "bodyShape": "torso robusto de madera clara, brazos cortos y manos anchas simplificadas",
-    "face": "ojos redondos medianos, cejas gruesas suaves y sonrisa asimétrica",
+    "silhouette": "forma compacta y robusta coronada por una cúpula de bellota y pequeñas gafas de inventor",
+    "bodyShape": "torso redondeado de madera clara, brazos cortos, manos anchas simplificadas y piernas firmes",
+    "face": "ojos redondos medianos, cejas gruesas suaves, párpados móviles y sonrisa asimétrica",
     "palette": {"primary":"#B97845","secondary":"#E9B873","accent":"#5EC6C8","eyes":"#2B3442"},
-    "signatureFeatures": ["sombrero natural de bellota", "pequeño cinturón turquesa de herramientas", "una veta en forma de espiral en el pecho"],
+    "signatureFeatures": ["sombrero natural de bellota", "gafas redondeadas sobre la frente", "cinturón turquesa con herramientas sencillas", "veta en espiral en el pecho"],
     "scaleRelativeToLumo": 1.12
   },
-  "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "enfado controlado", "tristeza segura", "concentración", "orgullo compartido"],
+  "expressions": ["alegría orgullosa", "curiosidad técnica", "sorpresa amable", "preocupación leve", "frustración controlada", "duda", "concentración intensa", "orgullo compartido"],
   "voice": {"register":"infantil neutro", "pace":"medio", "tone":"enérgico y práctico", "avoid":["voz adulta grave", "jerga técnica incomprensible", "burla hacia otros personajes"]},
-  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["medir", "martillar de forma segura", "dibujar un plano", "transportar piezas ligeras", "celebrar", "participar en La Ronda de las Ideas"]},
-  "promptTemplate": "Tuno, criatura infantil original de madera clara y bellota, cuerpo rectangular muy redondeado, cúpula de bellota, cinturón turquesa de herramientas sencillas, veta espiral en el pecho, ojos azul oscuro, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados y diseño seguro para público infantil",
-  "negativePrompt": ["fotorrealismo", "astillas peligrosas", "herramientas afiladas", "objetos de combate", "barba o apariencia adulta", "madera podrida", "texto o logotipos", "personajes de franquicias existentes"]
+  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["medir", "ajustar un mecanismo seguro", "dibujar un plano", "transportar piezas ligeras", "celebrar", "participar en La Ronda de las Ideas"]},
+  "promptTemplate": "Tuno, criatura infantil original de madera clara y bellota, cuerpo robusto muy redondeado, cúpula de bellota, gafas de inventor sobre la frente, cinturón turquesa con herramientas sencillas, veta espiral en el pecho, ojos oscuros con cejas y párpados expresivos, animación 3D estilizada premium para preescolar, madera satinada suave, iluminación cinematográfica cálida, actuación física precisa y cómica",
+  "negativePrompt": ["fotorrealismo", "astillas peligrosas", "herramientas afiladas", "objetos de combate", "barba o apariencia adulta", "madera podrida", "rostro rígido", "texto o logotipos", "personajes de franquicias existentes"]
 }
