@@ -1,0 +1,12 @@
+{
+  "series": "Las aventuras de Lumo",
+  "version": 1,
+  "visualBible": "docs/LUMO_VISUAL_BIBLE.md",
+  "characters": [
+    {"id":"lumo","name":"Lumo","profile":"content/characters/profiles/lumo.json"},
+    {"id":"nara","name":"Nara","profile":"content/characters/profiles/nara.json"},
+    {"id":"tuno","name":"Tuno","profile":"content/characters/profiles/tuno.json"},
+    {"id":"biri","name":"Biri","profile":"content/characters/profiles/biri.json"},
+    {"id":"pompon","name":"Pompón","profile":"content/characters/profiles/pompon.json"}
+  ]
+}
