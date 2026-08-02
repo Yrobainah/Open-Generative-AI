@@ -1,94 +1,161 @@
-# Biblia visual de Las aventuras de Lumo
+# Biblia visual 3D de Las aventuras de Lumo
 
 ## Objetivo
 
-Este documento fija la identidad visual de la serie para que los personajes, escenarios y emociones se mantengan coherentes entre episodios, modelos generativos y artistas humanos.
+Este documento fija la identidad visual de la serie para que personajes, escenarios, materiales, emociones e iluminación se mantengan coherentes entre episodios, herramientas generativas y producción humana.
 
-La serie puede tomar como referencia estructural la aventura coral, el humor cotidiano, la cooperación y el uso de canciones o rituales para resolver problemas. No se copiarán personajes, diseños, canciones, diálogos, localizaciones ni tramas de obras existentes.
+Las referencias externas solo sirven para estudiar legibilidad, ritmo, actuación, música y claridad narrativa. No se copiarán personajes, diseños, canciones, diálogos, localizaciones, planos ni tramas de obras existentes.
 
 ## Dirección artística
 
-- Animación 2D con apariencia de recorte suave y acabado de pintura digital.
-- Formas redondeadas, siluetas simples y lectura clara en pantallas pequeñas.
-- Textura ligera de papel o gouache, nunca fotorrealismo.
-- Contornos coloreados o sombras de borde; evitar líneas negras duras.
-- Iluminación cálida y difusa, con brillos suaves como elemento narrativo.
-- Fondos con profundidad sencilla: primer plano, plano medio y fondo.
-- Composición principal 16:9, protegida para recortes verticales 9:16.
+- Animación 3D estilizada premium para público preescolar.
+- Personajes redondeados, suaves y visualmente abrazables.
+- Actuación facial clara mediante ojos, iris, párpados, cejas, boca y postura.
+- Materiales diferenciados: luz aterciopelada, hojas translúcidas, madera satinada, plumaje volumétrico, musgo suave y niebla luminosa.
+- Iluminación cinematográfica cálida con relleno frío y bordes mágicos controlados.
+- Escenarios con profundidad real: primer plano, plano medio, fondo, niebla ambiental y elementos desenfocados.
+- Movimiento con anticipación, peso, rebote suave y acciones legibles.
+- Composición principal 16:9 protegida para recortes verticales 9:16.
+- Cada fotograma importante debe poder funcionar como miniatura.
 - Nada de texto generado dentro de las imágenes finales.
 
 ## Gramática de formas
 
-- Lumo: estrella redondeada y gota luminosa. Curvas ascendentes y energía abierta.
-- Nara: brote y hoja. Curvas laterales, equilibrio y sensación de calma.
-- Tuno: madera y bellota. Formas cuadradas redondeadas, estabilidad e inventiva.
-- Biri: ave-nube. Triángulos suaves y diagonales que sugieren movimiento.
-- Pompón: musgo y pompón. Círculos superpuestos, ternura y comicidad.
+- Lumo: esfera luminosa, corazón y antenas curvas. Energía abierta y ascendente.
+- Nara: brote y hojas largas. Equilibrio, calma y movimientos fluidos.
+- Tuno: bellota, madera y herramientas redondeadas. Estabilidad e inventiva.
+- Biri: ave ligera, diagonales y alas abiertas. Velocidad y optimismo.
+- Pompón: esfera de musgo y volumen deformable. Ternura y humor.
+- Nublo: media luna, niebla en espiral y mochila-linterna. Misterio amable y teatralidad.
 
-Cada personaje debe reconocerse únicamente por su silueta, incluso sin color ni detalles faciales.
+Cada personaje debe reconocerse por su silueta incluso sin color ni detalles faciales.
 
 ## Proporciones generales
 
-- Cabeza: entre 42 % y 52 % de la altura total.
-- Ojos grandes, separados y situados ligeramente por debajo del centro de la cara.
+- Cabeza: entre 45 % y 55 % de la altura total.
+- Ojos grandes con iris visibles, reflejos definidos y dirección de mirada inequívoca.
 - Manos y pies simplificados; máximo cuatro dedos visuales cuando sean visibles.
 - Extremidades cortas y flexibles, aptas para poses expresivas.
 - No modificar la altura relativa de un personaje más de un 5 % entre escenas.
+- Las poses deben evitar simetría rígida salvo en momentos rituales o musicales.
 
 ## Rostros y emociones
 
-Las emociones deben leerse primero en ojos y cejas, después en boca y postura.
+La emoción debe entenderse sin escuchar el diálogo. Se leerá primero en ojos y cejas, después en boca, inclinación de cabeza, manos y postura.
 
-Expresiones obligatorias por personaje:
+Expresiones mínimas:
 
-1. Alegría tranquila.
+1. Alegría abierta.
 2. Curiosidad.
 3. Sorpresa amable.
-4. Preocupación leve.
-5. Enfado controlado.
-6. Tristeza segura, sin angustia intensa.
-7. Concentración durante La Ronda de las Ideas.
-8. Orgullo compartido al resolver un problema.
+4. Preocupación valiente.
+5. Duda.
+6. Tristeza segura.
+7. Concentración.
+8. Orgullo compartido.
+
+Nublo añade orgullo teatral, soledad, arrepentimiento y alegría al sentirse incluido.
 
 Evitar terror, dolor gráfico, humillación, llanto extremo, miradas amenazantes o gestos adultos.
 
-## Color y luz
+## Materiales
 
-- Saturación media-alta en personajes y media-baja en fondos.
+### Lumo
+
+- Superficie dorada suave, ligeramente aterciopelada.
+- Subsurface scattering ligero para transmitir calidez.
+- Núcleo de luz en forma de corazón.
+- Halo controlado que nunca oculta los ojos ni la boca.
+
+### Nara
+
+- Hojas satinadas y parcialmente translúcidas.
+- Nervaduras suaves visibles al trasluz.
+- Movimiento secundario lento en hojas y flor.
+
+### Tuno
+
+- Madera clara satinada, sin astillas ni grietas inquietantes.
+- Cúpula de bellota mate.
+- Metal y herramientas con bordes amplios y reflejos suaves.
+
+### Biri
+
+- Plumaje azul suave con volumen, sin detalle fotorrealista.
+- Alas flexibles y estela de vapor breve al acelerar.
+
+### Pompón
+
+- Musgo-pelaje lavanda esponjoso y volumétrico.
+- Deformación corporal elástica usada para humor y protección.
+
+### Nublo
+
+- Pelaje azul violeta aterciopelado.
+- Cola de niebla semitransparente que cambia de forma con su emoción.
+- Ojos ámbar y borde violeta suave para conservar legibilidad en escenas oscuras.
+
+## Color e iluminación
+
+- Saturación media-alta en personajes y más controlada en fondos.
 - Contraste suficiente entre personaje y escenario.
-- Los colores principales de cada personaje son invariables.
-- La luz de Lumo nunca sustituye el color base de otros personajes.
-- Las escenas nocturnas usan azules profundos, violetas y luz cálida localizada.
-- Las sombras serán suaves, coloreadas y sin negro puro.
+- Las escenas nocturnas usan azul profundo, violeta y fuentes cálidas localizadas.
+- Las sombras son suaves, coloreadas y sin negro puro.
+- La luz de Lumo actúa sobre el entorno, pero no borra los colores de los demás.
+- Las fuentes mágicas deben generar rebote de luz sobre ojos, mejillas, suelo y objetos cercanos.
+- Los fuegos artificiales de Brillavalle son mágicos, silenciosos y sin fogonazos agresivos.
 
 ## Brillavalle
 
-Brillavalle es una comunidad fantástica construida entre raíces, hojas translúcidas, pequeñas corrientes de agua y objetos reutilizados.
+Brillavalle es una comunidad fantástica construida entre raíces, agua, cristales, flores, torres redondeadas y senderos iluminados.
 
 Elementos recurrentes:
 
-- Plaza de las Luciérnagas.
+- Plaza de la Fuente de Luz.
 - Árbol Biblioteca.
 - Taller de Tuno.
-- Puente de las Tres Piedras.
-- Colina de las Nubes Bajas.
-- Senderos de hojas iluminadas.
+- Puente del Arroyo Brillante.
+- Arboleda de Niebla Violeta.
+- Antiguo Observatorio.
+- Senderos de faroles.
 
-La naturaleza participa en la historia, pero no debe parecer peligrosa ni hostil. Los objetos tienen personalidad visual sin convertirse necesariamente en personajes parlantes.
+La naturaleza participa visualmente en la historia, pero nunca debe parecer hostil. Cada lugar necesita profundidad, elementos reconocibles y una paleta propia.
+
+## La Fiesta de las Mil Luces
+
+La celebración del piloto introduce:
+
+- Guirnaldas suspendidas entre edificios y árboles.
+- Puestos redondeados, banderines y flores luminosas.
+- El Corazón de Luz como fuente energética del pueblo.
+- Una cuenta atrás visual y musical.
+- Una ola de encendido que recorre Brillavalle.
+- Fuegos de luz con formas de estrellas, hojas y medias lunas.
 
 ## La Ronda de las Ideas
 
-Ritual original de la serie:
+Ritual original:
 
 > Paro, miro alrededor. Pienso, pruebo algo mejor.
 
 Tratamiento visual:
 
-- Los personajes forman un círculo imperfecto.
+- Los personajes forman un círculo imperfecto y abierto.
 - Se reduce el movimiento del fondo.
-- Aparecen pequeñas chispas con los colores de cada personaje.
-- Las ideas se representan con imágenes simples, no con texto.
-- La solución final combina aportaciones de más de un personaje.
+- Aparecen luces con los colores de cada personaje.
+- Las ideas se representan mediante imágenes y acciones, no texto.
+- La solución combina aportaciones de varios personajes.
+- Cuando alguien está excluido, el círculo deja un espacio visible para invitarlo sin obligarlo.
+
+## Cámara y montaje
+
+- Altura de cámara cercana a la mirada infantil.
+- Lentes moderadas; evitar distorsión extrema.
+- Movimientos suaves, motivados por personajes, luz u objetos.
+- Cortes cada 3-7 segundos durante aventura.
+- Planos más largos en confesiones, canción y resolución.
+- Mantener dirección de movimiento y posición de objetos entre planos.
+- No usar cámara temblorosa ni acción difícil de seguir.
 
 ## Hojas de modelo obligatorias
 
@@ -100,42 +167,50 @@ Antes de aprobar un personaje deben existir:
 - Vista trasera.
 - Comparativa de altura con Lumo.
 - Ocho expresiones.
-- Seis poses de acción cotidiana.
+- Seis poses de acción.
 - Paleta con códigos hexadecimales.
+- Materiales y respuesta a la luz.
 - Accesorios permitidos y prohibidos.
+- Prueba de silueta.
+- Prueba de miniatura.
 
 ## Plantilla de prompt visual
 
-La ficha JSON de cada personaje aporta su `promptTemplate`. El sistema debe completarlo con:
+La ficha JSON aporta el `promptTemplate`. Se completa con:
 
 - Acción.
 - Emoción.
 - Escenario.
-- Plano de cámara.
+- Plano y lente.
 - Iluminación.
 - Relación con otros personajes.
+- Materiales.
+- Restricciones.
 
 Orden recomendado:
 
-`identidad fija + acción + expresión + escenario + composición + iluminación + técnica + restricciones`
+`identidad fija + actuación + acción + escenario + cámara + iluminación + materiales + técnica + restricciones`
 
 ## Restricciones permanentes
 
 - No pedir estilos de estudios, artistas o franquicias reconocibles.
 - No introducir personajes protegidos como referencia visual.
-- No cambiar especie, color principal, ojos, silueta o rasgo distintivo.
-- No añadir ropa adulta, maquillaje, armas, tatuajes o accesorios de lujo.
+- No cambiar especie, color principal, ojos, silueta o rasgos distintivos.
+- No añadir ropa adulta, maquillaje, objetos de combate, tatuajes o accesorios de lujo.
 - No usar fotorrealismo, anatomía humana realista ni texturas inquietantes.
 - No generar texto, marcas comerciales o logotipos dentro del fotograma.
-- No publicar una imagen sin revisión humana de consistencia y seguridad.
+- No publicar ninguna imagen sin revisión humana de consistencia, emoción y seguridad.
 
 ## Criterios de aprobación
 
-Una imagen se aprueba cuando:
+Un fotograma se aprueba cuando:
 
-- El personaje se reconoce por silueta y paleta.
-- Mantiene sus proporciones y rasgos distintivos.
-- La emoción coincide con el guion.
-- La escena es comprensible sin explicación adicional.
+- El personaje se reconoce por silueta, materiales y paleta.
+- La emoción se entiende sin diálogo.
+- Los ojos mantienen un punto de atención claro.
+- La iluminación no oculta el rostro.
+- La escena es comprensible a tamaño de miniatura.
+- Existe profundidad sin fondos recargados.
+- El acabado tiene volumen, rebote de luz y materiales consistentes.
 - No contiene elementos de las listas negativas.
-- Respeta la composición infantil y la política de seguridad.
+- Respeta la política infantil y la continuidad del episodio.
