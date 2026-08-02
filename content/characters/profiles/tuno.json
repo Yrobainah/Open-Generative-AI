@@ -17,5 +17,5 @@
   "voice": {"register":"infantil neutro", "pace":"medio", "tone":"enérgico y práctico", "avoid":["voz adulta grave", "jerga técnica incomprensible", "burla hacia otros personajes"]},
   "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["medir", "martillar de forma segura", "dibujar un plano", "transportar piezas ligeras", "celebrar", "participar en La Ronda de las Ideas"]},
   "promptTemplate": "Tuno, criatura infantil original de madera clara y bellota, cuerpo rectangular muy redondeado, cúpula de bellota, cinturón turquesa de herramientas sencillas, veta espiral en el pecho, ojos azul oscuro, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados y diseño seguro para público infantil",
-  "negativePrompt": ["fotorrealismo", "astillas peligrosas", "herramientas afiladas", "armas", "barba o apariencia adulta", "madera podrida", "texto o logotipos", "personajes de franquicias existentes"]
+  "negativePrompt": ["fotorrealismo", "astillas peligrosas", "herramientas afiladas", "objetos de combate", "barba o apariencia adulta", "madera podrida", "texto o logotipos", "personajes de franquicias existentes"]
 }
