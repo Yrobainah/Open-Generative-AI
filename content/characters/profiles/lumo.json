@@ -2,25 +2,25 @@
   "id": "lumo",
   "name": "Lumo",
   "role": "Protagonista curioso y mediador del grupo",
-  "characterType": "criatura estelar luminosa original",
+  "characterType": "criatura luminosa original de energía cálida",
   "agePresentation": "equivalente emocional a 6 años",
   "personality": ["curioso", "generoso", "impulsivo", "optimista", "capaz de reconocer errores"],
   "visual": {
-    "silhouette": "estrella de cinco puntas muy redondeadas fusionada con una pequeña forma de gota",
-    "bodyShape": "cabeza y torso forman una sola figura compacta; brazos y piernas cortos y flexibles",
-    "face": "ojos ovalados grandes, cejas suaves y boca pequeña muy expresiva",
-    "palette": {"primary":"#FFD85A","secondary":"#FFF1A8","accent":"#F79A4A","eyes":"#27324A"},
-    "signatureFeatures": ["halo cálido tenue", "punta superior ligeramente inclinada a la derecha", "dos pecas luminosas en cada mejilla"],
+    "silhouette": "cuerpo pequeño y redondeado con cabeza grande, dos antenas luminosas curvas y extremidades cortas",
+    "bodyShape": "volumen compacto, suave y ligeramente aterciopelado; manos expresivas y piernas elásticas con rebote controlado",
+    "face": "ojos grandes con iris turquesa, párpados y cejas móviles, boca flexible y mejillas luminosas",
+    "palette": {"primary":"#FFD85A","secondary":"#FFF1A8","accent":"#F79A4A","eyes":"#167A83"},
+    "signatureFeatures": ["dos antenas luminosas que reaccionan a sus emociones", "núcleo de luz en forma de corazón en el pecho", "halo cálido que nunca oculta el rostro", "dos pecas luminosas en cada mejilla"],
     "scaleRelativeToLumo": 1
   },
-  "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "enfado controlado", "tristeza segura", "concentración", "orgullo compartido"],
+  "expressions": ["alegría abierta", "curiosidad", "sorpresa amable", "preocupación valiente", "duda", "tristeza segura", "concentración", "orgullo compartido"],
   "voice": {"register":"infantil neutro", "pace":"ágil pero claro", "tone":"cálido y curioso", "avoid":["voz chillona", "sarcasmo adulto", "habla de bebé exagerada"]},
-  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["caminar", "correr", "leer", "señalar", "abrazar", "participar en La Ronda de las Ideas"]},
+  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["caminar", "correr", "compartir un destello", "señalar", "abrazar", "participar en La Ronda de las Ideas"]},
   "modelSheet": {
     "manifest": "content/characters/model-sheets/lumo-v1.json",
     "asset": "/lumo-kids/model-sheets/lumo-model-sheet-v1.svg",
     "version": 1
   },
-  "promptTemplate": "Lumo, criatura estelar infantil original de cinco puntas muy redondeadas, cuerpo compacto amarillo dorado, halo cálido tenue, ojos ovalados azul oscuro, pecas luminosas en las mejillas, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados, formas simples y seguras para público infantil",
-  "negativePrompt": ["fotorrealismo", "líneas negras duras", "anatomía humana realista", "puntas afiladas", "ojos rojos", "ropa adulta", "texto o logotipos", "personajes de franquicias existentes"]
+  "promptTemplate": "Lumo, criatura infantil luminosa original, cuerpo pequeño y redondeado amarillo dorado con material suave ligeramente aterciopelado, cabeza grande, dos antenas curvas brillantes, ojos enormes con iris turquesa y reflejos de estrella, cejas y párpados muy expresivos, manos redondeadas, núcleo de luz en forma de corazón en el pecho, animación 3D estilizada premium para preescolar, iluminación cinematográfica cálida, profundidad de campo suave y actuación emocional clara",
+  "negativePrompt": ["fotorrealismo", "anatomía humana realista", "puntas afiladas", "ojos rojos", "rostro rígido", "halo que oculte los ojos", "ropa adulta", "texto o logotipos", "personajes de franquicias existentes"]
 }
