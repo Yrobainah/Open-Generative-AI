@@ -16,6 +16,11 @@
   "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "enfado controlado", "tristeza segura", "concentración", "orgullo compartido"],
   "voice": {"register":"infantil neutro", "pace":"ágil pero claro", "tone":"cálido y curioso", "avoid":["voz chillona", "sarcasmo adulto", "habla de bebé exagerada"]},
   "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["caminar", "correr", "leer", "señalar", "abrazar", "participar en La Ronda de las Ideas"]},
+  "modelSheet": {
+    "manifest": "content/characters/model-sheets/lumo-v1.json",
+    "asset": "/lumo-kids/model-sheets/lumo-model-sheet-v1.svg",
+    "version": 1
+  },
   "promptTemplate": "Lumo, criatura estelar infantil original de cinco puntas muy redondeadas, cuerpo compacto amarillo dorado, halo cálido tenue, ojos ovalados azul oscuro, pecas luminosas en las mejillas, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados, formas simples y seguras para público infantil",
   "negativePrompt": ["fotorrealismo", "líneas negras duras", "anatomía humana realista", "puntas afiladas", "ojos rojos", "ropa adulta", "texto o logotipos", "personajes de franquicias existentes"]
 }
