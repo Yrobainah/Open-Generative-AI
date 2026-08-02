@@ -1,0 +1,21 @@
+{
+  "id": "tuno",
+  "name": "Tuno",
+  "role": "Inventor práctico y constructor del grupo",
+  "characterType": "criatura de madera y bellota original",
+  "agePresentation": "equivalente emocional a 7 años",
+  "personality": ["ingenioso", "trabajador", "terco a veces", "leal", "entusiasta con los mecanismos"],
+  "visual": {
+    "silhouette": "forma rectangular redondeada coronada por una cúpula de bellota",
+    "bodyShape": "torso robusto de madera clara, brazos cortos y manos anchas simplificadas",
+    "face": "ojos redondos medianos, cejas gruesas suaves y sonrisa asimétrica",
+    "palette": {"primary":"#B97845","secondary":"#E9B873","accent":"#5EC6C8","eyes":"#2B3442"},
+    "signatureFeatures": ["sombrero natural de bellota", "pequeño cinturón turquesa de herramientas", "una veta en forma de espiral en el pecho"],
+    "scaleRelativeToLumo": 1.12
+  },
+  "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "enfado controlado", "tristeza segura", "concentración", "orgullo compartido"],
+  "voice": {"register":"infantil neutro", "pace":"medio", "tone":"enérgico y práctico", "avoid":["voz adulta grave", "jerga técnica incomprensible", "burla hacia otros personajes"]},
+  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["medir", "martillar de forma segura", "dibujar un plano", "transportar piezas ligeras", "celebrar", "participar en La Ronda de las Ideas"]},
+  "promptTemplate": "Tuno, criatura infantil original de madera clara y bellota, cuerpo rectangular muy redondeado, cúpula de bellota, cinturón turquesa de herramientas sencillas, veta espiral en el pecho, ojos azul oscuro, proporciones exactas de hoja de modelo, animación 2D con textura suave de gouache, contornos coloreados y diseño seguro para público infantil",
+  "negativePrompt": ["fotorrealismo", "astillas peligrosas", "herramientas afiladas", "armas", "barba o apariencia adulta", "madera podrida", "texto o logotipos", "personajes de franquicias existentes"]
+}
