@@ -1,0 +1,40 @@
+{
+  "id": "lumo-model-sheet-v1",
+  "characterId": "lumo",
+  "version": 1,
+  "status": "reference",
+  "asset": "/lumo-kids/model-sheets/lumo-model-sheet-v1.svg",
+  "format": "svg",
+  "canvas": {"width": 1600, "height": 1000},
+  "requiredViews": ["front", "threeQuarter", "side", "back"],
+  "expressions": [
+    "alegría tranquila",
+    "curiosidad",
+    "sorpresa amable",
+    "preocupación leve",
+    "enfado controlado",
+    "tristeza segura",
+    "concentración",
+    "orgullo compartido"
+  ],
+  "canonicalInvariants": [
+    "estrella de cinco puntas muy redondeadas",
+    "punta superior inclinada ligeramente a la derecha",
+    "cuatro pecas luminosas, dos por mejilla",
+    "brazos y piernas cortos y flexibles",
+    "contorno naranja coloreado, nunca negro puro",
+    "paleta principal #FFD85A, secundaria #FFF1A8 y acento #F79A4A"
+  ],
+  "generation": {
+    "positivePrompt": "Hoja de modelo ortográfica de Lumo, criatura estelar infantil original de cinco puntas muy redondeadas, cuerpo compacto amarillo dorado, halo cálido tenue, ojos ovalados azul oscuro, cuatro pecas luminosas en las mejillas, brazos y piernas cortos y flexibles. Mostrar vista frontal, tres cuartos a 35 grados, perfil derecho y espalda a la misma escala, más ocho expresiones separadas. Animación 2D con textura suave de gouache, contornos coloreados naranja, fondo crema limpio, proporciones exactas y consistentes, diseño seguro para público infantil.",
+    "negativePrompt": "fotorrealismo, líneas negras duras, anatomía humana realista, puntas afiladas, ojos rojos, ropa adulta, texto decorativo, logotipos, marcas de agua, personajes de franquicias existentes, cambios de color, extremidades extra, asimetría accidental",
+    "aspectRatio": "8:5",
+    "recommendedResolution": "1600x1000",
+    "referenceStrength": 0.85
+  },
+  "approval": {
+    "humanApproved": false,
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}
