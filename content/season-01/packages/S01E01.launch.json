@@ -1,0 +1,121 @@
+{
+  "id": "S01E01-launch-v1",
+  "episodeCode": "S01E01",
+  "version": 1,
+  "status": "strategy",
+  "searchTitle": "Lumo aprende a compartir ⭐ La luz prestada | Cuento y canción infantil",
+  "alternateTitles": [
+    "Aprender a compartir con Lumo ⭐ Cuento infantil",
+    "La luz prestada 💛 Canción y aventura sobre compartir",
+    "¿Compartimos la luz? | Las aventuras de Lumo"
+  ],
+  "openingHook": {
+    "durationSeconds": 8,
+    "visual": "La plaza de Brillavalle se apaga justo cuando todos preparan la merienda.",
+    "dialogue": "¡Oh, no! ¿Dónde se escondió toda la luz?",
+    "promise": "Lumo y sus amigos encontrarán una forma de iluminar la plaza entre todos."
+  },
+  "thumbnailConcept": {
+    "primaryEmotion": "sorpresa amable y preocupación leve",
+    "focalObject": "la piedra luminosa en las manos de Lumo",
+    "supportingCharacters": ["Nara", "Pompón"],
+    "background": "la plaza oscura de Brillavalle con pequeñas luces cálidas",
+    "optionalText": "¿Compartimos?",
+    "maximumWords": 2,
+    "avoid": [
+      "flechas exageradas",
+      "peligro falso",
+      "rostros aterrados",
+      "texto pequeño",
+      "fondos recargados"
+    ]
+  },
+  "song": {
+    "title": "Una luz para compartir",
+    "durationSeconds": 82,
+    "placement": "La Ronda de las Ideas",
+    "chorus": [
+      "Paro, miro alrededor,",
+      "pienso y pruebo algo mejor.",
+      "Una luz para ti, otra luz para mí,",
+      "si la compartimos, brilla más aquí."
+    ],
+    "callAndResponse": {
+      "call": "¿Qué hacemos con la luz?",
+      "response": "¡La compartimos!"
+    },
+    "movements": [
+      "manos quietas al decir Paro",
+      "mirar a izquierda y derecha",
+      "dedo en la mejilla al decir Pienso",
+      "abrir los brazos en Compartimos"
+    ],
+    "reuseTargets": ["episodio principal", "vídeo musical", "Short musical", "compilación de canciones"]
+  },
+  "mainVideo": {
+    "targetDurationSeconds": 310,
+    "format": "16:9",
+    "segments": [
+      {"startSecond": 0, "endSecond": 8, "purpose": "mostrar el problema", "retentionDevice": "apagón visual y pregunta directa"},
+      {"startSecond": 8, "endSecond": 75, "purpose": "descubrimiento y decisión de Lumo", "retentionDevice": "piedra luminosa y humor visual"},
+      {"startSecond": 75, "endSecond": 155, "purpose": "complicación en la plaza", "retentionDevice": "intentos diferentes de la pandilla"},
+      {"startSecond": 155, "endSecond": 237, "purpose": "canción de La Ronda de las Ideas", "retentionDevice": "coro, movimientos y repetición"},
+      {"startSecond": 237, "endSecond": 292, "purpose": "resolución compartida", "retentionDevice": "transformación luminosa de la plaza"},
+      {"startSecond": 292, "endSecond": 310, "purpose": "enseñanza y cierre", "retentionDevice": "frase final breve y reprise musical"}
+    ]
+  },
+  "shorts": [
+    {
+      "id": "S01E01-short-problem",
+      "title": "¡Brillavalle se quedó sin luz!",
+      "durationSeconds": 24,
+      "format": "9:16",
+      "hook": "La plaza se apaga y Lumo mira la piedra que guardó.",
+      "payoff": "Pregunta: ¿qué harías tú con la luz?",
+      "sourceSegment": "0-35"
+    },
+    {
+      "id": "S01E01-short-song",
+      "title": "Una luz para compartir ⭐",
+      "durationSeconds": 34,
+      "format": "9:16",
+      "hook": "Empieza directamente con Paro, miro alrededor.",
+      "payoff": "Coro completo con cuatro movimientos fáciles.",
+      "sourceSegment": "170-220"
+    },
+    {
+      "id": "S01E01-short-resolution",
+      "title": "Cuando compartimos, todo brilla más",
+      "durationSeconds": 22,
+      "format": "9:16",
+      "hook": "Lumo entrega la piedra y aparecen varias luces.",
+      "payoff": "La plaza termina más luminosa que antes.",
+      "sourceSegment": "250-300"
+    }
+  ],
+  "compilationGroups": ["compartir-y-cooperar", "temporada-01-volumen-01"],
+  "retentionMoments": [
+    {"second": 5, "event": "pregunta sobre la luz desaparecida"},
+    {"second": 32, "event": "revelación de la piedra luminosa"},
+    {"second": 96, "event": "primer intento divertido de repartir la luz"},
+    {"second": 158, "event": "inicio musical de La Ronda de las Ideas"},
+    {"second": 244, "event": "Lumo decide compartir"},
+    {"second": 285, "event": "revelación de la plaza iluminada"}
+  ],
+  "publicationVariants": {
+    "episode": {"platform": "YouTube", "format": "16:9", "madeForKids": true},
+    "musicVideo": {"platform": "YouTube", "format": "16:9", "madeForKids": true},
+    "shorts": {"platform": "YouTube Shorts", "format": "9:16", "madeForKids": true},
+    "compilation": {"platform": "YouTube", "format": "16:9", "madeForKids": true}
+  },
+  "measurementGoals": {
+    "retentionAt30SecondsPercent": 70,
+    "averageViewedPercent": 55,
+    "primarySignals": ["retención", "repeticiones", "espectadores recurrentes", "tráfico desde Shorts"]
+  },
+  "approval": {
+    "humanApproved": false,
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}
