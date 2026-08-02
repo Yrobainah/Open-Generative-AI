@@ -1,0 +1,21 @@
+{
+  "id": "nublo",
+  "name": "Nublo",
+  "role": "Antagonista travieso y coleccionista de destellos que desea sentirse incluido",
+  "characterType": "criatura nocturna original de niebla y terciopelo",
+  "agePresentation": "equivalente emocional a 7 años",
+  "personality": ["ingenioso", "teatral", "solitario", "impaciente", "capaz de reparar el daño"],
+  "visual": {
+    "silhouette": "cuerpo pequeño y redondeado con orejas curvas como medias lunas y una cola de niebla en espiral",
+    "bodyShape": "cabeza grande, torso compacto, brazos finos muy expresivos y pies blandos; apariencia abrazable, nunca amenazante",
+    "face": "ojos grandes color ámbar, cejas móviles y sonrisa ladeada que cambia a vulnerabilidad cuando se siente escuchado",
+    "palette": {"primary":"#3D3475","secondary":"#8076C9","accent":"#FFB84A","eyes":"#F7D37A"},
+    "signatureFeatures": ["marca de media luna en la frente", "cola de niebla que revela su estado de ánimo", "pequeña mochila-linterna para guardar destellos", "bordes iluminados en violeta suave"],
+    "scaleRelativeToLumo": 1.05
+  },
+  "expressions": ["curiosidad furtiva", "orgullo teatral", "sorpresa", "frustración controlada", "soledad", "duda", "arrepentimiento seguro", "alegría al sentirse incluido"],
+  "voice": {"register":"infantil ligeramente grave", "pace":"pausado y teatral", "tone":"misterioso pero amable", "avoid":["voz monstruosa", "amenazas", "gritos agresivos", "sarcasmo cruel"]},
+  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["esconderse tras una farola", "llevar la fuente de luz", "hacer una reverencia", "sorprenderse", "devolver un objeto", "participar en La Ronda de las Ideas"]},
+  "promptTemplate": "Nublo, criatura nocturna infantil original de cuerpo pequeño y redondeado, pelaje aterciopelado azul violeta, ojos grandes ámbar, orejas curvas como medias lunas, cola de niebla expresiva y mochila-linterna, animación 3D estilizada premium para preescolar, materiales suaves, iluminación cinematográfica cálida, actuación facial clara, apariencia traviesa pero segura y abrazable",
+  "negativePrompt": ["terror", "colmillos", "garras", "ojos rojos", "anatomía realista", "violencia", "oscuridad que oculte el rostro", "personajes de franquicias existentes", "texto o logotipos"]
+}
