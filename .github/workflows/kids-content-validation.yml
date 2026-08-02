@@ -1,0 +1,30 @@
+name: Kids content validation
+
+on:
+  pull_request:
+    paths:
+      - 'config/kids-safety.json'
+      - 'content/**'
+      - 'lib/kids/**'
+      - 'scripts/validate-kids-content.mjs'
+  push:
+    branches:
+      - main
+    paths:
+      - 'config/kids-safety.json'
+      - 'content/**'
+      - 'lib/kids/**'
+      - 'scripts/validate-kids-content.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/validate-kids-content.mjs
