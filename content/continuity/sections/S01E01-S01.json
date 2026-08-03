@@ -1,0 +1,83 @@
+{
+  "id": "S01E01-S01",
+  "episodeId": "S01E01",
+  "sectionNumber": 1,
+  "durationSeconds": 15,
+  "status": "planned",
+  "title": "Bienvenidos a Brillavalle",
+  "storyPurpose": "Presentar el bosque mágico, Brillavalle, la plaza, la Fiesta de las Mil Luces y la llegada del grupo antes de cualquier conflicto.",
+  "references": {
+    "storyboardAsset": "pending:S01E01-S01-intro-storyboard-v1.png",
+    "castSheetAsset": "pending:CAST-S01-main-five-v1.png",
+    "environmentIds": ["ENV-BRILLAVALLE-PLAZA-001"],
+    "propIds": ["PROP-FOUNTAIN-OF-LIGHT-001", "PROP-HEART-OF-LIGHT-001"],
+    "voiceBibleId": "VOICE-BIBLE-LUMO-KIDS-001",
+    "previousSectionAsset": null
+  },
+  "charactersPresent": ["lumo", "nara", "tuno", "biri", "pompon"],
+  "charactersForbidden": ["nublo"],
+  "secondaryCastAllowed": [
+    "SEC-LIRA-RABBIT-001",
+    "SEC-MILO-BADGER-001",
+    "SEC-OLMO-OWL-001",
+    "SEC-NELA-OTTER-001",
+    "SEC-TIMA-TURTLE-001",
+    "SEC-HEDGEHOG-FAMILY-001"
+  ],
+  "environmentState": {
+    "environmentId": "ENV-BRILLAVALLE-PLAZA-001",
+    "lighting": "warm-night-festival",
+    "festivalDress": "preparations-in-progress",
+    "crowdDensity": "light-to-medium"
+  },
+  "propState": {
+    "fountainState": "on",
+    "heartState": "safe-floating"
+  },
+  "startState": "Vista aérea del bosque nocturno; Brillavalle aparece a lo lejos entre árboles y luces.",
+  "endState": "Los cinco amigos llegan a la entrada de la plaza con luces, flores y herramientas; la fuente y el Corazón permanecen seguros.",
+  "shots": [
+    {"start": 0, "end": 4, "action": "La cámara atraviesa copas de árboles y descubre Brillavalle."},
+    {"start": 4, "end": 8, "action": "Descenso hacia el valle, sus casas redondeadas y senderos de faroles."},
+    {"start": 8, "end": 12, "action": "Presentación de la plaza, la fuente encendida y los preparativos de la fiesta."},
+    {"start": 12, "end": 15, "action": "Lumo, Nara, Tuno, Biri y Pompón llegan juntos y contemplan la plaza."}
+  ],
+  "audio": {
+    "mode": "narrator-over-environment",
+    "narratorVoiceId": "VOICE-NARRATOR-001",
+    "narration": "En el corazón del bosque mágico estaba Brillavalle, un lugar donde cada pequeña luz tenía algo que contar. Aquella noche, Lumo y sus amigos se preparaban para la Fiesta de las Mil Luces.",
+    "principalDialogue": [],
+    "music": "Inicio suave de celesta y cuerdas pizzicato; crecimiento sin cadencia final.",
+    "effects": ["viento suave", "agua de fuente", "faroles", "actividad distante de animales"]
+  },
+  "generation": {
+    "preferredMode": "seedance-v2.0-i2v-anchor",
+    "durationSeconds": 15,
+    "aspectRatio": "16:9",
+    "audioEnabled": true,
+    "useExtendFromPrevious": false,
+    "oneVariation": true,
+    "doNotUseEpisodeOverviewReference": true
+  },
+  "promptBudget": {
+    "hardLimitChars": 10000,
+    "targetMaxChars": 6500
+  },
+  "continuityOut": {
+    "nextSection": "S01E01-S02",
+    "requiredVisualLink": "El grupo termina entrando en la misma plaza para comenzar a decorar.",
+    "musicMustContinue": true,
+    "noFinalCadence": true
+  },
+  "strictExclusions": [
+    "Nublo visible en storyboard, hoja de reparto, multitud o fondo",
+    "niebla violeta",
+    "robo o movimiento del Corazón",
+    "apagón",
+    "cuenta atrás",
+    "fuegos finales",
+    "secundarios clonados de protagonistas",
+    "texto dentro del vídeo"
+  ],
+  "humanApprovalRequired": true
+}
