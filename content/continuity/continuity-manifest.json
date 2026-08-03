@@ -22,6 +22,9 @@
     ],
     "secondaryCast": [
       "content/continuity/cast/secondary-citizens-v1.json"
+    ],
+    "visualSheets": [
+      "content/continuity/visual-assets-v1.json"
     ]
   },
   "characterProfiles": [
