@@ -11,6 +11,13 @@ export default function LumoKidsPageClient() {
       <div className="absolute right-5 top-5 z-50 flex flex-col gap-2 sm:flex-row">
         <button
           type="button"
+          onClick={() => router.push('/studio/lumo-kids/episodes/S01E01/production')}
+          className="rounded-xl border border-emerald-300/25 bg-[#0b0c10]/90 px-4 py-2.5 text-xs font-black text-emerald-100 shadow-xl shadow-black/30 backdrop-blur-md transition hover:border-emerald-300/40 hover:bg-emerald-300/10"
+        >
+          Producción protegida →
+        </button>
+        <button
+          type="button"
           onClick={() => router.push('/studio/lumo-kids/episodes/S01E01/package')}
           className="rounded-xl border border-amber-300/25 bg-[#0b0c10]/90 px-4 py-2.5 text-xs font-black text-amber-100 shadow-xl shadow-black/30 backdrop-blur-md transition hover:border-amber-300/40 hover:bg-amber-300/10"
         >
