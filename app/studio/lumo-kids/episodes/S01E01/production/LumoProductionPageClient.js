@@ -1,149 +1,311 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const HANDOFF_KEY = 'lumo_safe_production_handoff_v2';
-const REQUIRED = [
-  ['canon', 'He comprobado que las referencias proceden de la guía visual original.'],
-  ['cast', 'No hay personajes principales dibujados dentro del storyboard o fotograma inicial.'],
-  ['nublo', 'Nublo y la niebla violeta no aparecen en ninguna referencia de esta sección.'],
-  ['prompt', 'El prompt está por debajo de 10.000 caracteres.'],
-  ['budget', 'Haré una sola generación y revisaré el resultado antes de continuar.'],
-];
-
-const VIDEO_PROMPT = `Create S01E01-S01, the opening of the premium stylized 3D preschool series “Lumo Kids: Lumo y la luz de la fiesta”.
-
-DURATION: exactly 15 seconds. FORMAT: 16:9, 1280x720, 24 fps. NO GENERATED SPEECH. This section introduces only Brillavalle and ends before the principal characters enter frame. The approved narrator will be added during editing so voice identity cannot drift.
-
-REFERENCE RULES
-Use the canonical Brillavalle reference for architecture, materials, lighting and geography. Use the canonical Fountain of Light and Heart of Light references for prop identity. Do not use a character sheet as the primary image. Do not display reference sheets, panels, captions, labels, logos, interface elements or text.
-
-CANONICAL WORLD
-Brillavalle is a magical woodland village built into giant trees and roots, with rounded homes, bridges, warm lanterns, glowing flowers and winding paths. Preserve the same village identity throughout the shot. The central plaza has the canonical Fountain of Light, blue water and warm golden details. The Heart of Light is a clearly recognizable golden heart floating at the canonical height and scale above the fountain. It never becomes a sphere, gem, drop or lantern.
-
-TIMELINE
-0:00–0:05 — Aerial nighttime view above a vast magical forest under a clear moon and stars. The camera glides smoothly over the treetops and reveals Brillavalle glowing in the valley. Small waterfalls and warm village lights establish a peaceful enchanted world.
-
-0:05–0:10 — Continue the same coherent camera movement, descending between giant trees toward Brillavalle. Pass rounded homes, bridges, lanterns and glowing flowers. A few distant secondary woodland animals walk toward the plaza, but no principal character is visible or recognizable.
-
-0:10–0:15 — Arrive at a wide establishing view of the main plaza. The Fountain of Light is on and the Heart of Light floats safely above it. Distinct secondary villagers prepare stalls, garlands and flowers. End on a stable cinematic composition of the fountain and Heart, ready to cut to the already generated S02 preparation scene.
-
-SECONDARY CITIZENS
-Use only clearly distinct rabbits, badgers, owls, otters, hedgehogs, turtles, deer or squirrels. Keep them small or medium in frame. No citizen may copy Lumo’s golden glowing body or antennae, Nara’s leafy silhouette, Tuno’s goggles and raccoon design, Biri’s blue-orange design, Pompón’s purple fluffy silhouette or Nublo’s dark blue-violet design.
-
-AUDIO
-Generate only a continuous child-friendly instrumental score: soft celesta, pizzicato strings, gentle woodwinds and subtle magical chimes. Add soft wind, distant waterfalls, fountain water, lantern chimes, gentle footsteps and quiet friendly animal activity. No narrator, character dialogue, singing, lyrics, countdown or final cadence.
-
-VISUAL STYLE
-Premium stylized 3D preschool animation; tactile natural materials; rounded friendly forms; warm golden festival light contrasted with soft blue night ambience; smooth controlled cinematic camera; stable geometry; consistent scale; clear readable staging.
-
-MANDATORY END STATE
-Brillavalle remains peaceful and illuminated. The fountain is on. The Heart remains safely floating above it. No principal character has entered frame. No conflict or countdown has started.
-
-STRICT EXCLUSIONS
-No Lumo, Nara, Tuno, Biri, Pompón or Nublo visible in this opening section. No violet mist, theft, darkness, danger, fear, chase, maze, observatory, fireworks or final celebration. No humans, principal-character clones, merged bodies, extra limbs, distorted faces, changing fountain design, changing Heart shape or size, split screen, storyboard panels, captions, subtitles, logos, readable text, interface elements, photorealism or imitation of an existing franchise.`;
+const DB_NAME = 'lumo-kids-production-assets-v1';
+const DB_VERSION = 1;
+const STORE_NAME = 'files';
+const ASSET_KEY = 'S01E01-S01-approved-rescue-v1';
+const APPROVAL_KEY = 'lumo_s01e01_s01_rescue_approved_v1';
+const DEFAULT_VIDEO = '/lumo-kids/episodes/S01E01/S01E01-S01-approved-rescue-v1.mp4';
 
 const NARRATION = 'En el corazón del bosque mágico estaba Brillavalle, un lugar donde cada pequeña luz tenía algo que contar. Aquella noche, Lumo y sus amigos se preparaban para la Fiesta de las Mil Luces.';
 
+const REFERENCES = [
+  {
+    name: 'Brillavalle aprobado',
+    description: 'Recorte limpio de la guía visual original. Define arquitectura, iluminación y ambiente.',
+    src: '/lumo-kids/continuity/ENV-BRILLAVALLE-approved-guide-v3.jpg',
+  },
+  {
+    name: 'Fotograma final seguro',
+    description: 'Ancla sin protagonistas identificables, utilizada para completar la introducción mediante montaje.',
+    src: '/lumo-kids/episodes/S01E01/S01E01-S01-clean-anchor-v1.jpg',
+  },
+  {
+    name: 'Reparto principal aprobado',
+    description: 'Lumo, Nara, Tuno, Biri y Pompón recortados de la guía original. No se envían en S01.',
+    src: '/lumo-kids/continuity/CAST-S01-main-five-approved-guide-v3.jpg',
+  },
+];
+
+function openDatabase() {
+  return new Promise((resolve, reject) => {
+    if (typeof indexedDB === 'undefined') {
+      reject(new Error('IndexedDB no está disponible.'));
+      return;
+    }
+
+    const request = indexedDB.open(DB_NAME, DB_VERSION);
+    request.onupgradeneeded = () => {
+      const database = request.result;
+      if (!database.objectStoreNames.contains(STORE_NAME)) database.createObjectStore(STORE_NAME);
+    };
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error || new Error('No se pudo abrir IndexedDB.'));
+  });
+}
+
+async function getStoredFile(key) {
+  const database = await openDatabase();
+  try {
+    return await new Promise((resolve, reject) => {
+      const transaction = database.transaction(STORE_NAME, 'readonly');
+      const request = transaction.objectStore(STORE_NAME).get(key);
+      request.onsuccess = () => resolve(request.result || null);
+      request.onerror = () => reject(request.error || new Error('No se pudo leer el archivo local.'));
+    });
+  } finally {
+    database.close();
+  }
+}
+
+async function putStoredFile(key, file) {
+  const database = await openDatabase();
+  try {
+    await new Promise((resolve, reject) => {
+      const transaction = database.transaction(STORE_NAME, 'readwrite');
+      transaction.objectStore(STORE_NAME).put(file, key);
+      transaction.oncomplete = () => resolve();
+      transaction.onerror = () => reject(transaction.error || new Error('No se pudo guardar el archivo local.'));
+      transaction.onabort = () => reject(transaction.error || new Error('Se canceló el guardado local.'));
+    });
+  } finally {
+    database.close();
+  }
+}
+
+async function removeStoredFile(key) {
+  const database = await openDatabase();
+  try {
+    await new Promise((resolve, reject) => {
+      const transaction = database.transaction(STORE_NAME, 'readwrite');
+      transaction.objectStore(STORE_NAME).delete(key);
+      transaction.oncomplete = () => resolve();
+      transaction.onerror = () => reject(transaction.error || new Error('No se pudo eliminar el archivo local.'));
+    });
+  } finally {
+    database.close();
+  }
+}
+
+function Metric({ value, label, accent = '' }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-center">
+      <div className={`text-xl font-black ${accent}`}>{value}</div>
+      <div className="mt-0.5 text-[10px] font-black uppercase tracking-wider text-white/35">{label}</div>
+    </div>
+  );
+}
+
 export default function LumoProductionPageClient() {
   const router = useRouter();
-  const [checks, setChecks] = useState({});
-  const [balance, setBalance] = useState('22.92');
-  const [copied, setCopied] = useState('');
-  const promptChars = VIDEO_PROMPT.length;
-  const estimatedCost = 2.25;
-  const remaining = Math.max(0, (Number(balance) || 0) - estimatedCost).toFixed(2);
-  const ready = REQUIRED.every(([id]) => checks[id]) && promptChars < 10000;
+  const inputRef = useRef(null);
+  const objectUrlRef = useRef('');
+  const [videoUrl, setVideoUrl] = useState(DEFAULT_VIDEO);
+  const [videoSource, setVideoSource] = useState('repository');
+  const [repositoryVideoMissing, setRepositoryVideoMissing] = useState(false);
+  const [approved, setApproved] = useState(false);
+  const [message, setMessage] = useState('Comprobando el resultado instalado…');
 
-  const references = useMemo(() => [
-    { name: 'Brillavalle canónico', src: '/lumo-kids/continuity/ENV-BRILLAVALLE-PLAZA-001-v1.png', required: true },
-    { name: 'Fuente canónica', src: '/lumo-kids/continuity/PROP-FOUNTAIN-OF-LIGHT-001-v1.png', required: true },
-    { name: 'Corazón canónico', src: '/lumo-kids/continuity/PROP-HEART-OF-LIGHT-001-v1.png', required: true },
-  ], []);
+  const replaceObjectUrl = (file) => {
+    if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
+    const nextUrl = URL.createObjectURL(file);
+    objectUrlRef.current = nextUrl;
+    setVideoUrl(nextUrl);
+    setVideoSource('local');
+    setRepositoryVideoMissing(false);
+  };
 
-  async function prepareVideo() {
-    if (!ready) return;
-    const payload = {
-      schemaVersion: 2,
-      source: 'lumo-safe-production-guard',
-      episode: 'S01E01',
-      section: 'S01E01-S01',
-      targetStudio: 'video',
-      model: 'seedance-v2.0-i2v',
-      durationSeconds: 15,
-      aspectRatio: '16:9',
-      resolution: '720p',
-      prompt: VIDEO_PROMPT,
-      promptChars,
-      references,
-      narrationExternal: true,
-      narrationText: NARRATION,
-      maxPaidVariations: 1,
-      expectedCostUsd: estimatedCost,
-      humanReviewRequired: true,
-      forbiddenCharacters: ['lumo', 'nara', 'tuno', 'biri', 'pompon', 'nublo'],
+  useEffect(() => {
+    let active = true;
+
+    try {
+      setApproved(window.localStorage.getItem(APPROVAL_KEY) === 'true');
+    } catch {
+      // La aprobación local es opcional.
+    }
+
+    getStoredFile(ASSET_KEY)
+      .then((file) => {
+        if (!active || !(file instanceof Blob)) {
+          if (active) setMessage('Buscando el MP4 dentro del repositorio…');
+          return;
+        }
+        replaceObjectUrl(file);
+        setMessage('Vídeo final cargado desde el almacenamiento local protegido.');
+      })
+      .catch(() => {
+        if (active) setMessage('Buscando el MP4 dentro del repositorio…');
+      });
+
+    return () => {
+      active = false;
+      if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
     };
-    sessionStorage.setItem(HANDOFF_KEY, JSON.stringify(payload));
-    await navigator.clipboard?.writeText(VIDEO_PROMPT);
-    setCopied('video');
-    window.setTimeout(() => router.push('/studio/video'), 400);
-  }
+  }, []);
 
-  async function copyNarration() {
-    await navigator.clipboard?.writeText(NARRATION);
-    setCopied('narration');
-    window.setTimeout(() => setCopied(''), 1500);
-  }
+  const importVideo = async (event) => {
+    const file = event.target.files?.[0];
+    event.target.value = '';
+    if (!file) return;
+    if (file.type !== 'video/mp4' && !file.name.toLowerCase().endsWith('.mp4')) {
+      setMessage('Selecciona el archivo MP4 del paquete de rescate.');
+      return;
+    }
+
+    try {
+      await putStoredFile(ASSET_KEY, file);
+      replaceObjectUrl(file);
+      setMessage('MP4 importado y guardado localmente. No se ha enviado a ningún servicio externo.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'No se pudo importar el vídeo.');
+    }
+  };
+
+  const clearLocalVideo = async () => {
+    try {
+      await removeStoredFile(ASSET_KEY);
+    } catch {
+      // Continuamos para restaurar la ruta del repositorio.
+    }
+    if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
+    objectUrlRef.current = '';
+    setVideoUrl(DEFAULT_VIDEO);
+    setVideoSource('repository');
+    setRepositoryVideoMissing(false);
+    setMessage('Copia local eliminada. Buscando el MP4 dentro del repositorio…');
+  };
+
+  const toggleApproval = () => {
+    const next = !approved;
+    setApproved(next);
+    try {
+      window.localStorage.setItem(APPROVAL_KEY, String(next));
+    } catch {
+      // La interfaz continúa funcionando sin persistencia.
+    }
+  };
+
+  const handleVideoReady = () => {
+    setRepositoryVideoMissing(false);
+    setMessage(videoSource === 'local'
+      ? 'Vídeo final cargado desde el almacenamiento local protegido.'
+      : 'Vídeo final instalado correctamente en el repositorio.');
+  };
+
+  const handleVideoError = () => {
+    if (videoSource !== 'repository') return;
+    setRepositoryVideoMissing(true);
+    setMessage('El código está actualizado, pero falta instalar o importar el MP4 final.');
+  };
 
   return (
     <main className="min-h-screen bg-[#06070a] px-4 py-6 text-white sm:px-6 lg:px-8">
       <div className="mx-auto max-w-[1500px] space-y-5">
-        <header className="rounded-3xl border border-white/10 bg-[radial-gradient(circle_at_0%_0%,rgba(34,211,238,.15),transparent_35%),#0b0d12] p-6 sm:p-8">
-          <button onClick={() => router.push('/studio/lumo-kids')} className="text-xs font-black text-white/45 hover:text-white">← Lumo Kids Studio</button>
-          <div className="mt-4 flex flex-col gap-5 xl:flex-row xl:items-end xl:justify-between">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[.2em] text-cyan-200/70">Production Guard v2</p>
-              <h1 className="mt-2 text-3xl font-black">S01E01-S01 · Bienvenidos a Brillavalle</h1>
-              <p className="mt-3 max-w-3xl text-sm leading-6 text-white/55">Flujo bloqueado por canon y presupuesto. Esta versión elimina a los protagonistas del plano pagado: así no pueden rediseñarse. La narración se añade después y conserva siempre la misma voz.</p>
+        <header className="rounded-3xl border border-emerald-300/15 bg-[radial-gradient(circle_at_0%_0%,rgba(16,185,129,.14),transparent_34%),#0b0d12] p-6 sm:p-8">
+          <button type="button" onClick={() => router.push('/studio/lumo-kids')} className="text-xs font-black text-white/45 transition hover:text-white">← Lumo Kids Studio</button>
+          <div className="mt-4 flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-xs font-black uppercase tracking-[.2em] text-emerald-200/75">Rescue & Canon Guard v3</p>
+              <h1 className="mt-2 text-3xl font-black sm:text-4xl">S01E01-S01 · Bienvenidos a Brillavalle</h1>
+              <p className="mt-3 text-sm leading-6 text-white/55">Sección cerrada mediante montaje editorial: conserva la narración y el movimiento válido de Brillavalle, elimina las versiones alteradas de los protagonistas y bloquea cualquier nueva generación pagada.</p>
             </div>
-            <div className="grid grid-cols-3 gap-2 text-center">
-              <div className="rounded-2xl border border-white/10 bg-black/25 p-3"><div className="text-xl font-black">{promptChars}</div><div className="text-[10px] text-white/35">caracteres</div></div>
-              <div className="rounded-2xl border border-white/10 bg-black/25 p-3"><div className="text-xl font-black">${estimatedCost.toFixed(2)}</div><div className="text-[10px] text-white/35">máximo</div></div>
-              <div className="rounded-2xl border border-white/10 bg-black/25 p-3"><div className="text-xl font-black text-emerald-200">${remaining}</div><div className="text-[10px] text-white/35">restante</div></div>
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+              <Metric value="15,093 s" label="duración" />
+              <Metric value="720p" label="resolución" />
+              <Metric value="$0.00" label="coste adicional" accent="text-emerald-200" />
+              <Metric value="$22.92" label="saldo conservado" accent="text-emerald-200" />
             </div>
           </div>
         </header>
 
-        <section className="grid gap-5 xl:grid-cols-[1.25fr_.75fr]">
-          <div className="rounded-3xl border border-white/10 bg-[#0c0e13] p-5">
-            <div className="flex items-center justify-between"><h2 className="font-black">Referencias que sí se enviarán</h2><span className="rounded-full bg-emerald-300/10 px-3 py-1 text-[10px] font-black text-emerald-200">SIN PERSONAJES PRINCIPALES</span></div>
-            <div className="mt-4 grid gap-3 sm:grid-cols-3">
-              {references.map((item) => <figure key={item.src} className="overflow-hidden rounded-2xl border border-white/10 bg-black/30"><img src={item.src} alt={item.name} className="aspect-video w-full object-cover"/><figcaption className="p-3 text-xs font-bold text-white/65">{item.name}</figcaption></figure>)}
-            </div>
-            <div className="mt-5 rounded-2xl border border-cyan-300/10 bg-cyan-300/[.035] p-4">
-              <div className="flex items-center justify-between gap-3"><h3 className="text-sm font-black">Prompt final protegido</h3><span className={promptChars < 10000 ? 'text-xs font-black text-emerald-200' : 'text-xs font-black text-red-300'}>{promptChars}/10.000</span></div>
-              <pre className="mt-3 max-h-[420px] overflow-auto whitespace-pre-wrap text-xs leading-6 text-white/55">{VIDEO_PROMPT}</pre>
-            </div>
+        <section className="grid gap-5 xl:grid-cols-[minmax(0,1.2fr)_380px]">
+          <div className="space-y-5">
+            <section className="overflow-hidden rounded-3xl border border-white/10 bg-[#0c0e13]">
+              <div className="flex flex-col gap-3 border-b border-white/[.07] p-5 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h2 className="font-black">Resultado final de S01</h2>
+                  <p className="mt-1 text-xs text-white/40">H.264 · 1280×720 · 24 fps · AAC estéreo 48 kHz</p>
+                </div>
+                <span className={`w-fit rounded-full px-3 py-1 text-[10px] font-black uppercase tracking-wider ${repositoryVideoMissing ? 'bg-amber-300/10 text-amber-100' : 'bg-emerald-300/10 text-emerald-100'}`}>
+                  {repositoryVideoMissing ? 'MP4 pendiente de importar' : 'MP4 disponible'}
+                </span>
+              </div>
+
+              <div className="bg-black">
+                <video
+                  key={videoUrl}
+                  src={videoUrl}
+                  controls
+                  preload="metadata"
+                  onLoadedMetadata={handleVideoReady}
+                  onError={handleVideoError}
+                  className="aspect-video w-full bg-black object-contain"
+                >
+                  Tu navegador no puede reproducir este vídeo.
+                </video>
+              </div>
+
+              <div className="flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-xs leading-5 text-white/45">{message}</p>
+                <div className="flex flex-wrap gap-2">
+                  <input ref={inputRef} type="file" accept="video/mp4,.mp4" onChange={importVideo} className="hidden" />
+                  <button type="button" onClick={() => inputRef.current?.click()} className="rounded-xl bg-cyan-300 px-4 py-2.5 text-xs font-black text-slate-950 transition hover:bg-cyan-200">Importar vídeo final</button>
+                  {videoSource === 'local' && (
+                    <button type="button" onClick={clearLocalVideo} className="rounded-xl border border-white/10 px-4 py-2.5 text-xs font-black text-white/55 transition hover:bg-white/[.05]">Eliminar copia local</button>
+                  )}
+                </div>
+              </div>
+            </section>
+
+            <section className="rounded-3xl border border-white/10 bg-[#0c0e13] p-5">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h2 className="font-black">Referencias limpias y aprobadas</h2>
+                  <p className="mt-1 text-xs text-white/40">Recortes directos de la guía original; no son rediseños generados.</p>
+                </div>
+                <span className="w-fit rounded-full bg-cyan-300/10 px-3 py-1 text-[10px] font-black text-cyan-100">SIN DIAGRAMAS NI TEXTO EN EL ANCLA</span>
+              </div>
+              <div className="mt-4 grid gap-3 md:grid-cols-3">
+                {REFERENCES.map((item) => (
+                  <figure key={item.src} className="overflow-hidden rounded-2xl border border-white/10 bg-black/25">
+                    <img src={item.src} alt={item.name} className="aspect-video w-full object-cover" />
+                    <figcaption className="p-3">
+                      <p className="text-xs font-black text-white/75">{item.name}</p>
+                      <p className="mt-1 text-[11px] leading-5 text-white/35">{item.description}</p>
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
           </div>
 
           <aside className="space-y-5">
-            <section className="rounded-3xl border border-white/10 bg-[#0c0e13] p-5">
-              <h2 className="font-black">Bloqueo previo al gasto</h2>
-              <div className="mt-4 space-y-3">{REQUIRED.map(([id,label]) => <label key={id} className="flex cursor-pointer gap-3 rounded-xl border border-white/[.07] bg-white/[.02] p-3"><input type="checkbox" checked={Boolean(checks[id])} onChange={e=>setChecks(v=>({...v,[id]:e.target.checked}))} className="mt-1"/><span className="text-xs leading-5 text-white/60">{label}</span></label>)}</div>
-              <label className="mt-4 block text-xs font-black text-white/45">Saldo actual ($)<input value={balance} onChange={e=>setBalance(e.target.value)} inputMode="decimal" className="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2.5 text-white outline-none"/></label>
-              <button disabled={!ready} onClick={prepareVideo} className="mt-4 w-full rounded-xl bg-cyan-300 px-4 py-3 text-sm font-black text-slate-950 disabled:cursor-not-allowed disabled:opacity-25">{ready ? 'Copiar prompt y abrir Video Studio' : 'Completa las cinco comprobaciones'}</button>
-              <p className="mt-3 text-[11px] leading-5 text-white/35">El botón solo prepara una solicitud. No genera automáticamente ni permite varias versiones pagadas.</p>
+            <section className="rounded-3xl border border-red-300/15 bg-red-300/[.035] p-5">
+              <p className="text-[10px] font-black uppercase tracking-[.16em] text-red-200/65">Protección económica</p>
+              <h2 className="mt-2 text-lg font-black text-red-50">Generación pagada bloqueada</h2>
+              <p className="mt-3 text-xs leading-6 text-red-50/55">S01 no volverá a abrir Video Studio ni preparará solicitudes de MuAPI. La sección se resuelve con los recursos ya pagados.</p>
+              <button type="button" disabled className="mt-4 w-full cursor-not-allowed rounded-xl bg-white/[.06] px-4 py-3 text-xs font-black text-white/25">Generar de nuevo — bloqueado</button>
             </section>
 
             <section className="rounded-3xl border border-amber-300/15 bg-amber-300/[.04] p-5">
-              <h2 className="font-black text-amber-100">Narración oficial externa</h2>
+              <h2 className="font-black text-amber-100">Narración conservada</h2>
               <p className="mt-3 text-sm leading-6 text-amber-50/65">“{NARRATION}”</p>
-              <button onClick={copyNarration} className="mt-4 rounded-xl border border-amber-200/20 px-4 py-2.5 text-xs font-black text-amber-100">{copied === 'narration' ? 'Copiada ✓' : 'Copiar narración'}</button>
+              <p className="mt-3 text-[11px] leading-5 text-amber-50/35">La pista original permanece completa; no se volvió a sintetizar ni se modificó la identidad vocal.</p>
             </section>
 
-            <section className="rounded-3xl border border-emerald-300/15 bg-emerald-300/[.035] p-5 text-xs leading-6 text-emerald-50/65">
-              <strong className="text-emerald-100">Estrategia de rescate:</strong> conservar los primeros nueve segundos del vídeo generado y su audio; usar una nueva toma solo cuando aporte algo imprescindible. El corte de S01 termina en la fuente y enlaza directamente con S02, evitando pagar otra aparición de los cinco personajes.
+            <section className="rounded-3xl border border-emerald-300/15 bg-emerald-300/[.035] p-5">
+              <h2 className="font-black text-emerald-100">Control humano</h2>
+              <p className="mt-2 text-xs leading-5 text-emerald-50/50">Marca la sección como aprobada después de reproducirla completa. La decisión queda guardada únicamente en tu navegador.</p>
+              <button type="button" onClick={toggleApproval} className={`mt-4 w-full rounded-xl px-4 py-3 text-sm font-black transition ${approved ? 'bg-emerald-300 text-emerald-950' : 'border border-emerald-200/20 text-emerald-100 hover:bg-emerald-300/[.08]'}`}>
+                {approved ? 'S01 aprobada ✓' : 'Aprobar S01'}
+              </button>
+            </section>
+
+            <section className="rounded-3xl border border-white/10 bg-[#0c0e13] p-5 text-xs leading-6 text-white/45">
+              <strong className="text-white/75">Enlace con S02:</strong> la introducción termina en una vista distante y estable de Brillavalle. El montaje corta después al bloque existente donde los amigos preparan la plaza.
             </section>
           </aside>
         </section>
