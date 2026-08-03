@@ -3,28 +3,28 @@
   "episodeId": "S01E01",
   "sectionNumber": 1,
   "durationSeconds": 15,
-  "status": "planned",
+  "status": "approved-rescue-no-new-generation",
+  "sectionMode": "environment-only-editorial-rescue",
   "title": "Bienvenidos a Brillavalle",
-  "storyPurpose": "Presentar el bosque mágico, Brillavalle, la plaza, la Fiesta de las Mil Luces y la llegada del grupo antes de cualquier conflicto.",
+  "storyPurpose": "Presentar el bosque mágico, Brillavalle, la Fiesta de las Mil Luces, la fuente y el Corazón de Luz sin mostrar protagonistas identificables ni provocar rediseños.",
   "references": {
-    "storyboardAsset": "pending:S01E01-S01-intro-storyboard-v1.png",
-    "castSheetAsset": "/lumo-kids/continuity/CAST-S01-main-five-v1.png",
+    "storyboardAsset": "/lumo-kids/episodes/S01E01/S01E01-S01-clean-anchor-v1.jpg",
+    "castSheetAsset": "/lumo-kids/continuity/CAST-S01-main-five-approved-guide-v3.jpg",
+    "castSheetUsage": "future-sections-only-not-sent-in-S01",
     "environmentSheetAssets": [
-      "/lumo-kids/continuity/ENV-BRILLAVALLE-PLAZA-001-v1.png",
-      "/lumo-kids/continuity/ENV-BRILLAVALLE-VIEWS-001-v1.png"
+      "/lumo-kids/continuity/ENV-BRILLAVALLE-approved-guide-v3.jpg",
+      "/lumo-kids/episodes/S01E01/S01E01-S01-clean-anchor-v1.jpg"
     ],
-    "propSheetAssets": [
-      "/lumo-kids/continuity/PROP-FOUNTAIN-OF-LIGHT-001-v1.png",
-      "/lumo-kids/continuity/PROP-HEART-OF-LIGHT-001-v1.png"
-    ],
-    "secondaryAndVoiceSheetAsset": "/lumo-kids/continuity/CAST-SECONDARY-VOICE-001-v1.png",
+    "propSheetAssets": [],
     "environmentIds": ["ENV-BRILLAVALLE-PLAZA-001"],
     "propIds": ["PROP-FOUNTAIN-OF-LIGHT-001", "PROP-HEART-OF-LIGHT-001"],
     "voiceBibleId": "VOICE-BIBLE-LUMO-KIDS-001",
-    "previousSectionAsset": null
+    "previousSectionAsset": null,
+    "approvedResultAsset": "/lumo-kids/episodes/S01E01/S01E01-S01-approved-rescue-v1.mp4",
+    "deliveryMode": "repository-file-or-local-indexeddb-import"
   },
-  "charactersPresent": ["lumo", "nara", "tuno", "biri", "pompon"],
-  "charactersForbidden": ["nublo"],
+  "charactersPresent": [],
+  "charactersForbidden": ["lumo", "nara", "tuno", "biri", "pompon", "nublo"],
   "secondaryCastAllowed": [
     "SEC-LIRA-RABBIT-001",
     "SEC-MILO-BADGER-001",
@@ -37,56 +37,77 @@
     "environmentId": "ENV-BRILLAVALLE-PLAZA-001",
     "lighting": "warm-night-festival",
     "festivalDress": "preparations-in-progress",
-    "crowdDensity": "light-to-medium"
+    "crowdDensity": "distant-unidentifiable"
   },
   "propState": {
     "fountainState": "on",
     "heartState": "safe-floating"
   },
-  "startState": "Vista aérea del bosque nocturno; Brillavalle aparece a lo lejos entre árboles y luces.",
-  "endState": "Los cinco amigos llegan a la entrada de la plaza con luces, flores y herramientas; la fuente y el Corazón permanecen seguros.",
+  "startState": "Vista aérea en movimiento del bosque nocturno y de Brillavalle a lo lejos.",
+  "endState": "Vista distante, estable y segura de Brillavalle, la fuente y el Corazón; ningún protagonista es identificable.",
   "shots": [
-    {"start": 0, "end": 4, "action": "La cámara atraviesa copas de árboles y descubre Brillavalle."},
-    {"start": 4, "end": 8, "action": "Descenso hacia el valle, sus casas redondeadas y senderos de faroles."},
-    {"start": 8, "end": 12, "action": "Presentación de la plaza, la fuente encendida y los preparativos de la fiesta."},
-    {"start": 12, "end": 15, "action": "Lumo, Nara, Tuno, Biri y Pompón llegan juntos y contemplan la plaza."}
+    {
+      "start": 0,
+      "end": 4,
+      "action": "Se conserva el movimiento aéreo original aprobado sobre el bosque y Brillavalle."
+    },
+    {
+      "start": 4,
+      "end": 15,
+      "action": "Montaje editorial con acercamiento lento sobre un fotograma distante seguro, manteniendo la narración, música y ambiente originales."
+    }
   ],
   "audio": {
-    "mode": "narrator-over-environment",
+    "mode": "approved-original-narration-and-score",
     "narratorVoiceId": "VOICE-NARRATOR-001",
     "narration": "En el corazón del bosque mágico estaba Brillavalle, un lugar donde cada pequeña luz tenía algo que contar. Aquella noche, Lumo y sus amigos se preparaban para la Fiesta de las Mil Luces.",
     "principalDialogue": [],
-    "music": "Inicio suave de celesta y cuerdas pizzicato; crecimiento sin cadencia final.",
-    "effects": ["viento suave", "agua de fuente", "faroles", "actividad distante de animales"]
+    "music": "Pista original conservada sin nueva síntesis.",
+    "effects": ["viento suave", "ambiente del valle", "agua distante", "actividad animal distante"],
+    "sampleRateHz": 48000,
+    "channels": 2
   },
   "generation": {
-    "preferredMode": "seedance-v2.0-i2v-anchor",
-    "durationSeconds": 15,
+    "preferredMode": "editorial-rescue",
+    "paidGenerationAllowed": false,
+    "estimatedAdditionalCostUsd": 0,
+    "durationSeconds": 15.093,
     "aspectRatio": "16:9",
+    "resolution": "1280x720",
+    "frameRate": 24,
     "audioEnabled": true,
     "useExtendFromPrevious": false,
-    "oneVariation": true,
-    "doNotUseEpisodeOverviewReference": true
+    "doNotUseEpisodeOverviewReference": true,
+    "editRecipe": [
+      "Preservar los primeros cuatro segundos de movimiento original.",
+      "Eliminar todos los fotogramas donde los protagonistas modificados sean identificables.",
+      "Completar la duración con un acercamiento editorial suave sobre el fotograma limpio aprobado.",
+      "Conservar la narración y el ambiente originales completos.",
+      "Normalizar la salida de audio a 48 kHz estéreo."
+    ]
   },
   "promptBudget": {
     "hardLimitChars": 10000,
-    "targetMaxChars": 6500
+    "targetMaxChars": 500,
+    "usedForThisDelivery": false
   },
   "continuityOut": {
     "nextSection": "S01E01-S02",
-    "requiredVisualLink": "El grupo termina entrando en la misma plaza para comenzar a decorar.",
+    "requiredVisualLink": "Corte directo desde la vista distante de Brillavalle al bloque existente donde los amigos preparan la plaza.",
     "musicMustContinue": true,
     "noFinalCadence": true
   },
   "strictExclusions": [
-    "Nublo visible en storyboard, hoja de reparto, multitud o fondo",
-    "niebla violeta",
+    "Protagonistas identificables en pantalla",
+    "Nublo o niebla violeta",
     "robo o movimiento del Corazón",
     "apagón",
     "cuenta atrás",
     "fuegos finales",
     "secundarios clonados de protagonistas",
-    "texto dentro del vídeo"
+    "texto dentro del vídeo",
+    "nueva generación pagada para S01"
   ],
-  "humanApprovalRequired": true
+  "humanApprovalRequired": true,
+  "humanApproved": true
 }
