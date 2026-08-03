@@ -1,57 +1,69 @@
 {
   "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
-  "version": 1,
-  "status": "canonical-v1",
+  "version": 3,
+  "status": "canonical-v3",
   "approvedAt": "2026-08-03",
-  "purpose": "Hojas PNG de memoria visual para reducir variaciones de reparto, escenografía, utilería, voces y secundarios entre bloques de vídeo.",
+  "purpose": "Registro de referencias visuales activas y retiradas. Las referencias v3 son recortes directos de la guía original aprobada, no reinterpretaciones generadas.",
   "basePath": "/lumo-kids/continuity/",
-  "assets": [
+  "activeAssets": [
     {
-      "id": "CAST-S01-MAIN-FIVE-001",
-      "path": "/lumo-kids/continuity/CAST-S01-main-five-v1.png",
-      "role": "Hoja de reparto para secciones donde aparecen Lumo, Nara, Tuno, Biri y Pompón sin Nublo.",
-      "useAs": "character-reference",
-      "forbid": ["nublo", "human characters", "duplicate principals"]
+      "id": "CAST-S01-MAIN-FIVE-APPROVED-003",
+      "path": "/lumo-kids/continuity/CAST-S01-main-five-approved-guide-v3.jpg",
+      "status": "approved-source-crop",
+      "role": "Identidad de Lumo, Nara, Tuno, Biri y Pompón para futuras secciones con protagonistas.",
+      "useAs": "character-reference-only",
+      "forbid": ["nublo", "redesign", "secondary clones", "use as storyboard"]
     },
     {
-      "id": "CAST-SECONDARY-VOICE-001",
-      "path": "/lumo-kids/continuity/CAST-SECONDARY-VOICE-001-v1.png",
-      "role": "Biblioteca visual de habitantes secundarios y perfiles de voz.",
-      "useAs": "secondary-cast-and-voice-reference",
-      "forbid": ["secondary clones of primary cast"]
-    },
-    {
-      "id": "ENV-BRILLAVALLE-PLAZA-001-SHEET",
-      "path": "/lumo-kids/continuity/ENV-BRILLAVALLE-PLAZA-001-v1.png",
-      "role": "Plano maestro de la plaza, arquitectura, caminos, puestos y posición de la fuente.",
+      "id": "ENV-BRILLAVALLE-APPROVED-003",
+      "path": "/lumo-kids/continuity/ENV-BRILLAVALLE-approved-guide-v3.jpg",
+      "status": "approved-source-crop",
+      "role": "Identidad general de Brillavalle, su iluminación nocturna y su arquitectura.",
       "useAs": "environment-reference"
     },
     {
-      "id": "ENV-BRILLAVALLE-VIEWS-001-SHEET",
+      "id": "S01E01-S01-CLEAN-ANCHOR-001",
+      "path": "/lumo-kids/episodes/S01E01/S01E01-S01-clean-anchor-v1.jpg",
+      "status": "approved-editorial-anchor",
+      "role": "Fotograma distante sin protagonistas identificables para el cierre del rescate S01.",
+      "useAs": "editorial-anchor"
+    }
+  ],
+  "deprecatedAssets": [
+    {
+      "path": "/lumo-kids/continuity/CAST-S01-main-five-v1.png",
+      "reason": "Contiene reinterpretaciones de Nara, Pompón, Lumo y Biri. No usar como canon ni como referencia de generación."
+    },
+    {
+      "path": "/lumo-kids/continuity/CAST-SECONDARY-VOICE-001-v1.png",
+      "reason": "Documento diagramado con texto; no usar como fotograma ni referencia visual directa."
+    },
+    {
+      "path": "/lumo-kids/continuity/ENV-BRILLAVALLE-PLAZA-001-v1.png",
+      "reason": "Documento diagramado con texto; retirado del flujo activo de S01."
+    },
+    {
       "path": "/lumo-kids/continuity/ENV-BRILLAVALLE-VIEWS-001-v1.png",
-      "role": "Vistas coherentes de Brillavalle para cambios de cámara sin rediseñar el valle.",
-      "useAs": "environment-angle-reference"
+      "reason": "Documento diagramado; no debe enviarse directamente a un modelo de vídeo."
     },
     {
-      "id": "PROP-FOUNTAIN-OF-LIGHT-001-SHEET",
       "path": "/lumo-kids/continuity/PROP-FOUNTAIN-OF-LIGHT-001-v1.png",
-      "role": "Fuente canónica en vistas frontal, lateral y elevada, con estados encendida, apagada y recuperando energía.",
-      "useAs": "prop-reference"
+      "reason": "Referencia defectuosa o no cargada en Production Guard; retirada hasta reconstruirla desde una fuente aprobada."
     },
     {
-      "id": "PROP-HEART-OF-LIGHT-001-SHEET",
       "path": "/lumo-kids/continuity/PROP-HEART-OF-LIGHT-001-v1.png",
-      "role": "Corazón de Luz canónico con forma, escala y estados permitidos.",
-      "useAs": "prop-reference",
-      "forbid": ["sphere", "drop", "lantern", "size drift"]
+      "reason": "Hoja con texto y estados; no debe utilizarse como imagen principal ni como ancla."
     }
   ],
   "referencePolicy": {
     "neverUseAllSheetsBlindly": true,
     "onlyAttachAssetsNeededByCurrentSection": true,
-    "sectionStoryboardRemainsPrimaryImage": true,
+    "storyboardsMustNotContainRedesignedPrincipals": true,
+    "cleanSingleFrameRequiredBeforePaidVideo": true,
     "canonicalSheetsAreReferencesNotFrames": true,
     "visibleCharactersInReferencesMustBeAllowedInSection": true,
+    "deprecatedAssetsBlocked": true,
+    "paidGenerationRequiresVerifiedAttachmentHandoff": true,
     "humanReviewRequired": true
   }
 }
