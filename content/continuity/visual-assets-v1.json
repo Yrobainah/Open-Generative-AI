@@ -1,0 +1,57 @@
+{
+  "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+  "version": 1,
+  "status": "canonical-v1",
+  "approvedAt": "2026-08-03",
+  "purpose": "Hojas PNG de memoria visual para reducir variaciones de reparto, escenografía, utilería, voces y secundarios entre bloques de vídeo.",
+  "basePath": "/lumo-kids/continuity/",
+  "assets": [
+    {
+      "id": "CAST-S01-MAIN-FIVE-001",
+      "path": "/lumo-kids/continuity/CAST-S01-main-five-v1.png",
+      "role": "Hoja de reparto para secciones donde aparecen Lumo, Nara, Tuno, Biri y Pompón sin Nublo.",
+      "useAs": "character-reference",
+      "forbid": ["nublo", "human characters", "duplicate principals"]
+    },
+    {
+      "id": "CAST-SECONDARY-VOICE-001",
+      "path": "/lumo-kids/continuity/CAST-SECONDARY-VOICE-001-v1.png",
+      "role": "Biblioteca visual de habitantes secundarios y perfiles de voz.",
+      "useAs": "secondary-cast-and-voice-reference",
+      "forbid": ["secondary clones of primary cast"]
+    },
+    {
+      "id": "ENV-BRILLAVALLE-PLAZA-001-SHEET",
+      "path": "/lumo-kids/continuity/ENV-BRILLAVALLE-PLAZA-001-v1.png",
+      "role": "Plano maestro de la plaza, arquitectura, caminos, puestos y posición de la fuente.",
+      "useAs": "environment-reference"
+    },
+    {
+      "id": "ENV-BRILLAVALLE-VIEWS-001-SHEET",
+      "path": "/lumo-kids/continuity/ENV-BRILLAVALLE-VIEWS-001-v1.png",
+      "role": "Vistas coherentes de Brillavalle para cambios de cámara sin rediseñar el valle.",
+      "useAs": "environment-angle-reference"
+    },
+    {
+      "id": "PROP-FOUNTAIN-OF-LIGHT-001-SHEET",
+      "path": "/lumo-kids/continuity/PROP-FOUNTAIN-OF-LIGHT-001-v1.png",
+      "role": "Fuente canónica en vistas frontal, lateral y elevada, con estados encendida, apagada y recuperando energía.",
+      "useAs": "prop-reference"
+    },
+    {
+      "id": "PROP-HEART-OF-LIGHT-001-SHEET",
+      "path": "/lumo-kids/continuity/PROP-HEART-OF-LIGHT-001-v1.png",
+      "role": "Corazón de Luz canónico con forma, escala y estados permitidos.",
+      "useAs": "prop-reference",
+      "forbid": ["sphere", "drop", "lantern", "size drift"]
+    }
+  ],
+  "referencePolicy": {
+    "neverUseAllSheetsBlindly": true,
+    "onlyAttachAssetsNeededByCurrentSection": true,
+    "sectionStoryboardRemainsPrimaryImage": true,
+    "canonicalSheetsAreReferencesNotFrames": true,
+    "visibleCharactersInReferencesMustBeAllowedInSection": true,
+    "humanReviewRequired": true
+  }
+}
