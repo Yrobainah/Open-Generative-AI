@@ -1,0 +1,119 @@
+{
+  "id": "VOICE-BIBLE-LUMO-KIDS-001",
+  "version": 1,
+  "status": "canonical",
+  "language": "es-ES",
+  "dialoguePolicy": {
+    "exactTextRequired": true,
+    "noOverlappingPrincipalDialogue": true,
+    "onlySpeakerMovesMouth": true,
+    "listenersKeepMouthClosed": true,
+    "listenerReactionRequired": true,
+    "musicBelowDialogue": true,
+    "seedanceVoicesAreProvisional": true,
+    "officialReplacementMayBeAppliedInEdit": true
+  },
+  "voices": [
+    {
+      "id": "VOICE-NARRATOR-001",
+      "character": "Narrador",
+      "role": "Introducir lugares, transiciones y acciones que no necesitan diálogo visible.",
+      "presentation": "adulto joven o adulto de tono familiar, sin grandilocuencia",
+      "register": "cálido, claro y envolvente",
+      "paceWordsPerMinute": {"target": 130, "min": 115, "max": 145},
+      "tone": ["cercano", "mágico", "tranquilo", "curioso"],
+      "avoid": ["voz de tráiler", "exceso de entusiasmo", "tono inquietante", "habla infantilizada"],
+      "continuity": "Debe producirse como una pista estable para todo el episodio y añadirse en montaje cuando sea posible.",
+      "referenceAsset": null
+    },
+    {
+      "id": "VOICE-LUMO-001",
+      "character": "Lumo",
+      "presentation": "infantil neutra, equivalente emocional a seis años",
+      "register": "medio-agudo pero cómodo",
+      "paceWordsPerMinute": {"target": 150, "min": 135, "max": 165},
+      "tone": ["cálido", "curioso", "alegre", "empático"],
+      "performance": "Frases claras, sonrisa audible cuando corresponde, energía sin gritar.",
+      "avoid": ["voz chillona", "voz de bebé", "sarcasmo", "gritos prolongados"],
+      "approvedGeneratedReference": "S01E01-S02-preparativos-y-presagio-approved-v1.mp4",
+      "referenceAsset": null
+    },
+    {
+      "id": "VOICE-NARA-001",
+      "character": "Nara",
+      "presentation": "infantil suave y segura",
+      "register": "medio",
+      "paceWordsPerMinute": {"target": 140, "min": 125, "max": 155},
+      "tone": ["serena", "amable", "paciente", "confiada"],
+      "performance": "Responde con calidez y deja pausas naturales para escuchar.",
+      "avoid": ["susurro inaudible", "tono adulto severo", "exceso de dulzura artificial"],
+      "approvedGeneratedReference": "S01E01-S02-preparativos-y-presagio-approved-v1.mp4",
+      "referenceAsset": null
+    },
+    {
+      "id": "VOICE-TUNO-001",
+      "character": "Tuno",
+      "presentation": "infantil vivaz con seguridad de inventor",
+      "register": "medio",
+      "paceWordsPerMinute": {"target": 160, "min": 145, "max": 175},
+      "tone": ["entusiasta", "ingenioso", "ligeramente cómico"],
+      "performance": "Ataques de frase claros, orgullo amable al explicar o revisar un mecanismo.",
+      "avoid": ["habla demasiado rápida", "voz adulta grave", "caricatura nasal extrema"],
+      "approvedGeneratedReference": "S01E01-S02-preparativos-y-presagio-approved-v1.mp4",
+      "referenceAsset": null
+    },
+    {
+      "id": "VOICE-BIRI-001",
+      "character": "Biri",
+      "presentation": "ave pequeña expresiva",
+      "register": "gorjeos agudos suaves",
+      "paceWordsPerMinute": null,
+      "tone": ["alegre", "curioso", "enérgico"],
+      "performance": "Gorjeos breves sincronizados con miradas, vuelos cortos y reacciones.",
+      "avoid": ["palabras humanas", "chillidos estridentes", "sonidos de ave realista agresiva"],
+      "approvedGeneratedReference": "S01E01-S02-preparativos-y-presagio-approved-v1.mp4",
+      "referenceAsset": null
+    },
+    {
+      "id": "VOICE-POMPON-001",
+      "character": "Pompón",
+      "presentation": "infantil tierna y redondeada",
+      "register": "medio-agudo suave",
+      "paceWordsPerMinute": {"target": 145, "min": 130, "max": 160},
+      "tone": ["afectuoso", "alegre", "juguetón", "cómico sin burla"],
+      "performance": "Ligera sonrisa audible y pequeñas pausas de entusiasmo.",
+      "avoid": ["voz excesivamente grave", "balbuceo", "caricatura torpe"],
+      "approvedGeneratedReference": "S01E01-S02-preparativos-y-presagio-approved-v1.mp4",
+      "referenceAsset": null
+    },
+    {
+      "id": "VOICE-NUBLO-001",
+      "character": "Nublo",
+      "presentation": "infantil algo más grave, vulnerable y teatral",
+      "register": "medio-bajo infantil",
+      "paceWordsPerMinute": {"target": 135, "min": 120, "max": 150},
+      "tone": ["reservado", "melancólico seguro", "teatral", "capaz de mostrar alivio"],
+      "performance": "Habla despacio cuando admite sentirse excluido; nunca suena monstruoso.",
+      "avoid": ["voz de villano adulto", "gruñidos", "amenaza", "susurro de terror"],
+      "approvedGeneratedReference": null,
+      "referenceAsset": null
+    }
+  ],
+  "dialogueRecordTemplate": {
+    "speaker": "VOICE-ID",
+    "text": "Texto exacto en español",
+    "startSeconds": 0,
+    "endSeconds": 0,
+    "emotion": "emoción",
+    "looksAt": "personaje u objeto",
+    "gesture": "gesto visible",
+    "listenerReaction": "reacción con boca cerrada",
+    "officialAudioAsset": null
+  },
+  "continuityWorkflow": [
+    "Usar el mismo texto, duración y descripción vocal en storyboard, prompt y montaje.",
+    "Conservar voz generada si coincide con la biblia y con clips adyacentes.",
+    "Si cambia demasiado, sustituir solo esa frase con la pista oficial manteniendo tiempo y actuación.",
+    "No regenerar vídeo únicamente por una variación vocal corregible en edición."
+  ]
+}
