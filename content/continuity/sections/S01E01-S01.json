@@ -8,7 +8,16 @@
   "storyPurpose": "Presentar el bosque mágico, Brillavalle, la plaza, la Fiesta de las Mil Luces y la llegada del grupo antes de cualquier conflicto.",
   "references": {
     "storyboardAsset": "pending:S01E01-S01-intro-storyboard-v1.png",
-    "castSheetAsset": "pending:CAST-S01-main-five-v1.png",
+    "castSheetAsset": "/lumo-kids/continuity/CAST-S01-main-five-v1.png",
+    "environmentSheetAssets": [
+      "/lumo-kids/continuity/ENV-BRILLAVALLE-PLAZA-001-v1.png",
+      "/lumo-kids/continuity/ENV-BRILLAVALLE-VIEWS-001-v1.png"
+    ],
+    "propSheetAssets": [
+      "/lumo-kids/continuity/PROP-FOUNTAIN-OF-LIGHT-001-v1.png",
+      "/lumo-kids/continuity/PROP-HEART-OF-LIGHT-001-v1.png"
+    ],
+    "secondaryAndVoiceSheetAsset": "/lumo-kids/continuity/CAST-SECONDARY-VOICE-001-v1.png",
     "environmentIds": ["ENV-BRILLAVALLE-PLAZA-001"],
     "propIds": ["PROP-FOUNTAIN-OF-LIGHT-001", "PROP-HEART-OF-LIGHT-001"],
     "voiceBibleId": "VOICE-BIBLE-LUMO-KIDS-001",
