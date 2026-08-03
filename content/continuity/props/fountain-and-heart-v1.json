@@ -1,0 +1,110 @@
+{
+  "id": "PROP-LIGHT-SYSTEM-001",
+  "version": 1,
+  "status": "canonical",
+  "components": [
+    {
+      "id": "PROP-FOUNTAIN-OF-LIGHT-001",
+      "name": "Fuente de Luz",
+      "kind": "environment-prop",
+      "geometry": {
+        "footprint": "circular",
+        "levels": 2,
+        "base": "anillo ancho de piedra azul grisácea con bordes redondeados",
+        "upperBowl": "copa circular baja sobre pedestal central",
+        "center": "soporte dorado discreto alineado con el Corazón",
+        "water": "agua azul luminosa en velos suaves, nunca chorros agresivos"
+      },
+      "scale": {
+        "totalHeightRelativeToLumo": 1.65,
+        "upperBowlHeightRelativeToLumo": 1.05,
+        "variationTolerancePercent": 5
+      },
+      "materials": [
+        "piedra azul grisácea satinada",
+        "detalles dorados suaves",
+        "agua azul blanca luminosa"
+      ],
+      "states": {
+        "on": "agua circulando, reflejos cálidos y azules, Corazón estable",
+        "dim": "agua más lenta y luz reducida, geometría intacta",
+        "off": "sin agua ni resplandor, misma geometría y posición",
+        "restoring": "agua reaparece desde el centro y la luz se propaga por ambos niveles"
+      },
+      "invariants": [
+        "Siempre ocupa el centro de ENV-BRILLAVALLE-PLAZA-001.",
+        "Conserva dos niveles y base circular.",
+        "No se transforma en pozo, estatua, estanque, torre ni fuente de varios pisos.",
+        "El estado luminoso no cambia su geometría.",
+        "El agua nunca oculta por completo el Corazón ni a personajes cercanos."
+      ],
+      "promptFragment": "the same canonical two-level circular Fountain of Light, rounded blue-gray stone base, low upper bowl, subtle gold center support, soft luminous blue-white water curtains, fixed proportions and central position",
+      "negativePrompt": [
+        "different fountain design",
+        "tall multi-tier fountain",
+        "heart-shaped fountain",
+        "statue fountain",
+        "realistic municipal fountain",
+        "geometry changing with lighting state"
+      ]
+    },
+    {
+      "id": "PROP-HEART-OF-LIGHT-001",
+      "name": "Corazón de Luz",
+      "kind": "story-prop",
+      "geometry": {
+        "shape": "corazón simétrico claramente legible con punta inferior redondeada",
+        "construction": "núcleo blanco cálido envuelto por borde dorado translúcido",
+        "surface": "luz suave con pequeñas partículas interiores, sin facetas de gema",
+        "orientation": "frontal legible en planos principales"
+      },
+      "scale": {
+        "heightRelativeToLumo": 0.42,
+        "floatingHeightAboveUpperBowlRelativeToLumo": 0.55,
+        "variationTolerancePercent": 5
+      },
+      "palette": {
+        "core": "#FFF8D8",
+        "body": "#FFD85A",
+        "edge": "#F6A83A",
+        "highlight": "#FFFFFF"
+      },
+      "states": {
+        "safe-floating": "centrado sobre la fuente, pulso lento y estable",
+        "being-stolen": "se desplaza completo siguiendo niebla violeta, sin deformarse",
+        "carried": "flota cerca de las manos o mochila de Nublo, misma escala y forma",
+        "being-returned": "se desplaza hacia la fuente con mezcla de luz dorada y violeta",
+        "restored": "vuelve a su altura canónica y emite una onda de encendido"
+      },
+      "invariants": [
+        "Siempre mantiene forma de corazón.",
+        "Nunca se convierte en esfera, gota, llama, lámpara, diamante o cristal genérico.",
+        "Mantiene escala y grosor entre planos.",
+        "No sustituye al núcleo turquesa del pecho de Lumo.",
+        "Su luz rebota en rostros, agua, piedra y suelo cercanos.",
+        "Solo puede abandonar la fuente en estados narrativos declarados por la sección."
+      ],
+      "promptFragment": "the same canonical Heart of Light, a clearly readable symmetrical warm golden heart with a soft white core and translucent amber edge, fixed size, thickness and orientation, gently floating above the fountain",
+      "negativePrompt": [
+        "sphere",
+        "orb",
+        "drop",
+        "flame",
+        "lamp",
+        "faceted gemstone",
+        "diamond",
+        "changing size",
+        "changing shape",
+        "turquoise chest heart"
+      ]
+    }
+  ],
+  "continuityRule": "Cada contrato de sección debe declarar fountainState y heartState. La combinación debe ser narrativamente válida y no puede cambiar dentro del clip salvo que la propia acción describa la transición.",
+  "validStatePairs": [
+    {"fountainState": "on", "heartState": "safe-floating"},
+    {"fountainState": "dim", "heartState": "being-stolen"},
+    {"fountainState": "off", "heartState": "carried"},
+    {"fountainState": "restoring", "heartState": "being-returned"},
+    {"fountainState": "on", "heartState": "restored"}
+  ]
+}
