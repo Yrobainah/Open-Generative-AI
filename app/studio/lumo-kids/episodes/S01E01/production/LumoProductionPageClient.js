@@ -57,7 +57,7 @@ export default function LumoProductionPageClient() {
   const ready = REQUIRED.every(([id]) => checks[id]) && promptChars < 10000;
 
   const references = useMemo(() => [
-    { name: 'Brillavalle canónico', src: '/lumo-kids/continuity/ENV-BRILLAVALLE-canonical-v2.png', required: true },
+    { name: 'Brillavalle canónico', src: '/lumo-kids/continuity/ENV-BRILLAVALLE-PLAZA-001-v1.png', required: true },
     { name: 'Fuente canónica', src: '/lumo-kids/continuity/PROP-FOUNTAIN-OF-LIGHT-001-v1.png', required: true },
     { name: 'Corazón canónico', src: '/lumo-kids/continuity/PROP-HEART-OF-LIGHT-001-v1.png', required: true },
   ], []);
