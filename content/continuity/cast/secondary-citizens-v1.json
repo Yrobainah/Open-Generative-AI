@@ -1,8 +1,11 @@
 {
   "id": "CAST-SECONDARY-CITIZENS-001",
-  "version": 1,
+  "version": 4,
   "status": "canonical",
-  "purpose": "Biblioteca de habitantes de Brillavalle con siluetas distintas del reparto principal.",
+  "canonicalSourceVersion": 4,
+  "canonicalAsset": "/lumo-kids/canon/reference/CAST-secondary-v4.png",
+  "futureAntagonistsAsset": "/lumo-kids/canon/reference/CAST-future-antagonists-v4.png",
+  "purpose": "Personajes secundarios y antagonistas futuros definidos por Character Design v4, más habitantes suplementarios con siluetas distintas.",
   "globalRules": {
     "allAnimalLike": true,
     "foregroundCitizensMustUseCanonicalDesign": true,
@@ -12,7 +15,7 @@
     "noSecondaryDialogueUnlessDeclaredBySection": true
   },
   "antiCloneRules": [
-    "No secondary citizen may have Lumo's golden glowing body, curved antennae and chest heart.",
+    "No secondary citizen may have Lumo's golden glowing body, branched antennae and cyan chest heart.",
     "No secondary citizen may copy Nara's all-green leafy body silhouette.",
     "No secondary raccoon may copy Tuno's exact face, bronze goggles and utility outfit.",
     "No secondary bird may combine Biri's blue body with orange crest feathers.",
@@ -43,12 +46,12 @@
       "notLike": ["Nublo"]
     },
     {
-      "id": "SEC-MILO-BADGER-001",
+      "id": "SEC-MILO-RACCOON-001",
       "name": "Milo",
-      "species": "tejón",
+      "species": "mapache",
       "role": "músico",
-      "silhouette": "cuerpo bajo y ancho, franja facial blanca vertical",
-      "palette": ["gris carbón", "blanco", "rojo ladrillo"],
+      "silhouette": "mapache compacto de máscara clara, orejas redondas y postura musical relajada",
+      "palette": ["gris carbón", "crema", "rojo ladrillo"],
       "signatureAccessory": "tambor pequeño de madera",
       "notLike": ["Tuno"]
     },
@@ -56,7 +59,7 @@
       "id": "SEC-SILA-SQUIRREL-001",
       "name": "Sila",
       "species": "ardilla",
-      "role": "inventora de juegos",
+      "role": "científica",
       "silhouette": "cuerpo pequeño y cola sólida muy curva",
       "palette": ["castaño rojizo", "amarillo mantequilla", "turquesa oscuro"],
       "signatureAccessory": "bandolera con piezas de madera, sin gafas",
@@ -143,7 +146,14 @@
       "notLike": ["Lumo", "Nara", "Nublo"]
     }
   ],
-  "crowdPromptFragment": "a small varied crowd of canonical Brillavalle woodland citizens with clearly different species, heights, silhouettes, palettes and accessories; rabbits, badgers, owls, squirrels, otters, turtles, moles, deer and hedgehogs; no repeated clones and no resemblance to the six principal characters",
+  "futureAntagonists": [
+    {"id":"ANT-SOMBRO-WOLF-001", "name":"Sombro", "species":"lobo de la niebla", "role":"desorientado, no malvado", "signature":"pelaje negro azulado, ojos ámbar y niebla baja"},
+    {"id":"ANT-GRUMM-BADGER-001", "name":"Grumm", "species":"tejón", "role":"gruñón desorientado", "signature":"cuerpo ancho gris pardo, cejas fuertes y hocico crema"},
+    {"id":"ANT-VEXO-FOX-001", "name":"Vexo", "species":"zorro", "role":"astuto desorientado", "signature":"pelaje naranja oscuro, pecho crema y mirada lateral"},
+    {"id":"ANT-DRYLLA-OWL-001", "name":"Drylla", "species":"lechuza", "role":"fría y distante", "signature":"plumaje gris azulado, ojos ámbar y penachos altos"},
+    {"id":"ANT-GLOOM-CROW-001", "name":"Gloom", "species":"cuervo", "role":"cuervo del olvido", "signature":"plumaje azul negro, gran copete y ojos ámbar"}
+  ],
+  "crowdPromptFragment": "a small varied crowd of canonical Brillavalle woodland citizens with clearly different species, heights, silhouettes, palettes and accessories; Lira the rabbit artist, Tori the fox baker, Milo the raccoon musician, Sila the squirrel scientist, Olmo the owl librarian and Flo the flamingo gardener; no repeated clones and no resemblance to the six principal characters",
   "negativePrompt": [
     "crowd made from recolored main characters",
     "multiple Tuno copies",

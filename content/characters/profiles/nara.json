@@ -1,21 +1,23 @@
 {
   "id": "nara",
   "name": "Nara",
-  "role": "Observadora, cuidadora de plantas y voz serena del grupo",
-  "characterType": "criatura brote original",
+  "role": "Guía, amiga y voz serena del grupo",
+  "characterType": "criatura vegetal infantil formada por hojas",
   "agePresentation": "equivalente emocional a 7 años",
-  "personality": ["paciente", "empática", "valiente", "observadora", "prudente sin ser temerosa"],
+  "canonicalSourceVersion": 4,
+  "canonicalAsset": "/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+  "personality": ["amable", "paciente", "sabia", "empática", "conecta naturaleza e ideas"],
   "visual": {
-    "silhouette": "cuerpo ovalado y ligero con dos hojas largas y redondeadas a modo de orejas",
-    "bodyShape": "torso pequeño en forma de semilla, piernas cortas y brazos finos como tallos flexibles",
-    "face": "ojos almendrados grandes, cejas curvas, párpados expresivos y sonrisa tranquila",
-    "palette": {"primary":"#73C96B","secondary":"#C8EE9B","accent":"#F4C95D","eyes":"#29443A"},
-    "signatureFeatures": ["hoja izquierda ligeramente doblada", "pequeña flor amarilla desmontable", "hojas translúcidas con nervaduras visibles", "movimiento suave inspirado en una planta al viento"],
-    "scaleRelativeToLumo": 1.06
+    "silhouette": "cuerpo vegetal fino con corona central de hojas, hojas laterales y falda de pétalos",
+    "bodyShape": "torso pequeño verde, brazos finos como tallos, manos de hoja y pies vegetales redondeados",
+    "face": "ojos grandes verde oscuro, cejas curvas, párpados expresivos y sonrisa tranquila",
+    "palette": {"primary":"#64A83D","secondary":"#A9D65C","accent":"#355F2D","eyes":"#233C27"},
+    "signatureFeatures": ["corona de hojas verticales", "hojas laterales", "cuello y falda de pétalos", "nervaduras visibles y material vegetal satinado"],
+    "scaleRelativeToLumo": 1.02
   },
   "expressions": ["alegría tranquila", "curiosidad", "sorpresa amable", "preocupación leve", "firmeza serena", "tristeza segura", "concentración", "orgullo compartido"],
   "voice": {"register":"infantil neutro", "pace":"pausado", "tone":"sereno y afectuoso", "avoid":["susurro constante", "tono maternal adulto", "habla excesivamente lenta"]},
-  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["regar", "escuchar", "agacharse", "sostener una hoja", "guiar al grupo", "participar en La Ronda de las Ideas"]},
-  "promptTemplate": "Nara, criatura brote infantil original, cuerpo ovalado verde hoja con materiales vegetales suaves, dos hojas largas y redondeadas como orejas, hoja izquierda ligeramente doblada, ojos almendrados verde oscuro con cejas y párpados expresivos, pequeña flor amarilla, hojas parcialmente translúcidas con nervaduras, animación 3D estilizada premium para preescolar, iluminación cinematográfica cálida, actuación serena y silueta clara",
-  "negativePrompt": ["fotorrealismo", "planta humana realista", "hojas afiladas", "maquillaje", "ropa adulta", "textura marchita inquietante", "rostro rígido", "texto o logotipos", "personajes de franquicias existentes"]
+  "designSheet": {"requiredViews":["front","threeQuarter"], "actionPoses":["escuchar", "observar", "guiar", "conectar una idea", "celebrar", "abrazar"]},
+  "promptTemplate": "Nara exactamente según Character Design v4: criatura vegetal infantil verde, silueta delgada formada por hojas, corona central de hojas erguidas, hojas laterales, cuello y falda de pétalos, ojos grandes verde oscuro y sonrisa serena. Material vegetal satinado parcialmente translúcido con nervaduras suaves, animación 3D estilizada cinematográfica para preescolar, proporciones idénticas a la referencia canónica.",
+  "negativePrompt": ["flor amarilla", "solo dos hojas como orejas", "cuerpo humano", "hojas afiladas", "textura marchita", "maquillaje", "ropa adulta", "fotorrealismo", "texto o logotipos", "personajes de franquicias existentes", "clones o duplicados"]
 }

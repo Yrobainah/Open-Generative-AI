@@ -72,7 +72,7 @@
       "states": {
         "safe-floating": "centrado sobre la fuente, pulso lento y estable",
         "being-stolen": "se desplaza completo siguiendo niebla violeta, sin deformarse",
-        "carried": "flota cerca de las manos o mochila de Nublo, misma escala y forma",
+        "carried": "flota cerca de las manos o del farol cruzado de Nublo, misma escala y forma",
         "being-returned": "se desplaza hacia la fuente con mezcla de luz dorada y violeta",
         "restored": "vuelve a su altura canónica y emite una onda de encendido"
       },

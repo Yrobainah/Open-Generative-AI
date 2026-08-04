@@ -3,10 +3,21 @@ const PENDING_KEY = 'muapi_pending_jobs';
 export function savePendingJob(job) {
     try {
         const jobs = getAllPendingJobs().filter(j => j.requestId !== job.requestId);
+        if (job.exclusiveKey) {
+            const conflict = jobs.find(j => j.exclusiveKey === job.exclusiveKey);
+            if (conflict) {
+                const error = new Error(`An exclusive MuAPI job is already active: ${conflict.requestId}`);
+                error.code = 'MUAPI_EXCLUSIVE_JOB_ACTIVE';
+                throw error;
+            }
+        }
         jobs.push(job);
         localStorage.setItem(PENDING_KEY, JSON.stringify(jobs));
+        return true;
     } catch (e) {
+        if (e?.code === 'MUAPI_EXCLUSIVE_JOB_ACTIVE') throw e;
         console.warn('[PendingJobs] Failed to save:', e);
+        return false;
     }
 }
 

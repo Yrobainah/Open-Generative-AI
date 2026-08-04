@@ -3,18 +3,28 @@ name: Kids content validation
 on:
   pull_request:
     paths:
-      - 'config/kids-safety.json'
+      - 'config/**'
       - 'content/**'
       - 'lib/kids/**'
+      - 'public/lumo-kids/canon/**'
+      - 'src/lib/muapi.js'
       - 'scripts/validate-kids-content.mjs'
+      - 'scripts/build-lumo-canonical-graph.mjs'
+      - 'tests/lumo-production.test.mjs'
+      - 'package.json'
   push:
     branches:
       - main
     paths:
-      - 'config/kids-safety.json'
+      - 'config/**'
       - 'content/**'
       - 'lib/kids/**'
+      - 'public/lumo-kids/canon/**'
+      - 'src/lib/muapi.js'
       - 'scripts/validate-kids-content.mjs'
+      - 'scripts/build-lumo-canonical-graph.mjs'
+      - 'tests/lumo-production.test.mjs'
+      - 'package.json'
 
 permissions:
   contents: read
@@ -27,4 +37,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - run: node scripts/build-lumo-canonical-graph.mjs
       - run: node scripts/validate-kids-content.mjs
+      - run: node --test tests/lumo-production.test.mjs

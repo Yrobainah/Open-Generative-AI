@@ -11,23 +11,13 @@ import nublo from '../content/characters/profiles/nublo.json';
 const CHARACTERS = [lumo, nara, tuno, biri, pompon, nublo];
 
 function CharacterMark({ character, size = 76 }) {
-  const palette = character.visual.palette;
   return (
     <div
-      className="relative flex shrink-0 items-center justify-center rounded-[38%] border border-white/15 shadow-xl"
-      style={{
-        width: size,
-        height: size,
-        background: `radial-gradient(circle at 32% 25%, ${palette.secondary}, ${palette.primary} 62%, ${palette.accent})`,
-        boxShadow: `0 16px 36px ${palette.primary}25`,
-      }}
+      className="relative flex shrink-0 items-center justify-center overflow-hidden rounded-[30%] border border-white/15 bg-[#07111c] shadow-xl"
+      style={{ width: size, height: size }}
       aria-hidden="true"
     >
-      <div className="flex items-center gap-2">
-        <span className="h-3 w-2.5 rounded-full bg-white/80 shadow-inner" style={{ border: `3px solid ${palette.eyes}` }} />
-        <span className="h-3 w-2.5 rounded-full bg-white/80 shadow-inner" style={{ border: `3px solid ${palette.eyes}` }} />
-      </div>
-      <span className="absolute bottom-[18%] h-2 w-5 rounded-b-full border-b-2" style={{ borderColor: palette.eyes }} />
+      <img src={character.canonicalAsset} alt="" className="h-full w-full object-contain" />
     </div>
   );
 }
@@ -54,16 +44,24 @@ export default function LumoCharacterLibrary({ onBack }) {
       <div className="mx-auto max-w-[1500px]">
         <header className="flex flex-col gap-4 rounded-3xl border border-white/[0.08] bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_34%),radial-gradient(circle_at_85%_15%,rgba(168,85,247,0.13),transparent_32%),#0b0c10] p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div>
-            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-cyan-200/70">Dirección visual 3D · versión 2</p>
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-cyan-200/70">Canon visual 3D · versión 4</p>
             <h1 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">Biblioteca de personajes</h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-white/55">
-              Seis referencias maestras para mantener silueta, materiales, actuación facial, paleta, voz y personalidad durante la producción 3D.
+              Seis recortes exactos del Character Design maestro para mantener especie, silueta, materiales, actuación, paleta y accesorios durante la producción 3D.
             </p>
           </div>
           <button type="button" onClick={onBack} className="self-start rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-xs font-bold text-white/70 transition hover:bg-white/[0.08] hover:text-white sm:self-auto">
             ← Volver al estudio
           </button>
         </header>
+
+        <section className="mt-5 overflow-hidden rounded-3xl border border-amber-300/15 bg-[#07111c]">
+          <div className="border-b border-white/[0.07] px-5 py-4">
+            <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-200/65">Fuente de verdad visual</p>
+            <h2 className="mt-1 text-sm font-black">Character Design v4 · aprobado</h2>
+          </div>
+          <img src="/lumo-kids/canon/Character-Design-v4.png" alt="Character Design canónico de Lumo Kids con reparto, mundo, expresiones y guía técnica" className="h-auto w-full" />
+        </section>
 
         <div className="mt-5 grid gap-5 xl:grid-cols-[320px_minmax(0,1fr)]">
           <aside className="rounded-3xl border border-white/[0.07] bg-[#0c0d11] p-3">

@@ -3,6 +3,8 @@
   "episodeCode": "S01E01",
   "version": 2,
   "status": "draft",
+  "canonicalSourceVersion": 4,
+  "canonicalSource": "/lumo-kids/canon/Character-Design-v4.png",
   "title": "Lumo y la luz de la fiesta",
   "targetDurationSeconds": 360,
   "aspectRatio": "16:9",
@@ -10,12 +12,12 @@
   "language": "es-ES",
   "visualStyle": "animación 3D estilizada premium para preescolar, personajes redondeados con actuación facial clara, materiales suaves, iluminación cinematográfica cálida, profundidad ambiental y colorido festivo",
   "characterReferences": {
-    "Lumo": "/lumo-kids/model-sheets/lumo-model-sheet-v1.svg",
-    "Nara": "content/characters/profiles/nara.json",
-    "Tuno": "content/characters/profiles/tuno.json",
-    "Biri": "content/characters/profiles/biri.json",
-    "Pompón": "content/characters/profiles/pompon.json",
-    "Nublo": "content/characters/profiles/nublo.json"
+    "Lumo": "/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+    "Nara": "/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+    "Tuno": "/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+    "Biri": "/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+    "Pompón": "/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+    "Nublo": "/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png"
   },
   "productionRules": {
     "maximumContinuousShotSeconds": 10,
@@ -24,6 +26,7 @@
     "cameraMotion": "dinámica pero suave, legible y sin sacudidas",
     "editingRhythm": "cortes cada 3-7 segundos; planos más largos en la motivación de Nublo, la canción y el cierre festivo",
     "humanReviewRequired": true
+    ,"characterDesignMasterOverridesPrompts": true
   },
   "assetRegistry": {
     "backgrounds": [
@@ -44,7 +47,7 @@
       {"id":"PROP-LEAVES","name":"Hojas translúcidas de Nara"},
       {"id":"PROP-RIBBONS","name":"Cintas reflectantes de Biri"},
       {"id":"PROP-LANTERNS","name":"Linternas suaves de Pompón"},
-      {"id":"PROP-NUBLO-BACKPACK","name":"Mochila-linterna de Nublo"}
+      {"id":"PROP-NUBLO-LANTERN","name":"Farol pequeño en la correa cruzada de Nublo"}
     ],
     "effects": [
       {"id":"FX-WARM-GLOW","name":"Luz dorada volumétrica"},
@@ -92,10 +95,10 @@
       "id":"SC03","startSecond":34,"endSecond":48,"title":"Alguien mira desde lejos","purpose":"Introducir a Nublo y sembrar su sentimiento de exclusión.","location":"Tejado cercano a la plaza","characters":["Nublo"],"emotionalBeat":"curiosidad, deseo y soledad",
       "shot":{"size":"plano medio a primer plano","angle":"ligero contrapicado amable","composition":"Nublo se asoma tras una chimenea y la fiesta se refleja en sus ojos ámbar"},
       "camera":{"movement":"acercamiento lento entre guirnaldas desenfocadas","transitionIn":"corte sobre destello","transitionOut":"ocultación tras una bandera"},
-      "action":"Nublo contempla la plaza y aprieta su mochila-linterna vacía. Su cola de niebla forma un signo de interrogación.",
+      "action":"Nublo contempla la plaza y sostiene el farol pequeño de su correa cruzada. Su cola de niebla forma un signo de interrogación.",
       "dialogue":[{"speaker":"Nublo","text":"Con una luz así, por fin todos mirarían mi fiesta.","direction":"teatral al principio y suavemente triste al final"}],
       "audio":{"music":"MUSIC-MYSTERY aparece con marimba suave","sfx":["SFX-SPARKLE"],"ambience":"AMB-PLAZA"},
-      "lighting":"borde violeta sobre Nublo y luz cálida de la plaza en su rostro","assets":["BG-PLAZA-FESTIVAL-DAY","PROP-NUBLO-BACKPACK","FX-MIST"],"continuity":"Nublo todavía no ha sido visto.","retentionDevice":"primera aparición del antagonista","generationPrompt":"Nublo, criatura infantil nocturna redondeada de pelaje violeta y ojos ámbar, observa una fiesta brillante desde un tejado, expresión traviesa pero solitaria, animación 3D premium y segura."
+      "lighting":"borde violeta sobre Nublo y luz cálida de la plaza en su rostro","assets":["BG-PLAZA-FESTIVAL-DAY","PROP-NUBLO-LANTERN","FX-MIST"],"continuity":"Nublo todavía no ha sido visto.","retentionDevice":"primera aparición del antagonista","generationPrompt":"Nublo exactamente según Character Design v4: criatura infantil nocturna felina-zorruna de pelaje azul marino, orejas triangulares, ojos ámbar, farol en correa cruzada y cola de niebla violeta; observa una fiesta desde un tejado, solitario pero seguro."
     },
     {
       "id":"SC04","startSecond":48,"endSecond":65,"title":"La luz desaparece","purpose":"Activar el conflicto con un robo visual rápido y sin violencia.","location":"Fuente central de Brillavalle","characters":["Lumo","Nara","Tuno","Biri","Pompón","Nublo"],"emotionalBeat":"sorpresa y urgencia amable",
@@ -164,19 +167,19 @@
       "id":"SC11","startSecond":178,"endSecond":198,"title":"El pasillo de sombras blandas","purpose":"Dar a Pompón humor y utilidad sin convertir la oscuridad en amenaza.","location":"Interior del observatorio","characters":["Lumo","Nara","Tuno","Biri","Pompón"],"emotionalBeat":"humor y valentía",
       "shot":{"size":"plano conjunto en profundidad","angle":"frontal","composition":"sombras de objetos parecen enormes y Pompón difunde los destellos"},
       "camera":{"movement":"avance suave detrás de Pompón","transitionIn":"corte por apertura de puerta","transitionOut":"corte al revelar los objetos"},
-      "action":"Pompón se convierte en una nube luminosa. Las sombras resultan ser un telescopio, una silla y una planta.",
+      "action":"Pompón abre su pelaje lavanda y refleja los cinco destellos como una luz difusa. Las sombras resultan ser un telescopio, una silla y una planta.",
       "dialogue":[{"speaker":"Pompón","text":"Las sombras son menos misteriosas cuando les damos un poquito de luz.","direction":"gracioso y tranquilizador"}],
       "audio":{"music":"MUSIC-CHASE con notas cómicas","sfx":["SFX-WHOOSH-SOFT"],"ambience":"AMB-OBSERVATORY"},
-      "lighting":"luz difusa sobre paredes azules y rostros visibles","assets":["BG-OBSERVATORY","PROP-LANTERNS","PROP-LIGHT-BADGES","FX-MIST"],"continuity":"El grupo avanza sin correr.","retentionDevice":"falsa alarma cómica","generationPrompt":"Pompón se transforma en una nube luminosa y revela que grandes sombras dentro del observatorio pertenecen a objetos cotidianos, escena 3D divertida, suave y nada aterradora."
+      "lighting":"luz difusa sobre paredes azules y rostros visibles","assets":["BG-OBSERVATORY","PROP-LANTERNS","PROP-LIGHT-BADGES","FX-MIST"],"continuity":"El grupo avanza sin correr.","retentionDevice":"falsa alarma cómica","generationPrompt":"Pompón exactamente según Character Design v4 abre su pelaje lavanda para difundir cinco destellos y revelar objetos cotidianos tras grandes sombras; escena 3D divertida, suave y nada aterradora."
     },
     {
       "id":"SC12","startSecond":198,"endSecond":218,"title":"Una luz que se debilita","purpose":"Preparar la revelación mostrando que la fuente no funciona en aislamiento.","location":"Sala principal del observatorio","characters":["Lumo","Nara","Tuno","Biri","Pompón","Nublo"],"emotionalBeat":"preocupación y curiosidad",
-      "shot":{"size":"gran plano general a primer plano","angle":"desde detrás del grupo","composition":"Nublo está sobre una plataforma con el corazón conectado a su mochila"},
+      "shot":{"size":"gran plano general a primer plano","angle":"desde detrás del grupo","composition":"Nublo está sobre una plataforma y sostiene el Corazón cerca de su farol cruzado"},
       "camera":{"movement":"avance lento hacia la plataforma","transitionIn":"corte desde pasillo","transitionOut":"corte a ojos de Nublo"},
       "action":"Nublo intenta encender faroles para una fiesta vacía. Cada vez que activa la fuente, esta brilla menos.",
       "dialogue":[{"speaker":"Lumo","text":"Esa luz parece cansada.","direction":"preocupado"},{"speaker":"Nublo","text":"Solo necesita... obedecerme un poquito.","direction":"seguro al inicio y dudoso al final"}],
       "audio":{"music":"MUSIC-MYSTERY vuelve más frágil","sfx":["SFX-SPARKLE"],"ambience":"AMB-OBSERVATORY"},
-      "lighting":"foco dorado débil sobre Nublo y espacio azul a su alrededor","assets":["BG-OBSERVATORY","PROP-HEART-LIGHT","PROP-NUBLO-BACKPACK","FX-WARM-GLOW"],"continuity":"Nadie intenta quitarle el objeto.","retentionDevice":"revelación del antagonista","generationPrompt":"En un observatorio 3D vacío, Nublo conecta el Corazón de Luz a su mochila pero el brillo se debilita, Lumo y sus amigos observan desde la entrada, emoción legible y entorno cinematográfico."
+      "lighting":"foco dorado débil sobre Nublo y espacio azul a su alrededor","assets":["BG-OBSERVATORY","PROP-HEART-LIGHT","PROP-NUBLO-LANTERN","FX-WARM-GLOW"],"continuity":"Nadie intenta quitarle el objeto.","retentionDevice":"revelación del antagonista","generationPrompt":"En un observatorio 3D vacío, Nublo acerca el Corazón de Luz al farol de su correa cruzada, pero el brillo se debilita; Lumo y sus amigos observan desde la entrada, emoción legible y entorno cinematográfico."
     },
     {
       "id":"SC13","startSecond":218,"endSecond":238,"title":"La fiesta de uno solo","purpose":"Explicar la motivación de Nublo sin justificar el daño.","location":"Sala principal del observatorio","characters":["Lumo","Nublo","Nara","Tuno","Biri","Pompón"],"emotionalBeat":"orgullo herido y empatía",
@@ -194,7 +197,7 @@
       "action":"Nublo vuelve a intentarlo. La fuente emite un destello mínimo. Las insignias responden cuando están juntas.",
       "dialogue":[{"speaker":"Nublo","text":"¿Por qué no brillas para mí?","direction":"frustrado pero no agresivo"},{"speaker":"Tuno","text":"Porque no es una batería. Es una luz que responde a la comunidad.","direction":"claro y didáctico"}],
       "audio":{"music":"MUSIC-MYSTERY se detiene en acorde abierto","sfx":["SFX-SPARKLE"],"ambience":"AMB-OBSERVATORY"},
-      "lighting":"luz débil en la fuente y cinco pulsos cálidos","assets":["BG-OBSERVATORY","PROP-HEART-LIGHT","PROP-LIGHT-BADGES","PROP-NUBLO-BACKPACK"],"continuity":"Nublo deja de manipular la fuente.","retentionDevice":"regla mágica confirmada","generationPrompt":"Primer plano 3D del Corazón de Luz debilitado mientras cinco insignias laten juntas, Nublo observa confundido y Tuno explica, composición clara y emocionalmente segura."
+      "lighting":"luz débil en la fuente y cinco pulsos cálidos","assets":["BG-OBSERVATORY","PROP-HEART-LIGHT","PROP-LIGHT-BADGES","PROP-NUBLO-LANTERN"],"continuity":"Nublo deja de manipular la fuente.","retentionDevice":"regla mágica confirmada","generationPrompt":"Primer plano 3D del Corazón de Luz debilitado mientras cinco insignias laten juntas, Nublo observa confundido y Tuno explica, composición clara y emocionalmente segura."
     },
     {
       "id":"SC15","startSecond":258,"endSecond":278,"title":"La Ronda de las Ideas","purpose":"Transformar el enfrentamiento en una decisión colectiva y preparar la recuperación.","location":"Sala principal del observatorio","characters":["Lumo","Nara","Tuno","Biri","Pompón","Nublo"],"emotionalBeat":"calma activa",
@@ -218,10 +221,10 @@
       "id":"SC17","startSecond":302,"endSecond":322,"title":"Nublo devuelve la luz","purpose":"Resolver el conflicto emocional, recuperar la fuente y ofrecer una reparación concreta.","location":"Sala principal del observatorio","characters":["Nublo","Lumo","Nara","Tuno","Biri","Pompón"],"emotionalBeat":"arrepentimiento seguro y alivio",
       "shot":{"size":"plano medio de Nublo a plano conjunto","angle":"altura de ojos","composition":"Nublo entrega el corazón y el grupo mantiene postura abierta"},
       "camera":{"movement":"fija durante la disculpa y retroceso al recibir apoyo","transitionIn":"fundido desde canción","transitionOut":"corte a manos compartidas"},
-      "action":"Nublo desconecta la fuente de su mochila, la devuelve y propone ayudar a llevarla de vuelta.",
+      "action":"Nublo separa el Corazón de su farol, lo devuelve y propone ayudar a llevarlo de vuelta.",
       "dialogue":[{"speaker":"Nublo","text":"Quería que me vieran y apagué la alegría de todos. Lo siento. Ayudaré a llevarla de vuelta.","direction":"honesto"},{"speaker":"Lumo","text":"Reparar también es compartir. Ven con nosotros.","direction":"cálido y firme"}],
       "audio":{"music":"MUSIC-RONDA pasa a versión emotiva","sfx":["SFX-SPARKLE"],"ambience":"AMB-OBSERVATORY"},
-      "lighting":"dorado y violeta se mezclan sobre las manos","assets":["BG-OBSERVATORY","PROP-HEART-LIGHT","PROP-NUBLO-BACKPACK","FX-WARM-GLOW"],"continuity":"El corazón pasa a ser transportado por el grupo.","retentionDevice":"disculpa y restitución","generationPrompt":"Nublo devuelve el Corazón de Luz a Lumo y se disculpa ante el grupo, posturas abiertas, manos compartidas, actuación 3D sensible y una mezcla cálida de luz dorada y violeta."
+      "lighting":"dorado y violeta se mezclan sobre las manos","assets":["BG-OBSERVATORY","PROP-HEART-LIGHT","PROP-NUBLO-LANTERN","FX-WARM-GLOW"],"continuity":"El corazón pasa a ser transportado por el grupo.","retentionDevice":"disculpa y restitución","generationPrompt":"Nublo devuelve el Corazón de Luz a Lumo y se disculpa ante el grupo, posturas abiertas, manos compartidas, actuación 3D sensible y una mezcla cálida de luz dorada y violeta."
     },
     {
       "id":"SC18","startSecond":322,"endSecond":340,"title":"Relevo hacia la plaza","purpose":"Crear un regreso dinámico donde todos participan.","location":"Sendero entre observatorio y Brillavalle","characters":["Lumo","Nara","Tuno","Biri","Pompón","Nublo"],"emotionalBeat":"urgencia alegre",

@@ -1,44 +1,25 @@
 {
   "id": "LUMO-CONTINUITY-MEMORY-001",
-  "version": 1,
+  "version": 4,
   "status": "canonical",
-  "series": "Las aventuras de Lumo",
+  "series": "Lumo Kids",
   "purpose": "Memoria externa versionada para conservar identidad visual, sonora y narrativa entre generaciones independientes.",
-  "precedence": [
-    "section-contract",
-    "canonical-asset",
-    "character-profile",
-    "visual-bible"
-  ],
-  "canonicalAssets": {
-    "environments": [
-      "content/continuity/environments/brillavalle-plaza-v1.json"
-    ],
-    "props": [
-      "content/continuity/props/fountain-and-heart-v1.json"
-    ],
-    "voices": [
-      "content/continuity/voices/voice-bible-v1.json"
-    ],
-    "secondaryCast": [
-      "content/continuity/cast/secondary-citizens-v1.json"
-    ],
-    "visualSheets": [
-      "content/continuity/visual-assets-v1.json"
-    ]
+  "characterDesignSource": {
+    "asset": "/lumo-kids/canon/Character-Design-v4.png",
+    "repositoryFile": "public/lumo-kids/canon/Character-Design-v4.png",
+    "sha256": "a3163c83e64bdae0ace3afa99046a5cbd0022cdfbfdd5e76721753980912e1db",
+    "approvedAt": "2026-08-03"
   },
-  "characterProfiles": [
-    "content/characters/profiles/lumo.json",
-    "content/characters/profiles/nara.json",
-    "content/characters/profiles/tuno.json",
-    "content/characters/profiles/biri.json",
-    "content/characters/profiles/pompon.json",
-    "content/characters/profiles/nublo.json"
-  ],
-  "sectionContracts": [
-    "content/continuity/sections/S01E01-S01.json",
-    "content/continuity/sections/S01E01-S02.json"
-  ],
+  "precedence": ["character-design-master", "canonical-source-crop", "character-profile", "section-contract", "generation-prompt"],
+  "canonicalAssets": {
+    "environments": ["content/continuity/environments/brillavalle-plaza-v1.json"],
+    "props": ["content/continuity/props/fountain-and-heart-v1.json"],
+    "voices": ["content/continuity/voices/voice-bible-v1.json"],
+    "secondaryCast": ["content/continuity/cast/secondary-citizens-v1.json"],
+    "visualSheets": ["content/continuity/visual-assets-v1.json"]
+  },
+  "characterProfiles": ["content/characters/profiles/lumo.json", "content/characters/profiles/nara.json", "content/characters/profiles/tuno.json", "content/characters/profiles/biri.json", "content/characters/profiles/pompon.json", "content/characters/profiles/nublo.json"],
+  "sectionContracts": ["content/continuity/sections/S01E01-S01.json", "content/continuity/sections/S01E01-S02.json"],
   "generationPolicy": {
     "sectionDurationSeconds": 15,
     "promptHardLimitChars": 10000,
@@ -46,40 +27,19 @@
     "maxConsecutiveExtensions": 3,
     "onePaidVariationByDefault": true,
     "useEpisodeOverviewAsGenerationReference": false,
-    "referenceOrder": [
-      "section-storyboard",
-      "section-cast-sheet",
-      "canonical-environment-and-props",
-      "previous-section-last-frame-or-video"
-    ],
-    "anchorRequiredWhen": [
-      "location changes",
-      "principal cast changes",
-      "canonical prop changes state",
-      "lighting state changes materially",
-      "three consecutive extensions have been used",
-      "previous output contains continuity drift"
-    ]
+    "referenceOrder": ["canonical-character-crops", "section-storyboard", "canonical-environment-and-props", "previous-section-last-frame-or-video"],
+    "anchorRequiredWhen": ["location changes", "principal cast changes", "canonical prop changes state", "lighting state changes materially", "three consecutive extensions have been used", "previous output contains continuity drift"]
   },
   "permanentRules": {
-    "allCharactersAnimalLike": true,
+    "allCharactersAnimalLikeOrMagicalCreature": true,
     "noHumanCharacters": true,
     "noExistingFranchiseImitation": true,
     "noGeneratedTextInFinalFrames": true,
     "humanReviewRequired": true,
     "visibleReferenceOverridesWrittenExclusionRisk": true,
     "onlyPresentCharactersMayAppearInSectionReferences": true,
-    "secondaryCitizensMustNotClonePrimaryCast": true
+    "secondaryCitizensMustNotClonePrimaryCast": true,
+    "characterDesignMasterOverridesPrompts": true
   },
-  "approvalChecklist": [
-    "storyboard limited to current section",
-    "present and forbidden cast verified visually",
-    "canonical environment and prop states verified",
-    "secondary silhouettes distinct from primary cast",
-    "dialogue timing and listener acting registered",
-    "start and end continuity verified",
-    "prompt character count verified",
-    "single output selected",
-    "result reviewed before extension"
-  ]
+  "approvalChecklist": ["master v4 and exact character crops attached", "storyboard limited to current section", "present and forbidden cast verified visually", "canonical environment and prop states verified", "secondary silhouettes distinct from primary cast", "dialogue timing and listener acting registered", "start and end continuity verified", "prompt character count verified", "single output selected", "result reviewed before extension"]
 }

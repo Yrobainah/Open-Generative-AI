@@ -8,11 +8,11 @@
   "title": "Bienvenidos a Brillavalle",
   "storyPurpose": "Presentar el bosque mágico, Brillavalle, la Fiesta de las Mil Luces, la fuente y el Corazón de Luz sin mostrar protagonistas identificables ni provocar rediseños.",
   "references": {
-    "storyboardAsset": "/lumo-kids/episodes/S01E01/S01E01-S01-clean-anchor-v1.jpg",
-    "castSheetAsset": "/lumo-kids/continuity/CAST-S01-main-five-approved-guide-v3.jpg",
+    "storyboardAsset": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+    "castSheetAsset": "/lumo-kids/canon/CAST-main-six-v4.png",
     "castSheetUsage": "future-sections-only-not-sent-in-S01",
     "environmentSheetAssets": [
-      "/lumo-kids/continuity/ENV-BRILLAVALLE-approved-guide-v3.jpg",
+      "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
       "/lumo-kids/episodes/S01E01/S01E01-S01-clean-anchor-v1.jpg"
     ],
     "propSheetAssets": [],
@@ -27,11 +27,11 @@
   "charactersForbidden": ["lumo", "nara", "tuno", "biri", "pompon", "nublo"],
   "secondaryCastAllowed": [
     "SEC-LIRA-RABBIT-001",
-    "SEC-MILO-BADGER-001",
+      "SEC-MILO-RACCOON-001",
     "SEC-OLMO-OWL-001",
-    "SEC-NELA-OTTER-001",
-    "SEC-TIMA-TURTLE-001",
-    "SEC-HEDGEHOG-FAMILY-001"
+      "SEC-TORI-FOX-001",
+      "SEC-SILA-SQUIRREL-001",
+      "SEC-FLO-FLAMINGO-001"
   ],
   "environmentState": {
     "environmentId": "ENV-BRILLAVALLE-PLAZA-001",

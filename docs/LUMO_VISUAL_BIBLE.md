@@ -1,216 +1,158 @@
-# Biblia visual 3D de Las aventuras de Lumo
+# Biblia visual canónica de Lumo Kids — v4
 
-## Objetivo
+## Fuente maestra obligatoria
 
-Este documento fija la identidad visual de la serie para que personajes, escenarios, materiales, emociones e iluminación se mantengan coherentes entre episodios, herramientas generativas y producción humana.
+La única fuente de verdad visual del proyecto es:
 
-Las referencias externas solo sirven para estudiar legibilidad, ritmo, actuación, música y claridad narrativa. No se copiarán personajes, diseños, canciones, diálogos, localizaciones, planos ni tramas de obras existentes.
+- Activo: `/lumo-kids/canon/Character-Design-v4.png`
+- Archivo de repositorio: `public/lumo-kids/canon/Character-Design-v4.png`
+- Resolución: `1535 × 1024`
+- SHA-256: `a3163c83e64bdae0ace3afa99046a5cbd0022cdfbfdd5e76721753980912e1db`
+- Aprobación: Yariel Robaina, 3 de agosto de 2026
 
-## Dirección artística
+El diseño maestro fija personajes, proporciones, materiales, expresiones, Brillavalle, secundarios, antagonistas futuros, color, iluminación y lectura a tamaño de miniatura. Los recortes de `public/lumo-kids/canon/` son vistas operativas del mismo archivo; no son reinterpretaciones.
 
-- Animación 3D estilizada premium para público preescolar.
-- Personajes redondeados, suaves y visualmente abrazables.
-- Actuación facial clara mediante ojos, iris, párpados, cejas, boca y postura.
-- Materiales diferenciados: luz aterciopelada, hojas translúcidas, madera satinada, plumaje volumétrico, musgo suave y niebla luminosa.
-- Iluminación cinematográfica cálida con relleno frío y bordes mágicos controlados.
-- Escenarios con profundidad real: primer plano, plano medio, fondo, niebla ambiental y elementos desenfocados.
-- Movimiento con anticipación, peso, rebote suave y acciones legibles.
-- Composición principal 16:9 protegida para recortes verticales 9:16.
-- Cada fotograma importante debe poder funcionar como miniatura.
-- Nada de texto generado dentro de las imágenes finales.
+Cuando exista una discrepancia, se aplica este orden:
 
-## Gramática de formas
+1. `Character-Design-v4.png`.
+2. Recorte canónico v4 derivado del diseño maestro.
+3. Perfil JSON del personaje.
+4. Contrato de escena y storyboard.
+5. Prompt de generación.
 
-- Lumo: esfera luminosa, corazón y antenas curvas. Energía abierta y ascendente.
-- Nara: brote y hojas largas. Equilibrio, calma y movimientos fluidos.
-- Tuno: bellota, madera y herramientas redondeadas. Estabilidad e inventiva.
-- Biri: ave ligera, diagonales y alas abiertas. Velocidad y optimismo.
-- Pompón: esfera de musgo y volumen deformable. Ternura y humor.
-- Nublo: media luna, niebla en espiral y mochila-linterna. Misterio amable y teatralidad.
+Un prompt, storyboard o resultado generado nunca puede redefinir el diseño maestro.
 
-Cada personaje debe reconocerse por su silueta incluso sin color ni detalles faciales.
+## Identidad de la serie
 
-## Proporciones generales
+- Marca: `Lumo Kids`.
+- Lema: `La luz prestada`.
+- Promesa: historias y canciones que enseñan a niños pequeños a pensar, sentir y actuar con amabilidad.
+- Mundo: Brillavalle, una comunidad fantástica integrada en árboles, agua, puentes y casas de madera cálida.
+- Técnica: animación 3D estilizada, cinematográfica, amable y legible.
+- Formato principal: `16:9`, protegido para recortes `9:16`.
+- Principio visual: formas suaves, siluetas distintas, profundidad real y emociones claras.
 
-- Cabeza: entre 45 % y 55 % de la altura total.
-- Ojos grandes con iris visibles, reflejos definidos y dirección de mirada inequívoca.
-- Manos y pies simplificados; máximo cuatro dedos visuales cuando sean visibles.
-- Extremidades cortas y flexibles, aptas para poses expresivas.
-- No modificar la altura relativa de un personaje más de un 5 % entre escenas.
-- Las poses deben evitar simetría rígida salvo en momentos rituales o musicales.
+## Reparto principal
 
-## Rostros y emociones
+| Personaje | Diseño fijo | Material y color | Rasgos que nunca cambian |
+|---|---|---|---|
+| Lumo | Criatura luminosa pequeña, cabeza grande y cuerpo redondeado | Amarillo dorado suave; halo cálido; ojos turquesa | Dos antenas luminosas ramificadas, ojos enormes turquesa y corazón azul-cian en el pecho |
+| Nara | Criatura vegetal infantil formada por hojas | Verdes cálidos, hojas satinadas y parcialmente translúcidas | Corona central de hojas, hojas laterales, cuello/falda de pétalos y silueta claramente vegetal |
+| Tuno | Mapache inventor infantil | Pelaje gris y crema; mono de trabajo marrón; metal bronce | Máscara natural de mapache, hocico crema, gafas redondas sobre la cabeza y equipo de inventor |
+| Biri | Ave mensajera azul | Plumaje azul y vientre celeste; pico y patas naranjas | Cresta naranja de tres plumas, pico corto redondeado, alas pequeñas expresivas y patas finas |
+| Pompón | Criatura redonda y muy peluda | Pelaje lavanda/morado, suave y volumétrico | Gran mechón superior morado, cuerpo ovalado esponjoso, brazos cortos y sonrisa cómica |
+| Nublo | Criatura nocturna felina/zorruna | Pelaje azul marino; ojos ámbar; niebla violeta | Orejas triangulares grandes, mechón frontal, ojos ámbar, correa con farol y cola de niebla violeta |
 
-La emoción debe entenderse sin escuchar el diálogo. Se leerá primero en ojos y cejas, después en boca, inclinación de cabeza, manos y postura.
+### Proporciones relativas
 
-Expresiones mínimas:
+- Lumo: `1.00`.
+- Nara: `1.02`.
+- Tuno: `1.10`.
+- Biri: `0.96` de altura corporal, con patas finas que alargan la silueta.
+- Pompón: `1.00`.
+- Nublo: `1.06` sentado; su niebla no cuenta como altura corporal.
+- Tolerancia máxima entre planos: `±5 %`.
 
-1. Alegría abierta.
-2. Curiosidad.
-3. Sorpresa amable.
-4. Preocupación valiente.
-5. Duda.
-6. Tristeza segura.
-7. Concentración.
-8. Orgullo compartido.
+### Prohibiciones específicas
 
-Nublo añade orgullo teatral, soledad, arrepentimiento y alegría al sentirse incluido.
+- Lumo no es una estrella de cinco puntas, no tiene ojos azul oscuro y su corazón no es dorado.
+- Nara no lleva una flor amarilla y no se reduce a dos hojas usadas como orejas.
+- Tuno no es una bellota ni una criatura de madera.
+- Biri no es un ave realista, no tiene garras amenazantes y conserva la cresta naranja.
+- Pompón no es musgo, no lleva semillas verdes ni bolsa de hojas.
+- Nublo no tiene orejas redondas de media luna, no es un lobo agresivo y no lleva una mochila grande que tape su silueta.
 
-Evitar terror, dolor gráfico, humillación, llanto extremo, miradas amenazantes o gestos adultos.
+## Lumo: actuación y expresiones
 
-## Materiales
+La referencia operativa es `/lumo-kids/canon/reference/LUMO-expressions-v4.png`. Deben mantenerse, como mínimo:
 
-### Lumo
+1. Feliz.
+2. Sorprendido.
+3. Pensativo.
+4. Triste.
+5. Asustado de forma segura.
+6. Orgulloso.
+7. Curioso.
+8. Determinado.
+9. Cansado.
+10. Ilusionado.
 
-- Superficie dorada suave, ligeramente aterciopelada.
-- Subsurface scattering ligero para transmitir calidez.
-- Núcleo de luz en forma de corazón.
-- Halo controlado que nunca oculta los ojos ni la boca.
-
-### Nara
-
-- Hojas satinadas y parcialmente translúcidas.
-- Nervaduras suaves visibles al trasluz.
-- Movimiento secundario lento en hojas y flor.
-
-### Tuno
-
-- Madera clara satinada, sin astillas ni grietas inquietantes.
-- Cúpula de bellota mate.
-- Metal y herramientas con bordes amplios y reflejos suaves.
-
-### Biri
-
-- Plumaje azul suave con volumen, sin detalle fotorrealista.
-- Alas flexibles y estela de vapor breve al acelerar.
-
-### Pompón
-
-- Musgo-pelaje lavanda esponjoso y volumétrico.
-- Deformación corporal elástica usada para humor y protección.
-
-### Nublo
-
-- Pelaje azul violeta aterciopelado.
-- Cola de niebla semitransparente que cambia de forma con su emoción.
-- Ojos ámbar y borde violeta suave para conservar legibilidad en escenas oscuras.
-
-## Color e iluminación
-
-- Saturación media-alta en personajes y más controlada en fondos.
-- Contraste suficiente entre personaje y escenario.
-- Las escenas nocturnas usan azul profundo, violeta y fuentes cálidas localizadas.
-- Las sombras son suaves, coloreadas y sin negro puro.
-- La luz de Lumo actúa sobre el entorno, pero no borra los colores de los demás.
-- Las fuentes mágicas deben generar rebote de luz sobre ojos, mejillas, suelo y objetos cercanos.
-- Los fuegos artificiales de Brillavalle son mágicos, silenciosos y sin fogonazos agresivos.
+La actuación se lee primero en ojos y cejas, luego en boca, inclinación de cabeza, antenas, manos y postura. El halo nunca puede borrar los ojos, el corazón o el contorno facial.
 
 ## Brillavalle
 
-Brillavalle es una comunidad fantástica construida entre raíces, agua, cristales, flores, torres redondeadas y senderos iluminados.
+La referencia operativa es `/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png`.
 
-Elementos recurrentes:
+Invariantes:
 
-- Plaza de la Fuente de Luz.
-- Árbol Biblioteca.
-- Taller de Tuno.
-- Puente del Arroyo Brillante.
-- Arboleda de Niebla Violeta.
-- Antiguo Observatorio.
-- Senderos de faroles.
+- Casas redondeadas integradas en árboles y raíces.
+- Gran árbol central y canales de agua visibles.
+- Puentes, senderos y viviendas iluminados con puntos cálidos.
+- Fondo profundo con torres naturales y vegetación.
+- Paleta cálida en luces y fría en ambiente y sombras.
+- Naturaleza mágica, habitable y nunca hostil.
+- Nada de ciudad humana moderna, coches, carreteras o arquitectura agresiva.
 
-La naturaleza participa visualmente en la historia, pero nunca debe parecer hostil. Cada lugar necesita profundidad, elementos reconocibles y una paleta propia.
+La plaza, la Fuente de Luz y el Corazón deben conservar su geografía y geometría entre planos. Los paneles del Character Design son referencias; nunca deben aparecer completos, con textos o marcos, dentro de un fotograma narrativo.
 
-## La Fiesta de las Mil Luces
+## Secundarios y antagonistas futuros
 
-La celebración del piloto introduce:
+Los secundarios canónicos iniciales son Lira, Tori, Milo, Sila, Olmo y Flo. Sus siluetas no pueden copiar al reparto principal.
 
-- Guirnaldas suspendidas entre edificios y árboles.
-- Puestos redondeados, banderines y flores luminosas.
-- El Corazón de Luz como fuente energética del pueblo.
-- Una cuenta atrás visual y musical.
-- Una ola de encendido que recorre Brillavalle.
-- Fuegos de luz con formas de estrellas, hojas y medias lunas.
+Los antagonistas futuros son personajes desorientados, no malvados: Sombro, Grumm, Vexo, Drylla y Gloom. No entran en el piloto salvo aprobación narrativa explícita.
 
-## La Ronda de las Ideas
+## Cámara, iluminación y materiales
 
-Ritual original:
+- Cámara cercana a la mirada infantil.
+- Lentes moderadas, sin deformación extrema.
+- Movimientos suaves y motivados por personajes, luz u objetos.
+- Luz principal cálida; relleno frío; borde violeta controlado cuando sea útil.
+- Materiales táctiles: luz aterciopelada, hojas translúcidas, pelaje suave, plumaje volumétrico, madera satinada y niebla luminosa.
+- Profundidad real con primer plano, plano medio y fondo.
+- Sombras suaves y coloreadas, nunca negro puro.
+- Nada de cámara temblorosa, flashes agresivos o rostros ocultos.
 
-> Paro, miro alrededor. Pienso, pruebo algo mejor.
+## Reglas de generación
 
-Tratamiento visual:
+Antes de enviar una solicitud pagada:
 
-- Los personajes forman un círculo imperfecto y abierto.
-- Se reduce el movimiento del fondo.
-- Aparecen luces con los colores de cada personaje.
-- Las ideas se representan mediante imágenes y acciones, no texto.
-- La solución combina aportaciones de varios personajes.
-- Cuando alguien está excluido, el círculo deja un espacio visible para invitarlo sin obligarlo.
+1. Adjuntar únicamente los recortes v4 necesarios para el plano.
+2. Verificar que todo personaje visible esté permitido en el contrato de escena.
+3. Incluir una sola instancia de cada protagonista.
+4. Prohibir clones del reparto en el fondo.
+5. Describir especie, silueta, material, paleta y rasgos distintivos exactamente como aparecen aquí.
+6. Mantener el prompt por debajo de `10.000` caracteres y apuntar a `7.500` o menos.
+7. Generar una sola variación por defecto.
+8. Revisar el resultado antes de extenderlo.
 
-## Cámara y montaje
+Un resultado se rechaza si cambia especie, ojos, paleta, silueta, accesorios fijos, escala, Fuente, Corazón o geografía. Una exclusión escrita no corrige un personaje incorrecto que ya aparece en una referencia.
 
-- Altura de cámara cercana a la mirada infantil.
-- Lentes moderadas; evitar distorsión extrema.
-- Movimientos suaves, motivados por personajes, luz u objetos.
-- Cortes cada 3-7 segundos durante aventura.
-- Planos más largos en confesiones, canción y resolución.
-- Mantener dirección de movimiento y posición de objetos entre planos.
-- No usar cámara temblorosa ni acción difícil de seguir.
+## Regla presupuestaria
 
-## Hojas de modelo obligatorias
+Yariel confirmó el 4 de agosto de 2026 un saldo actual de `20,67 USD` y un máximo de `2,25 USD` por intento. El archivo conserva esa confirmación, pero cada compra exige volver a consultar el saldo vivo y cotizar el payload exacto en MuAPI.
 
-Antes de aprobar un personaje deben existir:
+El saldo se reserva así:
 
-- Vista frontal.
-- Vista de tres cuartos.
-- Perfil.
-- Vista trasera.
-- Comparativa de altura con Lumo.
-- Ocho expresiones.
-- Seis poses de acción.
-- Paleta con códigos hexadecimales.
-- Materiales y respuesta a la luz.
-- Accesorios permitidos y prohibidos.
-- Prueba de silueta.
-- Prueba de miniatura.
+- Prueba reutilizable de 25 segundos: máximo `7,52 USD`.
+- Microepisodio completo de 60 segundos: máximo total `16,44 USD`.
+- Reserva protegida: `4,23 USD`.
 
-## Plantilla de prompt visual
-
-La ficha JSON aporta el `promptTemplate`. Se completa con:
-
-- Acción.
-- Emoción.
-- Escenario.
-- Plano y lente.
-- Iluminación.
-- Relación con otros personajes.
-- Materiales.
-- Restricciones.
-
-Orden recomendado:
-
-`identidad fija + actuación + acción + escenario + cámara + iluminación + materiales + técnica + restricciones`
-
-## Restricciones permanentes
-
-- No pedir estilos de estudios, artistas o franquicias reconocibles.
-- No introducir personajes protegidos como referencia visual.
-- No cambiar especie, color principal, ojos, silueta o rasgos distintivos.
-- No añadir ropa adulta, maquillaje, objetos de combate, tatuajes o accesorios de lujo.
-- No usar fotorrealismo, anatomía humana realista ni texturas inquietantes.
-- No generar texto, marcas comerciales o logotipos dentro del fotograma.
-- No publicar ninguna imagen sin revisión humana de consistencia, emoción y seguridad.
+No se gasta saldo para corregir problemas que puedan resolverse con montaje, recorte, sonido o una referencia correcta. Solo puede existir una solicitud pagada activa y no hay reintento automático.
 
 ## Criterios de aprobación
 
-Un fotograma se aprueba cuando:
+Un fotograma o clip se aprueba cuando:
 
-- El personaje se reconoce por silueta, materiales y paleta.
+- Coincide visualmente con el Character Design v4.
+- Cada personaje se reconoce por silueta sin depender del color.
 - La emoción se entiende sin diálogo.
-- Los ojos mantienen un punto de atención claro.
-- La iluminación no oculta el rostro.
-- La escena es comprensible a tamaño de miniatura.
-- Existe profundidad sin fondos recargados.
-- El acabado tiene volumen, rebote de luz y materiales consistentes.
-- No contiene elementos de las listas negativas.
-- Respeta la política infantil y la continuidad del episodio.
+- Los ojos mantienen una dirección clara.
+- La escena funciona a tamaño de miniatura.
+- No hay duplicados, extremidades extra ni secundarios clonados.
+- La iluminación conserva los rostros y materiales.
+- No contiene texto generado, logotipos ajenos ni referencias a franquicias.
+- Respeta la seguridad infantil y la continuidad del episodio.
+
+## Estado de hojas anteriores
+
+Las hojas vectoriales 2D, la descripción de Lumo como estrella, Tuno como bellota y Pompón como musgo quedan `superseded`. Se conservan únicamente como historial y están bloqueadas como entrada de producción.

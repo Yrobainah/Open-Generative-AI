@@ -2,9 +2,9 @@
 
 import { useMemo, useState } from 'react';
 import lumo from '../content/characters/profiles/lumo.json';
-import sheet from '../content/characters/model-sheets/lumo-v1.json';
+import sheet from '../content/characters/model-sheets/lumo-v4.json';
 
-const HANDOFF_KEY = 'lumo_image_studio_handoff_v1';
+const HANDOFF_KEY = 'lumo_image_studio_handoff_v4';
 
 export default function LumoModelSheetStudio({ onBack, onOpenImageStudio }) {
   const [copied, setCopied] = useState(false);
@@ -32,8 +32,8 @@ export default function LumoModelSheetStudio({ onBack, onOpenImageStudio }) {
 
   const prepareImageStudio = async () => {
     const handoff = {
-      version: 1,
-      source: 'lumo-model-sheet',
+      version: 4,
+      source: 'lumo-character-design-v4',
       characterId: lumo.id,
       characterName: lumo.name,
       modelSheetId: sheet.id,
@@ -66,9 +66,9 @@ export default function LumoModelSheetStudio({ onBack, onOpenImageStudio }) {
         <header className="flex flex-col gap-5 rounded-3xl border border-white/[0.08] bg-[radial-gradient(circle_at_top_left,rgba(250,204,21,0.16),transparent_34%),radial-gradient(circle_at_85%_15%,rgba(249,115,22,0.12),transparent_32%),#0b0c10] p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div>
             <p className="text-[11px] font-black uppercase tracking-[0.2em] text-amber-200/75">Activo canónico · versión {sheet.version}</p>
-            <h1 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">Hoja de modelo de Lumo</h1>
+            <h1 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">Character Design maestro de Lumo</h1>
             <p className="mt-3 max-w-3xl text-sm leading-6 text-white/55">
-              Referencia oficial para conservar silueta, proporciones, paleta y expresiones antes de generar escenas o animaciones.
+              Fuente oficial aprobada para conservar diseño, proporciones, materiales y expresiones antes de generar escenas o animaciones.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -86,8 +86,8 @@ export default function LumoModelSheetStudio({ onBack, onOpenImageStudio }) {
 
         <div className="mt-5 grid gap-5 xl:grid-cols-[minmax(0,1.3fr)_390px]">
           <section className="overflow-hidden rounded-3xl border border-white/[0.07] bg-[#0c0d11] p-3 sm:p-4">
-            <div className="overflow-hidden rounded-2xl bg-[#f8f6f0]">
-              <img src={sheet.asset} alt="Hoja de modelo de Lumo con vistas frontal, tres cuartos, lateral, trasera y ocho expresiones" className="h-auto w-full" />
+            <div className="overflow-hidden rounded-2xl bg-[#07111c]">
+              <img src={sheet.asset} alt="Character Design maestro de Lumo Kids con Lumo, reparto, expresiones y guía técnica" className="h-auto w-full" />
             </div>
             <div className="mt-3 flex flex-wrap items-center justify-between gap-2 px-1 text-[11px] text-white/35">
               <span>{sheet.canvas.width} × {sheet.canvas.height} · {sheet.format.toUpperCase()}</span>
@@ -109,6 +109,10 @@ export default function LumoModelSheetStudio({ onBack, onOpenImageStudio }) {
               <h2 className="text-sm font-black">Vistas obligatorias</h2>
               <div className="mt-3 flex flex-wrap gap-2">
                 {sheet.requiredViews.map((view) => <span key={view} className="rounded-lg border border-cyan-300/10 bg-cyan-300/[0.05] px-2.5 py-1.5 text-[11px] text-cyan-100/65">{view}</span>)}
+              </div>
+              <h2 className="mt-6 text-sm font-black">Vistas pendientes de producción</h2>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {sheet.pendingViews.map((view) => <span key={view} className="rounded-lg border border-amber-300/10 bg-amber-300/[0.05] px-2.5 py-1.5 text-[11px] text-amber-100/65">{view}</span>)}
               </div>
               <h2 className="mt-6 text-sm font-black">Invariantes</h2>
               <ul className="mt-3 space-y-2">

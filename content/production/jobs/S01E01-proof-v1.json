@@ -1,0 +1,62 @@
+{
+  "id": "S01E01-PROOF-JOBS-V1",
+  "episodeCode": "S01E01",
+  "version": 1,
+  "status": "blocked-until-live-preflight",
+  "totalDurationSeconds": 25,
+  "stageCap": 7.52,
+  "currency": "USD",
+  "executionPolicy": {
+    "maximumConcurrentPaidRequests": 1,
+    "persistRequestIdBeforePolling": true,
+    "stopPollingOn": ["failed", "error", "cancelled", "canceled"],
+    "reviewAfterEveryJob": true,
+    "allowAutomaticRetry": false
+  },
+  "preflight": [
+    "verify-canon-hashes",
+    "verify-only-front-or-threeQuarter-views",
+    "read-live-muapi-balance",
+    "quote-exact-payload",
+    "verify-quote-at-or-below-2.25",
+    "verify-stage-cap-and-4.23-reserve",
+    "verify-no-active-lumo-request"
+  ],
+  "jobs": [
+    {
+      "id": "PT01",
+      "durationSeconds": 5,
+      "kind": "image-to-video",
+      "model": "seedance-v2.0-i2v",
+      "maximumCost": 2.25,
+      "references": ["/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png", "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png"],
+      "presentCast": ["nublo"],
+      "shot": "Nublo observa la fiesta desde el puente; el farol y la cola de niebla permanecen visibles.",
+      "approval": "pending"
+    },
+    {
+      "id": "PT02",
+      "durationSeconds": 10,
+      "kind": "image-to-video",
+      "model": "seedance-v2.0-i2v",
+      "maximumCost": 2.25,
+      "references": ["/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png", "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png"],
+      "presentCast": ["nublo"],
+      "shot": "Una chispa vuela del Corazón de Luz al farol; no aparece ningún protagonista adicional.",
+      "approval": "blocked-by-PT01"
+    },
+    {
+      "id": "PT03",
+      "durationSeconds": 10,
+      "kind": "image-to-video",
+      "model": "seedance-v2.0-i2v",
+      "maximumCost": 2.25,
+      "references": ["/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png", "/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png", "/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png"],
+      "presentCast": ["lumo", "biri", "nublo"],
+      "shot": "Lumo y Biri encuentran a Nublo; la emoción pasa de sorpresa a escucha.",
+      "approval": "blocked-by-PT02"
+    }
+  ],
+  "unallocatedWithinStage": 0.77,
+  "receiptDirectory": "content/production/receipts/S01E01-proof"
+}

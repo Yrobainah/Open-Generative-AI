@@ -14,9 +14,11 @@ import { validateKeyframeSet } from '../lib/kids/safety/validate-keyframes.mjs';
 import { validateOgaiProof } from '../lib/kids/safety/validate-proof.mjs';
 import {
   validateCanonicalContinuityAsset,
+  validateCanonicalVisualRegistry,
   validateContinuityManifest,
   validateSectionContract,
 } from '../lib/kids/safety/validate-continuity.mjs';
+import { validateLumoProduction } from '../lib/kids/safety/validate-production.mjs';
 
 const safetyPolicy = loadPolicy();
 const characterPolicy = loadCharacterPolicy();
@@ -33,6 +35,7 @@ const continuityVoiceFiles = findJsonFiles('content/continuity/voices');
 const continuityCastFiles = findJsonFiles('content/continuity/cast');
 const continuitySectionFiles = findJsonFiles('content/continuity/sections');
 const continuityManifestFile = 'content/continuity/continuity-manifest.json';
+const continuityVisualRegistryFile = 'content/continuity/visual-assets-v1.json';
 let failed = false;
 
 function report(file, errors) {
@@ -96,6 +99,13 @@ if (!fs.existsSync(continuityManifestFile)) {
   report(continuityManifestFile, validateContinuityManifest(continuityManifest));
 }
 
+if (!fs.existsSync(continuityVisualRegistryFile)) {
+  report(continuityVisualRegistryFile, ['Falta el registro visual canónico.']);
+} else {
+  const visualRegistry = JSON.parse(fs.readFileSync(continuityVisualRegistryFile, 'utf8'));
+  report(continuityVisualRegistryFile, validateCanonicalVisualRegistry(visualRegistry));
+}
+
 const continuityAssetFiles = [
   ...continuityEnvironmentFiles,
   ...continuityPropFiles,
@@ -124,6 +134,8 @@ for (const file of continuitySectionFiles) {
   const section = JSON.parse(fs.readFileSync(file, 'utf8'));
   report(file, validateSectionContract(section, knownCharacters, canonicalIds));
 }
+
+report('Lumo production operating system', validateLumoProduction());
 
 if (failed) process.exit(1);
 console.log(

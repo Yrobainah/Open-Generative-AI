@@ -1,0 +1,32 @@
+{
+  "id": "LUMO-PRODUCTION-BUDGET-2026-08-03",
+  "version": 1,
+  "asOf": "2026-08-04",
+  "currency": "USD",
+  "sourceEvidence": {
+    "file": "Captura de pantalla 2026-08-03 194643.png",
+    "observation": "Saldo visible de 20.67 USD y máximo visible de 2.25 USD por generación."
+  },
+  "confirmedBalance": 20.67,
+  "balanceState": "user-confirmed-not-live-api",
+  "maximumPerGeneration": 2.25,
+  "canonicalTeaserIncrementalCost": 0,
+  "allocation": {
+    "proof25SecondsMaximum": 7.52,
+    "microepisode60SecondsMaximum": 16.44,
+    "protectedReserve": 4.23,
+    "total": 20.67
+  },
+  "spendingGate": [
+    "Character Design v4 adjunto mediante recortes canónicos del plano",
+    "contrato de sección y personajes visibles verificados",
+    "una sola variación pagada por defecto",
+    "revisión humana antes de extender o regenerar",
+    "saldo vivo consultado mediante GET /api/v1/account/balance",
+    "precio exacto cotizado para el payload mediante el catálogo o estimate-cost",
+    "request_id persistido antes de iniciar el sondeo",
+    "una sola solicitud Lumo Kids activa",
+    "recibo con coste real y saldo posterior guardado al finalizar"
+  ],
+  "note": "20.67 USD es el saldo confirmado por Yariel el 4 de agosto de 2026. Cada compra sigue exigiendo una lectura viva porque el archivo no sustituye al saldo de MuAPI."
+}

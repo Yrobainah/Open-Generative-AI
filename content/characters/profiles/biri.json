@@ -1,21 +1,23 @@
 {
   "id": "biri",
   "name": "Biri",
-  "role": "Explorador veloz, mensajero y fuente de humor físico",
-  "characterType": "ave-nube original",
+  "role": "Mensajero veloz y fuente de energía alegre",
+  "characterType": "ave azul infantil estilizada",
   "agePresentation": "equivalente emocional a 5 años",
-  "personality": ["rápido", "divertido", "distraído", "valiente", "muy afectuoso"],
+  "canonicalSourceVersion": 4,
+  "canonicalAsset": "/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+  "personality": ["rápido", "alegre", "optimista", "distraído", "afectuoso"],
   "visual": {
-    "silhouette": "cuerpo ligero y redondeado con alas amplias, cresta en remolino y cola corta",
-    "bodyShape": "volumen ovalado de plumaje suave, patas cortas y alas grandes respecto al torso",
-    "face": "ojos grandes y circulares, pico pequeño redondeado, cejas finas y párpados muy móviles",
-    "palette": {"primary":"#4DAEE8","secondary":"#D7F5FF","accent":"#FF8B73","eyes":"#23354A"},
-    "signatureFeatures": ["cresta en forma de remolino", "puntas coral en alas y cola", "pequeña estela de vapor al volar rápido", "plumaje suave con volumen legible"],
-    "scaleRelativeToLumo": 0.82
+    "silhouette": "ave azul pequeña con cuerpo ovalado, cuello fino, patas largas y cresta naranja",
+    "bodyShape": "torso de plumaje redondo, alas pequeñas expresivas y patas finas naranjas",
+    "face": "ojos grandes azul oscuro, pico corto redondeado naranja y cejas finas",
+    "palette": {"primary":"#168AC3","secondary":"#76C9E5","accent":"#F47A23","eyes":"#163A51"},
+    "signatureFeatures": ["cresta naranja de tres plumas", "pico corto naranja", "plumaje azul con vientre celeste", "patas finas naranjas"],
+    "scaleRelativeToLumo": 0.96
   },
   "expressions": ["alegría abierta", "curiosidad", "sorpresa amable", "preocupación leve", "determinación", "vergüenza cómica", "concentración", "orgullo compartido"],
   "voice": {"register":"infantil neutro", "pace":"rápido con pausas claras", "tone":"ligero y juguetón", "avoid":["chillidos", "tartamudeo usado como burla", "habla ininteligible"]},
-  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["volar", "aterrizar", "llevar una cinta luminosa", "mirar desde arriba", "tropezar sin daño", "participar en La Ronda de las Ideas"]},
-  "promptTemplate": "Biri, ave-nube infantil original, cuerpo ovalado de plumaje azul celeste suave y volumétrico, alas amplias redondeadas con puntas coral, cresta en remolino, pico pequeño y ojos grandes con cejas y párpados expresivos, animación 3D estilizada premium para preescolar, movimiento aéreo con anticipación y rebote, iluminación cinematográfica cálida y silueta energética",
-  "negativePrompt": ["fotorrealismo", "ave anatómicamente realista", "pico afilado", "garras", "tormenta amenazante", "ojos agresivos", "rostro rígido", "texto o logotipos", "personajes de franquicias existentes"]
+  "designSheet": {"requiredViews":["front","threeQuarter"], "actionPoses":["correr", "volar", "aterrizar", "llevar un mensaje", "tropezar sin daño", "celebrar"]},
+  "promptTemplate": "Biri exactamente según Character Design v4: ave mensajera infantil azul, cuerpo ovalado de plumaje suave, vientre celeste, cuello fino, alas pequeñas expresivas, cresta naranja de tres plumas, pico corto naranja y patas finas naranjas. Animación 3D estilizada cinematográfica para preescolar, movimiento rápido y alegre, proporciones idénticas a la referencia canónica.",
+  "negativePrompt": ["ave realista", "cresta en remolino azul", "puntas coral en alas", "pico afilado", "garras amenazantes", "tormenta", "ojos agresivos", "fotorrealismo", "texto o logotipos", "personajes de franquicias existentes", "clones o duplicados"]
 }

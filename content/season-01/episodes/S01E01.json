@@ -23,8 +23,14 @@
   "storyboard": "content/season-01/storyboards/S01E01.storyboard.json",
   "keyframeSet": "content/season-01/keyframes/S01E01.keyframes.json",
   "productionProof": "content/season-01/proofs/S01E01-theft-proof.json",
+  "canonicalDesign": "public/lumo-kids/canon/Character-Design-v4.png",
+  "archivedRejectedTeaser": "content/production/S01E01-canonical-teaser-v4.json",
+  "microepisodePlan": "content/production/S01E01-microepisode-plan-v1.json",
+  "protectedJobQueue": "content/production/jobs/S01E01-proof-v1.json",
+  "productionBudget": "content/production/budget-v1.json",
   "publication": {
     "youtubeMadeForKids": true,
-    "humanApproved": false
+    "humanApproved": false,
+    "releaseGate": "content/production/youtube-release-gate-v1.json"
   }
 }

@@ -1,0 +1,42 @@
+{
+  "id": "S01E01-CANONICAL-TEASER-V4",
+  "episodeCode": "S01E01",
+  "version": 4,
+  "title": "Lumo Kids — La luz prestada — teaser canónico",
+  "status": "rejected-archived",
+  "publishable": false,
+  "asset": "/lumo-kids/episodes/S01E01/Lumo-Kids-La-Luz-Prestada-Canon-Teaser-v4.mp4",
+  "sha256": "323f14344ee14d5806723f3f4e20c94532c67138d81fff7569b760ccdf446395",
+  "durationSeconds": 60.096,
+  "resolution": "1280x720",
+  "frameRate": 24,
+  "videoCodec": "h264 High",
+  "audioCodec": "aac LC stereo 48000 Hz",
+  "canonicalDesign": "/lumo-kids/canon/Character-Design-v4.png",
+  "editorialMethod": "Selección y montaje de clips ya pagados, transiciones, nivelado sonoro y cierre construido con recortes exactos del Character Design v4.",
+  "sourceClips": [
+    {"file":"S01E01-S01-Bienvenidos-a-Brillavalle-approved-rescue-v1.mp4", "durationSeconds":15.093, "use":"apertura de Brillavalle"},
+    {"file":"video-43edf48b3a75420587ec4840556c4049.mp4", "durationSeconds":15.093, "use":"preparativos"},
+    {"file":"video-1bde976ca4294645aa3b99c67c7fc788.mp4", "durationSeconds":15.104, "use":"incidente del Corazón de Luz"},
+    {"file":"video-18cb4668fe3f4bea8d1038ab4a2ecf5d.mp4", "durationSeconds":5.04, "use":"decisión de Lumo"},
+    {"file":"video-2f8d99fe7d6a44df83b94cb5234882d9.mp4", "durationSeconds":5.09, "use":"resolución en la Fuente"},
+    {"file":"/lumo-kids/canon/reference/LUMO-KIDS-end-card-v4.png", "durationSeconds":5, "use":"cierre canónico exacto"}
+  ],
+  "budget": {
+    "incrementalCost": 0,
+    "remainingBalanceAtRejection": 20.67,
+    "manifest": "content/production/budget-v1.json"
+  },
+  "qualityChecks": {
+    "decodeErrors": 0,
+    "audioPeakDb": -3.9,
+    "humanApprovalRequired": false,
+    "ownerDecision": "rejected-does-not-meet-project-objectives"
+  },
+  "scope": "Prueba editorial archivada; no se publica, no se usa como canon y no representa el microepisodio aprobado.",
+  "knownLimitations": [
+    "Los clips generados previamente presentan variaciones menores entre planos.",
+    "Puede haber habitantes de fondo parecidos al reparto; no deben usarse como base para nuevas generaciones.",
+    "Solo el cierre y las referencias v4 son reproducciones exactas del Character Design maestro."
+  ]
+}

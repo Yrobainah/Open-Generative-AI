@@ -122,6 +122,9 @@ export default function LumoKidsStudio({ onOpenStudio }) {
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60 sm:text-[15px]">
                 Centro de producción de <span className="font-semibold text-white/85">{season.series}</span>. Aquí organizamos la historia, el arte, las voces, la animación y la revisión humana de cada capítulo.
               </p>
+              <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-amber-300/20 bg-amber-300/[0.08] px-3 py-1.5 text-[11px] font-black text-amber-100">
+                Canon v4 bloqueado · 20,67 USD confirmados · reserva 4,23 USD
+              </div>
             </div>
 
             <div className="grid grid-cols-3 gap-2 sm:gap-3">
@@ -139,6 +142,17 @@ export default function LumoKidsStudio({ onOpenStudio }) {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="mt-5 overflow-hidden rounded-3xl border border-white/[0.08] bg-[#07111c]">
+          <div className="flex items-center justify-between border-b border-white/[0.07] px-5 py-4">
+            <div>
+              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-cyan-200/60">Fuente visual de verdad</p>
+              <h2 className="mt-1 text-sm font-black">Character Design canónico v4</h2>
+            </div>
+            <span className="rounded-full bg-emerald-300/10 px-3 py-1 text-[10px] font-black text-emerald-100">APROBADO</span>
+          </div>
+          <img src="/lumo-kids/canon/Character-Design-v4.png" alt="Character Design canónico de Lumo Kids" className="h-auto w-full" />
         </section>
 
         <div className="mt-5 grid flex-1 gap-5 xl:grid-cols-[340px_minmax(0,1fr)]">

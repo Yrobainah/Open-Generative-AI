@@ -1,21 +1,23 @@
 {
   "id": "nublo",
   "name": "Nublo",
-  "role": "Antagonista travieso y coleccionista de destellos que desea sentirse incluido",
-  "characterType": "criatura nocturna original de niebla y terciopelo",
+  "role": "Criatura nocturna observadora que aprende a confiar y compartir",
+  "characterType": "criatura felina-zorruna nocturna de niebla violeta",
   "agePresentation": "equivalente emocional a 7 años",
-  "personality": ["ingenioso", "teatral", "solitario", "impaciente", "capaz de reparar el daño"],
+  "canonicalSourceVersion": 4,
+  "canonicalAsset": "/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+  "personality": ["observador", "sensible", "leal", "reservado", "capaz de reparar el daño"],
   "visual": {
-    "silhouette": "cuerpo pequeño y redondeado con orejas curvas como medias lunas y una cola de niebla en espiral",
-    "bodyShape": "cabeza grande, torso compacto, brazos finos muy expresivos y pies blandos; apariencia abrazable, nunca amenazante",
-    "face": "ojos grandes color ámbar, cejas móviles y sonrisa ladeada que cambia a vulnerabilidad cuando se siente escuchado",
-    "palette": {"primary":"#3D3475","secondary":"#8076C9","accent":"#FFB84A","eyes":"#F7D37A"},
-    "signatureFeatures": ["marca de media luna en la frente", "cola de niebla que revela su estado de ánimo", "pequeña mochila-linterna para guardar destellos", "bordes iluminados en violeta suave"],
-    "scaleRelativeToLumo": 1.05
+    "silhouette": "criatura azul marino con cabeza grande, orejas triangulares altas y cola de niebla violeta",
+    "bodyShape": "torso compacto de pelaje suave, brazos finos, patas redondas y correa cruzada con farol",
+    "face": "ojos grandes ámbar, mechón frontal azul oscuro, cejas móviles y hocico corto",
+    "palette": {"primary":"#172E55","secondary":"#2F4F79","accent":"#8E50BC","eyes":"#E49A28"},
+    "signatureFeatures": ["orejas triangulares grandes", "ojos ámbar", "mechón frontal", "correa cruzada con farol y cola de niebla violeta"],
+    "scaleRelativeToLumo": 1.06
   },
   "expressions": ["curiosidad furtiva", "orgullo teatral", "sorpresa", "frustración controlada", "soledad", "duda", "arrepentimiento seguro", "alegría al sentirse incluido"],
   "voice": {"register":"infantil ligeramente grave", "pace":"pausado y teatral", "tone":"misterioso pero amable", "avoid":["voz monstruosa", "amenazas", "gritos agresivos", "sarcasmo cruel"]},
-  "designSheet": {"requiredViews":["front","threeQuarter","side","back"], "actionPoses":["esconderse tras una farola", "llevar la fuente de luz", "hacer una reverencia", "sorprenderse", "devolver un objeto", "participar en La Ronda de las Ideas"]},
-  "promptTemplate": "Nublo, criatura nocturna infantil original de cuerpo pequeño y redondeado, pelaje aterciopelado azul violeta, ojos grandes ámbar, orejas curvas como medias lunas, cola de niebla expresiva y mochila-linterna, animación 3D estilizada premium para preescolar, materiales suaves, iluminación cinematográfica cálida, actuación facial clara, apariencia traviesa pero segura y abrazable",
-  "negativePrompt": ["terror", "colmillos", "garras", "ojos rojos", "anatomía realista", "violencia", "oscuridad que oculte el rostro", "personajes de franquicias existentes", "texto o logotipos"]
+  "designSheet": {"requiredViews":["front","threeQuarter"], "actionPoses":["observar desde lejos", "llevar el farol", "esconderse", "sorprenderse", "devolver un objeto", "aceptar ayuda"]},
+  "promptTemplate": "Nublo exactamente según Character Design v4: criatura nocturna infantil felina-zorruna, pelaje azul marino suave, cabeza grande, orejas triangulares altas, mechón frontal, ojos grandes ámbar, correa cruzada con un farol pequeño y cola de niebla violeta. Animación 3D estilizada cinematográfica para preescolar, borde violeta suave y proporciones idénticas a la referencia canónica.",
+  "negativePrompt": ["orejas redondas", "orejas de media luna", "mochila grande", "marca de media luna", "lobo agresivo", "colmillos", "garras", "ojos rojos", "oscuridad que oculte el rostro", "texto o logotipos", "personajes de franquicias existentes", "clones o duplicados"]
 }

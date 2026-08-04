@@ -1,0 +1,27 @@
+{
+  "id": "LUMO-CANON-LOCK-V4",
+  "version": 4,
+  "status": "locked",
+  "approvedBy": "Yariel Robaina",
+  "approvedAt": "2026-08-03",
+  "master": {
+    "path": "public/lumo-kids/canon/Character-Design-v4.png",
+    "sha256": "a3163c83e64bdae0ace3afa99046a5cbd0022cdfbfdd5e76721753980912e1db"
+  },
+  "world": {
+    "id": "brillavalle",
+    "path": "public/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+    "sha256": "d035e6ea198bc79cf685683cf1a7ca841d9f3391becec703d08e2612b3fda951"
+  },
+  "characters": [
+    {"id":"lumo","path":"public/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png","sha256":"d799d737516c951bd9d6bbdd44b0509aadc05e188743ad3c31f4b7ef556289bb"},
+    {"id":"nara","path":"public/lumo-kids/canon/characters/CHAR-NARA-master-v4.png","sha256":"214591e85d0c51bf3241f629d02bb069a83bce2a0d6bbd2d5c32c15fcef6e775"},
+    {"id":"tuno","path":"public/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png","sha256":"e052238bc6aaa41b5a236c1b5725ced4c1f47551b249f6381f031a42cdbfec73"},
+    {"id":"biri","path":"public/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png","sha256":"ead78fc6f7768f647a1b9289cc50845b95cef901c64aa97675a568c435042920"},
+    {"id":"pompon","path":"public/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png","sha256":"c49fcb2c559704daeec0356f544a285d5c8e34206245960509b90a747d2a2a76"},
+    {"id":"nublo","path":"public/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png","sha256":"df6393efbab3a16a5532e50cc7598c01909407161144b76959b71766ab3e7055"}
+  ],
+  "permittedViews": ["front", "threeQuarter"],
+  "blockedViewsUntilApproved": ["side", "back"],
+  "mutationPolicy": "stop-production"
+}
