@@ -34,7 +34,13 @@
     "package:linux:deb": "node scripts/package-linux-deb.js",
     "package:linux:deb:arm64": "node scripts/package-linux-deb.js --arch arm64",
     "package:linux:deb:x64": "node scripts/package-linux-deb.js --arch x64",
-    "electron:build:all": "vite build && electron-builder --mac --win --linux"
+    "electron:build:all": "vite build && electron-builder --mac --win --linux",
+    "kids:validate": "node scripts/validate-kids-content.mjs",
+    "kids:graph": "graphify .",
+    "kids:graph:canonical": "node scripts/build-lumo-canonical-graph.mjs",
+    "kids:test": "node --test tests/lumo-production.test.mjs",
+    "kids:setup:windows": "scripts\\setup-kids-studio.cmd",
+    "kids:setup:unix": "bash scripts/setup-kids-studio.sh"
   },
   "build": {
     "appId": "ai.generative.open",

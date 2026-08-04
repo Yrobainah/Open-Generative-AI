@@ -1,0 +1,168 @@
+{
+  "id": "CAST-SECONDARY-CITIZENS-001",
+  "version": 4,
+  "status": "canonical",
+  "canonicalSourceVersion": 4,
+  "canonicalAsset": "/lumo-kids/canon/reference/CAST-secondary-v4.png",
+  "futureAntagonistsAsset": "/lumo-kids/canon/reference/CAST-future-antagonists-v4.png",
+  "purpose": "Personajes secundarios y antagonistas futuros definidos por Character Design v4, más habitantes suplementarios con siluetas distintas.",
+  "globalRules": {
+    "allAnimalLike": true,
+    "foregroundCitizensMustUseCanonicalDesign": true,
+    "backgroundCrowdsMayUseSimplifiedVariants": true,
+    "backgroundCrowdsMustStillAvoidPrimarySilhouettes": true,
+    "maxNamedSecondaryCitizensInOneFifteenSecondSection": 5,
+    "noSecondaryDialogueUnlessDeclaredBySection": true
+  },
+  "antiCloneRules": [
+    "No secondary citizen may have Lumo's golden glowing body, branched antennae and cyan chest heart.",
+    "No secondary citizen may copy Nara's all-green leafy body silhouette.",
+    "No secondary raccoon may copy Tuno's exact face, bronze goggles and utility outfit.",
+    "No secondary bird may combine Biri's blue body with orange crest feathers.",
+    "No secondary creature may copy Pompón's round purple fluffy silhouette.",
+    "No secondary fox or wolf may combine Nublo's blue-violet fur, amber eyes and mist tail.",
+    "Do not recolor a principal character and present it as a citizen.",
+    "Do not duplicate one citizen repeatedly to create a crowd."
+  ],
+  "citizens": [
+    {
+      "id": "SEC-LIRA-RABBIT-001",
+      "name": "Lira",
+      "species": "coneja",
+      "role": "artista de faroles",
+      "silhouette": "orejas largas asimétricas, cuerpo esbelto y cola pequeña",
+      "palette": ["crema", "coral", "azul petróleo"],
+      "signatureAccessory": "delantal coral con pinceles redondos",
+      "notLike": ["Lumo", "Nara"]
+    },
+    {
+      "id": "SEC-TORI-FOX-001",
+      "name": "Tori",
+      "species": "zorro",
+      "role": "panadero",
+      "silhouette": "hocico corto, orejas amplias y cola de pelo sólido",
+      "palette": ["naranja tostado", "crema", "verde oliva"],
+      "signatureAccessory": "gorro de panadero verde oliva",
+      "notLike": ["Nublo"]
+    },
+    {
+      "id": "SEC-MILO-RACCOON-001",
+      "name": "Milo",
+      "species": "mapache",
+      "role": "músico",
+      "silhouette": "mapache compacto de máscara clara, orejas redondas y postura musical relajada",
+      "palette": ["gris carbón", "crema", "rojo ladrillo"],
+      "signatureAccessory": "tambor pequeño de madera",
+      "notLike": ["Tuno"]
+    },
+    {
+      "id": "SEC-SILA-SQUIRREL-001",
+      "name": "Sila",
+      "species": "ardilla",
+      "role": "científica",
+      "silhouette": "cuerpo pequeño y cola sólida muy curva",
+      "palette": ["castaño rojizo", "amarillo mantequilla", "turquesa oscuro"],
+      "signatureAccessory": "bandolera con piezas de madera, sin gafas",
+      "notLike": ["Tuno", "Nublo"]
+    },
+    {
+      "id": "SEC-OLMO-OWL-001",
+      "name": "Olmo",
+      "species": "búho",
+      "role": "bibliotecario",
+      "silhouette": "cabeza circular plana, cejas de pluma y alas cortas",
+      "palette": ["marrón cacao", "beige", "verde salvia"],
+      "signatureAccessory": "bolsillo de libros de tela",
+      "notLike": ["Biri"]
+    },
+    {
+      "id": "SEC-FLO-FLAMINGO-001",
+      "name": "Flo",
+      "species": "flamenco",
+      "role": "jardinera",
+      "silhouette": "cuello largo curvo y patas finas",
+      "palette": ["rosa suave", "magenta", "verde menta"],
+      "signatureAccessory": "regadera con forma de hoja",
+      "notLike": ["Biri", "Nara"]
+    },
+    {
+      "id": "SEC-NELA-OTTER-001",
+      "name": "Nela",
+      "species": "nutria",
+      "role": "vendedora de bebidas de fruta",
+      "silhouette": "cuerpo alargado, hocico redondo y cola lisa",
+      "palette": ["marrón miel", "crema", "azul marino"],
+      "signatureAccessory": "bandeja circular de madera",
+      "notLike": ["Tuno"]
+    },
+    {
+      "id": "SEC-BRUN-MOLE-001",
+      "name": "Brun",
+      "species": "topo",
+      "role": "carpintero",
+      "silhouette": "cuerpo compacto, manos anchas y nariz rosada",
+      "palette": ["gris tierra", "rosa", "azul añil"],
+      "signatureAccessory": "cinturón de madera sin gafas",
+      "notLike": ["Tuno", "Pompón"]
+    },
+    {
+      "id": "SEC-ABUELA-MARA-GOAT-001",
+      "name": "Mara",
+      "species": "cabra anciana",
+      "role": "guardiana de tradiciones",
+      "silhouette": "cuernos cortos redondeados y postura erguida",
+      "palette": ["blanco cálido", "lavanda pálido", "vino"],
+      "signatureAccessory": "chal tejido color vino",
+      "notLike": ["Pompón", "Nara"]
+    },
+    {
+      "id": "SEC-TIMA-TURTLE-001",
+      "name": "Tima",
+      "species": "tortuga",
+      "role": "farolera",
+      "silhouette": "caparazón ovalado bajo y cuello corto",
+      "palette": ["verde musgo", "terracota", "amarillo suave"],
+      "signatureAccessory": "farol en bastón corto",
+      "notLike": ["Nara"]
+    },
+    {
+      "id": "SEC-HEDGEHOG-FAMILY-001",
+      "name": "Familia Púa",
+      "species": "erizos",
+      "role": "familia visitante",
+      "silhouette": "tres alturas distintas, espinas redondeadas marrón claro",
+      "palette": ["beige", "marrón avellana", "azul cielo", "naranja suave"],
+      "signatureAccessory": "bufandas de tres colores distintos",
+      "notLike": ["Pompón"]
+    },
+    {
+      "id": "SEC-DEER-SIBLINGS-001",
+      "name": "Ciro y Cora",
+      "species": "ciervos jóvenes",
+      "role": "ayudantes de guirnaldas",
+      "silhouette": "dos cuerpos altos y delgados, uno con astas pequeñas y otro sin astas",
+      "palette": ["arena", "marrón claro", "verde jade", "coral"],
+      "signatureAccessory": "cintas de colores en el cuello",
+      "notLike": ["Lumo", "Nara", "Nublo"]
+    }
+  ],
+  "futureAntagonists": [
+    {"id":"ANT-SOMBRO-WOLF-001", "name":"Sombro", "species":"lobo de la niebla", "role":"desorientado, no malvado", "signature":"pelaje negro azulado, ojos ámbar y niebla baja"},
+    {"id":"ANT-GRUMM-BADGER-001", "name":"Grumm", "species":"tejón", "role":"gruñón desorientado", "signature":"cuerpo ancho gris pardo, cejas fuertes y hocico crema"},
+    {"id":"ANT-VEXO-FOX-001", "name":"Vexo", "species":"zorro", "role":"astuto desorientado", "signature":"pelaje naranja oscuro, pecho crema y mirada lateral"},
+    {"id":"ANT-DRYLLA-OWL-001", "name":"Drylla", "species":"lechuza", "role":"fría y distante", "signature":"plumaje gris azulado, ojos ámbar y penachos altos"},
+    {"id":"ANT-GLOOM-CROW-001", "name":"Gloom", "species":"cuervo", "role":"cuervo del olvido", "signature":"plumaje azul negro, gran copete y ojos ámbar"}
+  ],
+  "crowdPromptFragment": "a small varied crowd of canonical Brillavalle woodland citizens with clearly different species, heights, silhouettes, palettes and accessories; Lira the rabbit artist, Tori the fox baker, Milo the raccoon musician, Sila the squirrel scientist, Olmo the owl librarian and Flo the flamingo gardener; no repeated clones and no resemblance to the six principal characters",
+  "negativePrompt": [
+    "crowd made from recolored main characters",
+    "multiple Tuno copies",
+    "multiple blue birds with orange crests",
+    "multiple purple fluffy round creatures",
+    "golden antenna creatures",
+    "leaf-bodied green citizens",
+    "blue-violet mist-tail foxes",
+    "identical repeated extras",
+    "human villagers"
+  ]
+}

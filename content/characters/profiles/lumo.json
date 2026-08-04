@@ -1,0 +1,24 @@
+{
+  "id": "lumo",
+  "name": "Lumo",
+  "role": "Protagonista curioso y mediador del grupo",
+  "characterType": "criatura luminosa original de energía cálida",
+  "agePresentation": "equivalente emocional a 6 años",
+  "canonicalSourceVersion": 4,
+  "canonicalAsset": "/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+  "personality": ["curioso", "empático", "valiente", "optimista", "capaz de reconocer errores"],
+  "visual": {
+    "silhouette": "criatura pequeña de cabeza grande, cuerpo redondeado y dos antenas luminosas ramificadas",
+    "bodyShape": "volumen compacto, suave y abrazable; manos de cuatro dedos, pies redondos y postura abierta",
+    "face": "ojos enormes con iris turquesa, cejas y párpados muy expresivos, boca flexible y mejillas cálidas",
+    "palette": {"primary":"#FFD34E","secondary":"#FFF2A6","accent":"#66DDF2","eyes":"#087986"},
+    "signatureFeatures": ["dos antenas luminosas ramificadas", "corazón azul-cian brillante en el pecho", "halo dorado controlado", "ojos turquesa enormes"],
+    "scaleRelativeToLumo": 1
+  },
+  "expressions": ["feliz", "sorprendido", "pensativo", "triste", "asustado de forma segura", "orgulloso", "curioso", "determinado", "cansado", "ilusionado"],
+  "voice": {"register":"infantil neutro", "pace":"ágil pero claro", "tone":"cálido y curioso", "avoid":["voz chillona", "sarcasmo adulto", "habla de bebé exagerada"]},
+  "designSheet": {"requiredViews":["front","threeQuarter"], "actionPoses":["curiosidad", "duda", "resolución", "alegría", "compartir luz", "abrazar"]},
+  "modelSheet": {"manifest":"content/characters/model-sheets/lumo-v4.json", "asset":"/lumo-kids/canon/Character-Design-v4.png", "version":4},
+  "promptTemplate": "Lumo exactamente según Character Design v4: criatura luminosa infantil pequeña, cuerpo redondeado amarillo dorado de luz aterciopelada, cabeza grande, dos antenas luminosas ramificadas, ojos enormes turquesa con cejas y párpados expresivos, manos redondeadas y corazón azul-cian brillante en el pecho. Animación 3D estilizada cinematográfica para preescolar, halo cálido que no oculta el rostro, silueta y proporciones idénticas a la referencia canónica.",
+  "negativePrompt": ["estrella de cinco puntas", "corazón dorado", "ojos azul oscuro", "antenas simples sin ramas", "fotorrealismo", "anatomía humana", "puntas afiladas", "halo que oculte el rostro", "texto o logotipos", "personajes de franquicias existentes", "clones o duplicados"]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "lumo-model-sheet-v4",
+  "characterId": "lumo",
+  "version": 4,
+  "status": "approved",
+  "sourceType": "character-design-board",
+  "asset": "/lumo-kids/canon/Character-Design-v4.png",
+  "detailAssets": [
+    "/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+    "/lumo-kids/canon/reference/LUMO-expressions-v4.png",
+    "/lumo-kids/canon/reference/LUMO-performance-v4.png"
+  ],
+  "format": "png",
+  "canvas": {"width": 1535, "height": 1024},
+  "requiredViews": ["front", "threeQuarter"],
+  "pendingViews": ["side", "back"],
+  "expressions": ["feliz", "sorprendido", "pensativo", "triste", "asustado", "orgulloso", "curioso", "determinado", "cansado", "ilusionado"],
+  "canonicalInvariants": [
+    "criatura luminosa infantil de cuerpo redondeado, no estrella de cinco puntas",
+    "dos antenas luminosas ramificadas",
+    "ojos enormes con iris turquesa",
+    "corazón azul-cian brillante en el pecho",
+    "cuerpo amarillo dorado con halo cálido controlado",
+    "silueta, proporciones y materiales idénticos a Character Design v4"
+  ],
+  "generation": {
+    "positivePrompt": "Lumo exactamente según Character Design v4: criatura luminosa infantil pequeña, cuerpo redondeado amarillo dorado de luz aterciopelada, cabeza grande, dos antenas luminosas ramificadas, ojos enormes turquesa y corazón azul-cian brillante en el pecho. Mantener sin reinterpretar la silueta, proporciones, paleta y material de la referencia canónica. Animación 3D estilizada cinematográfica para preescolar.",
+    "negativePrompt": "estrella de cinco puntas, corazón dorado, ojos azul oscuro, antenas simples, rediseño, fotorrealismo, anatomía humana, puntas afiladas, halo que oculte el rostro, extremidades extra, duplicados, texto, logotipos, marca de agua, personajes de franquicias existentes",
+    "aspectRatio": "3:2",
+    "recommendedResolution": "1536x1024",
+    "referenceStrength": 0.95
+  },
+  "approval": {
+    "humanApproved": true,
+    "approvedBy": "Yariel Robaina",
+    "approvedAt": "2026-08-03"
+  }
+}

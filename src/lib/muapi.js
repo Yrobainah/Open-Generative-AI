@@ -1,5 +1,14 @@
 import { getModelById, getVideoModelById, getI2IModelById, getI2VModelById, getV2VModelById, getLipSyncModelById } from './models.js';
 
+export class MuapiTerminalJobError extends Error {
+    constructor(status, message) {
+        super(message);
+        this.name = 'MuapiTerminalJobError';
+        this.status = status;
+        this.terminal = true;
+    }
+}
+
 export class MuapiClient {
     constructor() {
         // Ideally user provides this in settings
@@ -10,6 +19,93 @@ export class MuapiClient {
         const key = window.__MUAPI_KEY__ || localStorage.getItem('muapi_key');
         if (!key) throw new Error('API Key missing. Please set it in Settings.');
         return key;
+    }
+
+    async getBalance(key = this.getKey()) {
+        const response = await fetch(`${this.baseUrl}/api/v1/account/balance`, {
+            headers: { 'x-api-key': key }
+        });
+        if (!response.ok) {
+            const detail = await response.text();
+            throw new Error(`Balance request failed: ${response.status} - ${detail.slice(0, 100)}`);
+        }
+        const data = await response.json();
+        const balance = Number(data.balance);
+        if (!Number.isFinite(balance)) throw new Error('MuAPI returned an invalid live balance.');
+        return balance;
+    }
+
+    async quoteGeneration(model, payload) {
+        const modelName = String(model || '').replace(/^\/?api\/v1\//, '').replace(/^\//, '');
+        if (!modelName) throw new Error('A model endpoint is required for a live quote.');
+
+        const lookup = await fetch(`${this.baseUrl}/api/v1/models/${encodeURIComponent(modelName)}`);
+        if (!lookup.ok) {
+            const detail = await lookup.text();
+            throw new Error(`Pricing lookup failed: ${lookup.status} - ${detail.slice(0, 100)}`);
+        }
+        const pricing = await lookup.json();
+        if (!pricing.dynamic_pricing) {
+            const fixedCost = Number(pricing.cost);
+            if (!Number.isFinite(fixedCost)) throw new Error('MuAPI returned an invalid fixed price.');
+            return { model: modelName, cost: fixedCost, currency: pricing.cost_currency || 'USD', dynamic: false };
+        }
+
+        const estimatePath = pricing.estimate_endpoint || `/api/v1/models/${encodeURIComponent(modelName)}/estimate-cost`;
+        const estimate = await fetch(`${this.baseUrl}${estimatePath.startsWith('/') ? estimatePath : `/${estimatePath}`}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        if (!estimate.ok) {
+            const detail = await estimate.text();
+            throw new Error(`Pricing estimate failed: ${estimate.status} - ${detail.slice(0, 100)}`);
+        }
+        const quoted = await estimate.json();
+        const cost = Number(quoted.cost);
+        if (!Number.isFinite(cost)) throw new Error('MuAPI returned an invalid dynamic price.');
+        return { model: modelName, cost, currency: quoted.currency || 'USD', dynamic: true, strategy: quoted.cost_strategy };
+    }
+
+    async preflightPaidRequest(model, payload, budgetPolicy, key = this.getKey()) {
+        if (!budgetPolicy) return null;
+        if (budgetPolicy.activeRequestId) {
+            throw new Error(`Another protected request is active: ${budgetPolicy.activeRequestId}`);
+        }
+        if (typeof budgetPolicy.persistRequestId !== 'function') {
+            throw new Error('Protected production requires a request_id persistence callback before purchase.');
+        }
+
+        const [liveBalance, quote] = await Promise.all([
+            this.getBalance(key),
+            this.quoteGeneration(model, payload),
+        ]);
+        const maximumPerGeneration = Number(budgetPolicy.maximumPerGeneration);
+        const stageCap = Number(budgetPolicy.stageCap);
+        const spentInStage = Number(budgetPolicy.spentInStage || 0);
+        const protectedReserve = Number(budgetPolicy.protectedReserve);
+        const values = [maximumPerGeneration, stageCap, spentInStage, protectedReserve];
+        if (values.some((value) => !Number.isFinite(value) || value < 0)) {
+            throw new Error('Protected production budget policy is incomplete.');
+        }
+        if (quote.cost > maximumPerGeneration) throw new Error(`Quote ${quote.cost} exceeds the per-generation cap ${maximumPerGeneration}.`);
+        if (spentInStage + quote.cost > stageCap) throw new Error(`Quote ${quote.cost} exceeds the remaining stage cap.`);
+        if (liveBalance - quote.cost < protectedReserve) throw new Error(`Quote ${quote.cost} would breach the protected reserve ${protectedReserve}.`);
+
+        const preflight = { liveBalance, quote, spentInStage, stageCap, protectedReserve, checkedAt: new Date().toISOString() };
+        if (typeof budgetPolicy.onPreflight === 'function') budgetPolicy.onPreflight(preflight);
+        return preflight;
+    }
+
+    getResponseCost(response, payload = {}) {
+        const headerCost = response.headers.get('X-MuAPI-Cost-USD');
+        const headerBalance = response.headers.get('X-Account-Balance');
+        const bodyCost = payload.cost?.amount_usd;
+        return {
+            amountUsd: Number.isFinite(Number(headerCost)) ? Number(headerCost) : Number(bodyCost),
+            balanceAfter: Number.isFinite(Number(headerBalance)) ? Number(headerBalance) : null,
+            refunded: Boolean(payload.cost?.refunded),
+        };
     }
 
     /**
@@ -154,12 +250,13 @@ export class MuapiClient {
                     return data;
                 }
 
-                if (status === 'failed' || status === 'error') {
-                    throw new Error(`Generation failed: ${data.error || 'Unknown error'}`);
+                if (status === 'failed' || status === 'error' || status === 'cancelled' || status === 'canceled') {
+                    throw new MuapiTerminalJobError(status, `Generation ${status}: ${data.error || 'Unknown error'}`);
                 }
 
                 // Otherwise (processing, pending, etc.) keep polling
             } catch (error) {
+                if (error?.terminal) throw error;
                 if (attempt === maxAttempts) throw error;
                 console.warn('[Muapi] Poll attempt failed, retrying...', error.message);
             }
@@ -353,6 +450,8 @@ export class MuapiClient {
         if (params.mode) finalPayload.mode = params.mode;
         if (params.name) finalPayload.name = params.name;
 
+        const preflight = await this.preflightPaidRequest(endpoint, finalPayload, params.budgetPolicy, key);
+
         console.log('[Muapi] I2V Request:', url);
         console.log('[Muapi] I2V Payload:', finalPayload);
 
@@ -369,17 +468,29 @@ export class MuapiClient {
             }
 
             const submitData = await response.json();
+            const submitCost = this.getResponseCost(response, submitData);
             console.log('[Muapi] I2V Submit Response:', submitData);
 
             const requestId = submitData.request_id || submitData.id;
             if (!requestId) return submitData;
 
+            if (params.budgetPolicy) params.budgetPolicy.persistRequestId(requestId);
             if (params.onRequestId) params.onRequestId(requestId);
 
             const result = await this.pollForResult(requestId, key, 900, 2000);
             const videoUrl = result.outputs?.[0] || result.url || result.output?.url;
             console.log('[Muapi] I2V Result URL:', videoUrl);
-            return { ...result, url: videoUrl };
+            return {
+                ...result,
+                url: videoUrl,
+                muapiReceipt: {
+                    requestId,
+                    quotedCost: preflight?.quote?.cost ?? null,
+                    actualCost: Number(result.cost?.amount_usd ?? submitCost.amountUsd),
+                    balanceAfter: submitCost.balanceAfter,
+                    refunded: Boolean(result.cost?.refunded ?? submitCost.refunded),
+                }
+            };
         } catch (error) {
             console.error('Muapi I2V Error:', error);
             throw error;

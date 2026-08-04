@@ -1,0 +1,25 @@
+{
+  "id": "LUMO-TOOL-POLICY-V1",
+  "version": 1,
+  "caveman": {
+    "mode": "lite",
+    "allowedPurpose": ["technical-status", "non-canonical-implementation-notes"],
+    "forbiddenCommands": ["compress", "shrink", "rewrite"],
+    "forbiddenTargets": ["docs/LUMO_VISUAL_BIBLE.md", "content/characters", "content/continuity", "content/season-01", "content/production"]
+  },
+  "graphify": {
+    "mode": "augment-only",
+    "canonicalGraph": "content/continuity/lumo-canonical-graph-v1.json",
+    "authority": "derived",
+    "mayApproveGeneration": false,
+    "mayRedefineCanon": false,
+    "requiredInput": "validated-deterministic-graph"
+  },
+  "openGenerativeAi": {
+    "authority": "production-runtime",
+    "paidProvider": "MuAPI",
+    "requiresLiveBalance": true,
+    "requiresExactQuote": true,
+    "maximumConcurrentPaidRequests": 1
+  }
+}

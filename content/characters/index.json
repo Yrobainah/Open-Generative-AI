@@ -1,0 +1,19 @@
+{
+  "series": "Lumo Kids",
+  "version": 4,
+  "visualBible": "docs/LUMO_VISUAL_BIBLE.md",
+  "canonicalSource": {
+    "asset": "/lumo-kids/canon/Character-Design-v4.png",
+    "repositoryFile": "public/lumo-kids/canon/Character-Design-v4.png",
+    "sha256": "a3163c83e64bdae0ace3afa99046a5cbd0022cdfbfdd5e76721753980912e1db",
+    "approvedAt": "2026-08-03"
+  },
+  "characters": [
+    {"id":"lumo","name":"Lumo","profile":"content/characters/profiles/lumo.json"},
+    {"id":"nara","name":"Nara","profile":"content/characters/profiles/nara.json"},
+    {"id":"tuno","name":"Tuno","profile":"content/characters/profiles/tuno.json"},
+    {"id":"biri","name":"Biri","profile":"content/characters/profiles/biri.json"},
+    {"id":"pompon","name":"Pompón","profile":"content/characters/profiles/pompon.json"},
+    {"id":"nublo","name":"Nublo","profile":"content/characters/profiles/nublo.json"}
+  ]
+}

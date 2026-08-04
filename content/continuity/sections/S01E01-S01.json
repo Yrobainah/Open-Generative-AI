@@ -1,0 +1,113 @@
+{
+  "id": "S01E01-S01",
+  "episodeId": "S01E01",
+  "sectionNumber": 1,
+  "durationSeconds": 15,
+  "status": "approved-rescue-no-new-generation",
+  "sectionMode": "environment-only-editorial-rescue",
+  "title": "Bienvenidos a Brillavalle",
+  "storyPurpose": "Presentar el bosque mágico, Brillavalle, la Fiesta de las Mil Luces, la fuente y el Corazón de Luz sin mostrar protagonistas identificables ni provocar rediseños.",
+  "references": {
+    "storyboardAsset": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+    "castSheetAsset": "/lumo-kids/canon/CAST-main-six-v4.png",
+    "castSheetUsage": "future-sections-only-not-sent-in-S01",
+    "environmentSheetAssets": [
+      "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "/lumo-kids/episodes/S01E01/S01E01-S01-clean-anchor-v1.jpg"
+    ],
+    "propSheetAssets": [],
+    "environmentIds": ["ENV-BRILLAVALLE-PLAZA-001"],
+    "propIds": ["PROP-FOUNTAIN-OF-LIGHT-001", "PROP-HEART-OF-LIGHT-001"],
+    "voiceBibleId": "VOICE-BIBLE-LUMO-KIDS-001",
+    "previousSectionAsset": null,
+    "approvedResultAsset": "/lumo-kids/episodes/S01E01/S01E01-S01-approved-rescue-v1.mp4",
+    "deliveryMode": "repository-file-or-local-indexeddb-import"
+  },
+  "charactersPresent": [],
+  "charactersForbidden": ["lumo", "nara", "tuno", "biri", "pompon", "nublo"],
+  "secondaryCastAllowed": [
+    "SEC-LIRA-RABBIT-001",
+      "SEC-MILO-RACCOON-001",
+    "SEC-OLMO-OWL-001",
+      "SEC-TORI-FOX-001",
+      "SEC-SILA-SQUIRREL-001",
+      "SEC-FLO-FLAMINGO-001"
+  ],
+  "environmentState": {
+    "environmentId": "ENV-BRILLAVALLE-PLAZA-001",
+    "lighting": "warm-night-festival",
+    "festivalDress": "preparations-in-progress",
+    "crowdDensity": "distant-unidentifiable"
+  },
+  "propState": {
+    "fountainState": "on",
+    "heartState": "safe-floating"
+  },
+  "startState": "Vista aérea en movimiento del bosque nocturno y de Brillavalle a lo lejos.",
+  "endState": "Vista distante, estable y segura de Brillavalle, la fuente y el Corazón; ningún protagonista es identificable.",
+  "shots": [
+    {
+      "start": 0,
+      "end": 4,
+      "action": "Se conserva el movimiento aéreo original aprobado sobre el bosque y Brillavalle."
+    },
+    {
+      "start": 4,
+      "end": 15,
+      "action": "Montaje editorial con acercamiento lento sobre un fotograma distante seguro, manteniendo la narración, música y ambiente originales."
+    }
+  ],
+  "audio": {
+    "mode": "approved-original-narration-and-score",
+    "narratorVoiceId": "VOICE-NARRATOR-001",
+    "narration": "En el corazón del bosque mágico estaba Brillavalle, un lugar donde cada pequeña luz tenía algo que contar. Aquella noche, Lumo y sus amigos se preparaban para la Fiesta de las Mil Luces.",
+    "principalDialogue": [],
+    "music": "Pista original conservada sin nueva síntesis.",
+    "effects": ["viento suave", "ambiente del valle", "agua distante", "actividad animal distante"],
+    "sampleRateHz": 48000,
+    "channels": 2
+  },
+  "generation": {
+    "preferredMode": "editorial-rescue",
+    "paidGenerationAllowed": false,
+    "estimatedAdditionalCostUsd": 0,
+    "durationSeconds": 15.093,
+    "aspectRatio": "16:9",
+    "resolution": "1280x720",
+    "frameRate": 24,
+    "audioEnabled": true,
+    "useExtendFromPrevious": false,
+    "doNotUseEpisodeOverviewReference": true,
+    "editRecipe": [
+      "Preservar los primeros cuatro segundos de movimiento original.",
+      "Eliminar todos los fotogramas donde los protagonistas modificados sean identificables.",
+      "Completar la duración con un acercamiento editorial suave sobre el fotograma limpio aprobado.",
+      "Conservar la narración y el ambiente originales completos.",
+      "Normalizar la salida de audio a 48 kHz estéreo."
+    ]
+  },
+  "promptBudget": {
+    "hardLimitChars": 10000,
+    "targetMaxChars": 500,
+    "usedForThisDelivery": false
+  },
+  "continuityOut": {
+    "nextSection": "S01E01-S02",
+    "requiredVisualLink": "Corte directo desde la vista distante de Brillavalle al bloque existente donde los amigos preparan la plaza.",
+    "musicMustContinue": true,
+    "noFinalCadence": true
+  },
+  "strictExclusions": [
+    "Protagonistas identificables en pantalla",
+    "Nublo o niebla violeta",
+    "robo o movimiento del Corazón",
+    "apagón",
+    "cuenta atrás",
+    "fuegos finales",
+    "secundarios clonados de protagonistas",
+    "texto dentro del vídeo",
+    "nueva generación pagada para S01"
+  ],
+  "humanApprovalRequired": true,
+  "humanApproved": true
+}

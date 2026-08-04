@@ -1,0 +1,41 @@
+{
+  "id": "S01E01-MICROEPISODE-V1",
+  "episodeCode": "S01E01",
+  "version": 1,
+  "title": "La luz prestada",
+  "format": "microepisode",
+  "durationSeconds": 60,
+  "audience": "preescolar-4-7",
+  "learningGoal": "Pedir ayuda y compartir permite reparar un error sin culpar ni excluir.",
+  "emotionalPromise": "Una sorpresa luminosa, una pequeña preocupación y una reparación cálida en menos de un minuto.",
+  "hook": "El Corazón de Luz parpadea y se apaga justo cuando Brillavalle va a celebrar.",
+  "canon": {
+    "lock": "config/lumo-canon-lock-v4.json",
+    "master": "/lumo-kids/canon/Character-Design-v4.png",
+    "world": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+    "characters": ["lumo", "nara", "tuno", "biri", "pompon", "nublo"]
+  },
+  "sections": [
+    {"id":"S01","start":0,"end":15,"purpose":"hook","action":"La fiesta empieza; el Corazón de Luz titila y se apaga. Lumo mira a cámara y pregunta: ¿Dónde se fue su brillo?","valueBeat":"La curiosidad sustituye al miedo.","visibleCast":["lumo","nara","tuno","biri","pompon"],"location":"brillavalle-plaza"},
+    {"id":"S02","start":15,"end":30,"purpose":"discovery","action":"Biri descubre un rastro violeta. El grupo encuentra a Nublo intentando encender su pequeño farol con una chispa prestada.","valueBeat":"Antes de acusar, preguntamos qué ocurrió.","visibleCast":["lumo","biri","nublo"],"location":"brillavalle-bridge"},
+    {"id":"S03","start":30,"end":45,"purpose":"cooperative-solution","action":"Nublo explica que temía quedarse solo a oscuras. Lumo propone devolver juntos la chispa y Tuno prepara un reflector seguro.","valueBeat":"Pedir ayuda es más valiente que esconder un error.","visibleCast":["lumo","nara","tuno","nublo"],"location":"brillavalle-plaza"},
+    {"id":"S04","start":45,"end":60,"purpose":"payoff","action":"Todos unen pequeñas luces; el Corazón vuelve a brillar y también enciende el farol de Nublo. Pompón remata con una celebración visual.","valueBeat":"La luz compartida alcanza para todos.","visibleCast":["lumo","nara","tuno","biri","pompon","nublo"],"location":"brillavalle-plaza"}
+  ],
+  "engagement": {
+    "visualChangeMaximumGapSeconds": 4,
+    "firstQuestionBeforeSecond": 8,
+    "clearProblemBeforeSecond": 12,
+    "emotionalTurnBeforeSecond": 35,
+    "payoffBeforeSecond": 55,
+    "endCardSeconds": 5
+  },
+  "budget": {
+    "confirmedBalance": 20.67,
+    "productionCap": 16.44,
+    "protectedReserve": 4.23,
+    "proof25SecondsCap": 7.52,
+    "maximumPerGeneration": 2.25,
+    "currency": "USD"
+  },
+  "release": "content/production/youtube-release-gate-v1.json"
+}

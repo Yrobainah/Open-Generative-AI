@@ -1,0 +1,84 @@
+{
+  "id": "ENV-BRILLAVALLE-PLAZA-001",
+  "version": 1,
+  "status": "canonical",
+  "name": "Plaza de la Fuente de Luz",
+  "location": "Brillavalle",
+  "purpose": "Escenario principal del episodio S01E01 y punto visual de referencia para la Fiesta de las Mil Luces.",
+  "layout": {
+    "center": "Fuente de Luz circular con el Corazón flotando sobre su eje.",
+    "north": "Gran árbol habitado y viviendas redondeadas integradas en raíces.",
+    "east": "Puestos de fiesta y sendero de faroles hacia el mercado.",
+    "west": "Salida hacia el Puente del Arroyo Brillante.",
+    "south": "Entrada principal a la plaza y camino de llegada desde el bosque.",
+    "cameraHeight": "cercana a la mirada infantil salvo planos aéreos de establecimiento"
+  },
+  "invariants": [
+    "La fuente permanece en el centro geométrico de la plaza.",
+    "Las viviendas están integradas en árboles, raíces y formas redondeadas.",
+    "El gran árbol del norte es visible en planos generales.",
+    "El camino oeste conduce al puente y no cambia de lado.",
+    "La arquitectura usa madera satinada, piedra suave, musgo y luz cálida.",
+    "La plaza conserva profundidad de primer plano, plano medio y fondo.",
+    "No aparecen edificios humanos modernos, carreteras, coches ni mobiliario urbano realista."
+  ],
+  "lightingStates": {
+    "warm-night-festival": {
+      "key": "faroles dorados y Corazón de Luz",
+      "fill": "azul nocturno suave",
+      "accents": "flores luminosas, guirnaldas y reflejos cálidos en piedra húmeda",
+      "mood": "seguro, alegre y expectante"
+    },
+    "dim-after-theft": {
+      "key": "luz lunar azul y pequeños destellos personales",
+      "fill": "violeta tenue",
+      "accents": "ventanas y guirnaldas casi apagadas",
+      "mood": "preocupación comprensible, nunca terror"
+    },
+    "restoring": {
+      "key": "onda dorada que parte de la fuente",
+      "fill": "azul nocturno retrocediendo",
+      "accents": "encendido progresivo de casas, flores y guirnaldas",
+      "mood": "alivio y reparación"
+    }
+  },
+  "festivalDress": {
+    "allowed": [
+      "guirnaldas cálidas suspendidas entre árboles",
+      "banderines de formas simples",
+      "puestos redondeados",
+      "flores mágicas",
+      "faroles portátiles",
+      "familias de animales secundarios canónicos"
+    ],
+    "variableButControlled": [
+      "posición exacta de flores pequeñas",
+      "mercancía de fondo",
+      "cantidad de ciudadanos lejanos",
+      "ángulo de cámara"
+    ]
+  },
+  "requiredReferenceViews": [
+    "aerial-establishing",
+    "south-entrance",
+    "fountain-front",
+    "east-market",
+    "west-exit-to-bridge",
+    "roof-view-used-by-nublo",
+    "warm-night-festival",
+    "dim-after-theft",
+    "restored-celebration"
+  ],
+  "promptFragment": "Brillavalle Plaza, the same canonical magical woodland plaza built into giant trees and roots, rounded warm wooden homes, central circular Fountain of Light, north great tree, east festival stalls, west path to the glowing bridge, south entrance from the forest, tactile stylized 3D materials, child-height cinematic camera, consistent fixed geography",
+  "negativePrompt": [
+    "different plaza layout",
+    "fountain moved away from center",
+    "modern human town",
+    "urban street",
+    "photorealism",
+    "sharp hostile architecture",
+    "random castle",
+    "secondary characters copied from main cast",
+    "readable signs or logos"
+  ]
+}

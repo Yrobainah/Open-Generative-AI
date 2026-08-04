@@ -1,0 +1,23 @@
+{
+  "id": "biri",
+  "name": "Biri",
+  "role": "Mensajero veloz y fuente de energía alegre",
+  "characterType": "ave azul infantil estilizada",
+  "agePresentation": "equivalente emocional a 5 años",
+  "canonicalSourceVersion": 4,
+  "canonicalAsset": "/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+  "personality": ["rápido", "alegre", "optimista", "distraído", "afectuoso"],
+  "visual": {
+    "silhouette": "ave azul pequeña con cuerpo ovalado, cuello fino, patas largas y cresta naranja",
+    "bodyShape": "torso de plumaje redondo, alas pequeñas expresivas y patas finas naranjas",
+    "face": "ojos grandes azul oscuro, pico corto redondeado naranja y cejas finas",
+    "palette": {"primary":"#168AC3","secondary":"#76C9E5","accent":"#F47A23","eyes":"#163A51"},
+    "signatureFeatures": ["cresta naranja de tres plumas", "pico corto naranja", "plumaje azul con vientre celeste", "patas finas naranjas"],
+    "scaleRelativeToLumo": 0.96
+  },
+  "expressions": ["alegría abierta", "curiosidad", "sorpresa amable", "preocupación leve", "determinación", "vergüenza cómica", "concentración", "orgullo compartido"],
+  "voice": {"register":"infantil neutro", "pace":"rápido con pausas claras", "tone":"ligero y juguetón", "avoid":["chillidos", "tartamudeo usado como burla", "habla ininteligible"]},
+  "designSheet": {"requiredViews":["front","threeQuarter"], "actionPoses":["correr", "volar", "aterrizar", "llevar un mensaje", "tropezar sin daño", "celebrar"]},
+  "promptTemplate": "Biri exactamente según Character Design v4: ave mensajera infantil azul, cuerpo ovalado de plumaje suave, vientre celeste, cuello fino, alas pequeñas expresivas, cresta naranja de tres plumas, pico corto naranja y patas finas naranjas. Animación 3D estilizada cinematográfica para preescolar, movimiento rápido y alegre, proporciones idénticas a la referencia canónica.",
+  "negativePrompt": ["ave realista", "cresta en remolino azul", "puntas coral en alas", "pico afilado", "garras amenazantes", "tormenta", "ojos agresivos", "fotorrealismo", "texto o logotipos", "personajes de franquicias existentes", "clones o duplicados"]
+}

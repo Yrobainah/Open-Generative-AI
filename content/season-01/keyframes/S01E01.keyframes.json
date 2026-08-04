@@ -1,0 +1,65 @@
+{
+  "id": "S01E01-keyframes-v1",
+  "episodeCode": "S01E01",
+  "storyboardId": "S01E01-storyboard-v2",
+  "version": 1,
+  "status": "superseded",
+  "format": "svg",
+  "aspectRatio": "16:9",
+  "canvas": {
+    "width": 1600,
+    "height": 900
+  },
+  "compositeAsset": "/lumo-kids/keyframes/S01E01-keyframes-review-v1.svg",
+  "frames": [
+    {
+      "sceneId": "SC01",
+      "title": "Versión anterior: la plaza pierde su luz",
+      "timecode": "0:00–0:08",
+      "asset": "/lumo-kids/keyframes/S01E01-SC01-v1.svg",
+      "purpose": "Conservar únicamente la composición histórica del primer pase vectorial.",
+      "reviewFocus": ["no usar como arte final", "no usar como referencia 3D", "mantener solo como registro histórico"],
+      "humanApproved": false
+    },
+    {
+      "sceneId": "SC02",
+      "title": "Versión anterior: el rincón luminoso",
+      "timecode": "0:08–0:24",
+      "asset": "/lumo-kids/keyframes/S01E01-SC02-v1.svg",
+      "purpose": "Conservar únicamente la composición histórica del primer pase vectorial.",
+      "reviewFocus": ["no usar como arte final", "no usar como referencia 3D", "mantener solo como registro histórico"],
+      "humanApproved": false
+    },
+    {
+      "sceneId": "SC14",
+      "title": "Versión anterior: Lumo dice la verdad",
+      "timecode": "3:57–4:13",
+      "asset": "/lumo-kids/keyframes/S01E01-SC14-v1.svg",
+      "purpose": "Conservar únicamente la composición histórica del primer pase vectorial.",
+      "reviewFocus": ["no usar como arte final", "no usar como referencia 3D", "mantener solo como registro histórico"],
+      "humanApproved": false
+    },
+    {
+      "sceneId": "SC16",
+      "title": "Versión anterior: la plaza vuelve a brillar",
+      "timecode": "4:29–4:45",
+      "asset": "/lumo-kids/keyframes/S01E01-SC16-v1.svg",
+      "purpose": "Conservar únicamente la composición histórica del primer pase vectorial.",
+      "reviewFocus": ["no usar como arte final", "no usar como referencia 3D", "mantener solo como registro histórico"],
+      "humanApproved": false
+    }
+  ],
+  "reviewCriteria": [
+    "registro histórico del primer enfoque 2D",
+    "no condiciona la nueva dirección artística 3D",
+    "no debe entrar en producción",
+    "no debe utilizarse en miniaturas",
+    "requiere sustitución completa por nuevos keyframes 3D"
+  ],
+  "approval": {
+    "humanApproved": false,
+    "approvedBy": null,
+    "approvedAt": null,
+    "notes": "Conjunto descartado tras reescribir el piloto como una aventura 3D sobre la Fiesta de las Mil Luces. Se conserva solo para trazabilidad."
+  }
+}

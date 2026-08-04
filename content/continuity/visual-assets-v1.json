@@ -1,0 +1,50 @@
+{
+  "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+  "version": 4,
+  "status": "canonical-v4",
+  "approvedAt": "2026-08-03",
+  "purpose": "Registro activo derivado sin reinterpretación del Character Design maestro aprobado.",
+  "sourceMaster": {
+    "path": "/lumo-kids/canon/Character-Design-v4.png",
+    "sha256": "a3163c83e64bdae0ace3afa99046a5cbd0022cdfbfdd5e76721753980912e1db",
+    "resolution": "1535x1024"
+  },
+  "activeAssets": [
+    {"id":"DESIGN-MASTER-V4", "path":"/lumo-kids/canon/Character-Design-v4.png", "status":"approved-master", "role":"Fuente visual de verdad", "useAs":"canonical-master"},
+    {"id":"CAST-MAIN-SIX-V4", "path":"/lumo-kids/canon/CAST-main-six-v4.png", "status":"approved-source-crop", "role":"Alineación y ficha del reparto principal", "useAs":"character-reference"},
+    {"id":"CAST-MAIN-SIX-LINEUP-V4", "path":"/lumo-kids/canon/CAST-main-six-lineup-v4.png", "status":"approved-source-crop", "role":"Silueta y escala relativa del reparto", "useAs":"scale-reference"},
+    {"id":"CHAR-LUMO-V4", "path":"/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png", "status":"approved-source-crop", "role":"Identidad de Lumo", "useAs":"character-reference"},
+    {"id":"CHAR-NARA-V4", "path":"/lumo-kids/canon/characters/CHAR-NARA-master-v4.png", "status":"approved-source-crop", "role":"Identidad de Nara", "useAs":"character-reference"},
+    {"id":"CHAR-TUNO-V4", "path":"/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png", "status":"approved-source-crop", "role":"Identidad de Tuno", "useAs":"character-reference"},
+    {"id":"CHAR-BIRI-V4", "path":"/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png", "status":"approved-source-crop", "role":"Identidad de Biri", "useAs":"character-reference"},
+    {"id":"CHAR-POMPON-V4", "path":"/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png", "status":"approved-source-crop", "role":"Identidad de Pompón", "useAs":"character-reference"},
+    {"id":"CHAR-NUBLO-V4", "path":"/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png", "status":"approved-source-crop", "role":"Identidad de Nublo", "useAs":"character-reference"},
+    {"id":"ENV-BRILLAVALLE-V4", "path":"/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png", "status":"approved-source-crop", "role":"Identidad de Brillavalle", "useAs":"environment-reference"},
+    {"id":"LUMO-EXPRESSIONS-V4", "path":"/lumo-kids/canon/reference/LUMO-expressions-v4.png", "status":"approved-source-crop", "role":"Diez expresiones de Lumo", "useAs":"expression-reference"},
+    {"id":"LUMO-PERFORMANCE-V4", "path":"/lumo-kids/canon/reference/LUMO-performance-v4.png", "status":"approved-source-crop", "role":"Secuencia de actuación de Lumo", "useAs":"performance-reference"},
+    {"id":"S01E01-PILOT-FRAMES-V4", "path":"/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png", "status":"approved-source-crop", "role":"Problema y solución del piloto", "useAs":"story-reference"},
+    {"id":"S01E01-END-CARD-V4", "path":"/lumo-kids/canon/reference/LUMO-KIDS-end-card-v4.png", "status":"approved-editorial-composite", "role":"Cierre de marca reutilizable", "useAs":"end-card-reference"}
+  ],
+  "deprecatedAssets": [
+    {"path":"/lumo-kids/model-sheets/lumo-model-sheet-v1.svg", "reason":"Lumo era una estrella 2D; incompatible con Character Design v4."},
+    {"path":"/lumo-kids/continuity/CAST-S01-main-five-approved-guide-v3.jpg", "reason":"Guía v3 incompleta y defectuosa; sustituida por el maestro v4."},
+    {"path":"/lumo-kids/continuity/CAST-S01-main-five-v1.png", "reason":"Contiene reinterpretaciones no canónicas."},
+    {"path":"/lumo-kids/continuity/CAST-SECONDARY-VOICE-001-v1.png", "reason":"Documento con texto; no usar como fotograma ni referencia directa."},
+    {"path":"/lumo-kids/continuity/ENV-BRILLAVALLE-PLAZA-001-v1.png", "reason":"Documento diagramado retirado del flujo activo."},
+    {"path":"/lumo-kids/continuity/ENV-BRILLAVALLE-VIEWS-001-v1.png", "reason":"Documento diagramado retirado del flujo activo."},
+    {"path":"/lumo-kids/continuity/PROP-FOUNTAIN-OF-LIGHT-001-v1.png", "reason":"Referencia defectuosa; requiere reconstrucción canónica."},
+    {"path":"/lumo-kids/continuity/PROP-HEART-OF-LIGHT-001-v1.png", "reason":"Hoja con texto; no usar como ancla visual."}
+  ],
+  "referencePolicy": {
+    "masterDesignOverridesAllDerivedDocuments": true,
+    "neverUseAllSheetsBlindly": true,
+    "onlyAttachAssetsNeededByCurrentSection": true,
+    "storyboardsMustNotContainRedesignedPrincipals": true,
+    "cleanSingleFrameRequiredBeforePaidVideo": true,
+    "canonicalSheetsAreReferencesNotFrames": true,
+    "visibleCharactersInReferencesMustBeAllowedInSection": true,
+    "deprecatedAssetsBlocked": true,
+    "paidGenerationRequiresVerifiedAttachmentHandoff": true,
+    "humanReviewRequired": true
+  }
+}

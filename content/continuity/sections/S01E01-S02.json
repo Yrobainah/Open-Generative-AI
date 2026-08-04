@@ -1,0 +1,96 @@
+{
+  "id": "S01E01-S02",
+  "episodeId": "S01E01",
+  "sectionNumber": 2,
+  "durationSeconds": 15,
+  "status": "working-approved-with-continuity-exception",
+  "title": "Los amigos preparan la plaza",
+  "storyPurpose": "Mostrar trabajo en equipo, diálogo natural y preparativos inmediatos antes de presentar el conflicto.",
+  "references": {
+    "storyboardAsset": "/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+    "castSheetAsset": "/lumo-kids/canon/CAST-main-six-v4.png",
+    "environmentIds": ["ENV-BRILLAVALLE-PLAZA-001"],
+    "propIds": ["PROP-FOUNTAIN-OF-LIGHT-001", "PROP-HEART-OF-LIGHT-001"],
+    "voiceBibleId": "VOICE-BIBLE-LUMO-KIDS-001",
+    "previousSectionAsset": "pending:S01E01-S01-last-frame.png"
+  },
+  "charactersPresent": ["lumo", "nara", "tuno", "biri", "pompon", "nublo"],
+  "charactersForbidden": [],
+  "secondaryCastAllowed": [
+    "SEC-LIRA-RABBIT-001",
+      "SEC-MILO-RACCOON-001",
+    "SEC-OLMO-OWL-001",
+      "SEC-TORI-FOX-001",
+      "SEC-SILA-SQUIRREL-001"
+  ],
+  "environmentState": {
+    "environmentId": "ENV-BRILLAVALLE-PLAZA-001",
+    "lighting": "warm-night-festival",
+    "festivalDress": "preparations-nearly-complete",
+    "crowdDensity": "medium"
+  },
+  "propState": {
+    "fountainState": "on",
+    "heartState": "safe-floating"
+  },
+  "startState": "La misma plaza de S01; los cinco amigos ya están decorando cerca de la fuente.",
+  "endState": "La fuente permanece encendida. Nublo aparece antes de lo previsto en el cierre; el plano no debe usarse automáticamente como ancla de extensión.",
+  "shots": [
+    {"start": 0, "end": 4, "action": "Vista de la plaza y preparación de decoraciones."},
+    {"start": 4, "end": 8, "action": "Lumo y Nara conversan mientras decoran."},
+    {"start": 8, "end": 12, "action": "Tuno, Biri y Pompón revisan fuente y luces."},
+    {"start": 12, "end": 15, "action": "Plano de grupo frente a la fuente con aparición prematura de Nublo."}
+  ],
+  "audio": {
+    "mode": "generated-dialogue-and-score",
+    "narratorVoiceId": null,
+    "narration": null,
+    "principalDialogue": [
+      {"speaker": "VOICE-LUMO-001", "text": "¡Qué bonita está quedando!", "startSeconds": 4, "endSeconds": 6, "emotion": "orgullo alegre", "looksAt": "Nara", "gesture": "señala la plaza", "listenerReaction": "Nara sonríe con la boca cerrada"},
+      {"speaker": "VOICE-NARA-001", "text": "¡Será una gran fiesta!", "startSeconds": 6, "endSeconds": 8, "emotion": "ilusión serena", "looksAt": "Lumo", "gesture": "muestra las decoraciones", "listenerReaction": "Lumo asiente con la boca cerrada"},
+      {"speaker": "VOICE-TUNO-001", "text": "¡Fuente revisada!", "startSeconds": 8, "endSeconds": 10, "emotion": "seguridad de inventor", "looksAt": "grupo", "gesture": "levanta un dedo tras cerrar la herramienta", "listenerReaction": "Lumo y Nara reaccionan contentos"},
+      {"speaker": "VOICE-POMPON-001", "text": "¡Y las luces también!", "startSeconds": 10, "endSeconds": 12, "emotion": "entusiasmo", "looksAt": "grupo", "gesture": "levanta dos luces", "listenerReaction": "Tuno escucha y Biri gorjea"},
+      {"speaker": "VOICE-LUMO-001", "text": "¡Todos preparados!", "startSeconds": 12, "endSeconds": 15, "emotion": "liderazgo alegre", "looksAt": "grupo y fuente", "gesture": "abre los brazos", "listenerReaction": "el grupo asiente"}
+    ],
+    "music": "Celesta, pizzicato, maderas suaves y campanas mágicas; voces claras y sin narrador.",
+    "effects": ["agua de fuente", "herramientas", "aleteo de Biri", "faroles", "ambiente de plaza"]
+  },
+  "generation": {
+    "model": "seedance-v2.0-i2v",
+    "durationSeconds": 15,
+    "aspectRatio": "16:9",
+    "resolution": "1280x720",
+    "fps": 24,
+    "audioEnabled": true,
+    "resultFileName": "S01E01-S02-preparativos-y-presagio-approved-v1.mp4",
+    "resultUrl": null,
+    "humanReviewed": true,
+    "voiceQuality": "approved",
+    "visualQuality": "approved-with-exception",
+    "safeExtendAnchor": false
+  },
+  "promptBudget": {
+    "failedAttemptChars": 11139,
+    "hardLimitChars": 10000,
+    "targetMaxChars": 6500,
+    "rule": "El validador y la revisión manual deben confirmar el conteo antes de enviar."
+  },
+  "continuityException": {
+    "type": "premature-character-appearance",
+    "character": "nublo",
+    "cause": "Nublo estaba visible en las referencias, y la referencia visual prevaleció sobre la exclusión escrita.",
+    "decision": "Reclasificar el clip como S02 y conservarlo; no regenerar solo por este defecto.",
+    "editingOptions": [
+      "recortar antes de la aparición para montaje lineal",
+      "usar la aparición como presagio",
+      "no usar el último fotograma para Extend si Nublo parece integrado en el grupo"
+    ]
+  },
+  "continuityOut": {
+    "nextSection": "S01E01-S03",
+    "requiredVisualLink": "S03 debe presentar a Nublo observando desde una posición claramente separada de la pandilla.",
+    "musicMayContinue": true,
+    "extendFromThisResult": false
+  },
+  "humanApprovalRequired": true
+}

@@ -1,0 +1,21 @@
+{
+  "series": "Las aventuras de Lumo",
+  "season": 1,
+  "workingTitle": "Pequeñas luces, grandes ideas",
+  "format": "12 episodios de 7-9 minutos",
+  "audience": "3-7",
+  "episodes": [
+    {"code":"S01E01","title":"Lumo y la luz prestada","lesson":"Compartir"},
+    {"code":"S01E02","title":"El mapa que caminaba solo","lesson":"Trabajo en equipo"},
+    {"code":"S01E03","title":"La casa de las siete puertas","lesson":"Inclusión"},
+    {"code":"S01E04","title":"La nube que guardaba la lluvia","lesson":"Expresar emociones"},
+    {"code":"S01E05","title":"El puente de los tres intentos","lesson":"Perseverancia"},
+    {"code":"S01E06","title":"La fiesta sin una sola nota","lesson":"Creatividad"},
+    {"code":"S01E07","title":"El árbol que olvidó su canción","lesson":"Cuidado de la naturaleza"},
+    {"code":"S01E08","title":"La carrera que nadie debía ganar","lesson":"Cooperación"},
+    {"code":"S01E09","title":"El monstruo de los ruidos pequeños","lesson":"Manejar el miedo"},
+    {"code":"S01E10","title":"Un regalo para todo Brillavalle","lesson":"Generosidad"},
+    {"code":"S01E11","title":"El día de las palabras enredadas","lesson":"Comunicación y disculpas"},
+    {"code":"S01E12","title":"La noche de las mil luciérnagas","lesson":"Comunidad"}
+  ]
+}

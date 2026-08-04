@@ -1,0 +1,24 @@
+{
+  "id": "LUMO-YOUTUBE-RELEASE-GATE-V1",
+  "version": 1,
+  "automationTarget": "YouTube Data API v3",
+  "uploadDefaults": {
+    "privacyStatus": "private",
+    "madeForKids": true,
+    "containsSyntheticMedia": true,
+    "publishAt": null
+  },
+  "requiredChecks": [
+    "master-video-decodes-completely",
+    "canon-hashes-match",
+    "visual-drift-review-passed",
+    "child-safety-review-passed",
+    "copyright-and-music-rights-cleared",
+    "title-description-thumbnail-reviewed",
+    "Yariel-approved-final-master"
+  ],
+  "publicReleasePolicy": "blocked-until-owner-approval",
+  "owner": "Yariel Robaina",
+  "automationMay": ["prepare-metadata", "upload-private", "set-made-for-kids", "declare-synthetic-content"],
+  "automationMayNot": ["publish-publicly", "schedule-publication", "replace-approved-master"]
+}

@@ -1,0 +1,169 @@
+{
+  "id": "S01E01-theft-proof-v1",
+  "episodeCode": "S01E01",
+  "version": 1,
+  "status": "ready-for-generation",
+  "canonicalSourceVersion": 4,
+  "canonicalSource": "/lumo-kids/canon/Character-Design-v4.png",
+  "title": "Prueba de producción: el robo del Corazón de Luz",
+  "targetDurationSeconds": 25,
+  "aspectRatio": "16:9",
+  "resolution": "1920x1080",
+  "productionPlatform": "Open-Generative-AI",
+  "externalRenderingAllowed": false,
+  "humanReviewRequired": true,
+  "studios": {
+    "image": {
+      "route": "/studio/image",
+      "recommendedModelId": "nano-banana-2-edit",
+      "recommendedModelName": "Nano Banana 2 Edit",
+      "purpose": "crear los fotogramas iniciales manteniendo personajes y mundo consistentes"
+    },
+    "video": {
+      "route": "/studio/video",
+      "recommendedModelId": "seedance-v2.0-i2v",
+      "recommendedModelName": "Seedance 2.0 I2V",
+      "purpose": "animar cada fotograma con movimiento corporal, cámara e iluminación"
+    },
+    "audio": {
+      "route": "/studio/audio",
+      "recommendedModelId": "elevenlabs-text-to-dialogue-v3",
+      "recommendedModelName": "ElevenLabs Text to Dialogue V3",
+      "purpose": "generar voces expresivas y diferenciadas en español"
+    },
+    "lipSync": {
+      "route": "/studio/lipsync",
+      "recommendedModelId": "infinitetalk-video-to-video",
+      "recommendedModelName": "Infinite Talk V2V",
+      "purpose": "sincronizar únicamente las líneas visibles en primer plano"
+    }
+  },
+  "globalVisualPrompt": "Usar Character Design v4 como fuente de verdad sin rediseñar. Animación 3D estilizada premium para público preescolar, personajes originales con siluetas, proporciones, especies, materiales, colores y accesorios exactamente iguales a sus recortes canónicos v4; ojos muy expresivos, actuación corporal clara, iluminación cinematográfica cálida y violeta, Brillavalle mágico y habitable, composición legible en pantalla pequeña, continuidad exacta, una sola instancia de cada protagonista y sin texto dentro de la imagen.",
+  "globalNegativePrompt": [
+    "personajes de franquicias existentes",
+    "fotorrealismo inquietante",
+    "terror",
+    "violencia",
+    "movimientos bruscos",
+    "rostros deformados",
+    "dedos extra",
+    "ojos desalineados",
+    "texto o logotipos",
+    "cambio de vestuario o colores entre planos",
+    "rediseño de personajes",
+    "clones del reparto principal en el fondo"
+  ],
+  "referenceRequirements": [
+    "/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+    "/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+    "/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+    "/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+    "/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+    "/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+    "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+    "una referencia del Corazón de Luz",
+    "la paleta y materiales definidos en la biblia visual"
+  ],
+  "shots": [
+    {
+      "id": "PT01",
+      "durationSeconds": 5,
+      "title": "Nublo observa la fiesta",
+      "characters": ["Nublo"],
+      "dialogue": [],
+      "imagePrompt": "Nublo exactamente según Character Design v4: criatura nocturna infantil felina-zorruna de pelaje azul marino, orejas triangulares grandes, mechón frontal, ojos ámbar, correa cruzada con farol pequeño y cola de niebla violeta. Observa desde un tejado la Fiesta de las Mil Luces de Brillavalle. La plaza resplandece al fondo con guirnaldas, faroles, flores luminosas y habitantes felices. Nublo siente curiosidad y tristeza leve, nunca amenaza. Plano medio de tres cuartos, cámara a la altura de sus ojos, luz cálida reflejada en su rostro y borde violeta suave. Mantener idénticos silueta, proporciones, accesorios y paleta del recorte canónico.",
+      "videoPrompt": "Nublo respira con suavidad, sus orejas triangulares bajan un poco y su cola de niebla forma un pequeño remolino triste. Mira la plaza, luego el farol pequeño de su correa cruzada. La cámara avanza muy lentamente hacia su rostro. Las luces festivas parpadean con ritmo amable al fondo. Movimiento corporal natural y contenido, pelaje estable, rostro consistente, sin hablar y sin movimientos rápidos.",
+      "audioPlan": {
+        "music": "tema festivo cálido escuchado a distancia",
+        "ambience": "risas lejanas, campanillas suaves y hojas nocturnas",
+        "sfx": ["pequeño suspiro de Nublo"]
+      },
+      "approvalCriteria": [
+        "Nublo resulta comprensible y no aterrador",
+        "su emoción se entiende sin diálogo",
+        "la plaza parece atractiva y llena de vida",
+        "el diseño coincide con su ficha 3D"
+      ]
+    },
+    {
+      "id": "PT02",
+      "durationSeconds": 10,
+      "title": "El robo del Corazón de Luz",
+      "characters": ["Lumo", "Nublo", "Nara", "Tuno", "Biri", "Pompón"],
+      "dialogue": [
+        {
+          "speaker": "Todos",
+          "text": "¡Tres, dos, uno!",
+          "direction": "alegres, con expectación y ritmo de celebración"
+        }
+      ],
+      "imagePrompt": "La plaza central de Brillavalle exactamente según Character Design v4 durante la cuenta atrás. Una sola instancia de Lumo, Nara, Tuno, Biri y Pompón, cada cual idéntico a su recorte canónico v4, rodea la Fuente; sobre ella flota el Corazón de Luz con forma inequívoca de corazón, núcleo blanco cálido y borde dorado. Nublo, idéntico a su recorte canónico, aparece arriba envuelto en niebla violeta, preparado para tomar el Corazón sin agresividad. Gran plano general cinematográfico, composición clara, iluminación dorada intensa y sombras azules suaves; no añadir clones del reparto al fondo.",
+      "videoPrompt": "La pandilla cuenta tres, dos, uno con movimientos alegres. Justo antes del encendido, la cola de niebla de Nublo se alarga como una cinta suave, envuelve el Corazón de Luz y lo eleva. Nublo lo recibe con ambas manos y se aleja sobre una nube violeta. Las guirnaldas se apagan en una ola desde el centro hacia los bordes. La cámara sigue primero el Corazón y después desciende hacia las reacciones del grupo. Acción clara, mágica y sin choque físico; expresiones de sorpresa, nunca terror; continuidad estricta de personajes y objeto.",
+      "audioPlan": {
+        "music": "música festiva que se interrumpe en una nota suspendida",
+        "ambience": "multitud expectante y campanillas",
+        "sfx": ["cuenta atrás", "remolino de niebla suave", "descenso luminoso", "silencio breve"]
+      },
+      "approvalCriteria": [
+        "el robo se entiende en menos de dos segundos",
+        "no existe contacto violento",
+        "el Corazón de Luz conserva forma y escala",
+        "las reacciones son variadas y legibles",
+        "el apagón mantiene los rostros visibles"
+      ]
+    },
+    {
+      "id": "PT03",
+      "durationSeconds": 10,
+      "title": "Lumo decide actuar",
+      "characters": ["Lumo", "Nara", "Tuno", "Biri", "Pompón"],
+      "dialogue": [
+        {
+          "speaker": "Nara",
+          "text": "¡La fiesta se quedó sin luz!",
+          "direction": "sorprendida pero serena, sin gritar"
+        },
+        {
+          "speaker": "Lumo",
+          "text": "La fiesta no termina aquí. Encontraremos la luz juntos.",
+          "direction": "primero preocupado y después decidido, cálido y esperanzador"
+        }
+      ],
+      "imagePrompt": "Lumo y sus amigos exactamente según Character Design v4 en la plaza recién apagada. Lumo ocupa el primer término: cuerpo redondeado dorado, ojos turquesa enormes, corazón azul-cian en el pecho y dos antenas luminosas ramificadas. Nara vegetal con corona de hojas, Tuno mapache inventor con gafas, Biri ave azul con cresta naranja y Pompón peludo lavanda forman detrás un semicírculo. Un rastro de chispas violetas se aleja. Plano medio cinematográfico, rostro de Lumo completamente visible, penumbra azul y luz cálida; una sola instancia de cada personaje, sin rediseños ni clones.",
+      "videoPrompt": "Nara mira las guirnaldas apagadas y pronuncia su frase. Lumo baja la mirada durante un instante; su núcleo luminoso parpadea, respira, levanta la cabeza y da un pequeño paso al frente. Mientras dice su frase, sus antenas recuperan brillo y una luz cálida ilumina suavemente a sus amigos. La cámara comienza en plano conjunto y avanza hasta un primer plano de Lumo. Al final todos miran el rastro violeta y se preparan para avanzar. Movimiento facial expresivo, sincronización labial clara, gestos naturales y continuidad exacta.",
+      "audioPlan": {
+        "music": "tema de Lumo que pasa de preocupación a esperanza",
+        "ambience": "plaza silenciosa con hojas suaves",
+        "sfx": ["parpadeo del núcleo de Lumo", "chispas violetas lejanas"]
+      },
+      "approvalCriteria": [
+        "la voz de Lumo suena infantil, natural y no robótica",
+        "el cambio emocional se entiende antes de la frase final",
+        "la sincronización labial no deforma el rostro",
+        "el grupo transmite unidad",
+        "el rastro violeta establece el siguiente objetivo"
+      ]
+    }
+  ],
+  "completionRules": {
+    "requiresGeneratedStartFramePerShot": true,
+    "requiresGeneratedVideoPerShot": true,
+    "requiresGeneratedDialogueAudio": true,
+    "requiresLipSyncForShots": ["PT03"],
+    "requiresHumanApproval": true,
+    "mayBeCalledFinishedWithoutResultUrls": false
+  },
+  "results": {
+    "startFrames": {},
+    "videos": {},
+    "audio": {},
+    "lipSync": {},
+    "assembledPreview": null
+  },
+  "approval": {
+    "humanApproved": false,
+    "approvedBy": null,
+    "approvedAt": null,
+    "notes": "No considerar terminada la prueba hasta registrar resultados reales generados por Open-Generative-AI."
+  }
+}

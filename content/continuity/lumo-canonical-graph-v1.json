@@ -1,0 +1,4684 @@
+{
+  "id": "LUMO-CANONICAL-GRAPH-V1",
+  "version": 1,
+  "generatedBy": "scripts/build-lumo-canonical-graph.mjs",
+  "authority": "derived",
+  "graphifyMode": "augment-only",
+  "sourceFiles": [
+    "config/lumo-canon-lock-v4.json",
+    "config/lumo-tool-policy-v1.json",
+    "content/characters/index.json",
+    "content/characters/model-sheets/lumo-v1.json",
+    "content/characters/model-sheets/lumo-v4.json",
+    "content/characters/profiles/biri.json",
+    "content/characters/profiles/lumo.json",
+    "content/characters/profiles/nara.json",
+    "content/characters/profiles/nublo.json",
+    "content/characters/profiles/pompon.json",
+    "content/characters/profiles/tuno.json",
+    "content/continuity/cast/secondary-citizens-v1.json",
+    "content/continuity/continuity-manifest.json",
+    "content/continuity/environments/brillavalle-plaza-v1.json",
+    "content/continuity/props/fountain-and-heart-v1.json",
+    "content/continuity/sections/S01E01-S01.json",
+    "content/continuity/sections/S01E01-S02.json",
+    "content/continuity/visual-assets-v1.json",
+    "content/continuity/voices/voice-bible-v1.json",
+    "content/production/S01E01-canonical-teaser-v4.json",
+    "content/production/S01E01-microepisode-plan-v1.json",
+    "content/production/agent-team-v1.json",
+    "content/production/budget-v1.json",
+    "content/production/jobs/S01E01-proof-v1.json",
+    "content/production/youtube-release-gate-v1.json",
+    "content/season-01/episodes/S01E01.json",
+    "content/season-01/keyframes/S01E01.keyframes.json",
+    "content/season-01/packages/S01E01.launch.json",
+    "content/season-01/proofs/S01E01-theft-proof.json",
+    "content/season-01/season.json",
+    "content/season-01/storyboards/S01E01.storyboard.json"
+  ],
+  "counts": {
+    "nodes": 188,
+    "relationships": 415
+  },
+  "nodes": [
+    {
+      "id": "AMB-OBSERVATORY",
+      "type": "audio[11]",
+      "label": "Ambiente del observatorio",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "AMB-PLAZA",
+      "type": "audio[9]",
+      "label": "Ambiente de plaza festiva",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "AMB-WOODS",
+      "type": "audio[10]",
+      "label": "Ambiente de bosque nocturno amable",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "ANT-DRYLLA-OWL-001",
+      "type": "futureAntagonists[3]",
+      "label": "Drylla",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "ANT-GLOOM-CROW-001",
+      "type": "futureAntagonists[4]",
+      "label": "Gloom",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "ANT-GRUMM-BADGER-001",
+      "type": "futureAntagonists[1]",
+      "label": "Grumm",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "ANT-SOMBRO-WOLF-001",
+      "type": "futureAntagonists[0]",
+      "label": "Sombro",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "ANT-VEXO-FOX-001",
+      "type": "futureAntagonists[2]",
+      "label": "Vexo",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/CAST-main-six-lineup-v4.png",
+      "type": "canonical-asset",
+      "label": "CAST-main-six-lineup-v4.png",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/CAST-main-six-v4.png",
+      "type": "canonical-asset",
+      "label": "CAST-main-six-v4.png",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "type": "canonical-asset",
+      "label": "Character-Design-v4.png",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "type": "canonical-asset",
+      "label": "CHAR-BIRI-master-v4.png",
+      "source": "content/characters/profiles/biri.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "type": "canonical-asset",
+      "label": "CHAR-LUMO-master-v4.png",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "type": "canonical-asset",
+      "label": "CHAR-NARA-master-v4.png",
+      "source": "content/characters/profiles/nara.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "type": "canonical-asset",
+      "label": "CHAR-NUBLO-master-v4.png",
+      "source": "content/characters/profiles/nublo.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "type": "canonical-asset",
+      "label": "CHAR-POMPON-master-v4.png",
+      "source": "content/characters/profiles/pompon.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "type": "canonical-asset",
+      "label": "CHAR-TUNO-master-v4.png",
+      "source": "content/characters/profiles/tuno.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/reference/CAST-future-antagonists-v4.png",
+      "type": "canonical-asset",
+      "label": "CAST-future-antagonists-v4.png",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/reference/CAST-secondary-v4.png",
+      "type": "canonical-asset",
+      "label": "CAST-secondary-v4.png",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/reference/LUMO-expressions-v4.png",
+      "type": "canonical-asset",
+      "label": "LUMO-expressions-v4.png",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/reference/LUMO-KIDS-end-card-v4.png",
+      "type": "canonical-asset",
+      "label": "LUMO-KIDS-end-card-v4.png",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/reference/LUMO-performance-v4.png",
+      "type": "canonical-asset",
+      "label": "LUMO-performance-v4.png",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "type": "canonical-asset",
+      "label": "S01E01-pilot-frames-v4.png",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "type": "canonical-asset",
+      "label": "ENV-BRILLAVALLE-master-v4.png",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "BG-FESTIVAL-NIGHT",
+      "type": "backgrounds[7]",
+      "label": "Plaza nocturna durante la celebración",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "BG-LANTERN-PATH",
+      "type": "backgrounds[3]",
+      "label": "Sendero de faroles",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "BG-LIGHT-FOUNTAIN",
+      "type": "backgrounds[2]",
+      "label": "Fuente del Corazón de Luz",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "BG-MIST-GROVE",
+      "type": "backgrounds[5]",
+      "label": "Arboleda de niebla violeta",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "BG-OBSERVATORY",
+      "type": "backgrounds[6]",
+      "label": "Antiguo observatorio de Nublo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "BG-PLAZA-FESTIVAL-DAY",
+      "type": "backgrounds[0]",
+      "label": "Plaza preparada para la fiesta",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "BG-PLAZA-FESTIVAL-DIM",
+      "type": "backgrounds[1]",
+      "label": "Plaza festiva en penumbra",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "BG-WHISPER-BRIDGE",
+      "type": "backgrounds[4]",
+      "label": "Puente del arroyo brillante",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "biri",
+      "type": "characters[3]",
+      "label": "biri",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "brillavalle",
+      "type": "world",
+      "label": "brillavalle",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "canon-guardian",
+      "type": "roles[1]",
+      "label": "canon-guardian",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-MAIN-SIX-LINEUP-V4",
+      "type": "activeAssets[2]",
+      "label": "CAST-MAIN-SIX-LINEUP-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-MAIN-SIX-V4",
+      "type": "activeAssets[1]",
+      "label": "CAST-MAIN-SIX-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001",
+      "type": "root",
+      "label": "CAST-SECONDARY-CITIZENS-001",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-BIRI-V4",
+      "type": "activeAssets[6]",
+      "label": "CHAR-BIRI-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-LUMO-V4",
+      "type": "activeAssets[3]",
+      "label": "CHAR-LUMO-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-NARA-V4",
+      "type": "activeAssets[4]",
+      "label": "CHAR-NARA-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-NUBLO-V4",
+      "type": "activeAssets[8]",
+      "label": "CHAR-NUBLO-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-POMPON-V4",
+      "type": "activeAssets[7]",
+      "label": "CHAR-POMPON-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-TUNO-V4",
+      "type": "activeAssets[5]",
+      "label": "CHAR-TUNO-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "child-safety-qa",
+      "type": "roles[6]",
+      "label": "child-safety-qa",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "continuity-editor",
+      "type": "roles[3]",
+      "label": "continuity-editor",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "DESIGN-MASTER-V4",
+      "type": "activeAssets[0]",
+      "label": "DESIGN-MASTER-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "editor-sound",
+      "type": "roles[5]",
+      "label": "editor-sound",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "educational-story",
+      "type": "roles[0]",
+      "label": "educational-story",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "ENV-BRILLAVALLE-PLAZA-001",
+      "type": "root",
+      "label": "Plaza de la Fuente de Luz",
+      "source": "content/continuity/environments/brillavalle-plaza-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "ENV-BRILLAVALLE-V4",
+      "type": "activeAssets[9]",
+      "label": "ENV-BRILLAVALLE-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:config/lumo-canon-lock-v4.json",
+      "type": "source-file",
+      "label": "config/lumo-canon-lock-v4.json",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:config/lumo-tool-policy-v1.json",
+      "type": "source-file",
+      "label": "config/lumo-tool-policy-v1.json",
+      "source": "config/lumo-tool-policy-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/index.json",
+      "type": "source-file",
+      "label": "content/characters/index.json",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/model-sheets/lumo-v1.json",
+      "type": "source-file",
+      "label": "content/characters/model-sheets/lumo-v1.json",
+      "source": "content/characters/model-sheets/lumo-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/model-sheets/lumo-v4.json",
+      "type": "source-file",
+      "label": "content/characters/model-sheets/lumo-v4.json",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/biri.json",
+      "type": "source-file",
+      "label": "content/characters/profiles/biri.json",
+      "source": "content/characters/profiles/biri.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/lumo.json",
+      "type": "source-file",
+      "label": "content/characters/profiles/lumo.json",
+      "source": "content/characters/profiles/lumo.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/nara.json",
+      "type": "source-file",
+      "label": "content/characters/profiles/nara.json",
+      "source": "content/characters/profiles/nara.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/nublo.json",
+      "type": "source-file",
+      "label": "content/characters/profiles/nublo.json",
+      "source": "content/characters/profiles/nublo.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/pompon.json",
+      "type": "source-file",
+      "label": "content/characters/profiles/pompon.json",
+      "source": "content/characters/profiles/pompon.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/tuno.json",
+      "type": "source-file",
+      "label": "content/characters/profiles/tuno.json",
+      "source": "content/characters/profiles/tuno.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/cast/secondary-citizens-v1.json",
+      "type": "source-file",
+      "label": "content/continuity/cast/secondary-citizens-v1.json",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/continuity-manifest.json",
+      "type": "source-file",
+      "label": "content/continuity/continuity-manifest.json",
+      "source": "content/continuity/continuity-manifest.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/environments/brillavalle-plaza-v1.json",
+      "type": "source-file",
+      "label": "content/continuity/environments/brillavalle-plaza-v1.json",
+      "source": "content/continuity/environments/brillavalle-plaza-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/props/fountain-and-heart-v1.json",
+      "type": "source-file",
+      "label": "content/continuity/props/fountain-and-heart-v1.json",
+      "source": "content/continuity/props/fountain-and-heart-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/sections/S01E01-S01.json",
+      "type": "source-file",
+      "label": "content/continuity/sections/S01E01-S01.json",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/sections/S01E01-S02.json",
+      "type": "source-file",
+      "label": "content/continuity/sections/S01E01-S02.json",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/visual-assets-v1.json",
+      "type": "source-file",
+      "label": "content/continuity/visual-assets-v1.json",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/voices/voice-bible-v1.json",
+      "type": "source-file",
+      "label": "content/continuity/voices/voice-bible-v1.json",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/agent-team-v1.json",
+      "type": "source-file",
+      "label": "content/production/agent-team-v1.json",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/budget-v1.json",
+      "type": "source-file",
+      "label": "content/production/budget-v1.json",
+      "source": "content/production/budget-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/jobs/S01E01-proof-v1.json",
+      "type": "source-file",
+      "label": "content/production/jobs/S01E01-proof-v1.json",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/S01E01-canonical-teaser-v4.json",
+      "type": "source-file",
+      "label": "content/production/S01E01-canonical-teaser-v4.json",
+      "source": "content/production/S01E01-canonical-teaser-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/S01E01-microepisode-plan-v1.json",
+      "type": "source-file",
+      "label": "content/production/S01E01-microepisode-plan-v1.json",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/youtube-release-gate-v1.json",
+      "type": "source-file",
+      "label": "content/production/youtube-release-gate-v1.json",
+      "source": "content/production/youtube-release-gate-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/episodes/S01E01.json",
+      "type": "source-file",
+      "label": "content/season-01/episodes/S01E01.json",
+      "source": "content/season-01/episodes/S01E01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/keyframes/S01E01.keyframes.json",
+      "type": "source-file",
+      "label": "content/season-01/keyframes/S01E01.keyframes.json",
+      "source": "content/season-01/keyframes/S01E01.keyframes.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/packages/S01E01.launch.json",
+      "type": "source-file",
+      "label": "content/season-01/packages/S01E01.launch.json",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/proofs/S01E01-theft-proof.json",
+      "type": "source-file",
+      "label": "content/season-01/proofs/S01E01-theft-proof.json",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/season.json",
+      "type": "source-file",
+      "label": "content/season-01/season.json",
+      "source": "content/season-01/season.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/storyboards/S01E01.storyboard.json",
+      "type": "source-file",
+      "label": "content/season-01/storyboards/S01E01.storyboard.json",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "FX-FIREWORKS-SILENT",
+      "type": "effects[4]",
+      "label": "Fuegos artificiales mágicos y silenciosos",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "FX-FOUNTAIN-AWAKEN",
+      "type": "effects[3]",
+      "label": "Reencendido de la fuente",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "FX-MIST",
+      "type": "effects[5]",
+      "label": "Niebla expresiva de Nublo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "FX-SHARED-BEAMS",
+      "type": "effects[2]",
+      "label": "Rayos suaves de luz compartida",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "FX-VIOLET-TRAIL",
+      "type": "effects[1]",
+      "label": "Rastro de destellos violetas",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "FX-WARM-GLOW",
+      "type": "effects[0]",
+      "label": "Luz dorada volumétrica",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo",
+      "type": "characters[0]",
+      "label": "lumo",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1",
+      "type": "root",
+      "label": "LUMO-AGENT-TEAM-V1",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CANON-LOCK-V4",
+      "type": "root",
+      "label": "LUMO-CANON-LOCK-V4",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-MEMORY-001",
+      "type": "root",
+      "label": "LUMO-CONTINUITY-MEMORY-001",
+      "source": "content/continuity/continuity-manifest.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "type": "root",
+      "label": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-EXPRESSIONS-V4",
+      "type": "activeAssets[10]",
+      "label": "LUMO-EXPRESSIONS-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo-model-sheet-v1",
+      "type": "root",
+      "label": "lumo-model-sheet-v1",
+      "source": "content/characters/model-sheets/lumo-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo-model-sheet-v4",
+      "type": "root",
+      "label": "lumo-model-sheet-v4",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-PERFORMANCE-V4",
+      "type": "activeAssets[11]",
+      "label": "LUMO-PERFORMANCE-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-PRODUCTION-BUDGET-2026-08-03",
+      "type": "root",
+      "label": "LUMO-PRODUCTION-BUDGET-2026-08-03",
+      "source": "content/production/budget-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-TOOL-POLICY-V1",
+      "type": "root",
+      "label": "LUMO-TOOL-POLICY-V1",
+      "source": "config/lumo-tool-policy-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-YOUTUBE-RELEASE-GATE-V1",
+      "type": "root",
+      "label": "LUMO-YOUTUBE-RELEASE-GATE-V1",
+      "source": "content/production/youtube-release-gate-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "muapi-budget-controller",
+      "type": "roles[4]",
+      "label": "muapi-budget-controller",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "MUSIC-CHASE",
+      "type": "audio[2]",
+      "label": "Tema de aventura suave",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "MUSIC-FESTIVAL",
+      "type": "audio[0]",
+      "label": "Tema de la Fiesta de las Mil Luces",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "MUSIC-MYSTERY",
+      "type": "audio[1]",
+      "label": "Motivo travieso de Nublo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "MUSIC-RONDA",
+      "type": "audio[3]",
+      "label": "Compartimos nuestro brillo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "nara",
+      "type": "characters[1]",
+      "label": "nara",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "nublo",
+      "type": "characters[5]",
+      "label": "nublo",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "pompon",
+      "type": "characters[4]",
+      "label": "pompon",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-FOUNTAIN-OF-LIGHT-001",
+      "type": "components[0]",
+      "label": "Fuente de Luz",
+      "source": "content/continuity/props/fountain-and-heart-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-GARLANDS",
+      "type": "props[1]",
+      "label": "Guirnaldas de la fiesta",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-HEART-LIGHT",
+      "type": "props[0]",
+      "label": "Corazón de Luz",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-HEART-OF-LIGHT-001",
+      "type": "components[1]",
+      "label": "Corazón de Luz",
+      "source": "content/continuity/props/fountain-and-heart-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-LANTERNS",
+      "type": "props[6]",
+      "label": "Linternas suaves de Pompón",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-LEAVES",
+      "type": "props[4]",
+      "label": "Hojas translúcidas de Nara",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-LIGHT-BADGES",
+      "type": "props[2]",
+      "label": "Insignias de destellos compartidos",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-LIGHT-SYSTEM-001",
+      "type": "root",
+      "label": "PROP-LIGHT-SYSTEM-001",
+      "source": "content/continuity/props/fountain-and-heart-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-MIRROR-WHEEL",
+      "type": "props[3]",
+      "label": "Rueda de espejos de Tuno",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-NUBLO-LANTERN",
+      "type": "props[7]",
+      "label": "Farol pequeño en la correa cruzada de Nublo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-RIBBONS",
+      "type": "props[5]",
+      "label": "Cintas reflectantes de Biri",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT01",
+      "type": "jobs[0]",
+      "label": "PT01",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT02",
+      "type": "jobs[1]",
+      "label": "PT02",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT03",
+      "type": "jobs[2]",
+      "label": "PT03",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01",
+      "type": "sections[0]",
+      "label": "S01",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-CANONICAL-TEASER-V4",
+      "type": "root",
+      "label": "Lumo Kids — La luz prestada — teaser canónico",
+      "source": "content/production/S01E01-canonical-teaser-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-END-CARD-V4",
+      "type": "activeAssets[13]",
+      "label": "S01E01-END-CARD-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-keyframes-v1",
+      "type": "root",
+      "label": "S01E01-keyframes-v1",
+      "source": "content/season-01/keyframes/S01E01.keyframes.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-launch-v2",
+      "type": "root",
+      "label": "S01E01-launch-v2",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1",
+      "type": "root",
+      "label": "La luz prestada",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-PILOT-FRAMES-V4",
+      "type": "activeAssets[12]",
+      "label": "S01E01-PILOT-FRAMES-V4",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-PROOF-JOBS-V1",
+      "type": "root",
+      "label": "S01E01-PROOF-JOBS-V1",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01",
+      "type": "root",
+      "label": "Bienvenidos a Brillavalle",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02",
+      "type": "root",
+      "label": "Los amigos preparan la plaza",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-short-fireworks",
+      "type": "shorts[2]",
+      "label": "¡La fiesta vuelve a brillar!",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-short-song",
+      "type": "shorts[1]",
+      "label": "Compartimos nuestro brillo ✨",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-short-theft",
+      "type": "shorts[0]",
+      "label": "¡Alguien tomó la luz de la fiesta!",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2",
+      "type": "root",
+      "label": "Lumo y la luz de la fiesta",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1",
+      "type": "root",
+      "label": "Prueba de producción: el robo del Corazón de Luz",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S02",
+      "type": "sections[1]",
+      "label": "S02",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S03",
+      "type": "sections[2]",
+      "label": "S03",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S04",
+      "type": "sections[3]",
+      "label": "S04",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC01",
+      "type": "scenes[0]",
+      "label": "Brillavalle se viste de fiesta",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC02",
+      "type": "scenes[1]",
+      "label": "El Corazón de Luz",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC03",
+      "type": "scenes[2]",
+      "label": "Alguien mira desde lejos",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC04",
+      "type": "scenes[3]",
+      "label": "La luz desaparece",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC05",
+      "type": "scenes[4]",
+      "label": "La plaza en penumbra",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC06",
+      "type": "scenes[5]",
+      "label": "El rastro de Nublo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC07",
+      "type": "scenes[6]",
+      "label": "Una luz para cada amigo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC08",
+      "type": "scenes[7]",
+      "label": "El puente sin faroles",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC09",
+      "type": "scenes[8]",
+      "label": "La niebla de las mil vueltas",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC10",
+      "type": "scenes[9]",
+      "label": "La puerta del observatorio",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC11",
+      "type": "scenes[10]",
+      "label": "El pasillo de sombras blandas",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC12",
+      "type": "scenes[11]",
+      "label": "Una luz que se debilita",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC13",
+      "type": "scenes[12]",
+      "label": "La fiesta de uno solo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC14",
+      "type": "scenes[13]",
+      "label": "El corazón no obedece",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC15",
+      "type": "scenes[14]",
+      "label": "La Ronda de las Ideas",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16",
+      "type": "scenes[15]",
+      "label": "Compartimos nuestro brillo",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC17",
+      "type": "scenes[16]",
+      "label": "Nublo devuelve la luz",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18",
+      "type": "scenes[17]",
+      "label": "Relevo hacia la plaza",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19",
+      "type": "scenes[18]",
+      "label": "La fuente despierta",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC20",
+      "type": "scenes[19]",
+      "label": "La Fiesta de las Mil Luces",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-ABUELA-MARA-GOAT-001",
+      "type": "citizens[8]",
+      "label": "Mara",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-BRUN-MOLE-001",
+      "type": "citizens[7]",
+      "label": "Brun",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-DEER-SIBLINGS-001",
+      "type": "citizens[11]",
+      "label": "Ciro y Cora",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-FLO-FLAMINGO-001",
+      "type": "citizens[5]",
+      "label": "Flo",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-HEDGEHOG-FAMILY-001",
+      "type": "citizens[10]",
+      "label": "Familia Púa",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-LIRA-RABBIT-001",
+      "type": "citizens[0]",
+      "label": "Lira",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-MILO-RACCOON-001",
+      "type": "citizens[2]",
+      "label": "Milo",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-NELA-OTTER-001",
+      "type": "citizens[6]",
+      "label": "Nela",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-OLMO-OWL-001",
+      "type": "citizens[4]",
+      "label": "Olmo",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-SILA-SQUIRREL-001",
+      "type": "citizens[3]",
+      "label": "Sila",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-TIMA-TURTLE-001",
+      "type": "citizens[9]",
+      "label": "Tima",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SEC-TORI-FOX-001",
+      "type": "citizens[1]",
+      "label": "Tori",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SFX-FIREWORK-BLOOM",
+      "type": "audio[8]",
+      "label": "Apertura musical de fuegos de luz",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SFX-FOUNTAIN-IGNITE",
+      "type": "audio[7]",
+      "label": "Encendido ascendente de la fuente",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SFX-LIGHT-SNATCH",
+      "type": "audio[4]",
+      "label": "Remolino al desaparecer la fuente",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SFX-SPARKLE",
+      "type": "audio[5]",
+      "label": "Destello cristalino",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SFX-WHOOSH-SOFT",
+      "type": "audio[6]",
+      "label": "Movimiento aéreo suave",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "tuno",
+      "type": "characters[2]",
+      "label": "tuno",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "visual-director",
+      "type": "roles[2]",
+      "label": "visual-director",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIBLE-LUMO-KIDS-001",
+      "type": "root",
+      "label": "VOICE-BIBLE-LUMO-KIDS-001",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIRI-001",
+      "type": "voices[4]",
+      "label": "VOICE-BIRI-001",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-LUMO-001",
+      "type": "voices[1]",
+      "label": "VOICE-LUMO-001",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-NARA-001",
+      "type": "voices[2]",
+      "label": "VOICE-NARA-001",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-NARRATOR-001",
+      "type": "voices[0]",
+      "label": "VOICE-NARRATOR-001",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-NUBLO-001",
+      "type": "voices[6]",
+      "label": "VOICE-NUBLO-001",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-POMPON-001",
+      "type": "voices[5]",
+      "label": "VOICE-POMPON-001",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-TUNO-001",
+      "type": "voices[3]",
+      "label": "VOICE-TUNO-001",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "youtube-release",
+      "type": "roles[7]",
+      "label": "youtube-release",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "biri|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "from": "biri",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/profiles/biri.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-MAIN-SIX-LINEUP-V4|USES_ASSET|asset:/lumo-kids/canon/CAST-main-six-lineup-v4.png",
+      "from": "CAST-MAIN-SIX-LINEUP-V4",
+      "to": "asset:/lumo-kids/canon/CAST-main-six-lineup-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-MAIN-SIX-V4|USES_ASSET|asset:/lumo-kids/canon/CAST-main-six-v4.png",
+      "from": "CAST-MAIN-SIX-V4",
+      "to": "asset:/lumo-kids/canon/CAST-main-six-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|ANT-DRYLLA-OWL-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "ANT-DRYLLA-OWL-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|ANT-GLOOM-CROW-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "ANT-GLOOM-CROW-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|ANT-GRUMM-BADGER-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "ANT-GRUMM-BADGER-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|ANT-SOMBRO-WOLF-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "ANT-SOMBRO-WOLF-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|ANT-VEXO-FOX-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "ANT-VEXO-FOX-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-ABUELA-MARA-GOAT-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-ABUELA-MARA-GOAT-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-BRUN-MOLE-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-BRUN-MOLE-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-DEER-SIBLINGS-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-DEER-SIBLINGS-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-FLO-FLAMINGO-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-FLO-FLAMINGO-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-HEDGEHOG-FAMILY-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-HEDGEHOG-FAMILY-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-LIRA-RABBIT-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-LIRA-RABBIT-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-MILO-RACCOON-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-MILO-RACCOON-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-NELA-OTTER-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-NELA-OTTER-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-OLMO-OWL-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-OLMO-OWL-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-SILA-SQUIRREL-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-SILA-SQUIRREL-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-TIMA-TURTLE-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-TIMA-TURTLE-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|CONTAINS|SEC-TORI-FOX-001",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "SEC-TORI-FOX-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|USES_ASSET|asset:/lumo-kids/canon/reference/CAST-future-antagonists-v4.png",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "asset:/lumo-kids/canon/reference/CAST-future-antagonists-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-001|USES_ASSET|asset:/lumo-kids/canon/reference/CAST-secondary-v4.png",
+      "from": "CAST-SECONDARY-CITIZENS-001",
+      "to": "asset:/lumo-kids/canon/reference/CAST-secondary-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-BIRI-V4|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "from": "CHAR-BIRI-V4",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-LUMO-V4|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "from": "CHAR-LUMO-V4",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-NARA-V4|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "from": "CHAR-NARA-V4",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-NUBLO-V4|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "from": "CHAR-NUBLO-V4",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-POMPON-V4|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "from": "CHAR-POMPON-V4",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "CHAR-TUNO-V4|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "from": "CHAR-TUNO-V4",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "DESIGN-MASTER-V4|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "DESIGN-MASTER-V4",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "ENV-BRILLAVALLE-V4|USES_ASSET|asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "from": "ENV-BRILLAVALLE-V4",
+      "to": "asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:config/lumo-canon-lock-v4.json|DEFINES|LUMO-CANON-LOCK-V4",
+      "from": "file:config/lumo-canon-lock-v4.json",
+      "to": "LUMO-CANON-LOCK-V4",
+      "relation": "DEFINES",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:config/lumo-tool-policy-v1.json|DEFINES|LUMO-TOOL-POLICY-V1",
+      "from": "file:config/lumo-tool-policy-v1.json",
+      "to": "LUMO-TOOL-POLICY-V1",
+      "relation": "DEFINES",
+      "source": "config/lumo-tool-policy-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/index.json|DEFINES|biri",
+      "from": "file:content/characters/index.json",
+      "to": "biri",
+      "relation": "DEFINES",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/index.json|DEFINES|lumo",
+      "from": "file:content/characters/index.json",
+      "to": "lumo",
+      "relation": "DEFINES",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/index.json|DEFINES|nara",
+      "from": "file:content/characters/index.json",
+      "to": "nara",
+      "relation": "DEFINES",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/index.json|DEFINES|nublo",
+      "from": "file:content/characters/index.json",
+      "to": "nublo",
+      "relation": "DEFINES",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/index.json|DEFINES|pompon",
+      "from": "file:content/characters/index.json",
+      "to": "pompon",
+      "relation": "DEFINES",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/index.json|DEFINES|tuno",
+      "from": "file:content/characters/index.json",
+      "to": "tuno",
+      "relation": "DEFINES",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/index.json|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "file:content/characters/index.json",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/index.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/model-sheets/lumo-v1.json|DEFINES|lumo-model-sheet-v1",
+      "from": "file:content/characters/model-sheets/lumo-v1.json",
+      "to": "lumo-model-sheet-v1",
+      "relation": "DEFINES",
+      "source": "content/characters/model-sheets/lumo-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/model-sheets/lumo-v4.json|DEFINES|lumo-model-sheet-v4",
+      "from": "file:content/characters/model-sheets/lumo-v4.json",
+      "to": "lumo-model-sheet-v4",
+      "relation": "DEFINES",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/biri.json|DEFINES|biri",
+      "from": "file:content/characters/profiles/biri.json",
+      "to": "biri",
+      "relation": "DEFINES",
+      "source": "content/characters/profiles/biri.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/lumo.json|DEFINES|lumo",
+      "from": "file:content/characters/profiles/lumo.json",
+      "to": "lumo",
+      "relation": "DEFINES",
+      "source": "content/characters/profiles/lumo.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/nara.json|DEFINES|nara",
+      "from": "file:content/characters/profiles/nara.json",
+      "to": "nara",
+      "relation": "DEFINES",
+      "source": "content/characters/profiles/nara.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/nublo.json|DEFINES|nublo",
+      "from": "file:content/characters/profiles/nublo.json",
+      "to": "nublo",
+      "relation": "DEFINES",
+      "source": "content/characters/profiles/nublo.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/pompon.json|DEFINES|pompon",
+      "from": "file:content/characters/profiles/pompon.json",
+      "to": "pompon",
+      "relation": "DEFINES",
+      "source": "content/characters/profiles/pompon.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/characters/profiles/tuno.json|DEFINES|tuno",
+      "from": "file:content/characters/profiles/tuno.json",
+      "to": "tuno",
+      "relation": "DEFINES",
+      "source": "content/characters/profiles/tuno.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/cast/secondary-citizens-v1.json|DEFINES|CAST-SECONDARY-CITIZENS-001",
+      "from": "file:content/continuity/cast/secondary-citizens-v1.json",
+      "to": "CAST-SECONDARY-CITIZENS-001",
+      "relation": "DEFINES",
+      "source": "content/continuity/cast/secondary-citizens-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/continuity-manifest.json|DEFINES|LUMO-CONTINUITY-MEMORY-001",
+      "from": "file:content/continuity/continuity-manifest.json",
+      "to": "LUMO-CONTINUITY-MEMORY-001",
+      "relation": "DEFINES",
+      "source": "content/continuity/continuity-manifest.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/environments/brillavalle-plaza-v1.json|DEFINES|ENV-BRILLAVALLE-PLAZA-001",
+      "from": "file:content/continuity/environments/brillavalle-plaza-v1.json",
+      "to": "ENV-BRILLAVALLE-PLAZA-001",
+      "relation": "DEFINES",
+      "source": "content/continuity/environments/brillavalle-plaza-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/props/fountain-and-heart-v1.json|DEFINES|PROP-LIGHT-SYSTEM-001",
+      "from": "file:content/continuity/props/fountain-and-heart-v1.json",
+      "to": "PROP-LIGHT-SYSTEM-001",
+      "relation": "DEFINES",
+      "source": "content/continuity/props/fountain-and-heart-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/sections/S01E01-S01.json|DEFINES|S01E01-S01",
+      "from": "file:content/continuity/sections/S01E01-S01.json",
+      "to": "S01E01-S01",
+      "relation": "DEFINES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/sections/S01E01-S02.json|DEFINES|S01E01-S02",
+      "from": "file:content/continuity/sections/S01E01-S02.json",
+      "to": "S01E01-S02",
+      "relation": "DEFINES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/visual-assets-v1.json|DEFINES|LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "from": "file:content/continuity/visual-assets-v1.json",
+      "to": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "relation": "DEFINES",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/continuity/voices/voice-bible-v1.json|DEFINES|VOICE-BIBLE-LUMO-KIDS-001",
+      "from": "file:content/continuity/voices/voice-bible-v1.json",
+      "to": "VOICE-BIBLE-LUMO-KIDS-001",
+      "relation": "DEFINES",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/agent-team-v1.json|DEFINES|LUMO-AGENT-TEAM-V1",
+      "from": "file:content/production/agent-team-v1.json",
+      "to": "LUMO-AGENT-TEAM-V1",
+      "relation": "DEFINES",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/budget-v1.json|DEFINES|LUMO-PRODUCTION-BUDGET-2026-08-03",
+      "from": "file:content/production/budget-v1.json",
+      "to": "LUMO-PRODUCTION-BUDGET-2026-08-03",
+      "relation": "DEFINES",
+      "source": "content/production/budget-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/jobs/S01E01-proof-v1.json|DEFINES|S01E01-PROOF-JOBS-V1",
+      "from": "file:content/production/jobs/S01E01-proof-v1.json",
+      "to": "S01E01-PROOF-JOBS-V1",
+      "relation": "DEFINES",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/S01E01-canonical-teaser-v4.json|DEFINES|S01E01-CANONICAL-TEASER-V4",
+      "from": "file:content/production/S01E01-canonical-teaser-v4.json",
+      "to": "S01E01-CANONICAL-TEASER-V4",
+      "relation": "DEFINES",
+      "source": "content/production/S01E01-canonical-teaser-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/S01E01-microepisode-plan-v1.json|DEFINES|S01E01-MICROEPISODE-V1",
+      "from": "file:content/production/S01E01-microepisode-plan-v1.json",
+      "to": "S01E01-MICROEPISODE-V1",
+      "relation": "DEFINES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/production/youtube-release-gate-v1.json|DEFINES|LUMO-YOUTUBE-RELEASE-GATE-V1",
+      "from": "file:content/production/youtube-release-gate-v1.json",
+      "to": "LUMO-YOUTUBE-RELEASE-GATE-V1",
+      "relation": "DEFINES",
+      "source": "content/production/youtube-release-gate-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/keyframes/S01E01.keyframes.json|DEFINES|S01E01-keyframes-v1",
+      "from": "file:content/season-01/keyframes/S01E01.keyframes.json",
+      "to": "S01E01-keyframes-v1",
+      "relation": "DEFINES",
+      "source": "content/season-01/keyframes/S01E01.keyframes.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/packages/S01E01.launch.json|DEFINES|S01E01-launch-v2",
+      "from": "file:content/season-01/packages/S01E01.launch.json",
+      "to": "S01E01-launch-v2",
+      "relation": "DEFINES",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/proofs/S01E01-theft-proof.json|DEFINES|S01E01-theft-proof-v1",
+      "from": "file:content/season-01/proofs/S01E01-theft-proof.json",
+      "to": "S01E01-theft-proof-v1",
+      "relation": "DEFINES",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "file:content/season-01/storyboards/S01E01.storyboard.json|DEFINES|S01E01-storyboard-v2",
+      "from": "file:content/season-01/storyboards/S01E01.storyboard.json",
+      "to": "S01E01-storyboard-v2",
+      "relation": "DEFINES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1|CONTAINS|canon-guardian",
+      "from": "LUMO-AGENT-TEAM-V1",
+      "to": "canon-guardian",
+      "relation": "CONTAINS",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1|CONTAINS|child-safety-qa",
+      "from": "LUMO-AGENT-TEAM-V1",
+      "to": "child-safety-qa",
+      "relation": "CONTAINS",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1|CONTAINS|continuity-editor",
+      "from": "LUMO-AGENT-TEAM-V1",
+      "to": "continuity-editor",
+      "relation": "CONTAINS",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1|CONTAINS|editor-sound",
+      "from": "LUMO-AGENT-TEAM-V1",
+      "to": "editor-sound",
+      "relation": "CONTAINS",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1|CONTAINS|educational-story",
+      "from": "LUMO-AGENT-TEAM-V1",
+      "to": "educational-story",
+      "relation": "CONTAINS",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1|CONTAINS|muapi-budget-controller",
+      "from": "LUMO-AGENT-TEAM-V1",
+      "to": "muapi-budget-controller",
+      "relation": "CONTAINS",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1|CONTAINS|visual-director",
+      "from": "LUMO-AGENT-TEAM-V1",
+      "to": "visual-director",
+      "relation": "CONTAINS",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-AGENT-TEAM-V1|CONTAINS|youtube-release",
+      "from": "LUMO-AGENT-TEAM-V1",
+      "to": "youtube-release",
+      "relation": "CONTAINS",
+      "source": "content/production/agent-team-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CANON-LOCK-V4|CONTAINS|biri",
+      "from": "LUMO-CANON-LOCK-V4",
+      "to": "biri",
+      "relation": "CONTAINS",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CANON-LOCK-V4|CONTAINS|brillavalle",
+      "from": "LUMO-CANON-LOCK-V4",
+      "to": "brillavalle",
+      "relation": "CONTAINS",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CANON-LOCK-V4|CONTAINS|lumo",
+      "from": "LUMO-CANON-LOCK-V4",
+      "to": "lumo",
+      "relation": "CONTAINS",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CANON-LOCK-V4|CONTAINS|nara",
+      "from": "LUMO-CANON-LOCK-V4",
+      "to": "nara",
+      "relation": "CONTAINS",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CANON-LOCK-V4|CONTAINS|nublo",
+      "from": "LUMO-CANON-LOCK-V4",
+      "to": "nublo",
+      "relation": "CONTAINS",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CANON-LOCK-V4|CONTAINS|pompon",
+      "from": "LUMO-CANON-LOCK-V4",
+      "to": "pompon",
+      "relation": "CONTAINS",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CANON-LOCK-V4|CONTAINS|tuno",
+      "from": "LUMO-CANON-LOCK-V4",
+      "to": "tuno",
+      "relation": "CONTAINS",
+      "source": "config/lumo-canon-lock-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-MEMORY-001|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "LUMO-CONTINUITY-MEMORY-001",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/continuity-manifest.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|CAST-MAIN-SIX-LINEUP-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "CAST-MAIN-SIX-LINEUP-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|CAST-MAIN-SIX-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "CAST-MAIN-SIX-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|CHAR-BIRI-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "CHAR-BIRI-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|CHAR-LUMO-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "CHAR-LUMO-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|CHAR-NARA-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "CHAR-NARA-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|CHAR-NUBLO-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "CHAR-NUBLO-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|CHAR-POMPON-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "CHAR-POMPON-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|CHAR-TUNO-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "CHAR-TUNO-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|DESIGN-MASTER-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "DESIGN-MASTER-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|ENV-BRILLAVALLE-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "ENV-BRILLAVALLE-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|LUMO-EXPRESSIONS-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "LUMO-EXPRESSIONS-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|LUMO-PERFORMANCE-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "LUMO-PERFORMANCE-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|S01E01-END-CARD-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "S01E01-END-CARD-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|CONTAINS|S01E01-PILOT-FRAMES-V4",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "S01E01-PILOT-FRAMES-V4",
+      "relation": "CONTAINS",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-CONTINUITY-VISUAL-ASSETS-001|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "LUMO-CONTINUITY-VISUAL-ASSETS-001",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-EXPRESSIONS-V4|USES_ASSET|asset:/lumo-kids/canon/reference/LUMO-expressions-v4.png",
+      "from": "LUMO-EXPRESSIONS-V4",
+      "to": "asset:/lumo-kids/canon/reference/LUMO-expressions-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo-model-sheet-v1|REFERENCES|lumo",
+      "from": "lumo-model-sheet-v1",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/characters/model-sheets/lumo-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo-model-sheet-v4|REFERENCES|lumo",
+      "from": "lumo-model-sheet-v4",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo-model-sheet-v4|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "lumo-model-sheet-v4",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo-model-sheet-v4|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "from": "lumo-model-sheet-v4",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo-model-sheet-v4|USES_ASSET|asset:/lumo-kids/canon/reference/LUMO-expressions-v4.png",
+      "from": "lumo-model-sheet-v4",
+      "to": "asset:/lumo-kids/canon/reference/LUMO-expressions-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo-model-sheet-v4|USES_ASSET|asset:/lumo-kids/canon/reference/LUMO-performance-v4.png",
+      "from": "lumo-model-sheet-v4",
+      "to": "asset:/lumo-kids/canon/reference/LUMO-performance-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/model-sheets/lumo-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "LUMO-PERFORMANCE-V4|USES_ASSET|asset:/lumo-kids/canon/reference/LUMO-performance-v4.png",
+      "from": "LUMO-PERFORMANCE-V4",
+      "to": "asset:/lumo-kids/canon/reference/LUMO-performance-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "lumo",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/profiles/lumo.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "lumo|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "from": "lumo",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/profiles/lumo.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "nara|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "from": "nara",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/profiles/nara.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "nublo|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "from": "nublo",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/profiles/nublo.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "pompon|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "from": "pompon",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/profiles/pompon.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-LIGHT-SYSTEM-001|CONTAINS|PROP-FOUNTAIN-OF-LIGHT-001",
+      "from": "PROP-LIGHT-SYSTEM-001",
+      "to": "PROP-FOUNTAIN-OF-LIGHT-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/props/fountain-and-heart-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PROP-LIGHT-SYSTEM-001|CONTAINS|PROP-HEART-OF-LIGHT-001",
+      "from": "PROP-LIGHT-SYSTEM-001",
+      "to": "PROP-HEART-OF-LIGHT-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/props/fountain-and-heart-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT01|REFERENCES|nublo",
+      "from": "PT01",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT01|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "from": "PT01",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT01|USES_ASSET|asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "from": "PT01",
+      "to": "asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT02|REFERENCES|nublo",
+      "from": "PT02",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT02|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "from": "PT02",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT02|USES_ASSET|asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "from": "PT02",
+      "to": "asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT03|REFERENCES|biri",
+      "from": "PT03",
+      "to": "biri",
+      "relation": "REFERENCES",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT03|REFERENCES|lumo",
+      "from": "PT03",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT03|REFERENCES|nublo",
+      "from": "PT03",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT03|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "from": "PT03",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT03|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "from": "PT03",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "PT03|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "from": "PT03",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01|REFERENCES|biri",
+      "from": "S01",
+      "to": "biri",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01|REFERENCES|lumo",
+      "from": "S01",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01|REFERENCES|nara",
+      "from": "S01",
+      "to": "nara",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01|REFERENCES|pompon",
+      "from": "S01",
+      "to": "pompon",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01|REFERENCES|tuno",
+      "from": "S01",
+      "to": "tuno",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-CANONICAL-TEASER-V4|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "S01E01-CANONICAL-TEASER-V4",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/S01E01-canonical-teaser-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-CANONICAL-TEASER-V4|USES_ASSET|asset:/lumo-kids/canon/reference/LUMO-KIDS-end-card-v4.png",
+      "from": "S01E01-CANONICAL-TEASER-V4",
+      "to": "asset:/lumo-kids/canon/reference/LUMO-KIDS-end-card-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/S01E01-canonical-teaser-v4.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-END-CARD-V4|USES_ASSET|asset:/lumo-kids/canon/reference/LUMO-KIDS-end-card-v4.png",
+      "from": "S01E01-END-CARD-V4",
+      "to": "asset:/lumo-kids/canon/reference/LUMO-KIDS-end-card-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-keyframes-v1|REFERENCES|S01E01-storyboard-v2",
+      "from": "S01E01-keyframes-v1",
+      "to": "S01E01-storyboard-v2",
+      "relation": "REFERENCES",
+      "source": "content/season-01/keyframes/S01E01.keyframes.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-keyframes-v1|REFERENCES|SC01",
+      "from": "S01E01-keyframes-v1",
+      "to": "SC01",
+      "relation": "REFERENCES",
+      "source": "content/season-01/keyframes/S01E01.keyframes.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-keyframes-v1|REFERENCES|SC02",
+      "from": "S01E01-keyframes-v1",
+      "to": "SC02",
+      "relation": "REFERENCES",
+      "source": "content/season-01/keyframes/S01E01.keyframes.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-keyframes-v1|REFERENCES|SC14",
+      "from": "S01E01-keyframes-v1",
+      "to": "SC14",
+      "relation": "REFERENCES",
+      "source": "content/season-01/keyframes/S01E01.keyframes.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-keyframes-v1|REFERENCES|SC16",
+      "from": "S01E01-keyframes-v1",
+      "to": "SC16",
+      "relation": "REFERENCES",
+      "source": "content/season-01/keyframes/S01E01.keyframes.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-launch-v2|CONTAINS|S01E01-short-fireworks",
+      "from": "S01E01-launch-v2",
+      "to": "S01E01-short-fireworks",
+      "relation": "CONTAINS",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-launch-v2|CONTAINS|S01E01-short-song",
+      "from": "S01E01-launch-v2",
+      "to": "S01E01-short-song",
+      "relation": "CONTAINS",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-launch-v2|CONTAINS|S01E01-short-theft",
+      "from": "S01E01-launch-v2",
+      "to": "S01E01-short-theft",
+      "relation": "CONTAINS",
+      "source": "content/season-01/packages/S01E01.launch.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|CONTAINS|S01",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "S01",
+      "relation": "CONTAINS",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|CONTAINS|S02",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "S02",
+      "relation": "CONTAINS",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|CONTAINS|S03",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "S03",
+      "relation": "CONTAINS",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|CONTAINS|S04",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "S04",
+      "relation": "CONTAINS",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|REFERENCES|biri",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "biri",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|REFERENCES|lumo",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|REFERENCES|nara",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "nara",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|REFERENCES|nublo",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|REFERENCES|pompon",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "pompon",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|REFERENCES|tuno",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "tuno",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-MICROEPISODE-V1|USES_ASSET|asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "from": "S01E01-MICROEPISODE-V1",
+      "to": "asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-PILOT-FRAMES-V4|USES_ASSET|asset:/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "from": "S01E01-PILOT-FRAMES-V4",
+      "to": "asset:/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/visual-assets-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-PROOF-JOBS-V1|CONTAINS|PT01",
+      "from": "S01E01-PROOF-JOBS-V1",
+      "to": "PT01",
+      "relation": "CONTAINS",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-PROOF-JOBS-V1|CONTAINS|PT02",
+      "from": "S01E01-PROOF-JOBS-V1",
+      "to": "PT02",
+      "relation": "CONTAINS",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-PROOF-JOBS-V1|CONTAINS|PT03",
+      "from": "S01E01-PROOF-JOBS-V1",
+      "to": "PT03",
+      "relation": "CONTAINS",
+      "source": "content/production/jobs/S01E01-proof-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|biri",
+      "from": "S01E01-S01",
+      "to": "biri",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|ENV-BRILLAVALLE-PLAZA-001",
+      "from": "S01E01-S01",
+      "to": "ENV-BRILLAVALLE-PLAZA-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|lumo",
+      "from": "S01E01-S01",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|nara",
+      "from": "S01E01-S01",
+      "to": "nara",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|nublo",
+      "from": "S01E01-S01",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|pompon",
+      "from": "S01E01-S01",
+      "to": "pompon",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|PROP-FOUNTAIN-OF-LIGHT-001",
+      "from": "S01E01-S01",
+      "to": "PROP-FOUNTAIN-OF-LIGHT-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|PROP-HEART-OF-LIGHT-001",
+      "from": "S01E01-S01",
+      "to": "PROP-HEART-OF-LIGHT-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|S01E01-S02",
+      "from": "S01E01-S01",
+      "to": "S01E01-S02",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|SEC-FLO-FLAMINGO-001",
+      "from": "S01E01-S01",
+      "to": "SEC-FLO-FLAMINGO-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|SEC-LIRA-RABBIT-001",
+      "from": "S01E01-S01",
+      "to": "SEC-LIRA-RABBIT-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|SEC-MILO-RACCOON-001",
+      "from": "S01E01-S01",
+      "to": "SEC-MILO-RACCOON-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|SEC-OLMO-OWL-001",
+      "from": "S01E01-S01",
+      "to": "SEC-OLMO-OWL-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|SEC-SILA-SQUIRREL-001",
+      "from": "S01E01-S01",
+      "to": "SEC-SILA-SQUIRREL-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|SEC-TORI-FOX-001",
+      "from": "S01E01-S01",
+      "to": "SEC-TORI-FOX-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|tuno",
+      "from": "S01E01-S01",
+      "to": "tuno",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|VOICE-BIBLE-LUMO-KIDS-001",
+      "from": "S01E01-S01",
+      "to": "VOICE-BIBLE-LUMO-KIDS-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|REFERENCES|VOICE-NARRATOR-001",
+      "from": "S01E01-S01",
+      "to": "VOICE-NARRATOR-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|USES_ASSET|asset:/lumo-kids/canon/CAST-main-six-v4.png",
+      "from": "S01E01-S01",
+      "to": "asset:/lumo-kids/canon/CAST-main-six-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S01|USES_ASSET|asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "from": "S01E01-S01",
+      "to": "asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/sections/S01E01-S01.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|biri",
+      "from": "S01E01-S02",
+      "to": "biri",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|ENV-BRILLAVALLE-PLAZA-001",
+      "from": "S01E01-S02",
+      "to": "ENV-BRILLAVALLE-PLAZA-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|lumo",
+      "from": "S01E01-S02",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|nara",
+      "from": "S01E01-S02",
+      "to": "nara",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|nublo",
+      "from": "S01E01-S02",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|pompon",
+      "from": "S01E01-S02",
+      "to": "pompon",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|PROP-FOUNTAIN-OF-LIGHT-001",
+      "from": "S01E01-S02",
+      "to": "PROP-FOUNTAIN-OF-LIGHT-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|PROP-HEART-OF-LIGHT-001",
+      "from": "S01E01-S02",
+      "to": "PROP-HEART-OF-LIGHT-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|SEC-LIRA-RABBIT-001",
+      "from": "S01E01-S02",
+      "to": "SEC-LIRA-RABBIT-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|SEC-MILO-RACCOON-001",
+      "from": "S01E01-S02",
+      "to": "SEC-MILO-RACCOON-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|SEC-OLMO-OWL-001",
+      "from": "S01E01-S02",
+      "to": "SEC-OLMO-OWL-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|SEC-SILA-SQUIRREL-001",
+      "from": "S01E01-S02",
+      "to": "SEC-SILA-SQUIRREL-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|SEC-TORI-FOX-001",
+      "from": "S01E01-S02",
+      "to": "SEC-TORI-FOX-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|tuno",
+      "from": "S01E01-S02",
+      "to": "tuno",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|VOICE-BIBLE-LUMO-KIDS-001",
+      "from": "S01E01-S02",
+      "to": "VOICE-BIBLE-LUMO-KIDS-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|VOICE-LUMO-001",
+      "from": "S01E01-S02",
+      "to": "VOICE-LUMO-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|VOICE-NARA-001",
+      "from": "S01E01-S02",
+      "to": "VOICE-NARA-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|VOICE-POMPON-001",
+      "from": "S01E01-S02",
+      "to": "VOICE-POMPON-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|REFERENCES|VOICE-TUNO-001",
+      "from": "S01E01-S02",
+      "to": "VOICE-TUNO-001",
+      "relation": "REFERENCES",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|USES_ASSET|asset:/lumo-kids/canon/CAST-main-six-v4.png",
+      "from": "S01E01-S02",
+      "to": "asset:/lumo-kids/canon/CAST-main-six-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-S02|USES_ASSET|asset:/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "from": "S01E01-S02",
+      "to": "asset:/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/continuity/sections/S01E01-S02.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|AMB-OBSERVATORY",
+      "from": "S01E01-storyboard-v2",
+      "to": "AMB-OBSERVATORY",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|AMB-PLAZA",
+      "from": "S01E01-storyboard-v2",
+      "to": "AMB-PLAZA",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|AMB-WOODS",
+      "from": "S01E01-storyboard-v2",
+      "to": "AMB-WOODS",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|BG-FESTIVAL-NIGHT",
+      "from": "S01E01-storyboard-v2",
+      "to": "BG-FESTIVAL-NIGHT",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|BG-LANTERN-PATH",
+      "from": "S01E01-storyboard-v2",
+      "to": "BG-LANTERN-PATH",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|BG-LIGHT-FOUNTAIN",
+      "from": "S01E01-storyboard-v2",
+      "to": "BG-LIGHT-FOUNTAIN",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|BG-MIST-GROVE",
+      "from": "S01E01-storyboard-v2",
+      "to": "BG-MIST-GROVE",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|BG-OBSERVATORY",
+      "from": "S01E01-storyboard-v2",
+      "to": "BG-OBSERVATORY",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|BG-PLAZA-FESTIVAL-DAY",
+      "from": "S01E01-storyboard-v2",
+      "to": "BG-PLAZA-FESTIVAL-DAY",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|BG-PLAZA-FESTIVAL-DIM",
+      "from": "S01E01-storyboard-v2",
+      "to": "BG-PLAZA-FESTIVAL-DIM",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|BG-WHISPER-BRIDGE",
+      "from": "S01E01-storyboard-v2",
+      "to": "BG-WHISPER-BRIDGE",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|FX-FIREWORKS-SILENT",
+      "from": "S01E01-storyboard-v2",
+      "to": "FX-FIREWORKS-SILENT",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|FX-FOUNTAIN-AWAKEN",
+      "from": "S01E01-storyboard-v2",
+      "to": "FX-FOUNTAIN-AWAKEN",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|FX-MIST",
+      "from": "S01E01-storyboard-v2",
+      "to": "FX-MIST",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|FX-SHARED-BEAMS",
+      "from": "S01E01-storyboard-v2",
+      "to": "FX-SHARED-BEAMS",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|FX-VIOLET-TRAIL",
+      "from": "S01E01-storyboard-v2",
+      "to": "FX-VIOLET-TRAIL",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|FX-WARM-GLOW",
+      "from": "S01E01-storyboard-v2",
+      "to": "FX-WARM-GLOW",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|MUSIC-CHASE",
+      "from": "S01E01-storyboard-v2",
+      "to": "MUSIC-CHASE",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|MUSIC-FESTIVAL",
+      "from": "S01E01-storyboard-v2",
+      "to": "MUSIC-FESTIVAL",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|MUSIC-MYSTERY",
+      "from": "S01E01-storyboard-v2",
+      "to": "MUSIC-MYSTERY",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|MUSIC-RONDA",
+      "from": "S01E01-storyboard-v2",
+      "to": "MUSIC-RONDA",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|PROP-GARLANDS",
+      "from": "S01E01-storyboard-v2",
+      "to": "PROP-GARLANDS",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|PROP-HEART-LIGHT",
+      "from": "S01E01-storyboard-v2",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|PROP-LANTERNS",
+      "from": "S01E01-storyboard-v2",
+      "to": "PROP-LANTERNS",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|PROP-LEAVES",
+      "from": "S01E01-storyboard-v2",
+      "to": "PROP-LEAVES",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|PROP-LIGHT-BADGES",
+      "from": "S01E01-storyboard-v2",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|PROP-MIRROR-WHEEL",
+      "from": "S01E01-storyboard-v2",
+      "to": "PROP-MIRROR-WHEEL",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|PROP-NUBLO-LANTERN",
+      "from": "S01E01-storyboard-v2",
+      "to": "PROP-NUBLO-LANTERN",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|PROP-RIBBONS",
+      "from": "S01E01-storyboard-v2",
+      "to": "PROP-RIBBONS",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC01",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC01",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC02",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC02",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC03",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC03",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC04",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC04",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC05",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC05",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC06",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC06",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC07",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC07",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC08",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC08",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC09",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC09",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC10",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC10",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC11",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC11",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC12",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC12",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC13",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC13",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC14",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC14",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC15",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC15",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC16",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC16",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC17",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC17",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC18",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC18",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC19",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC19",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SC20",
+      "from": "S01E01-storyboard-v2",
+      "to": "SC20",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SFX-FIREWORK-BLOOM",
+      "from": "S01E01-storyboard-v2",
+      "to": "SFX-FIREWORK-BLOOM",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SFX-FOUNTAIN-IGNITE",
+      "from": "S01E01-storyboard-v2",
+      "to": "SFX-FOUNTAIN-IGNITE",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SFX-LIGHT-SNATCH",
+      "from": "S01E01-storyboard-v2",
+      "to": "SFX-LIGHT-SNATCH",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SFX-SPARKLE",
+      "from": "S01E01-storyboard-v2",
+      "to": "SFX-SPARKLE",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|CONTAINS|SFX-WHOOSH-SOFT",
+      "from": "S01E01-storyboard-v2",
+      "to": "SFX-WHOOSH-SOFT",
+      "relation": "CONTAINS",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "S01E01-storyboard-v2",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "from": "S01E01-storyboard-v2",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "from": "S01E01-storyboard-v2",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "from": "S01E01-storyboard-v2",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "from": "S01E01-storyboard-v2",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "from": "S01E01-storyboard-v2",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-storyboard-v2|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "from": "S01E01-storyboard-v2",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|CONTAINS|PT01",
+      "from": "S01E01-theft-proof-v1",
+      "to": "PT01",
+      "relation": "CONTAINS",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|CONTAINS|PT02",
+      "from": "S01E01-theft-proof-v1",
+      "to": "PT02",
+      "relation": "CONTAINS",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|CONTAINS|PT03",
+      "from": "S01E01-theft-proof-v1",
+      "to": "PT03",
+      "relation": "CONTAINS",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|REFERENCES|PT03",
+      "from": "S01E01-theft-proof-v1",
+      "to": "PT03",
+      "relation": "REFERENCES",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|USES_ASSET|asset:/lumo-kids/canon/Character-Design-v4.png",
+      "from": "S01E01-theft-proof-v1",
+      "to": "asset:/lumo-kids/canon/Character-Design-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "from": "S01E01-theft-proof-v1",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "from": "S01E01-theft-proof-v1",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "from": "S01E01-theft-proof-v1",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "from": "S01E01-theft-proof-v1",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "from": "S01E01-theft-proof-v1",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "from": "S01E01-theft-proof-v1",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S01E01-theft-proof-v1|USES_ASSET|asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "from": "S01E01-theft-proof-v1",
+      "to": "asset:/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/season-01/proofs/S01E01-theft-proof.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S02|REFERENCES|biri",
+      "from": "S02",
+      "to": "biri",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S02|REFERENCES|lumo",
+      "from": "S02",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S02|REFERENCES|nublo",
+      "from": "S02",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S03|REFERENCES|lumo",
+      "from": "S03",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S03|REFERENCES|nara",
+      "from": "S03",
+      "to": "nara",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S03|REFERENCES|nublo",
+      "from": "S03",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S03|REFERENCES|tuno",
+      "from": "S03",
+      "to": "tuno",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S04|REFERENCES|biri",
+      "from": "S04",
+      "to": "biri",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S04|REFERENCES|lumo",
+      "from": "S04",
+      "to": "lumo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S04|REFERENCES|nara",
+      "from": "S04",
+      "to": "nara",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S04|REFERENCES|nublo",
+      "from": "S04",
+      "to": "nublo",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S04|REFERENCES|pompon",
+      "from": "S04",
+      "to": "pompon",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "S04|REFERENCES|tuno",
+      "from": "S04",
+      "to": "tuno",
+      "relation": "REFERENCES",
+      "source": "content/production/S01E01-microepisode-plan-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC01|REFERENCES|AMB-PLAZA",
+      "from": "SC01",
+      "to": "AMB-PLAZA",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC01|REFERENCES|BG-LIGHT-FOUNTAIN",
+      "from": "SC01",
+      "to": "BG-LIGHT-FOUNTAIN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC01|REFERENCES|BG-PLAZA-FESTIVAL-DAY",
+      "from": "SC01",
+      "to": "BG-PLAZA-FESTIVAL-DAY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC01|REFERENCES|PROP-GARLANDS",
+      "from": "SC01",
+      "to": "PROP-GARLANDS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC01|REFERENCES|PROP-RIBBONS",
+      "from": "SC01",
+      "to": "PROP-RIBBONS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC01|REFERENCES|SFX-WHOOSH-SOFT",
+      "from": "SC01",
+      "to": "SFX-WHOOSH-SOFT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC02|REFERENCES|AMB-PLAZA",
+      "from": "SC02",
+      "to": "AMB-PLAZA",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC02|REFERENCES|BG-LIGHT-FOUNTAIN",
+      "from": "SC02",
+      "to": "BG-LIGHT-FOUNTAIN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC02|REFERENCES|FX-WARM-GLOW",
+      "from": "SC02",
+      "to": "FX-WARM-GLOW",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC02|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC02",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC02|REFERENCES|SFX-SPARKLE",
+      "from": "SC02",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC03|REFERENCES|AMB-PLAZA",
+      "from": "SC03",
+      "to": "AMB-PLAZA",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC03|REFERENCES|BG-PLAZA-FESTIVAL-DAY",
+      "from": "SC03",
+      "to": "BG-PLAZA-FESTIVAL-DAY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC03|REFERENCES|FX-MIST",
+      "from": "SC03",
+      "to": "FX-MIST",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC03|REFERENCES|PROP-NUBLO-LANTERN",
+      "from": "SC03",
+      "to": "PROP-NUBLO-LANTERN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC03|REFERENCES|SFX-SPARKLE",
+      "from": "SC03",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC04|REFERENCES|AMB-PLAZA",
+      "from": "SC04",
+      "to": "AMB-PLAZA",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC04|REFERENCES|BG-LIGHT-FOUNTAIN",
+      "from": "SC04",
+      "to": "BG-LIGHT-FOUNTAIN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC04|REFERENCES|FX-MIST",
+      "from": "SC04",
+      "to": "FX-MIST",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC04|REFERENCES|PROP-GARLANDS",
+      "from": "SC04",
+      "to": "PROP-GARLANDS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC04|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC04",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC04|REFERENCES|SFX-LIGHT-SNATCH",
+      "from": "SC04",
+      "to": "SFX-LIGHT-SNATCH",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC04|REFERENCES|SFX-WHOOSH-SOFT",
+      "from": "SC04",
+      "to": "SFX-WHOOSH-SOFT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC05|REFERENCES|AMB-PLAZA",
+      "from": "SC05",
+      "to": "AMB-PLAZA",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC05|REFERENCES|BG-LIGHT-FOUNTAIN",
+      "from": "SC05",
+      "to": "BG-LIGHT-FOUNTAIN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC05|REFERENCES|BG-PLAZA-FESTIVAL-DIM",
+      "from": "SC05",
+      "to": "BG-PLAZA-FESTIVAL-DIM",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC05|REFERENCES|FX-VIOLET-TRAIL",
+      "from": "SC05",
+      "to": "FX-VIOLET-TRAIL",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC05|REFERENCES|PROP-LANTERNS",
+      "from": "SC05",
+      "to": "PROP-LANTERNS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC05|REFERENCES|SFX-SPARKLE",
+      "from": "SC05",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC06|REFERENCES|AMB-PLAZA",
+      "from": "SC06",
+      "to": "AMB-PLAZA",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC06|REFERENCES|BG-LANTERN-PATH",
+      "from": "SC06",
+      "to": "BG-LANTERN-PATH",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC06|REFERENCES|FX-VIOLET-TRAIL",
+      "from": "SC06",
+      "to": "FX-VIOLET-TRAIL",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC06|REFERENCES|PROP-GARLANDS",
+      "from": "SC06",
+      "to": "PROP-GARLANDS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC06|REFERENCES|SFX-SPARKLE",
+      "from": "SC06",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC07|REFERENCES|AMB-WOODS",
+      "from": "SC07",
+      "to": "AMB-WOODS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC07|REFERENCES|BG-LANTERN-PATH",
+      "from": "SC07",
+      "to": "BG-LANTERN-PATH",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC07|REFERENCES|FX-SHARED-BEAMS",
+      "from": "SC07",
+      "to": "FX-SHARED-BEAMS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC07|REFERENCES|PROP-LIGHT-BADGES",
+      "from": "SC07",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC07|REFERENCES|SFX-SPARKLE",
+      "from": "SC07",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC08|REFERENCES|AMB-WOODS",
+      "from": "SC08",
+      "to": "AMB-WOODS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC08|REFERENCES|BG-WHISPER-BRIDGE",
+      "from": "SC08",
+      "to": "BG-WHISPER-BRIDGE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC08|REFERENCES|FX-SHARED-BEAMS",
+      "from": "SC08",
+      "to": "FX-SHARED-BEAMS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC08|REFERENCES|PROP-LIGHT-BADGES",
+      "from": "SC08",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC08|REFERENCES|PROP-RIBBONS",
+      "from": "SC08",
+      "to": "PROP-RIBBONS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC08|REFERENCES|SFX-SPARKLE",
+      "from": "SC08",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC08|REFERENCES|SFX-WHOOSH-SOFT",
+      "from": "SC08",
+      "to": "SFX-WHOOSH-SOFT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC09|REFERENCES|AMB-WOODS",
+      "from": "SC09",
+      "to": "AMB-WOODS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC09|REFERENCES|BG-MIST-GROVE",
+      "from": "SC09",
+      "to": "BG-MIST-GROVE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC09|REFERENCES|FX-MIST",
+      "from": "SC09",
+      "to": "FX-MIST",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC09|REFERENCES|FX-SHARED-BEAMS",
+      "from": "SC09",
+      "to": "FX-SHARED-BEAMS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC09|REFERENCES|PROP-LEAVES",
+      "from": "SC09",
+      "to": "PROP-LEAVES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC09|REFERENCES|PROP-LIGHT-BADGES",
+      "from": "SC09",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC09|REFERENCES|SFX-SPARKLE",
+      "from": "SC09",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC10|REFERENCES|AMB-OBSERVATORY",
+      "from": "SC10",
+      "to": "AMB-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC10|REFERENCES|BG-OBSERVATORY",
+      "from": "SC10",
+      "to": "BG-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC10|REFERENCES|FX-SHARED-BEAMS",
+      "from": "SC10",
+      "to": "FX-SHARED-BEAMS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC10|REFERENCES|PROP-LIGHT-BADGES",
+      "from": "SC10",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC10|REFERENCES|PROP-MIRROR-WHEEL",
+      "from": "SC10",
+      "to": "PROP-MIRROR-WHEEL",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC10|REFERENCES|SFX-SPARKLE",
+      "from": "SC10",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC10|REFERENCES|SFX-WHOOSH-SOFT",
+      "from": "SC10",
+      "to": "SFX-WHOOSH-SOFT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC11|REFERENCES|AMB-OBSERVATORY",
+      "from": "SC11",
+      "to": "AMB-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC11|REFERENCES|BG-OBSERVATORY",
+      "from": "SC11",
+      "to": "BG-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC11|REFERENCES|FX-MIST",
+      "from": "SC11",
+      "to": "FX-MIST",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC11|REFERENCES|PROP-LANTERNS",
+      "from": "SC11",
+      "to": "PROP-LANTERNS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC11|REFERENCES|PROP-LIGHT-BADGES",
+      "from": "SC11",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC11|REFERENCES|SFX-WHOOSH-SOFT",
+      "from": "SC11",
+      "to": "SFX-WHOOSH-SOFT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC12|REFERENCES|AMB-OBSERVATORY",
+      "from": "SC12",
+      "to": "AMB-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC12|REFERENCES|BG-OBSERVATORY",
+      "from": "SC12",
+      "to": "BG-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC12|REFERENCES|FX-WARM-GLOW",
+      "from": "SC12",
+      "to": "FX-WARM-GLOW",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC12|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC12",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC12|REFERENCES|PROP-NUBLO-LANTERN",
+      "from": "SC12",
+      "to": "PROP-NUBLO-LANTERN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC12|REFERENCES|SFX-SPARKLE",
+      "from": "SC12",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC13|REFERENCES|AMB-OBSERVATORY",
+      "from": "SC13",
+      "to": "AMB-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC13|REFERENCES|BG-OBSERVATORY",
+      "from": "SC13",
+      "to": "BG-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC13|REFERENCES|FX-MIST",
+      "from": "SC13",
+      "to": "FX-MIST",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC13|REFERENCES|PROP-GARLANDS",
+      "from": "SC13",
+      "to": "PROP-GARLANDS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC13|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC13",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC13|REFERENCES|SFX-SPARKLE",
+      "from": "SC13",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC14|REFERENCES|AMB-OBSERVATORY",
+      "from": "SC14",
+      "to": "AMB-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC14|REFERENCES|BG-OBSERVATORY",
+      "from": "SC14",
+      "to": "BG-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC14|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC14",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC14|REFERENCES|PROP-LIGHT-BADGES",
+      "from": "SC14",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC14|REFERENCES|PROP-NUBLO-LANTERN",
+      "from": "SC14",
+      "to": "PROP-NUBLO-LANTERN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC14|REFERENCES|SFX-SPARKLE",
+      "from": "SC14",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC15|REFERENCES|AMB-OBSERVATORY",
+      "from": "SC15",
+      "to": "AMB-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC15|REFERENCES|BG-OBSERVATORY",
+      "from": "SC15",
+      "to": "BG-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC15|REFERENCES|FX-SHARED-BEAMS",
+      "from": "SC15",
+      "to": "FX-SHARED-BEAMS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC15|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC15",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC15|REFERENCES|PROP-LIGHT-BADGES",
+      "from": "SC15",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC15|REFERENCES|SFX-SPARKLE",
+      "from": "SC15",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16|REFERENCES|AMB-OBSERVATORY",
+      "from": "SC16",
+      "to": "AMB-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16|REFERENCES|BG-OBSERVATORY",
+      "from": "SC16",
+      "to": "BG-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16|REFERENCES|FX-SHARED-BEAMS",
+      "from": "SC16",
+      "to": "FX-SHARED-BEAMS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16|REFERENCES|FX-WARM-GLOW",
+      "from": "SC16",
+      "to": "FX-WARM-GLOW",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC16",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16|REFERENCES|PROP-LIGHT-BADGES",
+      "from": "SC16",
+      "to": "PROP-LIGHT-BADGES",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16|REFERENCES|SFX-SPARKLE",
+      "from": "SC16",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC16|REFERENCES|SFX-WHOOSH-SOFT",
+      "from": "SC16",
+      "to": "SFX-WHOOSH-SOFT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC17|REFERENCES|AMB-OBSERVATORY",
+      "from": "SC17",
+      "to": "AMB-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC17|REFERENCES|BG-OBSERVATORY",
+      "from": "SC17",
+      "to": "BG-OBSERVATORY",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC17|REFERENCES|FX-WARM-GLOW",
+      "from": "SC17",
+      "to": "FX-WARM-GLOW",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC17|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC17",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC17|REFERENCES|PROP-NUBLO-LANTERN",
+      "from": "SC17",
+      "to": "PROP-NUBLO-LANTERN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC17|REFERENCES|SFX-SPARKLE",
+      "from": "SC17",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18|REFERENCES|AMB-WOODS",
+      "from": "SC18",
+      "to": "AMB-WOODS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18|REFERENCES|BG-LANTERN-PATH",
+      "from": "SC18",
+      "to": "BG-LANTERN-PATH",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18|REFERENCES|BG-MIST-GROVE",
+      "from": "SC18",
+      "to": "BG-MIST-GROVE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18|REFERENCES|BG-WHISPER-BRIDGE",
+      "from": "SC18",
+      "to": "BG-WHISPER-BRIDGE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18|REFERENCES|FX-VIOLET-TRAIL",
+      "from": "SC18",
+      "to": "FX-VIOLET-TRAIL",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC18",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18|REFERENCES|SFX-SPARKLE",
+      "from": "SC18",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC18|REFERENCES|SFX-WHOOSH-SOFT",
+      "from": "SC18",
+      "to": "SFX-WHOOSH-SOFT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19|REFERENCES|AMB-PLAZA",
+      "from": "SC19",
+      "to": "AMB-PLAZA",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19|REFERENCES|BG-FESTIVAL-NIGHT",
+      "from": "SC19",
+      "to": "BG-FESTIVAL-NIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19|REFERENCES|BG-LIGHT-FOUNTAIN",
+      "from": "SC19",
+      "to": "BG-LIGHT-FOUNTAIN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19|REFERENCES|FX-FOUNTAIN-AWAKEN",
+      "from": "SC19",
+      "to": "FX-FOUNTAIN-AWAKEN",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19|REFERENCES|PROP-GARLANDS",
+      "from": "SC19",
+      "to": "PROP-GARLANDS",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19|REFERENCES|PROP-HEART-LIGHT",
+      "from": "SC19",
+      "to": "PROP-HEART-LIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19|REFERENCES|SFX-FOUNTAIN-IGNITE",
+      "from": "SC19",
+      "to": "SFX-FOUNTAIN-IGNITE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC19|REFERENCES|SFX-SPARKLE",
+      "from": "SC19",
+      "to": "SFX-SPARKLE",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC20|REFERENCES|AMB-PLAZA",
+      "from": "SC20",
+      "to": "AMB-PLAZA",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC20|REFERENCES|BG-FESTIVAL-NIGHT",
+      "from": "SC20",
+      "to": "BG-FESTIVAL-NIGHT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC20|REFERENCES|FX-FIREWORKS-SILENT",
+      "from": "SC20",
+      "to": "FX-FIREWORKS-SILENT",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC20|REFERENCES|FX-WARM-GLOW",
+      "from": "SC20",
+      "to": "FX-WARM-GLOW",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "SC20|REFERENCES|SFX-FIREWORK-BLOOM",
+      "from": "SC20",
+      "to": "SFX-FIREWORK-BLOOM",
+      "relation": "REFERENCES",
+      "source": "content/season-01/storyboards/S01E01.storyboard.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "tuno|USES_ASSET|asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "from": "tuno",
+      "to": "asset:/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "relation": "USES_ASSET",
+      "source": "content/characters/profiles/tuno.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIBLE-LUMO-KIDS-001|CONTAINS|VOICE-BIRI-001",
+      "from": "VOICE-BIBLE-LUMO-KIDS-001",
+      "to": "VOICE-BIRI-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIBLE-LUMO-KIDS-001|CONTAINS|VOICE-LUMO-001",
+      "from": "VOICE-BIBLE-LUMO-KIDS-001",
+      "to": "VOICE-LUMO-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIBLE-LUMO-KIDS-001|CONTAINS|VOICE-NARA-001",
+      "from": "VOICE-BIBLE-LUMO-KIDS-001",
+      "to": "VOICE-NARA-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIBLE-LUMO-KIDS-001|CONTAINS|VOICE-NARRATOR-001",
+      "from": "VOICE-BIBLE-LUMO-KIDS-001",
+      "to": "VOICE-NARRATOR-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIBLE-LUMO-KIDS-001|CONTAINS|VOICE-NUBLO-001",
+      "from": "VOICE-BIBLE-LUMO-KIDS-001",
+      "to": "VOICE-NUBLO-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIBLE-LUMO-KIDS-001|CONTAINS|VOICE-POMPON-001",
+      "from": "VOICE-BIBLE-LUMO-KIDS-001",
+      "to": "VOICE-POMPON-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    },
+    {
+      "id": "VOICE-BIBLE-LUMO-KIDS-001|CONTAINS|VOICE-TUNO-001",
+      "from": "VOICE-BIBLE-LUMO-KIDS-001",
+      "to": "VOICE-TUNO-001",
+      "relation": "CONTAINS",
+      "source": "content/continuity/voices/voice-bible-v1.json",
+      "state": "EXTRACTED"
+    }
+  ]
+}

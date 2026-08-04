@@ -1,0 +1,36 @@
+{
+  "code": "S01E01",
+  "title": "Lumo y la luz de la fiesta",
+  "lesson": "Compartir y reparar el daño",
+  "logline": "En la víspera de las fiestas de Brillavalle, Nublo roba el Corazón de Luz del pueblo. Lumo y sus amigos comparten sus propios destellos, siguen su rastro y descubren que la luz crece cuando nadie queda fuera.",
+  "durationMinutes": 6,
+  "status": "draft",
+  "focusCharacters": ["Lumo", "Nara", "Tuno", "Biri", "Pompón", "Nublo"],
+  "storyBeats": [
+    "Brillavalle se prepara con alegría para la Fiesta de las Mil Luces.",
+    "Lumo presenta el Corazón de Luz, la fuente que enciende la plaza y abre la celebración.",
+    "Nublo observa desde lejos y se siente invisible porque cree que nadie lo ha invitado.",
+    "Durante la cuenta atrás, Nublo roba el Corazón de Luz y el pueblo queda en penumbra.",
+    "Lumo y la pandilla comparten pequeñas porciones de su propia luz para seguir el rastro sin dejar a nadie atrás.",
+    "Cada amigo usa su habilidad para atravesar el sendero oscuro y llegar al antiguo observatorio.",
+    "Nublo intenta encender la fuente para su fiesta solitaria, pero el Corazón de Luz se debilita cuando se usa sin compartir.",
+    "La pandilla realiza La Ronda de las Ideas y ofrece su luz en lugar de arrebatársela.",
+    "Nublo comprende el daño, devuelve la fuente y acepta ayudar a llevarla de vuelta.",
+    "El Corazón de Luz regresa a la plaza, las fiestas comienzan y el cielo se llena de fuegos artificiales mágicos y silenciosos."
+  ],
+  "visualMotifs": ["animación 3D estilizada", "luz volumétrica cálida", "niebla violeta", "guirnaldas festivas", "fuegos artificiales mágicos"],
+  "launchPackage": "content/season-01/packages/S01E01.launch.json",
+  "storyboard": "content/season-01/storyboards/S01E01.storyboard.json",
+  "keyframeSet": "content/season-01/keyframes/S01E01.keyframes.json",
+  "productionProof": "content/season-01/proofs/S01E01-theft-proof.json",
+  "canonicalDesign": "public/lumo-kids/canon/Character-Design-v4.png",
+  "archivedRejectedTeaser": "content/production/S01E01-canonical-teaser-v4.json",
+  "microepisodePlan": "content/production/S01E01-microepisode-plan-v1.json",
+  "protectedJobQueue": "content/production/jobs/S01E01-proof-v1.json",
+  "productionBudget": "content/production/budget-v1.json",
+  "publication": {
+    "youtubeMadeForKids": true,
+    "humanApproved": false,
+    "releaseGate": "content/production/youtube-release-gate-v1.json"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "LUMO-AGENT-TEAM-V1",
+  "version": 1,
+  "directorGeneral": {
+    "role": "director-general",
+    "authority": "operational",
+    "reportsTo": "Yariel Robaina",
+    "escalatesOnly": ["insufficient-live-balance", "unresolved-production-blocker", "final-master-review-before-youtube"]
+  },
+  "roles": [
+    {"id":"educational-story","mission":"Convertir cada episodio en una historia comprensible que enseñe una conducta concreta sin sonar a lección.","deliverables":["learning-goal","emotional-arc","age-appropriate-script"]},
+    {"id":"canon-guardian","mission":"Detener cualquier cambio de personajes, accesorios fijos o Brillavalle.","deliverables":["hash-preflight","reference-packet","drift-report"]},
+    {"id":"visual-director","mission":"Diseñar planos legibles, atractivos y coherentes con Character Design v4.","deliverables":["shot-language","lighting-plan","thumbnail-read"]},
+    {"id":"continuity-editor","mission":"Conservar posiciones, miradas, escala, utilería y estado emocional entre planos.","deliverables":["section-contracts","handoff-frames","continuity-log"]},
+    {"id":"muapi-budget-controller","mission":"Consultar saldo y precio vivos, limitar cada etapa y registrar cada request_id.","deliverables":["preflight","quote","receipt-ledger"]},
+    {"id":"editor-sound","mission":"Montar ritmo, voz, música y efectos sin intentar corregir deriva visual con gasto innecesario.","deliverables":["picture-lock","audio-mix","master"]},
+    {"id":"child-safety-qa","mission":"Verificar claridad, seguridad emocional, ausencia de imitación y adecuación preescolar.","deliverables":["safety-check","story-check","release-check"]},
+    {"id":"youtube-release","mission":"Preparar metadatos y una carga privada; publicar solo tras la revisión final del propietario.","deliverables":["private-upload","made-for-kids-metadata","synthetic-content-disclosure"]}
+  ],
+  "nonNegotiables": [
+    "Character Design v4 y sus recortes bloqueados gobiernan todos los planos.",
+    "Brillavalle no cambia de geografía, arquitectura ni lenguaje de luz.",
+    "Una sola solicitud pagada puede estar activa.",
+    "Ningún agente ni herramienta puede aprobar su propio resultado visual.",
+    "La publicación pública requiere revisión expresa de Yariel."
+  ]
+}

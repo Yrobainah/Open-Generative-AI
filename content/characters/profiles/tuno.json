@@ -1,0 +1,23 @@
+{
+  "id": "tuno",
+  "name": "Tuno",
+  "role": "Inventor práctico y constructor del grupo",
+  "characterType": "mapache inventor infantil",
+  "agePresentation": "equivalente emocional a 7 años",
+  "canonicalSourceVersion": 4,
+  "canonicalAsset": "/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+  "personality": ["ingenioso", "trabajador", "terco a veces", "leal", "crea soluciones"],
+  "visual": {
+    "silhouette": "mapache infantil compacto con orejas redondas, gafas sobre la cabeza y equipo de inventor",
+    "bodyShape": "torso robusto de pelaje suave, brazos cortos, mono de trabajo y mochila pequeña",
+    "face": "máscara natural gris, hocico crema, ojos grandes castaños y cejas expresivas",
+    "palette": {"primary":"#68665D","secondary":"#D7C7A7","accent":"#8B5A2B","eyes":"#3C3127"},
+    "signatureFeatures": ["máscara natural de mapache", "hocico crema", "gafas redondas de bronce sobre la cabeza", "mono de trabajo marrón y equipo de inventor"],
+    "scaleRelativeToLumo": 1.1
+  },
+  "expressions": ["alegría orgullosa", "curiosidad técnica", "sorpresa amable", "preocupación leve", "frustración controlada", "duda", "concentración intensa", "orgullo compartido"],
+  "voice": {"register":"infantil neutro", "pace":"medio", "tone":"enérgico y práctico", "avoid":["voz adulta grave", "jerga incomprensible", "burla hacia otros personajes"]},
+  "designSheet": {"requiredViews":["front","threeQuarter"], "actionPoses":["medir", "ajustar un mecanismo", "dibujar un plano", "transportar piezas", "celebrar", "proponer una solución"]},
+  "promptTemplate": "Tuno exactamente según Character Design v4: mapache inventor infantil compacto, pelaje gris y crema, máscara natural de mapache, hocico crema, ojos grandes castaños, gafas redondas de bronce sobre la cabeza, mono de trabajo marrón y mochila pequeña con herramientas seguras. Animación 3D estilizada cinematográfica para preescolar, pelaje suave y proporciones idénticas a la referencia canónica.",
+  "negativePrompt": ["bellota", "criatura de madera", "sombrero de bellota", "veta en espiral", "cinturón turquesa", "herramientas afiladas", "barba adulta", "fotorrealismo", "texto o logotipos", "personajes de franquicias existentes", "clones o duplicados"]
+}
