@@ -1,10 +1,10 @@
-import LumoReferenceReviewV4PageClient from './LumoReferenceReviewV4PageClient';
+import LumoReferenceReviewV5PageClient from './LumoReferenceReviewV5PageClient';
 
 export const metadata = {
   title: 'Revisión canónica · Lumo Kids',
-  description: 'Revisión y exportación selectiva de referencias canónicas para OpenArt.',
+  description: 'Revisión y descarga ZIP de referencias canónicas aprobadas para OpenArt.',
 };
 
 export default function LumoReferenceGeneratorPage() {
-  return <LumoReferenceReviewV4PageClient />;
+  return <LumoReferenceReviewV5PageClient />;
 }
