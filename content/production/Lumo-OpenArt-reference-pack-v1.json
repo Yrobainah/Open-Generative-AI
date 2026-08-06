@@ -1,0 +1,289 @@
+{
+  "id": "LUMO-OPENART-REFERENCE-PACK-V1",
+  "version": 1,
+  "status": "ready-for-protected-generation",
+  "owner": "Yariel Robaina",
+  "purpose": "Generar referencias limpias y revisables para OpenArt Short Film usando MuAPI desde Open-Generative-AI, sin consumir créditos de OpenArt.",
+  "outputPackageName": "Lumo_OpenArt_Canonical_Pack_v1",
+  "model": {
+    "endpoint": "seedream-5.0-edit",
+    "displayName": "Seedream 5.0 Lite Edit",
+    "mode": "image-edit",
+    "expectedUnitCostUsd": 0.0325,
+    "maximumUnitCostUsd": 0.1,
+    "maximumPromptChars": 5000,
+    "outputFormat": "png"
+  },
+  "budget": {
+    "balanceSource": "live-muapi-api-required",
+    "lastUserReportedBalanceUsd": 22.92,
+    "stageCapUsd": 1.25,
+    "protectedReserveUsd": 21.5,
+    "maximumConcurrentPaidRequests": 1,
+    "quoteEveryJobBeforePurchase": true,
+    "stopOnFirstError": true,
+    "automaticRetries": 0,
+    "openArtCreditsMayBeUsed": false
+  },
+  "canon": {
+    "lockFile": "config/lumo-canon-lock-v4.json",
+    "sourceVersion": 4,
+    "permittedCharacterViews": ["front", "threeQuarter"],
+    "blockedCharacterViews": ["side", "back"],
+    "mutationPolicy": "stop-production",
+    "noTextInOutput": true,
+    "onePrimarySubjectPerCharacterFile": true
+  },
+  "calibration": {
+    "required": true,
+    "jobIds": ["CHAR-NARA-threeQuarter-v1", "CHAR-POMPON-threeQuarter-v1"],
+    "minimumApproved": 2,
+    "batchLockedUntilApproved": true
+  },
+  "jobs": [
+    {
+      "id": "CHAR-LUMO-front-v1",
+      "category": "characters",
+      "subjectId": "lumo",
+      "view": "front",
+      "source": "/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Lumo v4 image as the only identity source, create a clean full-body FRONT production reference. Preserve exactly the small rounded golden luminous body, two curved glowing antennae, large turquoise eyes, turquoise-white heart core, proportions, materials and colors. Neutral relaxed pose, arms slightly away from body, feet visible, centered on a plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No props, no other characters, no scenery, no labels, no letters, no logo, no border, no redesign, no extra limbs."
+    },
+    {
+      "id": "CHAR-LUMO-threeQuarter-v1",
+      "category": "characters",
+      "subjectId": "lumo",
+      "view": "threeQuarter",
+      "source": "/lumo-kids/canon/characters/CHAR-LUMO-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Lumo v4 image as the only identity source, create a clean full-body THREE-QUARTER production reference, turned gently about 35 degrees. Preserve exactly the small rounded golden luminous body, two curved glowing antennae, large turquoise eyes, turquoise-white heart core, proportions, materials and colors. Neutral relaxed pose, complete silhouette and feet visible, centered on a plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No props, no other characters, no scenery, no text, no border, no redesign, no extra limbs."
+    },
+    {
+      "id": "CHAR-NARA-front-v1",
+      "category": "characters",
+      "subjectId": "nara",
+      "view": "front",
+      "source": "/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Nara v4 image as the only identity source, create a clean full-body FRONT production reference. Nara must remain the exact magical PLANT creature built from layered green leaves: leaf crown, leaf-shaped ears, leaf body and plant limbs. She is NOT a rabbit, cat, fox, dog or furry mammal. Preserve her approved face, silhouette, proportions, leaf textures and green palette. Neutral relaxed pose, complete body visible, plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No basket, no flowers, no props, no other characters, no scenery, no text, no border, no fur, no redesign."
+    },
+    {
+      "id": "CHAR-NARA-threeQuarter-v1",
+      "category": "characters",
+      "subjectId": "nara",
+      "view": "threeQuarter",
+      "source": "/lumo-kids/canon/characters/CHAR-NARA-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "calibration": true,
+      "prompt": "Using the supplied approved Nara v4 image as the only identity source, create a clean full-body THREE-QUARTER production reference, turned gently about 35 degrees. Nara must remain the exact magical PLANT creature built from layered green leaves: leaf crown, leaf-shaped ears, leaf body and plant limbs. She is NOT a rabbit, cat, fox, dog or furry mammal. Preserve her approved face, silhouette, proportions, leaf textures and green palette. Neutral relaxed pose, complete body visible, plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No basket, no flowers, no props, no other characters, no scenery, no text, no border, no fur, no redesign."
+    },
+    {
+      "id": "CHAR-TUNO-front-v1",
+      "category": "characters",
+      "subjectId": "tuno",
+      "view": "front",
+      "source": "/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Tuno v4 image as the only identity source, create a clean full-body FRONT production reference. Preserve exactly his small gray-brown raccoon-like inventor identity, approved face markings, bronze goggles, compact utility clothing, body proportions, materials and palette. Neutral relaxed pose, hands visible, feet visible, centered on a plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No tools in his hands, no other characters, no scenery, no text, no border, no costume changes, no redesign, no extra limbs."
+    },
+    {
+      "id": "CHAR-TUNO-threeQuarter-v1",
+      "category": "characters",
+      "subjectId": "tuno",
+      "view": "threeQuarter",
+      "source": "/lumo-kids/canon/characters/CHAR-TUNO-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Tuno v4 image as the only identity source, create a clean full-body THREE-QUARTER production reference, turned gently about 35 degrees. Preserve exactly his small gray-brown raccoon-like inventor identity, approved face markings, bronze goggles, compact utility clothing, body proportions, materials and palette. Neutral relaxed pose, complete silhouette visible, plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No tools in his hands, no other characters, no scenery, no text, no border, no costume changes, no redesign."
+    },
+    {
+      "id": "CHAR-BIRI-front-v1",
+      "category": "characters",
+      "subjectId": "biri",
+      "view": "front",
+      "source": "/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Biri v4 image as the only identity source, create a clean full-body FRONT production reference. Preserve exactly the approved blue bird body, orange crest and accents, beak, wings, long readable messenger silhouette, leg proportions, feather materials and colors. Standing neutrally with wings relaxed and complete body visible, centered on a plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. Do not turn Biri into a round chick. No props, no other characters, no scenery, no text, no border, no redesign."
+    },
+    {
+      "id": "CHAR-BIRI-threeQuarter-v1",
+      "category": "characters",
+      "subjectId": "biri",
+      "view": "threeQuarter",
+      "source": "/lumo-kids/canon/characters/CHAR-BIRI-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Biri v4 image as the only identity source, create a clean full-body THREE-QUARTER production reference, turned gently about 35 degrees. Preserve exactly the approved blue bird body, orange crest and accents, beak, wings, long readable messenger silhouette, leg proportions, feather materials and colors. Standing neutrally with wings relaxed and complete silhouette visible, plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. Do not turn Biri into a round chick. No props, no other characters, no scenery, no text, no border, no redesign."
+    },
+    {
+      "id": "CHAR-POMPON-front-v1",
+      "category": "characters",
+      "subjectId": "pompon",
+      "view": "front",
+      "source": "/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Pompón v4 image as the only identity source, create a clean full-body FRONT production reference. Preserve exactly the approved dark-purple fluffy material, small vertical body, distinctive long upper crest, face, limbs, proportions and irregular silhouette. Pompón is NOT a round lavender ball, hedgehog or generic furry monster. Neutral relaxed pose, complete body visible, centered on a plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No props, no other characters, no scenery, no text, no border, no lighter lavender redesign."
+    },
+    {
+      "id": "CHAR-POMPON-threeQuarter-v1",
+      "category": "characters",
+      "subjectId": "pompon",
+      "view": "threeQuarter",
+      "source": "/lumo-kids/canon/characters/CHAR-POMPON-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "calibration": true,
+      "prompt": "Using the supplied approved Pompón v4 image as the only identity source, create a clean full-body THREE-QUARTER production reference, turned gently about 35 degrees. Preserve exactly the approved dark-purple fluffy material, small vertical body, distinctive long upper crest, face, limbs, proportions and irregular silhouette. Pompón is NOT a round lavender ball, hedgehog or generic furry monster. Neutral relaxed pose, complete silhouette visible, centered on a plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No props, no other characters, no scenery, no text, no border, no lighter lavender redesign."
+    },
+    {
+      "id": "CHAR-NUBLO-front-v1",
+      "category": "characters",
+      "subjectId": "nublo",
+      "view": "front",
+      "source": "/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Nublo v4 image as the only identity source, create a clean full-body FRONT production reference. Preserve exactly the dark blue-violet fox-wolf design, amber eyes, approved ears and face, lantern backpack, mist tail, proportions, materials and colors. His expression is quiet and misunderstood, never threatening. Neutral standing pose, full silhouette and backpack straps visible, centered on a plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No other characters, no scenery, no text, no border, no horror, no redesign."
+    },
+    {
+      "id": "CHAR-NUBLO-threeQuarter-v1",
+      "category": "characters",
+      "subjectId": "nublo",
+      "view": "threeQuarter",
+      "source": "/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "imageSize": "portrait_4_3",
+      "prompt": "Using the supplied approved Nublo v4 image as the only identity source, create a clean full-body THREE-QUARTER production reference, turned gently about 35 degrees. Preserve exactly the dark blue-violet fox-wolf design, amber eyes, approved ears and face, lantern backpack, mist tail, proportions, materials and colors. His expression is quiet and misunderstood, never threatening. Neutral standing pose, complete silhouette and backpack visible, plain soft light-gray studio background, even neutral lighting, premium stylized 3D preschool character render. No other characters, no scenery, no text, no border, no horror, no redesign."
+    },
+    {
+      "id": "CAST-main-six-scale-lineup-v1",
+      "category": "characters",
+      "subjectId": "main-six",
+      "view": "front",
+      "source": "/lumo-kids/canon/CAST-main-six-lineup-v4.png",
+      "imageSize": "landscape_16_9",
+      "prompt": "Clean the supplied approved v4 six-character lineup into a professional scale reference. Keep exactly one Lumo, one Nara, one Tuno, one Biri, one Pompón and one Nublo with their approved identities, colors, clothing, accessories and relative heights unchanged. Place them in a straight front-facing lineup on a plain soft light-gray studio background with even neutral lighting and a subtle floor shadow. Full bodies visible and separated. No title, names, numbers, scale marks, text, logo, border, scenery, duplicate characters or redesign."
+    },
+    {
+      "id": "ENV-BRILLAVALLE-wide-v1",
+      "category": "environments",
+      "subjectId": "brillavalle",
+      "view": "wide",
+      "source": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "imageSize": "landscape_16_9",
+      "prompt": "Using the approved Brillavalle v4 world image as the only world-design source, create a clean cinematic 16:9 WIDE establishing reference of the same magical woodland valley at night. Preserve the giant trees and roots, rounded houses, bridges, warm lanterns, glowing flowers, waterfalls, winding paths, soft blue moonlight and warm golden village illumination. No principal characters, no close foreground citizens, no text, no logo, no border, no photorealism, no redesign of the architecture. Premium stylized 3D preschool world render with readable geography."
+    },
+    {
+      "id": "ENV-BRILLAVALLE-plaza-v1",
+      "category": "environments",
+      "subjectId": "brillavalle-plaza",
+      "view": "wide",
+      "source": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "imageSize": "landscape_16_9",
+      "prompt": "Using the approved Brillavalle v4 world image as the only world-design source, create a clean cinematic 16:9 reference of the CENTRAL PLAZA at night. Preserve the same tree-root architecture, warm lantern style, blue-gold lighting language and winding paths. Show the plaza's fixed circular layout and clear central space for the Fountain of Light, but do not place any principal character. Calm empty production reference, no festival crowd, no text, no signs, no logo, no border, no photorealism, no unrelated buildings. Premium stylized 3D preschool environment render."
+    },
+    {
+      "id": "ENV-BRILLAVALLE-forest-bridge-v1",
+      "category": "environments",
+      "subjectId": "forest-bridge",
+      "view": "wide",
+      "source": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "imageSize": "landscape_16_9",
+      "prompt": "Extend the approved Brillavalle v4 world language into a clean cinematic 16:9 production reference of a small curved wooden bridge and forest path just outside the village. Match the same rounded handcrafted forms, giant roots, glowing flowers, lantern design, soft blue night ambience and warm golden accents. Safe welcoming preschool mood, readable path direction, no characters, no fog threat, no text, no logo, no border, no photorealism, no new visual franchise."
+    },
+    {
+      "id": "ENV-BRILLAVALLE-mist-path-v1",
+      "category": "environments",
+      "subjectId": "mist-path",
+      "view": "wide",
+      "source": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "imageSize": "landscape_16_9",
+      "prompt": "Extend the approved Brillavalle v4 world language into a clean cinematic 16:9 production reference of the quiet path leading toward Nublo's observatory. Match the same trees, roots, stones, glowing plants and handcrafted lantern language. Add only a gentle low blue-violet mist that feels mysterious but safe for preschool children. No characters, no eyes in darkness, no danger, no text, no logo, no border, no photorealism, no horror."
+    },
+    {
+      "id": "ENV-NUBLO-observatory-exterior-v1",
+      "category": "environments",
+      "subjectId": "nublo-observatory-exterior",
+      "view": "wide",
+      "source": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "imageSize": "landscape_16_9",
+      "prompt": "Create a clean cinematic 16:9 exterior production reference for Nublo's small woodland observatory while preserving the approved Brillavalle v4 architecture and materials. The observatory is built into an old tree and stone outcrop, with one rounded copper telescope dome, a warm amber lantern beside the door and a safe blue-violet mist around the ground. It looks lonely and handmade, not sinister. No characters, no readable signs, no text, no logo, no border, no horror, no photorealism. Premium stylized 3D preschool environment render."
+    },
+    {
+      "id": "ENV-NUBLO-observatory-interior-v1",
+      "category": "environments",
+      "subjectId": "nublo-observatory-interior",
+      "view": "wide",
+      "source": "/lumo-kids/canon/world/ENV-BRILLAVALLE-master-v4.png",
+      "imageSize": "landscape_16_9",
+      "prompt": "Create a clean cinematic 16:9 interior production reference for Nublo's observatory while preserving the approved Brillavalle v4 handcrafted visual language. Cozy circular room inside a tree-and-stone structure, large simple telescope, rounded window toward the valley, star maps represented only as abstract drawings without readable writing, shelves of harmless curiosities, warm amber lantern light and soft blue night light. No characters, no readable text, no logo, no border, no horror, no photorealism. Premium stylized 3D preschool environment render."
+    },
+    {
+      "id": "PROP-FOUNTAIN-on-v1",
+      "category": "props",
+      "subjectId": "fountain-of-light",
+      "view": "on",
+      "source": "/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "imageSize": "square_hd",
+      "prompt": "Extract and faithfully rebuild the approved Fountain of Light as a clean isolated production prop reference in its ON state. Preserve the canonical rounded stone and warm golden details, blue water, proportions and child-friendly magical design. Center the complete fountain on a plain soft light-gray studio background with neutral product lighting and a subtle floor shadow. The Heart of Light is not included. No characters, no plaza, no text, no diagram, no labels, no border, no redesign, no photorealism."
+    },
+    {
+      "id": "PROP-FOUNTAIN-off-v1",
+      "category": "props",
+      "subjectId": "fountain-of-light",
+      "view": "off",
+      "source": "/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "imageSize": "square_hd",
+      "prompt": "Extract and faithfully rebuild the approved Fountain of Light as a clean isolated production prop reference in its OFF state. Preserve exactly the same canonical shape, rounded stone, golden details and proportions as the on-state fountain, but with no flowing water and no magical glow. Center the complete fountain on a plain soft light-gray studio background with neutral product lighting and a subtle floor shadow. The Heart of Light is not included. No characters, no plaza, no text, no diagram, no labels, no border, no redesign."
+    },
+    {
+      "id": "PROP-FOUNTAIN-restoring-v1",
+      "category": "props",
+      "subjectId": "fountain-of-light",
+      "view": "restoring",
+      "source": "/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "imageSize": "square_hd",
+      "prompt": "Extract and faithfully rebuild the approved Fountain of Light as a clean isolated production prop reference in its RESTORING state. Preserve exactly the same canonical shape, rounded stone, golden details and proportions. Show a small amount of blue water beginning to flow and a gentle partial warm glow, clearly halfway between off and fully on. Center it on a plain soft light-gray studio background with neutral product lighting. The Heart of Light is not included. No characters, no plaza, no text, no diagram, no labels, no border, no redesign."
+    },
+    {
+      "id": "PROP-HEART-OF-LIGHT-v1",
+      "category": "props",
+      "subjectId": "heart-of-light",
+      "view": "safe-floating",
+      "source": "/lumo-kids/canon/reference/S01E01-pilot-frames-v4.png",
+      "imageSize": "square_hd",
+      "prompt": "Extract and faithfully rebuild the approved Heart of Light as a clean isolated production prop reference. Preserve its canonical golden heart shape, warm internal light, smooth magical material, small scale and gentle halo. Show one complete heart floating at the center of a plain soft light-gray studio background with neutral product lighting. No fountain, no hands, no characters, no sphere, no drop shape, no lantern shape, no text, no diagram, no labels, no border, no redesign."
+    },
+    {
+      "id": "PROP-NUBLO-lantern-backpack-v1",
+      "category": "props",
+      "subjectId": "nublo-lantern-backpack",
+      "view": "threeQuarter",
+      "source": "/lumo-kids/canon/characters/CHAR-NUBLO-master-v4.png",
+      "imageSize": "square_hd",
+      "prompt": "Extract Nublo's approved lantern backpack and faithfully rebuild it as a clean isolated production prop reference. Preserve the exact compact backpack shape, straps, dark blue-violet materials, warm amber lantern, proportions and child-friendly handcrafted design. Show the complete backpack in a gentle three-quarter product view on a plain soft light-gray studio background with neutral lighting and a subtle floor shadow. No Nublo body, no characters, no scenery, no text, no diagram, no labels, no border, no redesign."
+    },
+    {
+      "id": "CAST-SECONDARY-CITIZENS-lineup-v1",
+      "category": "secondary-cast",
+      "subjectId": "secondary-citizens",
+      "view": "front",
+      "source": "/lumo-kids/canon/reference/CAST-secondary-v4.png",
+      "imageSize": "landscape_16_9",
+      "prompt": "Clean the supplied approved v4 secondary-citizen source into a professional front-facing lineup of eight distinct friendly woodland animals for Brillavalle: rabbit, badger, owl, otter, hedgehog, turtle, deer and squirrel. Preserve the approved premium stylized 3D preschool world. Every citizen must have a unique silhouette and muted natural palette. None may copy Lumo's golden body or antennae, Nara's leafy silhouette, Tuno's goggles and exact raccoon face, Biri's blue-orange crest, Pompón's dark-purple crest silhouette, or Nublo's dark fox form and mist tail. Full bodies separated on a plain soft light-gray background. No names, text, logo, border or duplicate designs."
+    }
+  ],
+  "reviewChecks": [
+    "identity-matches-v4-source",
+    "no-forbidden-view",
+    "single-subject-where-required",
+    "no-text-or-diagram",
+    "no-extra-limbs-or-duplicates",
+    "approved-color-and-silhouette",
+    "safe-preschool-presentation"
+  ],
+  "export": {
+    "manifest": "manifest.json",
+    "reviewContactSheet": "00_REVISION_GENERAL.png",
+    "auditLog": "PROMPTS_AND_COSTS.json",
+    "directoryPickerPreferred": true,
+    "individualDownloadFallback": true,
+    "uploadToOpenArtAutomatically": false
+  }
+}
