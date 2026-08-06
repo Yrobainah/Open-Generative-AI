@@ -1,0 +1,33 @@
+name: Lumo reference generator build
+
+on:
+  pull_request:
+    paths:
+      - 'app/studio/lumo-kids/references/**'
+      - 'app/studio/lumo-kids/LumoKidsPageClient.js'
+      - 'app/api/muapi/**'
+      - 'app/api/lumo-kids/reference-media/**'
+      - 'lib/kids/production/reference-pack-client.js'
+      - 'content/production/Lumo-OpenArt-reference-pack-v1.json'
+      - 'lib/kids/safety/validate-production.mjs'
+      - '.github/workflows/lumo-reference-generator-build.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run build:packages
+      - run: npm run kids:validate
+      - run: npm run build
