@@ -1,10 +1,10 @@
-import LumoReferenceGeneratorV3PageClient from './LumoReferenceGeneratorV3PageClient';
+import LumoReferenceReviewV4PageClient from './LumoReferenceReviewV4PageClient';
 
 export const metadata = {
-  title: 'Referencias canónicas · Lumo Kids',
-  description: 'Generador protegido de referencias canónicas para OpenArt.',
+  title: 'Revisión canónica · Lumo Kids',
+  description: 'Revisión y exportación selectiva de referencias canónicas para OpenArt.',
 };
 
 export default function LumoReferenceGeneratorPage() {
-  return <LumoReferenceGeneratorV3PageClient />;
+  return <LumoReferenceReviewV4PageClient />;
 }
