@@ -1,4 +1,4 @@
-import LumoReferenceGeneratorV2PageClient from './LumoReferenceGeneratorV2PageClient';
+import LumoReferenceGeneratorV3PageClient from './LumoReferenceGeneratorV3PageClient';
 
 export const metadata = {
   title: 'Referencias canónicas · Lumo Kids',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function LumoReferenceGeneratorPage() {
-  return <LumoReferenceGeneratorV2PageClient />;
+  return <LumoReferenceGeneratorV3PageClient />;
 }
