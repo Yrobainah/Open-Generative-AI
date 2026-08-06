@@ -1,0 +1,263 @@
+{
+  "id": "S01E01-SHORT-FILM-3MIN-V1",
+  "series": "Las aventuras de Lumo",
+  "episodeTitle": "Lumo y la luz de la fiesta",
+  "status": "preproduction-approved-no-render",
+  "language": "es-ES-neutral",
+  "audience": "3-7",
+  "durationSeconds": 180,
+  "aspectRatio": "16:9",
+  "projectId": "LgS7RrNzUwOr0XlWikAs",
+  "projectName": "Lumo Kids — S01E01",
+  "storyWordCount": 354,
+  "renderAllowed": false,
+  "renderGate": {
+    "storyboardApprovedByYariel": false,
+    "costReviewedByYariel": false,
+    "heartOfLightIsolatedReferenceUploaded": false,
+    "voiceAssignmentsLocked": false,
+    "generalContactSheetForbidden": true
+  },
+  "globalRules": [
+    "Use only the approved individual visual references listed in this plan.",
+    "Never use 00_REVISION_GENERAL.png as a generation reference.",
+    "Never redesign, reinterpret, age, recolor or replace a principal character.",
+    "Nara remains a magical plant creature made from layered green leaves; never a furry mammal.",
+    "Pompón keeps the approved purple fluffy body, vertical silhouette and long crest; never a round generic monster.",
+    "Tuno uses only the approved front reference; do not invent a three-quarter redesign.",
+    "Nublo is quiet and misunderstood, never frightening or evil.",
+    "No close-up secondary citizens. Distant woodland silhouettes are allowed only as background atmosphere.",
+    "No subtitles, captions, logos, labels or readable text inside the film.",
+    "Dialogue is short, clear, non-overlapping and in neutral Spanish.",
+    "Create storyboard and production plan only; stop before final video render."
+  ],
+  "audioPlan": {
+    "narrator": {
+      "role": "principal",
+      "voice": "warm adult storyteller, neutral Spanish, calm, affectionate, stable identity",
+      "paceWpm": "110-120",
+      "performance": "gentle wonder, never theatrical or frightening"
+    },
+    "characterVoices": {
+      "lumo": "warm, clear, optimistic child voice",
+      "nara": "gentle, thoughtful child voice",
+      "tuno": "slightly lower, calm, practical child voice",
+      "biri": "bright, quick but clear child voice",
+      "pompon": "soft, sincere child voice",
+      "nublo": "quiet, vulnerable child voice, never villainous"
+    },
+    "music": {
+      "opening": "soft magical woodwinds, bells and warm strings",
+      "darkness": "reduce music, no horror stingers",
+      "ending": "use the already approved Brillavalle song; do not invent replacement lyrics"
+    }
+  },
+  "approvedUploads": [
+    {"id":"n43xSLaztELOLkp5POw0","filename":"CHAR-BIRI-front-v1.jpg","role":"biri-front"},
+    {"id":"anMb12xg7BRWsJwJ2OLQ","filename":"CHAR-BIRI-threeQuarter-v1.jpg","role":"biri-three-quarter"},
+    {"id":"qGhtNfwhMYewGNAAtG3Y","filename":"CHAR-LUMO-front-v1.jpg","role":"lumo-front"},
+    {"id":"8twiMJ698z1H2gSGwYeL","filename":"CHAR-LUMO-threeQuarter-v1.jpg","role":"lumo-three-quarter"},
+    {"id":"gHT05poV3eTJgr8hKsr2","filename":"CHAR-NARA-front-v1.png","role":"nara-front"},
+    {"id":"ONA0lTy7Z2cUWlxjHpxT","filename":"CHAR-NARA-threeQuarter-v1.jpg","role":"nara-three-quarter"},
+    {"id":"EMrcXOLHwwJVQrEFcN5L","filename":"CHAR-NUBLO-front-v1.jpg","role":"nublo-front"},
+    {"id":"oE7F4zBNtXIv5cKN07ua","filename":"CHAR-NUBLO-threeQuarter-v1.jpg","role":"nublo-three-quarter"},
+    {"id":"nzzbQVHliYmvULpWBIwn","filename":"CHAR-POMPON-front-v1.jpg","role":"pompon-front"},
+    {"id":"yyi8gZNz6jh4K61wG8dX","filename":"CHAR-POMPON-threeQuarter-v1.jpg","role":"pompon-three-quarter"},
+    {"id":"m3VscMakYnZ6EsnM2SHa","filename":"CHAR-TUNO-front-v1.jpg","role":"tuno-front-only"},
+    {"id":"ixJMxpPPR8sJ1ggRBE7U","filename":"ENV-BRILLAVALLE-forest-bridge-v1.jpg","role":"forest-bridge"},
+    {"id":"PRKb6BTTHBJ0alFcogdT","filename":"ENV-BRILLAVALLE-plaza-v1.jpg","role":"central-plaza"},
+    {"id":"cqcudj3CqpsUjsBdjI28","filename":"ENV-NUBLO-observatory-exterior-v1.jpg","role":"observatory-exterior"},
+    {"id":"vO4wAoQ0mIspm8IN3KYb","filename":"ENV-NUBLO-observatory-interior-v1.jpg","role":"observatory-interior"},
+    {"id":"pHKrXnSzMljRuQOGnBpr","filename":"PROP-FOUNTAIN-on-v1.jpg","role":"fountain-on"}
+  ],
+  "forbiddenUpload": {
+    "id": "2vtgoRAorz0i7LVhmkKK",
+    "filename": "00_REVISION_GENERAL.png",
+    "reason": "Mixed contact sheet; it can contaminate character identity and scene composition."
+  },
+  "missingRequiredBeforeRender": [
+    {
+      "asset": "PROP-HEART-OF-LIGHT-approved",
+      "reason": "The Heart is central to theft, carrying, sharing light and restoration. Director must not invent its shape."
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 18,
+      "duration": 18,
+      "title": "Brillavalle y el Corazón",
+      "location": "Brillavalle central plaza",
+      "characters": [],
+      "references": ["ENV-BRILLAVALLE-plaza-v1.jpg", "PROP-FOUNTAIN-on-v1.jpg"],
+      "shots": [
+        "Slow aerial approach over the magical woodland toward Brillavalle.",
+        "Gentle descent to the central plaza and the glowing fountain.",
+        "Hold on the place where the Heart of Light floats; use a placeholder only in storyboard until the isolated Heart reference is uploaded."
+      ],
+      "script": "NARRADOR: En el corazón del bosque mágico estaba Brillavalle, donde cada pequeña luz tenía algo que contar. Aquella noche, la plaza se preparaba para la Fiesta de las Mil Luces. Sobre la fuente flotaba el Corazón de Luz.",
+      "transition": "match dissolve from glowing fountain to festival lanterns"
+    },
+    {
+      "scene": 2,
+      "start": 18,
+      "end": 38,
+      "duration": 20,
+      "title": "Preparativos juntos",
+      "location": "Brillavalle central plaza",
+      "characters": ["lumo", "nara", "tuno", "biri", "pompon"],
+      "references": [
+        "CHAR-LUMO-threeQuarter-v1.jpg",
+        "CHAR-NARA-threeQuarter-v1.jpg",
+        "CHAR-TUNO-front-v1.jpg",
+        "CHAR-BIRI-threeQuarter-v1.jpg",
+        "CHAR-POMPON-threeQuarter-v1.jpg",
+        "ENV-BRILLAVALLE-plaza-v1.jpg",
+        "PROP-FOUNTAIN-on-v1.jpg"
+      ],
+      "shots": [
+        "Readable montage of one simple action per character.",
+        "Medium shot of Lumo and Nara speaking; other friends remain background actions.",
+        "No six-character close-up and no crowd duplicates."
+      ],
+      "script": "NARRADOR: Lumo y sus amigos trabajaban juntos. Nara colocaba hojas luminosas, Tuno revisaba la fuente, Biri llevaba cintas y Pompón ordenaba faroles.\nLUMO: ¡La fiesta quedará preciosa!\nNARA: Porque la preparamos juntos.",
+      "transition": "cut on Biri flying upward toward observatory direction"
+    },
+    {
+      "scene": 3,
+      "start": 38,
+      "end": 55,
+      "duration": 17,
+      "title": "Nublo observa",
+      "location": "Nublo observatory exterior and window",
+      "characters": ["nublo"],
+      "references": ["CHAR-NUBLO-threeQuarter-v1.jpg", "ENV-NUBLO-observatory-exterior-v1.jpg", "ENV-NUBLO-observatory-interior-v1.jpg"],
+      "shots": [
+        "Exterior of observatory overlooking distant festival lights.",
+        "Medium close-up of Nublo watching through the rounded window.",
+        "Expression is lonely and hesitant, not sinister."
+      ],
+      "script": "NARRADOR: Desde su observatorio, Nublo miraba las luces en silencio. Quería acercarse, pero creía que nadie lo invitaría.\nNUBLO: Todos tienen un lugar… menos yo.",
+      "transition": "soft cut from Nublo's amber eye reflection to fountain glow"
+    },
+    {
+      "scene": 4,
+      "start": 55,
+      "end": 75,
+      "duration": 20,
+      "title": "La luz desaparece",
+      "location": "Brillavalle central plaza",
+      "characters": ["nublo", "biri"],
+      "references": ["CHAR-NUBLO-threeQuarter-v1.jpg", "CHAR-BIRI-front-v1.jpg", "ENV-BRILLAVALLE-plaza-v1.jpg", "PROP-FOUNTAIN-on-v1.jpg"],
+      "shots": [
+        "Nublo enters the temporarily empty plaza slowly and carefully.",
+        "He reaches toward the Heart placeholder; storyboard must mark asset pending.",
+        "Fountain light fades gently; Biri returns and reacts without panic."
+      ],
+      "script": "NARRADOR: Cuando la plaza quedó sola, Nublo bajó con cuidado. Solo quería una luz que lo acompañara. Al tocar el Corazón, la fuente se apagó y Brillavalle quedó a oscuras.\nNUBLO: Solo será un momento.\nBIRI: ¡La luz desapareció!",
+      "transition": "lights fade to deep blue, never total black or horror"
+    },
+    {
+      "scene": 5,
+      "start": 75,
+      "end": 95,
+      "duration": 20,
+      "title": "La Ronda de las Ideas",
+      "location": "Darkened Brillavalle plaza",
+      "characters": ["lumo", "nara", "tuno"],
+      "references": ["CHAR-LUMO-front-v1.jpg", "CHAR-NARA-front-v1.png", "CHAR-TUNO-front-v1.jpg", "ENV-BRILLAVALLE-plaza-v1.jpg"],
+      "shots": [
+        "Three-character semicircle, clear silhouettes and calm gestures.",
+        "Close on Lumo during the ritual.",
+        "Insert of soft mist footprints leaving the plaza; no new character."
+      ],
+      "script": "NARRADOR: Los amigos sintieron miedo, pero Lumo recordó la Ronda de las Ideas.\nLUMO: Paro, miro alrededor. Pienso, pruebo algo mejor.\nTUNO: Busquemos pistas sin acusar.\nNARA: Y escuchemos antes de decidir.\nNARRADOR: Unas huellas de neblina salían de la plaza.",
+      "transition": "camera follows mist footprints toward bridge"
+    },
+    {
+      "scene": 6,
+      "start": 95,
+      "end": 117,
+      "duration": 22,
+      "title": "Las huellas de neblina",
+      "location": "Forest bridge outside Brillavalle",
+      "characters": ["lumo", "biri", "pompon"],
+      "references": ["CHAR-LUMO-threeQuarter-v1.jpg", "CHAR-BIRI-threeQuarter-v1.jpg", "CHAR-POMPON-threeQuarter-v1.jpg", "ENV-BRILLAVALLE-forest-bridge-v1.jpg"],
+      "shots": [
+        "Wide shot crossing the bridge in a safe blue-gold night.",
+        "Medium shot of Pompón noticing the emotional quality of the mist.",
+        "Lumo leads gently; no running chase."
+      ],
+      "script": "NARRADOR: Lumo, Biri y Pompón siguieron las huellas por el puente del bosque.\nPOMPÓN: La niebla no parece enfadada. Parece triste.\nBIRI: Entonces acerquémonos con calma.\nLUMO: Vamos juntos. Nadie se queda atrás.",
+      "transition": "mist drifts toward observatory door"
+    },
+    {
+      "scene": 7,
+      "start": 117,
+      "end": 142,
+      "duration": 25,
+      "title": "Escuchar a Nublo",
+      "location": "Nublo observatory interior",
+      "characters": ["lumo", "nublo"],
+      "references": ["CHAR-LUMO-threeQuarter-v1.jpg", "CHAR-NUBLO-front-v1.jpg", "ENV-NUBLO-observatory-interior-v1.jpg"],
+      "shots": [
+        "Two-character composition with safe distance and open body language.",
+        "Close on Nublo during explanation; Heart remains storyboard placeholder until approved reference exists.",
+        "Reaction close on Lumo listening before speaking."
+      ],
+      "script": "NARRADOR: Las huellas terminaban en el observatorio. Nublo sostenía el Corazón, cuya luz se debilitaba.\nLUMO: Nublo, queremos escucharte.\nNUBLO: Pensé que no había sitio para mí. Creí que el Corazón me haría sentir acompañado.\nLUMO: Tomarlo apagó Brillavalle, pero sentirte solo también duele. Podemos arreglarlo juntos.",
+      "transition": "warm glow begins between both heart lights"
+    },
+    {
+      "scene": 8,
+      "start": 142,
+      "end": 163,
+      "duration": 21,
+      "title": "Compartir la luz",
+      "location": "Observatory interior to path back",
+      "characters": ["lumo", "nublo"],
+      "references": ["CHAR-LUMO-front-v1.jpg", "CHAR-NUBLO-threeQuarter-v1.jpg", "ENV-NUBLO-observatory-interior-v1.jpg", "ENV-BRILLAVALLE-forest-bridge-v1.jpg"],
+      "shots": [
+        "Lumo's turquoise core sends one gentle warm spark toward the Heart placeholder.",
+        "Nublo apologizes with lowered shoulders, then looks hopeful.",
+        "Short walking transition back toward Brillavalle."
+      ],
+      "script": "NARRADOR: Lumo acercó su corazón turquesa al Corazón de Luz. Una chispa cálida pasó de uno a otro.\nLUMO: Mi luz no se hace pequeña cuando la comparto.\nNUBLO: Lo siento. Quiero devolverlo y ayudar.\nNARRADOR: Juntos regresaron a la plaza.",
+      "transition": "golden glow carries into plaza fountain"
+    },
+    {
+      "scene": 9,
+      "start": 163,
+      "end": 180,
+      "duration": 17,
+      "title": "Una nueva luz en la fiesta",
+      "location": "Brillavalle central plaza",
+      "characters": ["lumo", "nara", "tuno", "biri", "pompon", "nublo"],
+      "references": [
+        "CHAR-LUMO-front-v1.jpg",
+        "CHAR-NARA-front-v1.png",
+        "CHAR-TUNO-front-v1.jpg",
+        "CHAR-BIRI-front-v1.jpg",
+        "CHAR-POMPON-front-v1.jpg",
+        "CHAR-NUBLO-front-v1.jpg",
+        "ENV-BRILLAVALLE-plaza-v1.jpg",
+        "PROP-FOUNTAIN-on-v1.jpg"
+      ],
+      "shots": [
+        "Fountain returns to the exact approved on-state design; do not invent off/restoring designs.",
+        "Nublo lights one lantern while friends watch.",
+        "Final wide group composition; use individual references as identity priority and avoid cloned background characters."
+      ],
+      "script": "NARRADOR: Al devolver el Corazón, el agua volvió a correr y las luces despertaron una a una. Nublo encendió el último farol.\nNARA: Ahora sí estamos todos.\nNUBLO: Gracias por escucharme.\nLUMO: Cuando paramos, miramos y escuchamos, encontramos una idea mejor.\nNARRADOR: La fiesta comenzó con la canción aprobada de Brillavalle, y una nueva luz encontró su lugar.",
+      "transition": "final warm hold, no end credits inside generated film"
+    }
+  ],
+  "storyboardInstructions": [
+    "Create one storyboard card per scene with 2-3 shots, timing, cast, location and prop state.",
+    "Show filenames of selected references outside the generated frames, never inside the film image.",
+    "Flag the Heart of Light as MISSING APPROVED REFERENCE in scenes 1, 4, 7, 8 and 9.",
+    "Do not render any video, synthesize final voices or deduct final-film credits.",
+    "Stop and wait for Yariel's approval after presenting all nine storyboard cards and the estimated render cost."
+  ]
+}
