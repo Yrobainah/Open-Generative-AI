@@ -14,26 +14,36 @@ function allowedHostname(hostname) {
     || normalized.endsWith('.fal.ai');
 }
 
+function validateRemoteUrl(raw) {
+  let target;
+  try {
+    target = new URL(raw);
+  } catch {
+    return { ok: false, error: 'Invalid media URL.' };
+  }
+  if (target.protocol !== 'https:' || !allowedHostname(target.hostname)) {
+    return { ok: false, error: 'Media host not allowed.' };
+  }
+  return { ok: true, target };
+}
+
 export async function GET(request) {
   const incoming = new URL(request.url);
   const raw = incoming.searchParams.get('url');
   if (!raw) return NextResponse.json({ error: 'Missing media URL.' }, { status: 400 });
 
-  let target;
-  try {
-    target = new URL(raw);
-  } catch {
-    return NextResponse.json({ error: 'Invalid media URL.' }, { status: 400 });
-  }
-
-  if (target.protocol !== 'https:' || !allowedHostname(target.hostname)) {
-    return NextResponse.json({ error: 'Media host not allowed.' }, { status: 403 });
-  }
+  const initial = validateRemoteUrl(raw);
+  if (!initial.ok) return NextResponse.json({ error: initial.error }, { status: 403 });
 
   try {
-    const response = await fetch(target, { cache: 'no-store', redirect: 'follow' });
+    const response = await fetch(initial.target, { cache: 'no-store', redirect: 'follow' });
     if (!response.ok) {
       return NextResponse.json({ error: `Remote media failed with ${response.status}.` }, { status: 502 });
+    }
+
+    const finalTarget = validateRemoteUrl(response.url || initial.target.href);
+    if (!finalTarget.ok) {
+      return NextResponse.json({ error: 'Redirected media host not allowed.' }, { status: 403 });
     }
 
     const contentType = response.headers.get('content-type') || '';
