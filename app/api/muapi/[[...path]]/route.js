@@ -4,6 +4,7 @@ const MUAPI_BASE = 'https://api.muapi.ai/api/v1';
 const ALLOWED_EXACT = new Set([
   'account/balance',
   'upload_file',
+  'models',
   'seedream-5.0-edit',
 ]);
 const ALLOWED_PREFIXES = [
